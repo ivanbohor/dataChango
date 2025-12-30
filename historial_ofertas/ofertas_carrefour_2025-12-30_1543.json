@@ -23,13 +23,13 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Financiación Disponible en Heladeras",
-        "descripcion": "iOfertas Virales! TIENDAS OFICIALES PRECIO NORMAL S9o5777 PRECO MORMAL 8974.998 PRECIO OFERTA 8699.999 CUOTAS SIN INTERÉS 8116.667 FoesngikFolestos 574357 PRECIO OFERTA $619.999 BOMBA EN PAGO dfeciasniknuestos 735784 EXCLUSIVO ONLINE Heladera Gafa 326 Its Lavarropas Drean Hasta el 02/01",
+        "titulo": "Precio Especial en Varios",
+        "descripcion": "Comprando los días Martes de Diciembre Con tarjetas de Débito Visa NaranjaX 153 253 DESCUENTO DESCUENTO Tope de descuento $6.000 Para clientes adheridos a planes de suscripción- Tope de descuento $12.000 Para clientes no adheridos a planes de suscripción por semana. por semana _ No Incluye electrodoméstlcos, electrónlca, telefonla celular; carnlcerla y leches Infantlles Ver legales en carrefour com arldescuentos-bancarlos. maternlzadas (etapa 1y 2) Apllca TarJetas de Déblto VIsa.",
         "categoria": [
-            "📺 Electro"
+            "💳 Bancarias"
         ],
-        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ab2f32da-e73f-4607-bb85-a4a85080e946___b871a5f991a526a65fac4908f44c054d.webp",
+        "link": "https://www.carrefour.com.ar/almacen",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/5dc7d217-91c7-4b93-8d52-0093ce41c9f8___be2d6ba3aa3453ae0a765b19642c08be.webp",
         "fecha": "2025-12-30"
     },
     {
@@ -41,17 +41,6 @@
         ],
         "link": "https://www.carrefour.com.ar/23609?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/8c1fda69-a935-4f89-ba80-e753a071d35f___d89d51e6f6c97143c89d8c8737022900.webp",
-        "fecha": "2025-12-30"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Precio Especial en Varios",
-        "descripcion": "Comprando los días Martes de Diciembre Con tarjetas de Débito Visa NaranjaX 153 253 DESCUENTO DESCUENTO Tope de descuento $6.000 Para clientes adheridos a planes de suscripción- Tope de descuento $12.000 Para clientes no adheridos a planes de suscripción por semana. por semana _ No Incluye electrodoméstlcos, electrónlca, telefonla celular; carnlcerla y leches Infantlles Ver legales en carrefour com arldescuentos-bancarlos. maternlzadas (etapa 1y 2) Apllca TarJetas de Déblto VIsa.",
-        "categoria": [
-            "💳 Bancarias"
-        ],
-        "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/5dc7d217-91c7-4b93-8d52-0093ce41c9f8___be2d6ba3aa3453ae0a765b19642c08be.webp",
         "fecha": "2025-12-30"
     },
     {
