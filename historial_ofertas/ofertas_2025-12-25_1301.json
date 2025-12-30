@@ -1,0 +1,153 @@
+[
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] ⚠️ AVISO: Posible Info de Horarios (El Jueves 25 de...)",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/7a24f2eb-50ae-4596-8f5a-463d8102dbc2___9f5f6297e98cf611c3cac1a518add3ca.webp",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] Promociones Bancarias y Varios",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/f2a34d79-36e4-4db0-92ce-5deb9f29c808___46f5196a478965d5799c741f88026695.webp",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] 18 Cuotas S/Int en Electro Exclusivo Online Sólo Consumo Famillar;...",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/6db4669a-2822-49b5-ba57-fa254b0ee468___83ef8950fd8831f463754a698e38656f.webp",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Varios",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.carrefour.com.ar/electro-y-tecnologia",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/19c075d8-de37-469a-b3d0-d5fb7d1ffb38___0c5a25da758e2e4fcd35e0749dd3ce43.webp",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "18 Cuotas S/Int en Electro Isolo Por Hoyl...",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.carrefour.com.ar/23574?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/5fdb7391-12cb-483a-a062-825a01b25a5b___bb8d1e2b9d5f7fe8030c3b0cf0bc04f7.webp",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "18 CUOTAS SIN INTERÉS en NUEVO",
+        "categoria": [
+            "🧸 Juguetería",
+            "📺 Electro"
+        ],
+        "link": "https://www.carrefour.com.ar/consola-play-station-5-hw-2015-cfi-2015b01x-digital-gt7-astro-argentina/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/782956-170-170?v=639016635023630000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Realizando tu compra los Jueves",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.carrefour.com.ar/descuentos-bancarios?filtro=tarjeta-carrefour",
+        "imagen": "https://www.carrefour.com.ar/api/dataentities/BP/documents/dc756f22-f479-11ef-b37f-f45bce4a2de1/cardImage/attachments/crf-credito-horizontal.avif",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Realizando tu compra los Lunes",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://www.carrefour.com.ar/api/dataentities/BP/documents/06991a18-5679-11f0-b37f-fc08fbf78cb1/cardImage/attachments/club_lanacion%20(1).webp",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Realizando tu compra Todos lo Martes de Diciembre Descuento:20",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.carrefour.com.ar/descuentos-bancarios?filtro=entidad&entidad=Tarjeta%20Mi%20Carrefour%20Prepaga",
+        "imagen": "https://www.carrefour.com.ar/api/dataentities/BP/documents/02405642-566f-11f0-b37f-d2294b32b8bf/cardImage/attachments/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(3).png",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "6 CUOTAS SIN INTERÉS en Vendido y entregado porHouse&Office",
+        "categoria": [
+            "🍷 Bebidas"
+        ],
+        "link": "https://www.carrefour.com.ar/cava-de-vinos-vondom-linea-limited-8-botellas-puerta-flat-1760872/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/741328-170-170?v=638966019642330000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en House&Office",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.carrefour.com.ar/22677?map=productClusterIds",
+        "imagen": "",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3 CUOTAS SIN INTERÉS en Vendido y entregado porGrupo Núcleo",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.carrefour.com.ar/tablet-lenovo-tab-10-1--wuxga-4gb-128gb-folio---lenovo-e310--tb311fu---zaeh0128ar--1763699/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/766885-170-170?v=639011613016100000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 CUOTAS SIN INTERÉS en NUEVO",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.carrefour.com.ar/aire-portatil-carrefour-home-3530w-hmac12jtb-25l/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/752765-170-170?v=638974299266100000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 CUOTAS SIN INTERÉS en 12 CSI MI CARREFOUR CRÉDITO",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.carrefour.com.ar/aire-acondicionado-de-ventana-philco-frio-3300w-phw32ca3an/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/423950-170-170?v=638375651602400000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "EXCLUSIVO ONLINE 2DO AL 80% IGUALES en Papas fritas acanaladas Pehuamar 135 g.",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/papas-fritas-acanaladas-pehuamar-135-g-721966/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/538175-170-170?v=638554455496930000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-25"
+    }
+]

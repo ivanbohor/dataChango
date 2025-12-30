@@ -1,0 +1,145 @@
+[
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 2x1 en Pan Dulce Y Budines",
+        "descripcion": "i2x1 2 1 798 CHIPS CHOCOLATE DE VÁLIDO DEL 26/12 AL 28/12.SELECCIONADOS. 0 1 DoNs SATUR 8",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/c9070b5e-c935-42fb-90ea-703862650a25___832a482919cb47ea63e8fbd8f20df46d.webp",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 2do al 70% en Cuidado Personal",
+        "descripcion": "4 {270% SUPER 60 ECONÓMICO , Dove Carefree 22 ~ot protección largos pequohar Auof VÁLIDO DEL 26/12 AL 28/12, SeleCCIONADOS",
+        "categoria": [
+            "💊 Farmacia"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/07c60c77-ff86-4001-a6ac-5420e239a603___8bf9ff7df95e0987c371986dfd19bded.webp",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 3x2 en Vinos",
+        "descripcion": "3x2 Juic; B-ua MORA TARD VÁLIDO DEL 26/12 AL 28/12 LECCIONADOS BEBER CON MODERACION.",
+        "categoria": [
+            "🍷 Bebidas"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/199ccc8c-19f0-405e-bcd3-6c55b64d575d___9966f014e49a4a4119e6626ded08a3fd.webp",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 35% Off en Limpieza",
+        "descripcion": "{35% Elite Ultra  Suave a MAGISTRAL VÁLIDO DEL 26/12 AL 28/12. SELECCIONADOS",
+        "categoria": [
+            "🧹 Limpieza"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/404fa068-a51a-4547-bf1c-9105da0c564d___e69dc68bc64271ef92a80cfad2e402a9.webp",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 3x2 en Lácteos",
+        "descripcion": "{3x2 Tres 00 Las 7 dLDD Cocolataol Niñas S5 luiana Umegeo Mapacto posiiiyg 20R} e  VÁLIDO DEL 26/1284728712. SELECCIONADOS.",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/ea333413-07a3-4bb4-acf1-cf7458effc98___2053069880258af4e5b6368f4cd76a2f.webp",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 15% Off en Celulares",
+        "descripcion": "3 ENTREGAS EN 24HS TVY CELULARES 112wo9 { 15% CUOTAS occo o0 12 sinottsrés 12O% CkEDIO",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/d5555a55-7e0b-42dd-9de9-131b8f6520e6___92e29881e88e9cc7d4f550074317553a.webp",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 25% Off en Varios",
+        "descripcion": "3 ENTREGAS EN 24HS ELECTROS INFALTABLES {12wo9r9 {25% CuoTaS CecC oa 12 sinotäsrés 30% CkÉDITO",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/c13a13d7-f93a-4eaf-a05d-92a25e6bb3ac___61693931bfbd0c735010100b62c2090a.webp",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 35% Off en Smart TV",
+        "descripcion": "0 ENTREGAS EN 24HS AUDIO Y SOPORTES DE TV {12wo92 { 35% CuoTaS CecC oa 12 sinotäsrés 140* CkÉDITO",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/a473729a-00dc-441d-beec-7aaea7e9dfb8___e1d7ce91c78a8e3eab604868e913c481.webp",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 12 Cuotas en Climatización",
+        "descripcion": "AIRES ACONDICIONADOS YVENTILADORES {12 CuoTaS @TSRÉg { 30% CecC oa 12 sinotäsrés 140* CkÉDITO",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/33fd5369-d48e-4a83-a270-540073dbc12e___be8fb8eaac6acd1e548a840c79b73d34.webp",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] Oferta en Varios",
+        "descripcion": "SOonneon IWCASALEI PARAICOMIRARIR Ziploc [Raic {359 Hs afos Paiq OFF COMPRAR_ Oas aaegeet Lo",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/3d059de9-8649-4a54-93fb-3ada5eb37e79___076a9ead140cbb75e4e212d6867b69bc.jpg",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 35% Off en Varios",
+        "descripcion": "nuevo Cif Activegel 35% DTO (Cif) ACTIVEGEL",
+        "categoria": [
+            "🧹 Limpieza"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/d7c6a5cc-af96-4d7f-8e6d-4e4ca362d8e1___aefd14789bc610cfdb70e84b070bb8d8.jpg",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 6x12 en Varios",
+        "descripcion": "Todos los días 3,6x12qu0625 CONCRABIFTA sin interés\" EN ELECTRODOMÉSTICOS SELECCIONADOS FROMCCIONVALIDA DEL 01/12/2025 AL31/12/2025 Iuioocterooy Geflaallesdilkessneoeele CFTNA: 0,0%",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/0f793e61-83d9-485d-8c36-495dca533144___7a46a6bf2b1ae6b762412528aebb4f8e.jpg",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "[BANNER] 20% Off en Varios",
+        "descripcion": "Miércoles -20%+3 STOteres CONCRABITTA sin EN TODA LA COMPRA EXCLUSIO WeB _ SIN TOPE DE DESCUENTO PRCMOCION VaLIDA DEL 0v12/2025 L 31/12/2025 ITrooyTe Wsses Exclusiones EncencopayAR CFTNA; 0,0%",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.jumbo.com.ar",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/77756596-d36f-490a-a39d-46c6431180ce___313da5dd3984269c15e0d50607daab29.jpg",
+        "fecha": "2025-12-26"
+    }
+]

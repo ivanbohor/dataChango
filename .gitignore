@@ -1,0 +1,12 @@
+# Ignorar entorno virtual
+venv/
+__pycache__/
+.DS_Store
+
+# Si generas archivos temporales o logs
+*.log
+
+# Opcional: Si NO quieres que los datos json se guarden en el historial de versiones
+# (Aunque para que tu app funcione en la nube, probablemente necesites subirlos
+# a menos que corras los scrapers en la nube también)
+# *.json

@@ -1,0 +1,98 @@
+[
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] ⚠️ REVISAR MANUALMENTE: Carrefour banco DESCUENTO EN E...",
+        "categoria": "💳 Bancarias",
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/e8280117-1243-4ca0-a667-058600ba59a8___06a23f26c5b61ceae1a7eaa79c5a1a4a.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] ⚠️ REVISAR MANUALMENTE: Comprando los días Martes de D...",
+        "categoria": "💳 Bancarias",
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/cb9d95c1-8c48-4340-b7a2-d9e3925596b3___be2d6ba3aa3453ae0a765b19642c08be.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] ⚠️ REVISAR: Oferta en Electro Black Carrefour Hasta Hasta El...",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2b1b7812-4190-46cf-875e-75bac2868219___c3ed28776ad744008a9c3b9a5739106e.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] 3x2 en Gaseosas Jugos En Polvo Cerveza Postres...",
+        "categoria": "🍷 Bebidas",
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c4b760ca-fdd1-44ff-9732-b039ce6b2e6d___bea8b2359866b77ff879927daacccd8d.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] 80% Off en Gaseosas Cervezas Quesos Cremas Yogures Arroz...",
+        "categoria": "🍷 Bebidas",
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1462a085-7821-42bb-9785-339586ae193d___b3ccd6bbbee2b6f16a7af35f38bb504f.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] ⚠️ REVISAR: Oferta en Confituras Turrones Budines Pan Dulce Y...",
+        "categoria": "💳 Bancarias",
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/54b74155-d514-4347-b155-a9d3b8f4e6fa___290a6f32deadd532ce7779d6ddb0415b.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] ⚠️ REVISAR MANUALMENTE: EXCLUSIVO ONLINE COMPRANDO HOY...",
+        "categoria": "💳 Bancarias",
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/651c3ac0-ff96-4f11-b181-96b6732148d4___9ce8eff9552b60d9737d388790249b3d.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] ⚠️ REVISAR: Oferta en Heladeras  Lavarropas Y Smart Tv'S...",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/bbab0ea2-8a8b-4daf-bfc8-7777c204b366___04b881cc746067d7756e43243c6febcd.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "[BANNER] ⚠️ REVISAR: Oferta en Celulares Parlantes Torres De Sonido Y...",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/86576151-0092-44b5-b7a0-8f9071fb896a___fa41060d8df241ac5e8b3265a0d47bfc.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "⚠️ REVISAR MANUALMENTE: Carrefour banco DESCUENTO HOY ...",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/almacen",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/e8280117-1243-4ca0-a667-058600ba59a8___06a23f26c5b61ceae1a7eaa79c5a1a4a.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "⚠️ REVISAR: Oferta en Electro Black Hasta Hasta El 25/12...",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/23574?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2b1b7812-4190-46cf-875e-75bac2868219___c3ed28776ad744008a9c3b9a5739106e.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "2x1 en Juguetes Pelotas Infables Y Juegos De...",
+        "categoria": "⚡ Varios",
+        "link": "https://www.carrefour.com.ar/regalos",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/afd356d0-ecbc-46c2-8169-f36f8ae97bf8___b335c965cef7dfe04621c5e82918cc5f.webp",
+        "fecha": "2025-12-23"
+    }
+]

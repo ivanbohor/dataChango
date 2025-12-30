@@ -1,0 +1,202 @@
+[
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Para clientes Club NACIÓN NUEVO Haciendo compra del super online",
+        "categoria": "💳 Bancarias",
+        "link": "https://www.carrefour.com.ar/almacen",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/39587ff5-815c-4316-813e-a860f9598846___06ba2c0ca4e3918307b6725bbd32de5f.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Varias Cuotas Sin Interés (Electro/Hogar)",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/23574?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2b1b7812-4190-46cf-875e-75bac2868219___c3ed28776ad744008a9c3b9a5739106e.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Cervezas",
+        "categoria": "🍷 Bebidas",
+        "link": "https://www.carrefour.com.ar/23525?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c4b760ca-fdd1-44ff-9732-b039ce6b2e6d___bea8b2359866b77ff879927daacccd8d.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "2 Cuotas Sin Interés (Electro/Hogar)",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/23502?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1ac93d9f-7ec0-4dfd-bbce-51f8c5afdc87___742f30e61756f95cb7b18a84f4192021.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Promos Bancarias",
+        "categoria": "💳 Bancarias",
+        "link": "https://www.carrefour.com.ar/descuentos-bancarios?filtro=por-dia&formato=ecommerce",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/08c5a255-e003-4908-97d2-a1d3289bf78d___dfcf12babc2aeecc6d42c7d447cf8e83.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "HASTA 80% DESCUENTO 2da UNIDAD seleccionados de: Gaseosas, Cervezas, Quesos",
+        "categoria": "🍷 Bebidas",
+        "link": "https://www.carrefour.com.ar/23526?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/41ee3b24-8dcc-49d2-ba56-12397a556622___4613f9bc566d80b83558240558046fca.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "2DO AL 50% MAX 48 UNIDADES IGUALES en Gaseosa cola Coca Cola sabor original 2,25 lts",
+        "categoria": "🍷 Bebidas",
+        "link": "https://www.carrefour.com.ar/gaseosa-cola-coca-cola-sabor-original-225-lts-30138/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/332148-170-170?v=638211437412370000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "EXCLUSIVO ONLINE 30% OFF en Cerveza rubia Brahma 473 ml",
+        "categoria": "🍷 Bebidas",
+        "link": "https://www.carrefour.com.ar/cerveza-rubia-brahma-473-ml-328962/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/780704-170-170?v=639011484283030000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "2DO AL 50% MAX 48 UNIDADES IGUALES en Cerveza rubia Brahma 1 lt",
+        "categoria": "🍷 Bebidas",
+        "link": "https://www.carrefour.com.ar/cerveza-rubia-brahma-1-lt-506884/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/780708-170-170?v=639011484987900000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "2DO AL 70% MAX 48 UNIDADES IGUALES en Gaseosa cola Coca Cola Zero 2,25 lts",
+        "categoria": "🍷 Bebidas",
+        "link": "https://www.carrefour.com.ar/gaseosa-cola-coca-cola-zero-225-lts-393964/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/395283-170-170?v=638326494223030000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Hasta 25/12 DESCUENTO Pequeños Electrodoméstlcos 70%: UNIDAD VER MÁS accesorlos",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/23511?map=productClusterIds/23510?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c10beb1c-d0f0-41ef-9a4f-0c1bec7f249c___92f3c8150ddfe9c7a448d2d518af5eb0.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Realizando tu compra los Jueves",
+        "categoria": "💳 Bancarias",
+        "link": "https://www.carrefour.com.ar/descuentos-bancarios?filtro=tarjeta-carrefour",
+        "imagen": "https://www.carrefour.com.ar/api/dataentities/BP/documents/dc756f22-f479-11ef-b37f-f45bce4a2de1/cardImage/attachments/crf-credito-horizontal.avif",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Realizando tu compra los Lunes",
+        "categoria": "💳 Bancarias",
+        "link": "https://www.carrefour.com.ar/",
+        "imagen": "https://www.carrefour.com.ar/api/dataentities/BP/documents/06991a18-5679-11f0-b37f-fc08fbf78cb1/cardImage/attachments/club_lanacion%20(1).webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Realizando tu compra Todos lo Martes de Diciembre Descuento:20",
+        "categoria": "💳 Bancarias",
+        "link": "https://www.carrefour.com.ar/descuentos-bancarios?filtro=entidad&entidad=Tarjeta%20Mi%20Carrefour%20Prepaga",
+        "imagen": "https://www.carrefour.com.ar/api/dataentities/BP/documents/02405642-566f-11f0-b37f-d2294b32b8bf/cardImage/attachments/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(3).png",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "4x2 en Vinos y Espumantes",
+        "categoria": "🍷 Bebidas",
+        "link": "https://www.carrefour.com.ar/23523?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/8ca3713a-ce46-4ece-ad95-072a9037d3ba___afcf729e16ebb87ce495537cc7f570f2.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "18 Cuotas Sin Interés (Electro/Hogar)",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/23574?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/5264b1eb-c18c-4e63-9592-76b8701df761___e68e52278f00a0dc70af8e8b26e5238c.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "18 CUOTAS SIN INTERÉS en 18 CSI MI CARREFOUR CRÉDITO",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/aire-acondicionado-split-philco-frio-calor-3400w-phs32ha4cn-blanco-/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/245689-170-170?v=638814425050000000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "18 CUOTAS SIN INTERÉS en NUEVO",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/lavarropas-carga-frontal-philco-11-kg-phlfa11c3abn/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/694053-170-170?v=638925081793370000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 CUOTAS SIN INTERÉS en 12 CSI MI CARREFOUR CRÉDITO",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/heladera-side-by-side-inox-428-lts-philco-phsb450x-/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/637662-170-170?v=638815486860800000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 CUOTAS SIN INTERÉS en NUEVO",
+        "categoria": "📺 Electro",
+        "link": "https://www.carrefour.com.ar/smart-tv-43-philips-titan-fhd-43pfd6910-77-/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/652475-170-170?v=638820525269470000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Llevando En: Hasta 24/12 2xI PAGÁS Protectores Solares VER MÁS",
+        "categoria": "🧹 Limpieza",
+        "link": "https://www.carrefour.com.ar/23528?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c235ce2c-5c5c-402b-8df8-f93bf4eff68a___0178c42257b875d04df01767835e3c73.webp",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "EXCLUSIVO ONLINE 2DO AL 80% IGUALES en Papas fritas acanaladas Pehuamar 135 g.",
+        "categoria": "🍝 Almacén",
+        "link": "https://www.carrefour.com.ar/papas-fritas-acanaladas-pehuamar-135-g-721966/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/538175-170-170?v=638554455496930000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "EXCLUSIVO ONLINE 45% OFF en Nachos sabor a queso Doritos 200 g.",
+        "categoria": "🍝 Almacén",
+        "link": "https://www.carrefour.com.ar/nachos-sabor-a-queso-doritos-200-g-721960/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/538136-170-170?v=638554455368800000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "EXCLUSIVO ONLINE 35% OFF en Chizitos de maíz Pehuamar Maicitos 125 g.",
+        "categoria": "🍝 Almacén",
+        "link": "https://www.carrefour.com.ar/chizitos-de-maiz-pehuamar-maicitos-125-g-676517/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/538183-170-170?v=638554455559700000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "EXCLUSIVO ONLINE 35% OFF en Maicitos clásicos Pehuamar 265 g.",
+        "categoria": "🍝 Almacén",
+        "link": "https://www.carrefour.com.ar/maicitos-clasicos-pehuamar-265-g-744865/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/545875-170-170?v=638582148939500000&width=170&height=170&aspect=true",
+        "fecha": "2025-12-23"
+    }
+]

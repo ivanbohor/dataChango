@@ -1,0 +1,90 @@
+[
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] 15% En Varios",
+        "descripcion": "ChangoMâs MâsOnline comar SIN TOPE Beneficio Lunes y Jueves Mâs club' 15% 7 Exclusivo MâsOnline Descuento comar entu compra No acumulable con otras promociones. Consultas detalles y legales en WWW.masonline com.ar/promociones-bancarias Martes y Miércoles Exclusivo Sucursal QUIERO VERMÁs",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/a8b24713-a07f-4c83-bb54-d6d2c86a8071/image/attachments/11_masclub_dkp.webp",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] 20% En Limpieza",
+        "descripcion": "ChangoMâs MâsOnline com.ar Lunes y Jueves Exclusivo MâsOnline com.ar En toda la categoría Penumera Ylipieza SIN TOPE 20% eesccoemta Beneficio No acumulable con otras promociones. Consultas detallesasleganes slegales ceom.ar/ Masclub promociones bancarias QUIERO VER MÁS",
+        "categoria": [
+            "🧹 Limpieza"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/bd03acf4-44ae-4799-9893-14ac47a463b6/image/attachments/Banners%20limpieza%20y%20perfumeria.webp",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] Oferta Especial En Almacén",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Almacén Hasta % Dolcuc 35 Unitario Descuento",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/bd7f6158-6e8f-494b-9afe-5f4b1e7515d3/multimedia/attachments/Regional_3_Almacen.png",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] 30% En Bebidas",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Bebidas Y snacks Hasta 30% Doscuento Beber con moderación. Prohibida su venta menores de 18 anos",
+        "categoria": [
+            "🍷 Bebidas"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/a4f285b3-837e-11f0-b37f-c3815824db45/multimedia/attachments/Regional_4_bebidas.png",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] 25% En Lácteos",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Lácteos y congelados XJJa}tMua Hasta 25% Descuiento",
+        "categoria": [
+            "🥛 Lácteos"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/4ea7067a-d892-4f4d-bca3-3ff9779209a5/multimedia/attachments/Regional_5_Lacteos.png",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] Oferta Especial En Electro",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Inrte 213] Pequeño electro Y cocción Hasta Hasta 40 % cuotas Unitario scuento SIN INTERÉS",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/d44a887f-67d9-11f0-b37f-8766f952b10c/multimedia/attachments/Regional_2_Pequenoelectro2.png",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] Oferta Especial En Piletas",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Piletas y camas elásticas Hasta Hasta 40 % T2suotes Unikaric Doscuento SIN INTERÉS",
+        "categoria": [
+            "🧸 Juguetería"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/89a33b33-bd19-4887-896d-713c7fe12f14/multimedia/attachments/Regional_6_Piletas.png",
+        "fecha": "2025-12-25"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] 2X1 En Varios",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Herramientas Y pinturas Hasta Hasta 2x1/6 Suotas LLEVÁS 2, PAGÁS 1 SIN",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/80c63c95-9789-4c6d-adb9-2236ee5905fb/multimedia/attachments/Regional_6_Herramientas2.png",
+        "fecha": "2025-12-25"
+    }
+]

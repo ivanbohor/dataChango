@@ -1,0 +1,68 @@
+[
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] Fiestas En Almacén",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Almacén Hasta % Dolcuc 35 Unitario Descuento",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/bd7f6158-6e8f-494b-9afe-5f4b1e7515d3/multimedia/attachments/Regional_3_Almacen.png",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] 30% En Bebidas",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Bebidas Y snacks Hasta 30% Doscuento Beber con moderación. Prohibida su venta menores de 18 anos",
+        "categoria": [
+            "🍷 Bebidas"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/a4f285b3-837e-11f0-b37f-c3815824db45/multimedia/attachments/Regional_4_bebidas.png",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] 35% En Lácteos",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Lácteos XJJa}tMua y congelados Hasta 35% Unitario Descuento",
+        "categoria": [
+            "🥛 Lácteos"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/4ea7067a-d892-4f4d-bca3-3ff9779209a5/multimedia/attachments/Regional_3_Lacteos.png",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] Fiestas En Electro",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Inrte 213] Pequeño electro Hasta 3cuotgs SIN INTERÉS",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/d44a887f-67d9-11f0-b37f-8766f952b10c/multimedia/attachments/Regional_4_Pequenoelectro.png",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] Fiestas En Piletas",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Piletas y camas elásticas Hasta Hasta 40 % T2suotes Unikaric Doscuento SIN INTERÉS",
+        "categoria": [
+            "🧸 Juguetería"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/89a33b33-bd19-4887-896d-713c7fe12f14/multimedia/attachments/Regional_6_Piletas.png",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] 50% En Artículos De Bazar",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Bazar Hasta 50% Unitario Descuento",
+        "categoria": [
+            "🍳 Bazar"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/80c63c95-9789-4c6d-adb9-2236ee5905fb/multimedia/attachments/Regional_6_Bazar2.png",
+        "fecha": "2025-12-26"
+    }
+]

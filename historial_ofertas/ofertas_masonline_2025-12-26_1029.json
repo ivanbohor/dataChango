@@ -1,0 +1,24 @@
+[
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] Oferta Especial En Juguetería",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Juguetes seleccionados Hasta Hasta 30 Dnscuicnto Suotes",
+        "categoria": [
+            "🧸 Juguetería"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/b6dae3fb-2d8c-4327-8127-534e509ae699/multimedia/attachments/Regional_7_Juguetes_.png",
+        "fecha": "2025-12-26"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "[BANNER] Oferta Especial En Varios",
+        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Deportes Hasta Hastc 50 % 12 Descuento Suotgs Unilario",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/6b724b1d-fee9-49ec-b681-5a7bc8381a06/multimedia/attachments/Regional_8_Deportes.png",
+        "fecha": "2025-12-26"
+    }
+]

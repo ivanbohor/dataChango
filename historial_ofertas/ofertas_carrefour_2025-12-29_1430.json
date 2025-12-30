@@ -1,0 +1,32 @@
+[
+    {
+        "supermercado": "Carrefour",
+        "titulo": "A $30.000 en Varios",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/750ae0d4-fccd-4a17-9dae-e72d23d5316b___8d7fdbda75061104b20d8804396cf3e8.webp",
+        "fecha": "2025-12-29"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Leche",
+        "categoria": [
+            "🥛 Lácteos"
+        ],
+        "link": "https://www.carrefour.com.ar",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/aeebe374-d3bc-4226-9506-e271bf0ef8a5___06ba2c0ca4e3918307b6725bbd32de5f.webp",
+        "fecha": "2025-12-29"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3 Cuotas S/Int en Varios",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.carrefour.com.ar",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c59fa256-f199-4b4e-9dfa-afd06fafa2c7___fcdd238d16474a3d25881d6c374ab3f4.webp",
+        "fecha": "2025-12-29"
+    }
+]
