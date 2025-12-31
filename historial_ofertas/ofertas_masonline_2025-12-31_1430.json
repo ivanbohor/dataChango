@@ -56,13 +56,24 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Heladeras, Smart TV",
+        "titulo": "12 Cuotas S/Int en Heladeras, Lavarropas",
         "descripcion": "Del 26al 31de diciembre ChangoMâs MâsOnline comar Hasta 12 Cuotas SIN INTERÉS Smart tv VISA CABAL de todos los Bancos OFERTAS FLASH Aires acond. Freezer Heladeras Lavarropas seleccionados Poneteenmodofiestas Poneteenmodofiestas Poneteenmodofiestas Poneteenmodofiestas QUIERO VER MÁs ",
         "categoria": [
             "📺 Electro"
         ],
         "link": "https://www.masonline.com.ar/masofertas-electroyhogar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/ba78d552-b13a-49fb-b94e-b1b30fc79c66/image/attachments/electro%20dkp_BHC_DKP-03.webp",
+        "fecha": "2025-12-31"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "50% Off en Juguetería",
+        "descripcion": "Juguetería Hasta 50% Unitario Descuento Del 26al 31de diciembre ChangoMâs MâsOnline comar Hasta VISA 3 suotas SIN de todos los Bancos Poneteen modofiestas Poneteenmodo fiestas_ Poneteenmodo fiestas Poneteen modo fiestas QUIERO VER MÁs ",
+        "categoria": [
+            "🧸 Juguetería"
+        ],
+        "link": "https://www.masonline.com.ar/",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/efb55cc8-b02f-4e59-8ac9-8146a2ee86fd/image/attachments/jueguetia.webp",
         "fecha": "2025-12-31"
     },
     {
@@ -74,72 +85,6 @@
         ],
         "link": "https://www.masonline.com.ar/promociones-bancarias",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/fb26fecd-49bf-4ebe-95c4-3366b98d4284___6dbd9077ffdb0d39e7332fe393473337.png",
-        "fecha": "2025-12-31"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Hasta 40% Off en Celulares",
-        "descripcion": "CCa Hasta 40% Descuento Hasta 12 SotrS SIN tvs y celulares tvs y celulares",
-        "categoria": [
-            "📺 Electro"
-        ],
-        "link": "https://www.masonline.com.ar/411?map=productClusterIds",
-        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/5ebb35dd-1ba3-4af6-8800-152b68bbdace___06b05e580b88e8fbb5067c45b51dad5d.webp",
-        "fecha": "2025-12-31"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "30% Off en Varios",
-        "descripcion": "Hasta 30% Descuento Hasta 12 Suotgs SIN 288  ",
-        "categoria": [
-            "⚡ Varios"
-        ],
-        "link": "https://www.masonline.com.ar/3353?map=productClusterIds",
-        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/5aaa5d26-33a0-4b8d-a525-0bc8f275cddb___2872eb54fb42932b877cb63f2c0c9abc.webp",
-        "fecha": "2025-12-31"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Oferta en Aires Acondicionados",
-        "descripcion": "PHILCO) Geahea [co]TTs Aire Acondicionado Split Inverter Philco 8750 Watt Frio Calor Phin90hc3awfpi ",
-        "categoria": [
-            "📺 Electro"
-        ],
-        "link": "https://www.masonline.com.ar/aire-acondicionado-philco-inverter-frio-calor-8750w/p",
-        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/354136-230-230?v=638827482345770000&width=230&height=230&aspect=true",
-        "fecha": "2025-12-31"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "3 Cuotas S/Int en Electro",
-        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Inrte 213] Pequeño electro Hasta 3cuotgs SIN INTERÉS Novedad image ",
-        "categoria": [
-            "📺 Electro"
-        ],
-        "link": "https://www.masonline.com.ar",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/d44a887f-67d9-11f0-b37f-8766f952b10c/multimedia/attachments/Regional_4_Pequenoelectro.png",
-        "fecha": "2025-12-31"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Oferta en Piletas",
-        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Piletas y camas elásticas Hasta Hasta 40 % T2suotes Unikaric Doscuento SIN INTERÉS Novedad image ",
-        "categoria": [
-            "🧸 Juguetería"
-        ],
-        "link": "https://www.masonline.com.ar",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/89a33b33-bd19-4887-896d-713c7fe12f14/multimedia/attachments/Regional_6_Piletas.png",
-        "fecha": "2025-12-31"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "50% Off en Bazar",
-        "descripcion": "Fiesta de Ofertas ChangoMâs MâsOnline oma( Bazar Hasta 50% Unitario Descuento Novedad image ",
-        "categoria": [
-            "🏠 Hogar"
-        ],
-        "link": "https://www.masonline.com.ar",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/80c63c95-9789-4c6d-adb9-2236ee5905fb/multimedia/attachments/Regional_6_Bazar2.png",
         "fecha": "2025-12-31"
     }
 ]

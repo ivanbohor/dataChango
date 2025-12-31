@@ -210,28 +210,6 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "20% Off en Reposeras, Sombrillas Y Más",
-        "descripcion": "REPOSERAS SOMBRILLAS Y MÁS 20% 3 SNERÉS cenco oa 20% 12 CREDITO fNERÉS VERLEGALES Reposeras, Sombrillas y más Reposeras, Sombrillas y más",
-        "categoria": [
-            "⚡ Varios"
-        ],
-        "link": "https://www.jumbo.com.ar/55834?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/5c873665-ef1f-4eb0-a3b2-132ad44c34c1___d644f6ed6ae386bea09ed0653a1128ee.webp",
-        "fecha": "2025-12-31"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "30% Off en Varios",
-        "descripcion": "30% DE DESCUENTO 52o3 cMevaug Gevcas ExTRA BRUT Goa 1 4 spaRKLING WINE BEBER CON PROHIBIDA SU VENTA MODERACIÓN. MENORES DE 18 ANOS.  ",
-        "categoria": [
-            "⚡ Varios"
-        ],
-        "link": "https://www.jumbo.com.ar/55674?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/b9e7b66c-ce3f-4361-92bd-9cfe1acda790___2f59473c7c7cbe54c2caa66e80949c6f.png",
-        "fecha": "2025-12-31"
-    },
-    {
-        "supermercado": "Jumbo",
         "titulo": "Oferta en La Hacienda",
         "descripcion": "LANZAMIENTO qgl QUAL 94 dACIENDA 3 SPASRÉS cenco pa Credito CUOTAS 6 šV NFgRÉS VÁLIDO DEL 08/11/2025 AL 31/03/2026. La Hacienda La Hacienda",
         "categoria": [
@@ -250,6 +228,28 @@
         ],
         "link": "https://www.jumbo.com.ar/54755?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6fcb0b10-2883-4018-a9b8-26f657354bcb___5ca8e8fcc8d04604865bb812a5fd07b8.webp",
+        "fecha": "2025-12-31"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "20% Off en Reposeras, Sombrillas Y Más",
+        "descripcion": "REPOSERAS SOMBRILLAS Y MÁS 20% 3 SNERÉS cenco oa 20% 12 CREDITO fNERÉS VERLEGALES Reposeras, Sombrillas y más Reposeras, Sombrillas y más",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.jumbo.com.ar/55834?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/5c873665-ef1f-4eb0-a3b2-132ad44c34c1___d644f6ed6ae386bea09ed0653a1128ee.webp",
+        "fecha": "2025-12-31"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "30% Off en Varios",
+        "descripcion": "30% DE DESCUENTO 52o3 cMevaug Gevcas ExTRA BRUT Goa 1 4 spaRKLING WINE BEBER CON PROHIBIDA SU VENTA MODERACIÓN. MENORES DE 18 ANOS.  ",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.jumbo.com.ar/55674?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/b9e7b66c-ce3f-4361-92bd-9cfe1acda790___2f59473c7c7cbe54c2caa66e80949c6f.png",
         "fecha": "2025-12-31"
     },
     {
