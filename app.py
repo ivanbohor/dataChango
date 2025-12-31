@@ -6,7 +6,6 @@ import streamlit.components.v1 as components
 import math
 import base64
 
-
 # --- OCULTAR LA BARRA DE STREAMLIT ---
 hide_st_style = """
             <style>
@@ -26,7 +25,6 @@ st.set_page_config(
 )
 
 # --- 1. GESTIÓN DE ESTADO (SESSION STATE) ---
-# Inicializamos el estado para saber qué categoría está "encendida"
 if 'categoria_activa' not in st.session_state:
     st.session_state.categoria_activa = None
 
@@ -64,9 +62,11 @@ def cargar_datos():
     return todas_ofertas, conteo_ofertas
 
 def get_img_as_base64(file):
-    with open(file, "rb") as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
+    try:
+        with open(file, "rb") as f:
+            data = f.read()
+        return base64.b64encode(data).decode()
+    except: return ""
 
 # --- 3. ESTILOS GLOBALES (CSS) ---
 st.markdown("""
@@ -79,28 +79,55 @@ st.markdown("""
         /* Checkboxes */
         .stCheckbox label { color: #ffffff !important; font-size: 1rem; font-weight: 500; }
         
-        /* Alineación Centrada de Checkboxes (Escritorio y Móvil) */
+        /* Alineación Centrada de Checkboxes */
         div[data-testid="stVerticalBlock"] > div > div[data-testid="stCheckbox"] { 
             display: flex; 
             justify-content: center; 
         }
         
-        /* REGLA RESPONSIVE PARA MÓVILES */
+        /* REGLA RESPONSIVE: MÓVIL (< 768px) */
         @media (max-width: 768px) {
-            /* Centrar columnas en móvil */
             div[data-testid="column"] {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
             }
-            /* Asegurar que los botones de categoría ocupen ancho completo pero centrados */
             .stButton { width: 100%; display: flex; justify-content: center; }
+        }
+
+        /* --- TRUCO CSS PARA EXPANDER HÍBRIDO --- */
+        /* En PC (Pantallas grandes), ocultamos la cabecera del expander para que parezca fijo */
+        @media (min-width: 768px) {
+            div[data-testid="stExpander"] details {
+                border: none !important;
+                box-shadow: none !important;
+                background-color: transparent !important;
+            }
+            /* Ocultamos la barra clickable (summary) en PC */
+            div[data-testid="stExpander"] details > summary {
+                display: none !important;
+            }
+            /* Quitamos padding extra para que se alinee bien */
+            div[data-testid="stExpander"] details > div {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+        
+        /* Estilos del Expander en Móvil (bordes y colores) */
+        .streamlit-expanderHeader {
+            background-color: #0b2a40; border: 1px solid #cfa539; border-radius: 8px;
+            color: #cfa539 !important; font-weight: bold;
+        }
+        .streamlit-expanderContent {
+            background-color: #0b2a40; border: 1px solid #cfa539; border-top: none;
+            border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; color: #ccc !important;
         }
 
         hr { border-color: #cfa539; opacity: 0.5; }
         
-        /* Botones Streamlit (Estilo Normal) */
+        /* Botones Streamlit */
         div[data-testid="stButton"] button[kind="secondary"] {
             background-color: transparent; 
             color: #ffffff;
@@ -116,7 +143,6 @@ st.markdown("""
             transform: scale(1.05);
         }
 
-        /* Botones Streamlit (Estilo ACTIVO/PRIMARY) */
         div[data-testid="stButton"] button[kind="primary"] {
             background-color: #c7501e !important; 
             color: white !important;
@@ -132,16 +158,6 @@ st.markdown("""
             margin-bottom: 20px; margin-top: 10px; color: #cfa539 !important; 
             text-transform: uppercase; letter-spacing: 1.5px;
         }
-        
-        /* Disclaimer */
-        .streamlit-expanderHeader {
-            background-color: #0b2a40; border: 1px solid #cfa539; border-radius: 8px;
-            color: #cfa539 !important; font-weight: bold;
-        }
-        .streamlit-expanderContent {
-            background-color: #0b2a40; border: 1px solid #cfa539; border-top: none;
-            border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; color: #ccc !important;
-        }
 
         /* Enlace contacto */
         .contact-link-text {
@@ -156,12 +172,31 @@ logo_file = "logo.jpg"
 
 if os.path.exists(logo_file):
     img_b64 = get_img_as_base64(logo_file)
-    logo_html = f"""<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 10px;"><img src="data:image/jpeg;base64,{img_b64}" style="width: 250px; height: auto; border-radius: 20px; object-fit: contain; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: block;"><h4 style='text-align: center; color: #cfa539 !important; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; margin-top: 20px; font-size: 1.1rem; line-height: 1.6;'>Recopilo las principales ofertas de los Hipermercados <span style="font-weight: bold; color: white;">AR</span><br><span style="font-size: 0.95rem; text-transform: none; color: #e0e0e0; letter-spacing: 0.5px;">DataChango hace las búsquedas de ofertas por vos ahorrandote tiempo y dinero!</span></h4></div>"""
+    logo_html = f"""
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 10px;">
+        <img src="data:image/jpeg;base64,{img_b64}" style="width: 250px; height: auto; border-radius: 20px; object-fit: contain; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: block;">
+        <h4 style='text-align: center; color: #cfa539 !important; font-weight: 300; letter-spacing: 1px; text-transform: uppercase; margin-top: 20px; font-size: 1.1rem; line-height: 1.6;'>
+            Las <span style="font-weight: bold; color: white;">mejores ofertas</span> de los principales Hipermercados en un solo lugar.<br>
+            <span style="font-size: 0.95rem; text-transform: none; color: #e0e0e0; letter-spacing: 0.5px;">
+                DataChango hace las búsquedas de ofertas por vos, ahorrandote tiempo y dinero!
+            </span>
+        </h4>
+    </div>
+    """
     st.markdown(logo_html, unsafe_allow_html=True)
 else:
     st.warning(f"⚠️ Falta el archivo '{logo_file}' en la carpeta.")
 
-st.markdown("<hr style='margin-top: 20px; margin-bottom: 20px;'>", unsafe_allow_html=True)
+# --- CONTACTO ---
+contact_html = """
+<div style="text-align: center; margin-bottom: 15px; font-weight: bold; color: white; font-size: 0.9rem;">
+    ¿Ideas, sugerencias? <a href="mailto:datachangoweb@gmail.com" class="contact-link-text">Hablemos</a> 
+    <svg style="width: 15px; height: 15px; fill: white; vertical-align: middle; margin-left: 3px;" viewBox="0 0 24 24">
+        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z"/>
+    </svg>
+</div>
+"""
+st.markdown(contact_html, unsafe_allow_html=True)
 
 # --- 5. LOGICA DE DATOS Y FILTROS ---
 ofertas_raw, conteos = cargar_datos()
@@ -169,6 +204,7 @@ ofertas_raw, conteos = cargar_datos()
 hipers = ["Carrefour", "Jumbo", "Coto", "MasOnline"]
 emojis = {"Carrefour": "🛒", "Jumbo": "🛒", "Coto": "🛒", "MasOnline": "🛒"}
 
+# Funciones de lógica de filtros
 def on_change_ver_todo():
     if st.session_state.filtro_ver_todo:
         for k in hipers: st.session_state.filtros_hipers[k] = False
@@ -179,75 +215,62 @@ def on_change_hiper(nombre):
     if not any(st.session_state.filtros_hipers.get(h, False) for h in hipers): 
         st.session_state.filtro_ver_todo = True
 
-# --- CONTACTO ---
-contact_html = """
-<div style="text-align: center; margin-bottom: 25px; font-weight: bold; color: white; font-size: 1rem;">
-    Ideas, sugerencias, comentarios? 
-    <a href="mailto:datachangoweb@gmail.com" class="contact-link-text">Hablemos</a> 
-    <svg style="width: 20px; height: 20px; fill: white; vertical-align: middle; margin-left: 5px;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z"/>
-    </svg>
-</div>
-"""
-st.markdown(contact_html, unsafe_allow_html=True)
+# --- MENU DESPLEGABLE (EXPANDER HÍBRIDO) ---
+# expanded=True: En PC se ve abierto (y ocultamos el botón de cerrar con CSS).
+# En Móvil se ve abierto, pero el usuario puede cerrarlo.
+with st.expander("🎯 FILTROS Y CATEGORÍAS", expanded=False):
+    
+    st.markdown('<p class="filter-title" style="font-size: 1.2rem !important;">Filtros por Supermercado</p>', unsafe_allow_html=True)
 
-st.markdown('<p class="filter-title"> Filtros por Supermercado</p>', unsafe_allow_html=True)
+    # Checkboxes de Supermercados
+    c_todo, c_h1, c_h2, c_h3, c_h4 = st.columns(5)
+    with c_todo:
+        st.checkbox("✅ Todo", key='filtro_ver_todo', on_change=on_change_ver_todo)
 
-# Checkboxes de Supermercados
-c_todo, c_h1, c_h2, c_h3, c_h4 = st.columns(5)
-with c_todo:
-    st.checkbox("✅ Ver Todo", key='filtro_ver_todo', on_change=on_change_ver_todo)
+    columnas_hipers = [c_h1, c_h2, c_h3, c_h4]
+    for i, h in enumerate(hipers):
+        with columnas_hipers[i]:
+            label = f"{emojis[h]} {h} ({conteos[h]})"
+            st.checkbox(label, key=f"chk_{h}", value=st.session_state.filtros_hipers[h], on_change=on_change_hiper, args=(h,))
+            st.session_state.filtros_hipers[h] = st.session_state[f"chk_{h}"]
 
-columnas_hipers = [c_h1, c_h2, c_h3, c_h4]
-for i, h in enumerate(hipers):
-    with columnas_hipers[i]:
-        label = f"{emojis[h]} {h} ({conteos[h]})"
-        st.checkbox(label, key=f"chk_{h}", value=st.session_state.filtros_hipers[h], on_change=on_change_hiper, args=(h,))
-        # Actualizamos el estado interno desde el key del checkbox
-        st.session_state.filtros_hipers[h] = st.session_state[f"chk_{h}"]
+    st.markdown("---")
 
+    # --- BOTONES DE CATEGORÍA ---
+    st.markdown('<p class="filter-title" style="font-size: 1.2rem !important;">⚡ Filtrar por Rubro</p>', unsafe_allow_html=True)
+
+    categorias = [
+        ("🥩 Carnes", "carne"),
+        ("🍷 Bebidas", "bebida"),
+        ("🍝 Almacén", "almacen"),
+        ("🧹 Limpieza", "limpieza"),
+        ("📺 Electro", "electro"),
+        ("🧸 Juguetes", "juguete")
+    ]
+
+    cols_cat = st.columns(6)
+
+    def toggle_categoria(cat_key):
+        if st.session_state.categoria_activa == cat_key:
+            st.session_state.categoria_activa = None 
+        else:
+            st.session_state.categoria_activa = cat_key
+
+    for i, (label, key) in enumerate(categorias):
+        btn_type = "primary" if st.session_state.categoria_activa == key else "secondary"
+        if cols_cat[i].button(label, key=f"btn_{key}", type=btn_type, use_container_width=True):
+            toggle_categoria(key)
+            st.rerun()
+
+# Definimos variables finales de filtrado
 if st.session_state.filtro_ver_todo:
     hipers_activos = hipers
 else:
     hipers_activos = [h for h in hipers if st.session_state.filtros_hipers[h]]
 
-st.markdown("<br>", unsafe_allow_html=True)
-
-# --- BOTONES DE CATEGORÍA (TOGGLE) ---
-st.markdown('<p class="filter-title">⚡ Filtrar por Rubro</p>', unsafe_allow_html=True)
-
-# Definimos las categorías y sus claves
-categorias = [
-    ("🥩 Carnes", "carne"),
-    ("🍷 Bebidas", "bebida"),
-    ("🍝 Almacén", "almacen"),
-    ("🧹 Limpieza", "limpieza"),
-    ("📺 Electro", "electro"),
-    ("🧸 Juguetes", "juguete")
-]
-
-cols_cat = st.columns(6)
-
-# Función para manejar el clic en categoría (Toggle)
-def toggle_categoria(cat_key):
-    if st.session_state.categoria_activa == cat_key:
-        st.session_state.categoria_activa = None # Apagar si ya estaba activa
-    else:
-        st.session_state.categoria_activa = cat_key # Encender nueva
-
-for i, (label, key) in enumerate(categorias):
-    # Determinamos el tipo de botón (primary = encendido, secondary = apagado)
-    btn_type = "primary" if st.session_state.categoria_activa == key else "secondary"
-    
-    # Creamos el botón ocupando el ancho del contenedor
-    if cols_cat[i].button(label, key=f"btn_{key}", type=btn_type, use_container_width=True):
-        toggle_categoria(key)
-        st.rerun()
-
-# Definimos el término de búsqueda según el estado
 filtro_cat = st.session_state.categoria_activa
 
-# --- BÚSQUEDA Y FILTRADO ---
+# --- BÚSQUEDA Y FILTRADO FINAL ---
 termino_busqueda = filtro_cat if filtro_cat else "" 
 query_clean = normalizar_texto(termino_busqueda)
 
@@ -298,9 +321,6 @@ else:
     
     cant_ofertas = len(ofertas_filtradas)
     filas = math.ceil(cant_ofertas / 3) 
-    
-    # Ajuste de altura dinámica (Considerando móviles 1 columna vs desktop 3 columnas)
-    # Scrolling=True en components.html soluciona el corte, pero damos una altura base generosa
     altura_dinamica = (filas * 400) + 100 
 
     css_styles = """
@@ -308,7 +328,6 @@ else:
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
         body { margin: 0; padding: 10px; font-family: 'Roboto', sans-serif; background-color: transparent; }
         
-        /* Grid responsive: se adapta automáticamente al ancho */
         .grid-container { 
             display: grid; 
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
@@ -351,7 +370,7 @@ else:
         elif "MasOnline" in super_name: bg_badge = "#ef6c00"
 
         cats_html = "".join([f'<span class="tag">{c}</span>' for c in oferta.get('categoria', [])[:2]])
-        texto_copiar = f"👵 Mira esta oferta en DataChango: {link_oferta}".replace("'", "")
+        texto_copiar = f"Mira esta oferta que encontro DataChango: {link_oferta}".replace("'", "")
         btn_id = f"btn-copy-{i}"
 
         card = f"""
@@ -407,7 +426,6 @@ else:
     </body></html>
     """
     
-    # IMPORTANTE: scrolling=True habilita el scroll interno si la altura calculada falla en móviles
     components.html(full_html, height=altura_dinamica, scrolling=True)
 
 # --- 7. FOOTER ---
@@ -426,3 +444,26 @@ with st.expander("⚖️ Aviso Legal y Exención de Responsabilidad (Leer más)"
 """, unsafe_allow_html=True)
 
 st.markdown("""<div style='text-align: center; color: #888; font-size: 0.8rem; margin-top: 15px; margin-bottom: 20px;'>© 2025 DataChango - Comparador Inteligente - Hecho con 🧉 en Argentina</div>""", unsafe_allow_html=True)
+
+
+# --- 8. SCRIPT JS PARA ABRIR FILTROS EN PC ---
+# Este script verifica el ancho de la pantalla. Si es mayor a 768px (PC), fuerza la apertura del expander.
+# Si es móvil, no hace nada (por lo tanto se queda cerrado como configuramos arriba).
+components.html("""
+<script>
+    function abrirEnPC() {
+        try {
+            var width = window.parent.innerWidth;
+            if (width > 768) {
+                var details = window.parent.document.querySelector('div[data-testid="stExpander"] details');
+                if (details && !details.hasAttribute('open')) {
+                    details.setAttribute('open', '');
+                }
+            }
+        } catch(e) {}
+    }
+    // Ejecutamos al cargar y un poco después por si hay lag en el renderizado
+    abrirEnPC();
+    setTimeout(abrirEnPC, 500);
+</script>
+""", height=0, width=0)

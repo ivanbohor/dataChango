@@ -79,12 +79,12 @@
     {
         "supermercado": "Jumbo",
         "titulo": "Hasta 50% Off en Hasta 50% Y 3 Csi En Juguetería",
-        "descripcion": "Regalos de Reyes 13 SUOTASRÉS 150% cCnCo pay CRÉDITO 160% '12 'SNERÉS VÁLIDO DEL 30/12 AL 08/01. PRODUCTOS SELECCIONADOS . IEhT MyyEavg {ooeri Turngou Pinypon fncooJeweg @ypao' #hing Hasta 50% y Hasta 3 CSI en Juguetería Hasta 50% y Hasta 3 CSI en Juguetería",
+        "descripcion": "Juguetería 9 SNONASRÉS {50% cenco Crednc HASTA 12 SININTERÉS ISaA @haypon VÁLIDo DEL 26/12 AL 31/12. PRODUCTOs SELECCIONADOS. Hasta 50% y Hasta 3 CSI en Juguetería Hasta 50% y Hasta 3 CSI en Juguetería",
         "categoria": [
             "⚡ Varios"
         ],
         "link": "https://www.jumbo.com.ar/55362?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6fe1c69e-bfd6-479b-998a-0c8a06cb8b40___6911bae93bb356d1615849626e5d9b19.webp",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/c50f893b-57b6-4a9f-a1b6-6b8c5e0cf8fa___2bc8d5408a53027053dd9eb425c5b37b.webp",
         "fecha": "2025-12-31"
     },
     {
@@ -210,28 +210,6 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Oferta en La Hacienda",
-        "descripcion": "LANZAMIENTO qgl QUAL 94 dACIENDA 3 SPASRÉS cenco pa Credito CUOTAS 6 šV NFgRÉS VÁLIDO DEL 08/11/2025 AL 31/03/2026. La Hacienda La Hacienda",
-        "categoria": [
-            "⚡ Varios"
-        ],
-        "link": "https://www.jumbo.com.ar/47442?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/7f9f0347-9373-4baa-97a9-b561e1b198aa___3aa765d3ef6e2222841839ac3b5561fa.webp",
-        "fecha": "2025-12-31"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "Oferta en Hydrum",
-        "descripcion": "Asa para transportar Boquilla con tapa LANZAMIENTO ~HYDRUM 3CyoTAs SIN INTÉRÉS cenco CUOTAS 0 6 šwCNT:RÉS Credito Aislamiento al vacío de doble pared VÁLIDO DEL 24/11/2025 AL 31/03/2026 . Hydrum Hydrum",
-        "categoria": [
-            "⚡ Varios"
-        ],
-        "link": "https://www.jumbo.com.ar/54755?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6fcb0b10-2883-4018-a9b8-26f657354bcb___5ca8e8fcc8d04604865bb812a5fd07b8.webp",
-        "fecha": "2025-12-31"
-    },
-    {
-        "supermercado": "Jumbo",
         "titulo": "20% Off en Reposeras, Sombrillas Y Más",
         "descripcion": "REPOSERAS SOMBRILLAS Y MÁS 20% 3 SNERÉS cenco oa 20% 12 CREDITO fNERÉS VERLEGALES Reposeras, Sombrillas y más Reposeras, Sombrillas y más",
         "categoria": [
@@ -250,6 +228,28 @@
         ],
         "link": "https://www.jumbo.com.ar/55674?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/b9e7b66c-ce3f-4361-92bd-9cfe1acda790___2f59473c7c7cbe54c2caa66e80949c6f.png",
+        "fecha": "2025-12-31"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Oferta en La Hacienda",
+        "descripcion": "LANZAMIENTO qgl QUAL 94 dACIENDA 3 SPASRÉS cenco pa Credito CUOTAS 6 šV NFgRÉS VÁLIDO DEL 08/11/2025 AL 31/03/2026. La Hacienda La Hacienda",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.jumbo.com.ar/47442?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/7f9f0347-9373-4baa-97a9-b561e1b198aa___3aa765d3ef6e2222841839ac3b5561fa.webp",
+        "fecha": "2025-12-31"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Oferta en Hydrum",
+        "descripcion": "Asa para transportar Boquilla con tapa LANZAMIENTO ~HYDRUM 3CyoTAs SIN INTÉRÉS cenco CUOTAS 0 6 šwCNT:RÉS Credito Aislamiento al vacío de doble pared VÁLIDO DEL 24/11/2025 AL 31/03/2026 . Hydrum Hydrum",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.jumbo.com.ar/54755?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6fcb0b10-2883-4018-a9b8-26f657354bcb___5ca8e8fcc8d04604865bb812a5fd07b8.webp",
         "fecha": "2025-12-31"
     },
     {
