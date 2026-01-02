@@ -1,0 +1,47 @@
+[
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Oferta en Varios Productos",
+        "descripcion": "NUEVOS Kmov MIXDESABORES Encontrá tu Sabor @egistrado - Rnoes MIx Knou) MlXe (Knov MlKa Rnovv SAlBBE Knov Rnov MIXp (Rmovn MIXnsemovnMIX uE emnove) Sabores SABORI SABORES SABORES | SABORES SABORES [ SABORES BARBACOA AHUMADA cokiMo PIMENTON HoNGOS CHAMPIGNONES OREGANO, ToMATE Y AJo BOULETTE puerRD BRjuras, CARME 'ollo Jsinae RDURAS iodoysb4y vorr(io niney 3588 35 % DTO  ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar/mix%20de%20sabores?_q=mix%20de%20sabores&map=ft",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/8e31e9bc-52ff-4e74-aa5a-8be2474c0e83___dba57aa1dfdf04ff70b1368d100a06dd.jpg",
+        "fecha": "2026-01-02"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "2x1 en Varios Productos",
+        "descripcion": "viernes domingo JUMBO 02 AL 04 enero enero EXTREMC HASTA 80% cenco l99 2x1 CRÉDITO VINOS Y ESPUMANTES 3x2 cenco oa 4x2 CRÉDITO HOLA QUE TAL JUMBO COMBINALOS COMO QUIERAS COMBINALOS COMO QUIERAS. MISMA MARCA Y CATEGORIA VÁLIDODEL O2/OIAL04/01. BEBER CONMODERACIÓN. PRODUCTOS SELECCIONADOS . Jumbo Ofertas Jumbo Ofertas",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar/55707?map=productClusterIds&evento=jumboofertas",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/f1aed058-ac0b-4074-9a82-fe2fb417d397___a81f23c362ea755eda32eeb6f345a8ec.webp",
+        "fecha": "2026-01-02"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Hasta 50% Off en Electro",
+        "descripcion": "llega EN24HS- envios ATUCASA Electros para todo 112 SNERÉS 150% aprovechón cencosay CRÉDITO 9 VÁLIDO DEL 02/12 AL 07/12. PRODUCTOS SELECCIONADOS . Hasta 50% y Hasta 12 CSI en Electro | On Fire Hasta 50% y Hasta 12 CSI en Electro | On Fire",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/55951?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/b672bdc0-ed83-44f1-b0e7-5f03bda3d496___40b718c46b5807a89a196e063848dcee.webp",
+        "fecha": "2026-01-02"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Promoción Bancaria",
+        "descripcion": "más fresco más rico SUPREMA DE $6.999 POLLO FRESCO VÁLIDO DEL 2/01 AL 4/01. PRECIO PRECIO REGULAR: $8.499 SIN IMPUESTOS: $6,333.94 cencopay CRÉDITO $5.999 Suprema de Pollo y más Suprema de Pollo y más",
+        "categoria": [
+            "💳 Bancarias",
+            "🥩 Carnicería"
+        ],
+        "link": "https://www.jumbo.com.ar/55868?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/8fee5e9b-0677-4877-a47d-d91b34a755e4___ca2099795b554c6fe3b33e3d3cf07ab2.webp",
+        "fecha": "2026-01-02"
+    }
+]

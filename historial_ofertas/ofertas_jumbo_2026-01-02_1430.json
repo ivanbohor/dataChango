@@ -79,17 +79,6 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "35% Off en Jabón Ropa",
-        "descripcion": "Único diseñado para   ciclo corto skip E X P E { X 35% DTO Freegyr^ 4235z4 949nr? Nuve skip Mivo ETx 0 skip skip Cortos CICLos  Cortos Ciclos , OClaro Delavedo Cortos Ciclos , Bilevado 6 Fa 4l4 5a  ",
-        "categoria": [
-            "🧹 Limpieza"
-        ],
-        "link": "https://www.jumbo.com.ar/skip?_q=skip&map=ft",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/fab02fc6-cae9-4761-8ee2-16f56c344b8d___00b07da857cf7d28c328a80975de7f0c.jpg",
-        "fecha": "2026-01-02"
-    },
-    {
-        "supermercado": "Jumbo",
         "titulo": "80% Off en Galletitas ...",
         "descripcion": "3 {,80% ; [ 1 VÁLIDO DEL 02701-At-04/01 cciORAD Galletitas ",
         "categoria": [
@@ -101,7 +90,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2x1 en Cuidado Personal, Cuidado Capilar",
+        "titulo": "2x1 en Cuidado Capilar, Cuidado Personal",
         "descripcion": "4 {,80% ceocooan CREDITO 2x1 PANTENE Dove Poyiol Dove H Restauralion VÁLIDO DEL 02/01 A2 84/01. SELeCCIONADOS Capilares ",
         "categoria": [
             "🧴 Perfumería y Bebé"
@@ -112,7 +101,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "35% Off en Jabón Ropa, Art. Limpieza",
+        "titulo": "35% Off en Art. Limpieza, Jabón Ropa",
         "descripcion": "{35% Mas74 205 [ Geahorr\" erwaanes) 'Yigienol skip enzimas Mx VÁLIDO DEL 02/0141-04/01- SFLECGONADOS: Limpieza ",
         "categoria": [
             "🧹 Limpieza"
@@ -196,6 +185,17 @@
         ],
         "link": "https://www.jumbo.com.ar/55674?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/b9e7b66c-ce3f-4361-92bd-9cfe1acda790___2f59473c7c7cbe54c2caa66e80949c6f.png",
+        "fecha": "2026-01-02"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "6x12 en Electro",
+        "descripcion": "Todos los días 3,6x12qu0625 CONCRABIFTA sin interés\" EN ELECTRODOMÉSTICOS SELECCIONADOS FROMCCIONVALIDA DEL 01/o1/2026 AL 31/01/2026 Iuioocterooy WeRV5Galesy Excugiones EncengorayAR CFTNA: 0,0% Electro Electro",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/electro",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/68ed13fe-f9ee-4257-8a05-b1a6be51ed7f___1615c495762c04f314f954da5c32faf6.jpg",
         "fecha": "2026-01-02"
     }
 ]

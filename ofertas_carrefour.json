@@ -1,8 +1,41 @@
 [
     {
         "supermercado": "Carrefour",
+        "titulo": "Precio Especial en Varios Productos",
+        "descripcion": "VÁLIDO SÓLO POR EL 02/01 EXCLUSIVO ONLINE TE REGALAMOS CUPÓN: ENRed] INMEDIaTA DESC-5K-ENE $5O0o DESCUENTO RECIBILO EN MÁX Si estás en CABA, TANDIL, CÓRDOBA 0 MENDOZA IH 24 recibí tu pedido en menos de 1 HORA mínimo de compra: $25.000 Válido sólo por el 02/01 de 2025. Exclusivo para carrefour comar para modalidad de entrega inmediata. No acumula con otras promociones. Aplica en compras mayores 525.000. No aplica compras programadas_ Ver legales en carrefour com.arflegales",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/799335e9-eef9-4ca2-a538-fcde60deb7f8___3a86ea0eacd24aef4c5c9ec6027464e8.png",
+        "fecha": "2026-01-02"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Promoción Bancaria",
+        "descripcion": "Los días DMM VGD Pagando Con DESCUENTO EN EL ACTO SIN TOPE 158 Tarjeta Mi Carrefour Crédito Válldo dfas vlernes, sabado; domlngo lunes mlercoles de Enero No Incluye electrodomestlcos; electrónlcatelefonla celular; carnlcerla nlleches Infantlles  maternlzadas. No acumulable con otras promoclones Exclusivo online Ver legales carrefour com arldescuentos-bancarlos APROVECHAR Cwrofour",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.carrefour.com.ar/ALMACEN",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ccabf24e-f8f1-4998-9680-fad22be1f0fa___ad290acf36f442d4e2d18b692caff650.png",
+        "fecha": "2026-01-02"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "80% Off en Varios Productos",
+        "descripcion": "jDenegalol {McCoin Nur Frtfr Lucchctci Felpita ite Ainitas vere Celebremos las fiestas Exirollo uaue Yirc 'opnecio Calidad: Popitosy Covonepg Ucnadita ilolay Duce Jclocw € Gupg eliueh Onero 80% DESCUENTO Hasta el 05/01 VER MÁS En Productos Seleccionados de: Supermercado Sólo cons fämiliar;válido",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23609?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/8c1fda69-a935-4f89-ba80-e753a071d35f___d89d51e6f6c97143c89d8c8737022900.webp",
+        "fecha": "2026-01-02"
+    },
+    {
+        "supermercado": "Carrefour",
         "titulo": "18 Cuotas S/Int en Electro y Tecno",
-        "descripcion": "PRECIO NORMAL 84-299-000 2r Hasta el 05/01 CONSOLA PLAY STATION 5 EDICIÓN DIGITAL SLIM GT7 ASTRO OFERTA 81.199.000 18 CUOTAS SIN INTERÉS DE 866.611 Soi VER MÁS Solo consumo familiar; valido por usuarioldocumento  ",
+        "descripcion": "PRECIO NORMAL 84-299-000 2r Hasta el 05/01 CONSOLA PLAY STATION 5 EDICIÓN DIGITAL SLIM GT7 ASTRO OFERTA 81.199.000 18 CUOTAS SIN INTERÉS DE 866.611 Soi VER MÁS Solo consumo familiar; valido por usuarioldocumento",
         "categoria": [
             "💳 Bancarias",
             "📺 Electro y Tecno"
@@ -14,10 +47,9 @@
     {
         "supermercado": "Carrefour",
         "titulo": "Oferta en Aires Acondicionados",
-        "descripcion": "121306 CUOTAS SIN INTERÉS DESCUENTQ Aires Acondicionados  ",
+        "descripcion": "121306 CUOTAS SIN INTERÉS DESCUENTQ Aires Acondicionados",
         "categoria": [
             "💳 Bancarias",
-            "🏠 Hogar y Bazar",
             "📺 Electro y Tecno"
         ],
         "link": "https://www.carrefour.com.ar/23611?map=productClusterIds&order=",
@@ -27,7 +59,7 @@
     {
         "supermercado": "Carrefour",
         "titulo": "Oferta en Lavarropas",
-        "descripcion": "12 30| CUOTAS SIN INTERÉS DESCUENTQ Smart TVs, Heladeras y Lavarropas  ",
+        "descripcion": "12 30| CUOTAS SIN INTERÉS DESCUENTQ Smart TVs, Heladeras y Lavarropas",
         "categoria": [
             "💳 Bancarias",
             "📺 Electro y Tecno"
@@ -39,7 +71,7 @@
     {
         "supermercado": "Carrefour",
         "titulo": "3x2 en Vinos",
-        "descripcion": "3x2 LLEVANDO 3 PAGÁS 2 Vinos y Espumantes  ",
+        "descripcion": "3x2 LLEVANDO 3 PAGÁS 2 Vinos y Espumantes",
         "categoria": [
             "🍷 Bebidas"
         ],
@@ -49,73 +81,59 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "18 Cuotas S/Int en Electro",
-        "descripcion": "HASTA 18 CUOTAS SIN INTERÉS En Electro Hasta el 01/01  ",
-        "categoria": [
-            "💳 Bancarias",
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23574?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d6c1c806-15ae-46b8-8b9e-50f7cf105be2___c897175cc259e43aaab8f9bad3ea8d50.webp",
-        "fecha": "2026-01-02"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "12 Cuotas S/Int en Electro y Tecno",
-        "descripcion": "iNo lo dejes pasar! 12 CUOTAS SIN INTERÉS En Electrodomésticos Por tlempo Ilmltado deañoz jDe negalol Celebremos las fiestas OOnecio lidad: Hasta el 01/01 OFpêrheimer VER MÁS Sólo consumo familiar; válido por usuarioldocumento  ",
-        "categoria": [
-            "💳 Bancarias",
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/20666?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/6637b774-1db1-4a4d-9d4b-85244b365f61___7bbd044e847ddbab750c4a4a6aa8a0d7.webp",
-        "fecha": "2026-01-02"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Precio Especial en Heladeras",
-        "descripcion": "iOfertas Virales! TIENDAS OFICIALES PRECIO NORMAL S9o5777 PRECO MORMAL 8974.998 PRECIO OFERTA 8699.999 CUOTAS SIN INTERÉS 8116.667 FoesngikFolestos 574357 PRECIO OFERTA $619.999 BOMBA EN PAGO dfeciasniknuestos 735784 EXCLUSIVO ONLINE Heladera Gafa 326 Its Lavarropas Drean Hasta el 02/01  ",
-        "categoria": [
-            "💳 Bancarias",
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ab2f32da-e73f-4607-bb85-a4a85080e946___b871a5f991a526a65fac4908f44c054d.webp",
-        "fecha": "2026-01-02"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "80% Off en Varios Productos",
-        "descripcion": "jDenegalol {McCoin Nur Frtfr Lucchctci Felpita ite Ainitas vere Celebremos las fiestas Exirollo uaue Yirc 'opnecio Calidad: Popitosy Covonepg Ucnadita ilolay Duce Jclocw € Gupg eliueh Onero 80% DESCUENTO Hasta el 05/01 VER MÁS En Productos Seleccionados de: Supermercado Sólo cons fämiliar;válido  ",
+        "titulo": "Oferta en Varios Productos",
+        "descripcion": "80p DESCUENTO EN LA 2DA UNIDAD En Productos Seecclonados de: Supermercado Hasta el 05/01 MÁS",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/23609?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/8c1fda69-a935-4f89-ba80-e753a071d35f___d89d51e6f6c97143c89d8c8737022900.webp",
+        "link": "https://www.carrefour.com.ar/23609?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/448bf98f-2bec-43d8-be7f-b786f5d9d4d0___d48947bdbcd909ee03e0031b82cca328.webp",
         "fecha": "2026-01-02"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "2x1 en Chocolates",
-        "descripcion": "041c e ARCOR eC {auduca LLEVANDO 2 2x1 PAGÁS 1 iDenegalol mufyetenuan Woi 4la Celebremos las fiestas 'opnecio Calidad: ManrCQ  CHOCOLATE Ventcio  Hasta el 05/01 Bonafide VER MÁS MAntEcQ Clasico En todos losz Confituras, Turrones, Budines, Pan Dulce y Postres de Maní Sólo consu faniliarzválido Panettone  ",
-        "categoria": [
-            "🧀 Lácteos y Frescos",
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/23579?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/a359f97d-ceb1-4398-b585-c82315f0eee4___8a17fec1cd6cdacfae116e3aa326e984.webp",
-        "fecha": "2026-01-02"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "3 Cuotas S/Int en Juguetería",
-        "descripcion": "3 CUOTAS SIN INTERÉS Hasta el 05/01 DESCUENTO EN LA 2DA UNIDAD REYES MAGOS Carrefour iNi los Reyes Magos se pierden estas ofertas! 80 En todos los: Juguetes y Juegos de Verano VER MÁS 1 Sólo consumo familiar; válido por usuarioldocumento.  ",
+        "titulo": "80% Off en Juguetería",
+        "descripcion": "3 80% CUOTAS DESCUENTO SIN INTERES EN LA 204 UNIDAD En todos los: Hasta el 05/01 Juguetes y VER MÁS Juegos de Verano",
         "categoria": [
             "💳 Bancarias",
             "🧸 Juguetería"
         ],
         "link": "https://www.carrefour.com.ar/regalos",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/b8b5567e-ccd3-4b9f-ad07-92c032df9ff1___7eff3e685fecd3a43d31898a8404b492.webp",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ba32fc9a-eb54-4a9b-97b5-f5b4335de76a___b15a8638508c67550563e29848480dea.webp",
+        "fecha": "2026-01-02"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "50% Off en Varios Productos",
+        "descripcion": "HASTA CUOTAS SIN INTERES HASTA 50% DE DESCUENTO HaSTA EL 06/01 EXCLUSIVO ONLINE",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3dea4ebb-2370-4e0a-af0f-84a8a79afcc0___f105bc12744568c2435c26bfd5aa779d.webp",
+        "fecha": "2026-01-02"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "35% Off en Varios Productos",
+        "descripcion": "25P DESCUENTO 35% DESCUENTO En selecclonados de: Gaseosas, Cervezas, Jugos- Arroz, Pan Rallado y más Hasta el 05/01 MÁS",
+        "categoria": [
+            "🍷 Bebidas",
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23607?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9402e2e3-cc87-4be4-b49a-d4d2288486d4___14da179d5b4f7c2f2a96a7ca89c874fd.webp",
+        "fecha": "2026-01-02"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "50% Off en Alimento Mascotas",
+        "descripcion": "hisk En: Hasta el 05/01 iaake 501 DESCUENTO EN LA 204 UNIDAD Tiernit Cnn AouiI@_ Alimento Seco para Mascotas VER MÁS 21se9bo",
+        "categoria": [
+            "🐶 Mascotas"
+        ],
+        "link": "https://www.carrefour.com.ar/23614?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/4cd63fc6-0a84-41a5-a3be-5e8c306dbb18___b0884c1ae36fa719cfd66325891408e9.webp",
         "fecha": "2026-01-02"
     }
 ]

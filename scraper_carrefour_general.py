@@ -15,13 +15,13 @@ NOMBRE_SUPER = "Carrefour"
 URL_SUPER = "https://www.carrefour.com.ar"
 ARCHIVO_SALIDA = "ofertas_carrefour.json"
 
-print(f">>> 🇫🇷 Iniciando Scraper {NOMBRE_SUPER} (V23: Inferencia por Cuotas)...")
+print(f">>> 🇫🇷 Iniciando Scraper {NOMBRE_SUPER} (V35: Filtro Anti-Productos + Fix Links)...")
 
 if os.path.exists(ARCHIVO_SALIDA): os.remove(ARCHIVO_SALIDA)
 
 reader = easyocr.Reader(['es'], gpu=False) 
 
-# --- 1. DICCIONARIO MAESTRO (V52) ---
+# --- 1. DICCIONARIO MAESTRO (VERSION V58) ---
 DB_MAESTRA = {
     # 🥩 CARNICERÍA
     "carne": ("Carne Vacuna", "🥩 Carnicería"),
@@ -261,78 +261,100 @@ DB_MAESTRA = {
     "perro": ("Alimento Perro", "🐶 Mascotas"),
     "gato": ("Alimento Gato", "🐶 Mascotas"),
     "balanceado": ("Alimento Balanceado", "🐶 Mascotas"),
+    "alimento seco": ("Alimento Mascotas", "🐶 Mascotas"),
+    "alimento humedo": ("Alimento Mascotas", "🐶 Mascotas"),
+    "cachorro": ("Alimento Mascotas", "🐶 Mascotas"), 
+    "adulto": ("Alimento Mascotas", "🐶 Mascotas"), 
+    "raza": ("Alimento Mascotas", "🐶 Mascotas"), 
+    "kilos": ("Alimento Mascotas", "🐶 Mascotas"), 
+    "kg": ("Alimento Mascotas", "🐶 Mascotas"), 
+    "pedigr": ("Alimento Mascotas", "🐶 Mascotas"),
+    "whisk": ("Alimento Mascotas", "🐶 Mascotas"),
+    "dog chow": ("Alimento Mascotas", "🐶 Mascotas"),
+    "cat chow": ("Alimento Mascotas", "🐶 Mascotas"),
+    "pro plan": ("Alimento Mascotas", "🐶 Mascotas"),
+    "eukanuba": ("Alimento Mascotas", "🐶 Mascotas"),
+    "royal canin": ("Alimento Mascotas", "🐶 Mascotas"),
+    "sabrositos": ("Alimento Mascotas", "🐶 Mascotas"),
+    "tiernit": ("Alimento Mascotas", "🐶 Mascotas"),
+    "gati": ("Alimento Mascotas", "🐶 Mascotas"), 
+    "excellence": ("Alimento Mascotas", "🐶 Mascotas"),
+    "sieger": ("Alimento Mascotas", "🐶 Mascotas"),
+    "nutrique": ("Alimento Mascotas", "🐶 Mascotas"),
 }
 
-# --- FUNCIÓN DE NORMALIZACIÓN ---
+# --- FUNCIONES DE LIMPIEZA ---
 def normalizar_texto(texto):
     if not texto: return ""
     t = texto.lower()
     return ''.join(c for c in unicodedata.normalize('NFD', t) if unicodedata.category(c) != 'Mn')
 
-# --- 2. LÓGICA DE DETECCIÓN MULTI-ETIQUETA (CON INFERENCIA) ---
-def detectar_categorias_inteligente(texto_completo, link=""):
-    t_limpio = normalizar_texto(texto_completo.replace("carrefour", ""))
+def sanitizar_texto_exclusiones(texto):
+    if not texto: return ""
+    t_norm = normalizar_texto(texto)
+    palabras_corte = ["excluye", "no incluye", "legales", "bases y cond", "consultar en", "no acumulable", "ver legal", "valido en"]
+    indice_corte = len(t_norm)
+    for palabra in palabras_corte:
+        idx = t_norm.find(palabra)
+        if idx != -1 and idx < indice_corte:
+            indice_corte = idx
+    return texto[:indice_corte]
+
+# --- LÓGICA DETECCIÓN ---
+def detectar_categorias_inteligente(texto_sanitizado, link=""):
+    t_limpio = normalizar_texto(texto_sanitizado.replace("carrefour", ""))
     etiquetas = []
     
-    # Detección Bancaria
     if any(k in t_limpio for k in ["banco", "tarjeta", "modo", "ahorro", "financiacion", "cuotas"]):
         etiquetas.append("💳 Bancarias")
 
-    # --- INFERENCIA POR CUOTAS (REGLA DE ORO) ---
-    # Si tiene 12, 18 o 24 cuotas, asumimos que es Electro
     if "12 cuotas" in t_limpio or "18 cuotas" in t_limpio or "24 cuotas" in t_limpio:
         etiquetas.append("📺 Electro y Tecno")
     
-    # Si tiene 6 cuotas y no es electro, podría ser Hogar/Bazar
-    elif "6 cuotas" in t_limpio:
-        if "📺 Electro y Tecno" not in etiquetas:
-            etiquetas.append("🏠 Hogar y Bazar") # Suposición probable
-    # --------------------------------------------
-
-    # Detección por Texto (Barrido)
     for keyword, (producto, categoria_final) in DB_MAESTRA.items():
         if re.search(r'\b' + re.escape(keyword) + r'\b', t_limpio):
             if categoria_final not in etiquetas:
                 etiquetas.append(categoria_final)
 
-    # Fallback
+    categorias_producto = [c for c in etiquetas if c != "💳 Bancarias"]
+    if len(set(categorias_producto)) > 3: return ["💳 Bancarias"]
+
     if not etiquetas:
         if "fresco" in t_limpio: etiquetas.append("🧀 Lácteos y Frescos")
         elif "limpie" in t_limpio: etiquetas.append("🧹 Limpieza")
         elif "tecno" in t_limpio: etiquetas.append("📺 Electro y Tecno")
         elif "casa" in t_limpio: etiquetas.append("🏠 Hogar y Bazar")
-        else:
-            etiquetas.append("🍝 Almacén") 
-            
+        else: etiquetas.append("🍝 Almacén") 
     return etiquetas
 
-# --- VALIDACIÓN OFERTA REAL ---
-def es_oferta_valida(texto, src_url):
-    t_norm = normalizar_texto(texto)
-    url_clean = src_url.lower()
-
+# --- VALIDACIÓN V35 (FILTRO DE PRODUCTOS SUELTOS) ---
+def es_oferta_valida(texto_sanitizado, src_url):
+    t_norm = normalizar_texto(texto_sanitizado)
+    
+    # 1. Filtro Negativo Estándar
     if any(x in t_norm for x in ["horarios", "sucursales", "copyright", "posible info", "seguinos", "whatsapp", "descarga", "app", "canal", "comunidad", "beneficio"]): 
         return False
 
+    # 2. Señales de Promoción (Obligatorias)
+    # Si no tiene "%", "off", "cuotas", etc., NO es una oferta, es solo un producto.
+    senales = ["%", "off", "2x1", "3x2", "4x2", "2da", "cuotas", "ahorro", "descuento", "precio", "$", "oferta", "llevando", "hasta", "80%", "bazar", "especial"]
+    tiene_senal = any(s in t_norm for s in senales)
+    
+    if not tiene_senal:
+        # Excepción muy específica: Si detecta "Electro" por inferencia visual (futura) o palabras clave muy fuertes sin precio (ej: "HOT SALE")
+        # Por ahora, somos estrictos: Sin señal de oferta -> Basura.
+        return False
+
+    # 3. Coincidencia con Diccionario (Solo si pasó el filtro de señal)
     for k in DB_MAESTRA.keys():
         if re.search(r'\b' + re.escape(k) + r'\b', t_norm): return True
     
-    senales = ["%", "off", "2x1", "3x2", "4x2", "2da", "cuotas", "ahorro", "descuento", "precio", "$", "oferta", "llevando", "hasta", "80%", "bazar"]
-    return any(s in t_norm for s in senales)
-
-def obtener_link_especifico(elemento_img):
-    try:
-        padre = elemento_img.find_element(By.XPATH, "./ancestor::a")
-        link = padre.get_attribute("href")
-        if link and "http" in link: return link
-    except: pass
-    return URL_SUPER
+    return True # Si tiene señal de oferta pero no producto conocido, pasa como "Varios"
 
 # --- LIMPIEZA INTELIGENTE ---
-def limpiar_texto_ocr(texto_sucio, texto_alt, src_url, categorias_detectadas=[]):
-    t = (texto_sucio + " " + texto_alt).replace("\n", " ").strip()
+def limpiar_texto_ocr(texto_sanitizado, texto_alt, src_url, categorias_detectadas=[]):
+    t = (texto_sanitizado + " " + texto_alt).replace("\n", " ").strip()
     t_norm = normalizar_texto(t)
-    
     t_clean = t.replace("12CUOTAS", "12 Cuotas").replace("18CUOTAS", "18 Cuotas").replace("6CUOTAS", "6 Cuotas")
     
     prefijo = "Oferta"
@@ -340,7 +362,8 @@ def limpiar_texto_ocr(texto_sucio, texto_alt, src_url, categorias_detectadas=[])
     match_pct = re.search(r'(\d+)%', t_clean)
     match_nxn = re.search(r'(\d+[xX]\d+)', t_clean)
     
-    if match_nxn: prefijo = match_nxn.group(1).lower()
+    if "501" in t_clean and "descuento" in t_norm: prefijo = "50% Off"
+    elif match_nxn: prefijo = match_nxn.group(1).lower()
     elif match_cuotas: prefijo = f"{match_cuotas.group(1)} Cuotas S/Int"
     elif match_pct:
         if "2do" in t_norm: prefijo = f"2do al {match_pct.group(1)}%"
@@ -349,48 +372,29 @@ def limpiar_texto_ocr(texto_sucio, texto_alt, src_url, categorias_detectadas=[])
     
     prods = []
     for k, v in DB_MAESTRA.items():
-        if re.search(r'\b' + re.escape(k) + r'\b', t_norm):
-            prods.append(v[0])
+        if re.search(r'\b' + re.escape(k) + r'\b', t_norm): prods.append(v[0])
     
     if prods:
+        if len(set(prods)) > 3:
+             if any(k in t_norm for k in ["banco", "tarjeta", "modo"]): return "Promoción Bancaria"
+             return f"{prefijo} en Varios Productos"
         prod_str = list(set(prods))[0] 
         return f"{prefijo} en {prod_str}"
     
-    # SALVAVIDAS: Usar categoría si no hay producto
     if categorias_detectadas:
-        # Priorizamos Electro u Hogar si fueron inferidos por cuotas
         cats_prioritarias = [c for c in categorias_detectadas if "Electro" in c or "Hogar" in c]
-        if cats_prioritarias:
-            cat_principal = cats_prioritarias[0]
-        else:
-            cat_principal = categorias_detectadas[0]
-
+        cat_principal = cats_prioritarias[0] if cats_prioritarias else categorias_detectadas[0]
         nombre_cat = cat_principal.replace("🧸 ", "").replace("📺 ", "").replace("🏠 ", "").replace("🥩 ", "").replace("💳 ", "").strip()
-        
-        # Si la categoría no es "Bancaria" pura (o si es Electro inferido), úsala
         if "Bancaria" not in nombre_cat and "Almacén" not in nombre_cat and "Varios" not in nombre_cat:
             return f"{prefijo} en {nombre_cat}"
-        
-        # Si inferimos Electro por cuotas, pero la etiqueta dice Bancaria, forzamos Electro en título
-        if "12 Cuotas" in prefijo or "18 Cuotas" in prefijo:
+        if ("12 Cuotas" in prefijo or "18 Cuotas" in prefijo) and "Electro" not in nombre_cat:
              return f"{prefijo} en Electro"
 
-    if any(k in t_norm for k in ["banco", "tarjeta", "modo"]):
-        return "Promoción Bancaria"
-    
+    if any(k in t_norm for k in ["banco", "tarjeta", "modo"]): return "Promoción Bancaria"
     return f"{prefijo} en Varios Productos"
 
-def procesar_oferta(elemento_img, src, texto_alt, titulos_procesados, ofertas_encontradas):
+def procesar_oferta(src, href_real, texto_alt, titulos_procesados, ofertas_encontradas):
     try:
-        if src.startswith("/"): src = URL_SUPER + src
-        filename = os.path.basename(urllib.parse.urlparse(src).path)
-        link_real = obtener_link_especifico(elemento_img)
-        
-        try:
-            w = int(elemento_img.get_attribute("width") or 0)
-            if w > 0 and w < 100: return
-        except: pass
-
         headers = {'User-Agent': 'Mozilla/5.0'}
         try: resp = requests.get(src, headers=headers, timeout=5)
         except: return
@@ -399,28 +403,68 @@ def procesar_oferta(elemento_img, src, texto_alt, titulos_procesados, ofertas_en
         res_ocr = reader.readtext(resp.content, detail=0, paragraph=True)
         texto_ocr = " ".join(res_ocr)
         
-        texto_completo = f"{texto_ocr} {texto_alt}"
+        # --- DEBUG MODE ---
+        # print(f"   🔍 RAW OCR: {texto_ocr[:100]}...") 
+        # ------------------
+
+        texto_limpio = sanitizar_texto_exclusiones(f"{texto_ocr} {texto_alt}")
         
-        if not es_oferta_valida(texto_completo, filename): return
+        filename = os.path.basename(urllib.parse.urlparse(src).path)
+        if not es_oferta_valida(texto_limpio, filename): return
         
-        cats = detectar_categorias_inteligente(texto_completo, filename)
-        titulo_final = limpiar_texto_ocr(texto_ocr, texto_alt, filename, cats)
+        cats = detectar_categorias_inteligente(texto_limpio, filename)
+        titulo_final = limpiar_texto_ocr(texto_limpio, "", filename, cats)
 
         if titulo_final not in titulos_procesados:
             oferta = {
                 "supermercado": NOMBRE_SUPER,
                 "titulo": titulo_final,
-                "descripcion": texto_completo,
+                "descripcion": texto_ocr,
                 "categoria": cats,
-                "link": link_real,
+                "link": href_real, # URL REAL DEL PRODUCTO/CATEGORÍA
                 "imagen": src,
                 "fecha": time.strftime("%Y-%m-%d")
             }
             ofertas_encontradas.append(oferta)
             titulos_procesados.add(titulo_final)
             print(f"      🇫🇷 {cats} {titulo_final}")
-
     except Exception: pass
+
+# --- EXTRACCIÓN MASIVA POR JS (CON LINKS) ---
+def extraccion_masiva_js(driver, titulos_procesados, ofertas_encontradas):
+    print("   ☢️ Ejecutando Extracción Masiva JS (Imágenes + Links)...")
+    try:
+        # Script Mejorado: Busca la imagen Y su link padre
+        script_js = """
+        var items = [];
+        var imgs = document.getElementsByTagName('img');
+        for (var i = 0; i < imgs.length; i++) {
+            var src = imgs[i].src || imgs[i].dataset.src;
+            if (src) {
+                var parentAnchor = imgs[i].closest('a');
+                var href = parentAnchor ? parentAnchor.href : "";
+                items.push({src: src, href: href});
+            }
+        }
+        return items;
+        """
+        items_crudos = driver.execute_script(script_js)
+        
+        # Filtrar solo carrefour assets
+        items_filtrados = [item for item in items_crudos if "carrefourar.vtexassets.com" in item['src']]
+        
+        # Eliminar duplicados por SRC
+        items_unicos = {item['src']: item for item in items_filtrados}.values()
+        
+        print(f"      -> {len(items_unicos)} elementos únicos encontrados.")
+        
+        for item in items_unicos:
+            if item['src'] not in [o['imagen'] for o in ofertas_encontradas]:
+                # Si no tiene href, usamos la URL base, pero intentamos que tenga href
+                href_final = item['href'] if item['href'] else URL_SUPER
+                procesar_oferta(item['src'], href_final, "JS Masivo", titulos_procesados, ofertas_encontradas)
+                
+    except Exception as e: print(f"Error en JS Masivo: {e}")
 
 def obtener_ofertas_carrefour():
     opts = Options()
@@ -436,34 +480,15 @@ def obtener_ofertas_carrefour():
         print(f"   🌐 Entrando a {NOMBRE_SUPER}...")
         time.sleep(6)
 
-        print("   📜 Barrido Profundo...")
-        altura_total = driver.execute_script("return document.body.scrollHeight")
-        paso_scroll = 700
-        
-        for y in range(0, altura_total, paso_scroll):
-            driver.execute_script(f"window.scrollTo(0, {y});")
-            time.sleep(1) 
-            
-            imagenes_visibles = driver.find_elements(By.TAG_NAME, "img")
-            
-            for img in imagenes_visibles:
-                try:
-                    w = int(img.get_attribute("width") or img.size['width'] or 0)
-                    h = int(img.get_attribute("height") or img.size['height'] or 0)
-                    
-                    if w > 200 and h > 150:
-                        src = img.get_attribute("src")
-                        if not src: continue
-                        if src in [o['imagen'] for o in ofertas_encontradas]: continue
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(3)
+        driver.execute_script("window.scrollTo(0, 0);")
+        time.sleep(2)
 
-                        texto_alt = (img.get_attribute("alt") or "") + " " + (img.get_attribute("title") or "")
-                        
-                        if "http" in src:
-                            if src not in src_procesados:
-                                if "icon" in src or "logo" in src: continue
-                                src_procesados.add(src)
-                                procesar_oferta(img, src, texto_alt, titulos_procesados, ofertas_encontradas)
-                except: continue
+        extraccion_masiva_js(driver, titulos_procesados, ofertas_encontradas)
+
+        # EL BARRIDO VISUAL YA NO ES NECESARIO SI EL JS FUNCIONA BIEN Y TRAE LINKS
+        # Lo quitamos para evitar duplicados y lógica confusa de links
 
     except Exception as e: print(f"❌ Error: {e}")
     finally: driver.quit()
