@@ -14,7 +14,6 @@ hide_st_style = """
             header {visibility: hidden;}
             </style>
             """
-st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # --- CONFIGURACIÓN DE PÁGINA ---
 st.set_page_config(
@@ -23,6 +22,24 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
+# --- INYECCIÓN DE GOOGLE TAG MANAGER (GTM) ---
+def inyectar_gtm():
+    GTM_ID = "GTM-PFPW7P44" # Tu ID Real
+    
+    gtm_code = f"""
+    <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+    new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    }})(window,document,'script','dataLayer','{GTM_ID}');</script>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={GTM_ID}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    """
+    components.html(gtm_code, height=0, width=0)
+
+inyectar_gtm()
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # --- 1. GESTIÓN DE ESTADO ---
 if 'categoria_activa' not in st.session_state:
@@ -34,59 +51,36 @@ hipers_init = ["Carrefour", "Jumbo", "Coto", "MasOnline"]
 for h in hipers_init:
     if f"chk_{h}" not in st.session_state: st.session_state[f"chk_{h}"] = False
 
-# --- 2. UTILIDADES Y SANITIZACIÓN (EL CEREBRO DEL FRONTEND) ---
+# --- 2. UTILIDADES Y SANITIZACIÓN ---
 def normalizar_texto(texto):
     if not isinstance(texto, str): return ""
     texto = texto.lower().strip()
     return ''.join(c for c in unicodedata.normalize('NFD', texto) if unicodedata.category(c) != 'Mn')
 
-# --- FUNCIÓN NUEVA: Corrige etiquetas viejas o "sucias" al cargar ---
 def sanitizar_oferta(oferta):
-    """
-    Limpia las categorías en tiempo real.
-    Si ve 'Frescos' (viejo) -> Lo cambia a 'Lácteos y Frescos'.
-    Si ve 'Varios' -> Intenta asignarlo a algo mejor o lo manda a Almacén.
-    """
     cats_sucias = oferta.get("categoria", [])
     cats_limpias = []
-    
     for c in cats_sucias:
         c_lower = c.lower()
-        
-        # Mapeo de corrección (Legacy -> New Standard)
         if "fresco" in c_lower: cats_limpias.append("🧀 Lácteos y Frescos")
         elif "vario" in c_lower:
-            # Si es Varios, intentamos adivinar por el título
             titulo = oferta.get("titulo", "").lower()
             if "toalla" in titulo or "sabana" in titulo: cats_limpias.append("🏠 Hogar y Bazar")
             elif "tv" in titulo or "celu" in titulo: cats_limpias.append("📺 Electro y Tecno")
             elif "juguete" in titulo: cats_limpias.append("🧸 Juguetes")
-            else: cats_limpias.append("🍝 Almacén") # Fallback seguro
-        elif "banco" in c_lower or "tarjeta" in c_lower:
-            cats_limpias.append("💳 Bancarias")
-        elif "hogar" in c_lower and "bazar" not in c_lower:
-             cats_limpias.append("🏠 Hogar y Bazar")
-        elif "automotor" in c_lower and "aire" not in c_lower:
-             cats_limpias.append("🚗 Auto y Aire Libre")
-        elif "electro" in c_lower and "tecno" not in c_lower:
-             cats_limpias.append("📺 Electro y Tecno")
-        else:
-            cats_limpias.append(c) # Si está bien, la dejamos
-            
-    # Eliminamos duplicados
+            else: cats_limpias.append("🍝 Almacén")
+        elif "banco" in c_lower or "tarjeta" in c_lower: cats_limpias.append("💳 Bancarias")
+        elif "hogar" in c_lower and "bazar" not in c_lower: cats_limpias.append("🏠 Hogar y Bazar")
+        elif "automotor" in c_lower and "aire" not in c_lower: cats_limpias.append("🚗 Auto y Aire Libre")
+        elif "electro" in c_lower and "tecno" not in c_lower: cats_limpias.append("📺 Electro y Tecno")
+        else: cats_limpias.append(c)
     oferta["categoria"] = list(set(cats_limpias))
     return oferta
 
 def cargar_datos():
-    archivos = {
-        "Carrefour": "ofertas_carrefour.json",
-        "Jumbo": "ofertas_jumbo.json",
-        "Coto": "ofertas_coto.json",
-        "MasOnline": "ofertas_masonline.json"
-    }
+    archivos = {"Carrefour": "ofertas_carrefour.json", "Jumbo": "ofertas_jumbo.json", "Coto": "ofertas_coto.json", "MasOnline": "ofertas_masonline.json"}
     todas_ofertas = []
     conteo_ofertas = {k: 0 for k in archivos.keys()} 
-
     for nombre, archivo in archivos.items():
         if os.path.exists(archivo):
             try:
@@ -94,19 +88,15 @@ def cargar_datos():
                     datos = json.load(f)
                     for d in datos: 
                         d["origen_filtro"] = nombre
-                        # APLICAMOS SANITIZACIÓN A CADA OFERTA
                         d = sanitizar_oferta(d)
-                        
                     todas_ofertas.extend(datos)
                     conteo_ofertas[nombre] = len(datos)
             except: pass
-            
     return todas_ofertas, conteo_ofertas
 
 def get_img_as_base64(file):
     try:
-        with open(file, "rb") as f:
-            data = f.read()
+        with open(file, "rb") as f: data = f.read()
         return base64.b64encode(data).decode()
     except: return ""
 
@@ -141,7 +131,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- 4. CABECERA ---
+# --- 4. CABECERA (LIMPIA) ---
 logo_file = "logo.jpg" 
 if os.path.exists(logo_file):
     img_b64 = get_img_as_base64(logo_file)
@@ -152,15 +142,15 @@ if os.path.exists(logo_file):
             Las <span style="font-weight: bold; color: white;">mejores ofertas</span> de los principales Hipermercados en un solo lugar.<br>
             <span style="font-size: 0.95rem; text-transform: none; color: #e0e0e0; letter-spacing: 0.5px;">DataChango hace las búsquedas de ofertas por vos, ahorrandote tiempo y dinero!</span>
         </h4>
+        <div style="text-align: center; margin-top: 10px; font-weight: bold; color: white; font-size: 0.9rem;">
+            ¿Ideas, sugerencias? <a href="mailto:datachangoweb@gmail.com" class="contact-link-text">Hablemos </a>🧉
+        </div>
     </div>
     """, unsafe_allow_html=True)
 else: st.warning(f"⚠️ Falta el archivo '{logo_file}' en la carpeta.")
 
-st.markdown("""<div style="text-align: center; margin-bottom: 15px; font-weight: bold; color: white; font-size: 0.9rem;">¿Ideas, sugerencias? <a href="mailto:datachangoweb@gmail.com" class="contact-link-text">Hablemos</a></div>""", unsafe_allow_html=True)
-
 # --- 5. LOGICA DE DATOS Y FILTROS ---
 ofertas_raw, conteos = cargar_datos()
-
 hipers = ["Carrefour", "Jumbo", "Coto", "MasOnline"]
 emojis = {"Carrefour": "🛒", "Jumbo": "🛒", "Coto": "🛒", "MasOnline": "🛒"}
 
@@ -174,7 +164,7 @@ def on_change_hiper(nombre):
 
 # --- MENU DESPLEGABLE ---
 with st.expander("🎯 FILTROS Y CATEGORÍAS", expanded=False):
-    st.markdown('<p class="filter-title">Filtros por Supermercado</p>', unsafe_allow_html=True)
+    st.markdown('<p class="filter-title">Filtrar por Supermercado</p>', unsafe_allow_html=True)
     c_todo, c_h1, c_h2, c_h3, c_h4 = st.columns(5)
     with c_todo: st.checkbox("✅ Todo", key='filtro_ver_todo', on_change=on_change_ver_todo)
     col_hipers = [c_h1, c_h2, c_h3, c_h4]
@@ -182,9 +172,8 @@ with st.expander("🎯 FILTROS Y CATEGORÍAS", expanded=False):
         with col_hipers[i]: st.checkbox(f"{emojis[h]} {h} ({conteos[h]})", key=f"chk_{h}", on_change=on_change_hiper, args=(h,))
 
     st.markdown("---")
-    st.markdown('<p class="filter-title">⚡ Filtrar por Rubro</p>', unsafe_allow_html=True)
+    st.markdown('<p class="filter-title">⚡Por Categoría</p>', unsafe_allow_html=True)
 
-    # 11 Categorías Estándar
     categorias = [
         ("🥩 Carnes", "carne"), ("🧀 Lácteos y Frescos", "lacteos"), ("🍷 Bebidas", "bebida"),
         ("🍝 Almacén", "almacen"), ("🧹 Limpieza", "limpieza"), ("🧴 Perfumería y Bebé", "perfumeria"),
@@ -207,7 +196,7 @@ with st.expander("🎯 FILTROS Y CATEGORÍAS", expanded=False):
 hipers_activos = hipers if st.session_state.filtro_ver_todo else [h for h in hipers if st.session_state[f"chk_{h}"]]
 filtro_cat = st.session_state.categoria_activa
 
-# --- BÚSQUEDA Y FILTRADO FINAL (Estricto) ---
+# --- BÚSQUEDA Y FILTRADO FINAL ---
 mapa_categorias = {
     "carne": "Carnicería", "lacteos": "Lácteos y Frescos", "bebida": "Bebidas", "almacen": "Almacén",
     "limpieza": "Limpieza", "perfumeria": "Perfumería y Bebé", "electro": "Electro y Tecno",
@@ -221,7 +210,6 @@ for oferta in ofertas_raw:
     if filtro_cat:
         tag_buscado = mapa_categorias.get(filtro_cat, "")
         cats_oferta = oferta.get("categoria", [])
-        # Match inteligente: Si "Lácteos" está en "Lácteos y Frescos", pasa.
         if not any(tag_buscado.lower() in c.lower() or c.lower() in tag_buscado.lower() for c in cats_oferta): continue
     
     ofertas_filtradas.append(oferta)
@@ -231,7 +219,20 @@ if not ofertas_filtradas:
     st.warning(f"🤷‍♂️ No encontré ofertas para este filtro. Prueba 'Ver Todo'.")
 else:
     nombres_mostrar = "Todos los Supermercados" if st.session_state.filtro_ver_todo else ", ".join(hipers_activos)
-    st.markdown(f"""<div style="text-align: center; margin-bottom: 20px;"><div style="color: #ccc; font-size: 1rem;">Mostrando <span style="color: white; font-weight: bold;">{len(ofertas_filtradas)}</span> ofertas de: {nombres_mostrar}</div></div>""", unsafe_allow_html=True)
+    
+    # === AQUI ESTÁ EL CAFECITO DISCRETO ===
+    url_cafecito = "https://cafecito.app/datachango" # <--- ¡Pon tu usuario aquí!
+    st.markdown(f"""
+    <div style="text-align: center; margin-bottom: 20px;">
+        <div style="color: #ccc; font-size: 1rem; margin-bottom: 8px;">
+            Mostrando <span style="color: white; font-weight: bold;">{len(ofertas_filtradas)}</span> ofertas de: {nombres_mostrar}
+        </div>
+        <div style="font-size: 0.9rem; color: #eee;">
+            ¿Te sirvió DataChango? <a href="{url_cafecito}" target="_blank" style="color: #cfa539; text-decoration: underline; font-weight: bold; margin-left: 5px;">Invitame un Cafecito ☕ </a>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    # ======================================
     
     cant_ofertas = len(ofertas_filtradas)
     filas = math.ceil(cant_ofertas / 3) 
@@ -267,11 +268,10 @@ else:
         link_oferta = oferta.get('link', '#')
         bg_badge = "#d32f2f" if "Coto" in super_name else "#2e7d32" if "Jumbo" in super_name else "#1565c0" if "Carrefour" in super_name else "#ef6c00"
         
-        # Filtramos etiquetas para mostrar solo las relevantes (y limpias)
         cats_visuales = [c for c in oferta.get('categoria', []) if "Bancarias" not in c][:2]
         cats_html = "".join([f'<span class="tag">{c}</span>' for c in cats_visuales])
         
-        texto_copiar = f"Mira esta oferta: {link_oferta}".replace("'", "")
+        texto_copiar = f"Mira esta oferta que encontró DataChango: {link_oferta}".replace("'", "")
         btn_id = f"btn-copy-{i}"
 
         cards_html += f"""

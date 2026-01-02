@@ -14,7 +14,7 @@ NOMBRE_SUPER = "Coto"
 URL_SUPER = "https://www.cotodigital.com.ar/sitios/cdigi/"
 ARCHIVO_SALIDA = "ofertas_coto.json"
 
-print(f">>> 🥩 Iniciando Scraper {NOMBRE_SUPER} (V24: Fix Electrodomésticos + Lógica Semántica)...")
+print(f">>> 🥩 Iniciando Scraper {NOMBRE_SUPER} (V25: Fix Links + Lógica Semántica)...")
 
 if os.path.exists(ARCHIVO_SALIDA): os.remove(ARCHIVO_SALIDA)
 
@@ -354,6 +354,19 @@ def es_oferta_valida(texto, src="", categorias_detectadas=[]):
 
     return False
 
+# --- EXTRAER LINK REAL (NUEVA FUNCIÓN) ---
+def obtener_link_especifico(elemento_img):
+    try:
+        # Intenta buscar el elemento <a> padre de la imagen
+        padre = elemento_img.find_element(By.XPATH, "./ancestor::a")
+        link = padre.get_attribute("href")
+        if link and "http" in link:
+            return link
+    except:
+        pass
+    # Si falla, devuelve el genérico (mejor eso que nada)
+    return URL_SUPER
+
 # --- LIMPIEZA INTELIGENTE ---
 def generar_titulo_bonito(texto_ocr, src):
     t = texto_ocr.replace("\n", " ").strip()
@@ -420,6 +433,9 @@ def procesar_oferta(elemento_img, src, titulos_procesados, ofertas_encontradas):
         
         # 3. Título
         titulo = generar_titulo_bonito(texto_ocr, src)
+        
+        # 4. OBTENER LINK REAL (AQUI ESTA EL CAMBIO)
+        link_real = obtener_link_especifico(elemento_img)
 
         if titulo not in titulos_procesados:
             oferta = {
@@ -427,7 +443,7 @@ def procesar_oferta(elemento_img, src, titulos_procesados, ofertas_encontradas):
                 "titulo": titulo,
                 "descripcion": texto_ocr,
                 "categoria": cats,
-                "link": URL_SUPER,
+                "link": link_real, # Usamos el link extraído
                 "imagen": src,
                 "fecha": time.strftime("%Y-%m-%d")
             }
@@ -473,6 +489,7 @@ def iniciar_scraper():
                 
                 if es_oferta_coto and src not in src_procesados:
                     src_procesados.add(src)
+                    # Pasamos el elemento 'img' completo, no solo el src
                     procesar_oferta(img, src, titulos_procesados, ofertas_encontradas)
             
             except: continue
