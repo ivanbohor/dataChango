@@ -1,0 +1,47 @@
+[
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Varios Productos",
+        "descripcion": "Del Olal 06 de enero ChangoMâs MâsOnline OFERTAS FLASH com.ar Galletitas OzEO Pepitos! |Paseo} % seleccionadas Terrabusi Bpfess 70 Variedad Crackers Segcnanto Leches largavida Las\" Tres Unidad Niñas Regalaen Reyes Regaláen Reyes Regalá en Reyes Regaláen Reyes Regaláen Reyes PARA MÁS INFORMACIÓNO LMITACIONES APLICABLES, CONSULTE EN MASONLINE COMAR/PROMOCIONES-BANCARIAS. DORINKA SRL 30-67813830-0 BOLVIA 5831,CABA Regalá en Reyes _ QUIERO VER MÁs ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar/210?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/b2f7a9fd-f753-41cd-8e13-7421e6a79767/image/attachments/galletasyleches_Dkt.webp",
+        "fecha": "2026-01-01"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "3x2 en Varios Productos",
+        "descripcion": "Del Olal 06 de enero ChangoMâs MâsOnline OFERTAS FLASH comar Worsteiner ) 3x2 Heineken Rilc eaM Cervezas seleccionadas LLEVÁS 3, PAGÁS 2 Schneider Imperiol PEC, Regaláen Reyes Regaláen Reyes Regalá en Reyes Regaláen Reyes Regaláen Reyes Regalá en Reyes QUIERO VER MÁs BEBER CON MODERACIÓN PROHIBIDA SU VENTA A MENORES DE 18 AÑOS. PARA MÁS INFORMACIÓNOUMITACIONES APLCABLES, CONSULTE EN MASONLINE COMAR /PROMOCIONES-BANCARIAS. DORINKA SRL 30-67813830-0 BOLVIA 5831,C.ABA ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar/340?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/62ba9656-f20d-45bc-a191-b6d737151d83/image/attachments/cervezas_dkt.webp",
+        "fecha": "2026-01-01"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Promoción Bancaria",
+        "descripcion": "Del Olal 06 de enero Neumáticos seleccionados ChangoMâs MâsOnline comar Hasta 40% 12 Suotas OFERTAS FLASH Descuento Unitario SIN VISA CABAL de todos los Bancos galáen Reyes Regaláen Reves Regaláen Reyes _ Regalá en Reyes _ QUIERO VER MÁs ROMOCIONES-BANCARIAS. DORINKA SRL 30-67813830-0 BOLIVIA 5831 CABA COLOCACIÓN GRATIS Mâsaurg Regalaen Reyes _ Rega PARA MÁS INFORMACIÓNO LMITACIONES APLCABLES, CONSULTEENMA ",
+        "categoria": [
+            "💳 Bancarias",
+            "🚗 Auto y Aire Libre"
+        ],
+        "link": "https://www.masonline.com.ar/418?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/6c44b212-d6b0-4e3a-89c5-6399e896a676/image/attachments/Automotor_Dkt.webp",
+        "fecha": "2026-01-01"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "15% Off en Varios Productos",
+        "descripcion": "cuenta DNI SIN \" ; Jueves_ Viernes y Sábado 15% Pagando con Cuenta DNI en Sucursal Exclusivamente Descuento Aplica exclusiones. (CD)*  ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar/promociones-bancarias",
+        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/fb26fecd-49bf-4ebe-95c4-3366b98d4284___6dbd9077ffdb0d39e7332fe393473337.png",
+        "fecha": "2026-01-01"
+    }
+]

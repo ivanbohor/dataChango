@@ -1,10 +1,10 @@
 [
     {
         "supermercado": "Jumbo",
-        "titulo": "Oferta en Varios Productos",
+        "titulo": "Oferta en Varios",
         "descripcion": "NUEVOS Kmov MIXDESABORES Encontrá tu Sabor @egistrado - Rnoes MIx Knou) MlXe (Knov MlKa Rnovv SAlBBE Knov Rnov MIXp (Rmovn MIXnsemovnMIX uE emnove) Sabores SABORI SABORES SABORES | SABORES SABORES [ SABORES BARBACOA AHUMADA cokiMo PIMENTON HoNGOS CHAMPIGNONES OREGANO, ToMATE Y AJo BOULETTE puerRD BRjuras, CARME 'ollo Jsinae RDURAS iodoysb4y vorr(io niney 3588 35 % DTO  ",
         "categoria": [
-            "🍝 Almacén"
+            "🥦 Frescos"
         ],
         "link": "https://www.jumbo.com.ar/mix%20de%20sabores?_q=mix%20de%20sabores&map=ft",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/8e31e9bc-52ff-4e74-aa5a-8be2474c0e83___dba57aa1dfdf04ff70b1368d100a06dd.jpg",
@@ -12,12 +12,10 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Pasta Dental, Tecnología",
+        "titulo": "40% Off en Hasta 40% Almacén, Bebidas, Frescos, Perfumería Y Limpieza",
         "descripcion": "BUEN fin de MES NUEva TECNOLogia Maximo CUIDADO oefiaras #ue5   #q595 ALMACÉN, BEBIDAS, FRESCOS {40% PERFUMERíA Y LIMPIEZA VÁLIDO DEL 29/12 AL 01/01 SELECCIONADOS . [locla skip BIO-ENZIMAS AT dediop Terrabusi 582025 92L cChi 28685 EXCLUSIVO ONLINE Dientes Blancos necuiitvie fulrre  Hf Iikh { SENSITIVE Mut ioiwk[ wnl Mldo Blanqueadora Colgate Conl Mbio 1009 (7304 Csne 6 degerendk Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
-            "🧹 Limpieza",
-            "🧴 Perfumería y Bebé",
-            "📺 Electro y Tecno"
+            "🍷 Bebidas"
         ],
         "link": "https://www.jumbo.com.ar/55816?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/073a162e-81ca-4543-b811-ce50c914b2f7___dded21f15fdc4a2d77b4395d114ba0d0.webp",
@@ -25,7 +23,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Oferta en Pavita, Carne Vacuna",
+        "titulo": "A $11.499 en Pavita",
         "descripcion": "BUEN fin de MES PAVITA SADIA X KG $11.499 VÁLIDO DEL 26/12 AL 01/01. PRECIO SIN IMPUESTOS: $10.406,33 Eceso Goasil orans Exceso 325o Ey CRASS Aturadac Sodio Carne d Pania MARINADA ADITIVADA CONGELADA Sadia €Subio? _ Es\" Gaanes SpehitabiapirAda Adi VaDa CongelADA eviscerada  'Connetios Pavita Pavita",
         "categoria": [
             "🥩 Carnicería"
@@ -36,11 +34,10 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Promoción Bancaria",
+        "titulo": "3 Cuotas S/Int en 25% En Galletitas, Café Y Más",
         "descripcion": "Los jueves cencopay -25%+3 cuotas EN BEBIDAS SIN ALCOHOL, CRÉDITO (2) FIDEOS, PASTAS FRESCAS, sin interés ARROZ Y iMUCHO MÁS! SIN TOPE DE DESCUENTO (2) TNA: 0,0% TEA: 0,0% CFTNA: 0,0% PROMOCIÓN VÁLIDA DEL 01/01/2026 AL 31/01/2026. VER LEGALES Y EXCLUSIONES EN CENCOPAY AR 25% en Galletitas, Café y más 25% en Galletitas, Café y más",
         "categoria": [
-            "💳 Bancarias",
-            "🍝 Almacén"
+            "🍷 Bebidas"
         ],
         "link": "https://www.jumbo.com.ar/53919?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/d8fad722-f8b9-4258-a25f-14c3a79c9434___74d3d1e1e4309bb95da3e17adeb4b5c6.jpg",
@@ -48,10 +45,10 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Decoración, Hogar",
+        "titulo": "Hasta 50% Off en Hasta 3 Csi Y 50% En Hogar",
         "descripcion": "Deco & casa 9 SWONASRÉS {50% Cnco š 50% i CrÉDITO SNERÉS VÁLIDo DEL 26/12 AL 01/01. PRODUCTOS SELECCIONADOS. Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
         "categoria": [
-            "🏠 Hogar y Bazar"
+            "🏠 Hogar"
         ],
         "link": "https://www.jumbo.com.ar/55734?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/033e4c13-861a-4d76-aa6c-55a9ad51b777___cd1ab7e6b3da98051aabb94befe0770c.webp",
@@ -59,10 +56,10 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Varios Productos",
+        "titulo": "Hasta 50% Off en Hasta 50% Y 3 Csi En Juguetería",
         "descripcion": "Regalos de Reyes 13 SUOTASRÉS 150% cCnCo pay CRÉDITO 160% '12 'SNERÉS VÁLIDO DEL 30/12 AL 08/01. PRODUCTOS SELECCIONADOS . IEhT MyyEavg {ooeri Turngou Pinypon fncooJeweg @ypao' #hing Hasta 50% y Hasta 3 CSI en Juguetería Hasta 50% y Hasta 3 CSI en Juguetería",
         "categoria": [
-            "🍝 Almacén"
+            "⚡ Varios"
         ],
         "link": "https://www.jumbo.com.ar/55362?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6fe1c69e-bfd6-479b-998a-0c8a06cb8b40___6911bae93bb356d1615849626e5d9b19.webp",
@@ -70,10 +67,21 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "70% Off en Varios Productos",
+        "titulo": "18 Cuotas S/Int en Cencopay",
+        "descripcion": "SOLOPORHOY cencopay CRÉDITO RENOVÁ TUS ELECTROS HOY OPCIÓN 1 18cuorAs SI INTERÉS OPCIÓN 2 I2SNERÉS 15% F llega EN 24HS- envíos A TUCASA VÁLIDO TODOS LOS JUEVES DE ENERO . PRODUCTOS SELECCIONADOS. Cencopay Cencopay",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.jumbo.com.ar/55881?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/307fb07a-697f-4cbb-9410-716f65961e43___24e3ec234ed23ab133d1510baba2d7f7.webp",
+        "fecha": "2026-01-01"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "70% Off en Hasta 70% | Especial Oportunidades",
         "descripcion": "ESPECIAL 8 OPORTUNIDADES {709 VÁLIDO DEL 19/12 AL 01/01. PRODUCTOS SELECCIONADOS. 1 [osRAn 1 1 8 1 | 1 GI Hasta 70% | Especial Oportunidades Hasta 70% | Especial Oportunidades",
         "categoria": [
-            "🍝 Almacén"
+            "⚡ Varios"
         ],
         "link": "https://www.jumbo.com.ar/55700?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/5a325dd4-67dc-4b37-8e46-e0047b5a90b4___2fb44290117364d26ea48614e22b1b74.webp",
@@ -81,7 +89,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2x1 en Varios Productos",
+        "titulo": "2x1 en Jumbo Prime| Hasta 2X1 En Infaltables De Almacén",
         "descripcion": "Del 31 de diciembre al 6 de enero DESCUENTOS EXCLUSIVOS PARASOCIOS prime Es momento de ser HASTA 2x1 (prircles Ñhne davoinAl cRUZEIRO 204 LA MERCED Pr|me oliovita DuBiznos DcAw EN INFALTABLES A \"Entiroe CRAdORSI DE ALMACÉN LlS Tis Jumbo Prime| Hasta 2x1 en Infaltables de Almacén  Jumbo Prime| Hasta 2x1 en Infaltables de Almacén ",
         "categoria": [
             "🍝 Almacén"
@@ -95,7 +103,7 @@
         "titulo": "25% Off en Cuidado Personal",
         "descripcion": "Dove original getane AlioctJen beero ovoRar Poa oocizt 800 99 @aya Dove no reseca la piel como los jabones comunes. 1l25% karité oaon en on @pe connecae Norgroconorcunca Dove cuidado indulgente cobena oaecadte on 'Cocoy koun Jach Dove | 1 g š 9 8  ",
         "categoria": [
-            "🧴 Perfumería y Bebé"
+            "🧹 Limpieza"
         ],
         "link": "https://www.jumbo.com.ar/55422?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/292b6a6b-ea7e-49c9-a254-354c91b3f15d___40cb2e8c374f4467be62f68286c66578.jpg",
@@ -103,7 +111,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Art. Limpieza",
+        "titulo": "40% Off en Perfumería Y Limpieza",
         "descripcion": "{40% EXCLUSIVO ONLINE NUEVO! PACK ECONÓMICO Cjonoeol  Ziploc Gacun Sellado Inteligente Don abrer Facil scJor = MÁLIDQ DEL = 29/12 AL 01/01. SELECCIONADOS. 1 | Perfumería y Limpieza ",
         "categoria": [
             "🧹 Limpieza"
@@ -114,10 +122,10 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Oferta en Quesos",
+        "titulo": "100% Off en Frescos",
         "descripcion": "1309 EXCLUSIVO ONLINE 2 Wisih8e( fad gtoje / 100% QUESO EXCESO Sodio EN àsieo Qa Paulina sehi 105 desors Quesa 'Rallado VÁLIDO DEL '29/12 AL 01/0P SELECCIONADOS. igianito  Frescos ",
         "categoria": [
-            "🧀 Lácteos y Frescos"
+            "🥛 Lácteos"
         ],
         "link": "https://www.jumbo.com.ar/55812?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/a502fb61-00fa-435f-ac54-62a60ca9f934___bbca6efcfebaab6394f777340d58e667.webp",
@@ -125,7 +133,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "80% Off en Almacén ...",
+        "titulo": "80% Off en Almacén",
         "descripcion": "4 {;80% EXCLUSIVO ONLINE 1 ; Gwt DoÑA 8 1 PERUTA 8 VÁLIDO DEL 29/12 AL 01/01) SELECCIO) # IDOS. Almacén ",
         "categoria": [
             "🍝 Almacén"
@@ -136,10 +144,87 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "30% Off en Varios Productos",
+        "titulo": "18 Cuotas S/Int en Cencopay | 18 Csi Ó 15% En Un Pago Y 12 Aires Más",
+        "descripcion": "cencopay CRÉDITO oPCIÓN]) 18cuoTAS SIN INTERÉS OPCIÓN 2 159 12 SUOTAERÉS CLIMATIZACIÓN Samsung VÁLIDO TODOS LOS JUEVES DE ENERO. PRODUCTOS SELECCIONADOS. Cencopay | 18 CSI ó 15% en un pago y 12 CSI en Aires y más Cencopay | 18 CSI ó 15% en un pago y 12 CSI en Aires y más",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.jumbo.com.ar/55884?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/fd90fd67-f138-4169-8e50-526a72855525___d22652cc2e1fbf9d14eab7ec0410a389.webp",
+        "fecha": "2026-01-01"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "18 Cuotas S/Int en Cencopay | 18 Csi Ó 15% En Un Pago Y 12 Tv Celulares",
+        "descripcion": "cencopay CRÉDITO oPCIÓN]) 18cuoTAS SIN INTERÉS OPCIÓN 2 159 12 SUOTAERÉS TELEVISORES , CELULARES Y MÁS VÁLIDO TODOS LOS JUEVES DE ENERO. PRODUCTOS SELECCIONADOS. Cencopay | 18 CSI ó 15% en un pago y 12 CSI en Tv y Celulares Cencopay | 18 CSI ó 15% en un pago y 12 CSI en Tv y Celulares",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.jumbo.com.ar/55885?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/0b89afdc-c590-4ee1-b9eb-c9e0bccab1f2___7aec51002d5233631e847b942cdca689.webp",
+        "fecha": "2026-01-01"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "18 Cuotas S/Int en Cencopay | 18 Csi Ó 15% En Electrodomésticos",
+        "descripcion": "cencopay CRÉDITO VÁLIDO TODOS LOS JUEVES DE ENERO. PRODUCTOS SELECCIONADOS. OPCIÓN 1 18cuoTAs SIN INTERÉS OPCIÓN 2 159 12 SUOTASRÉS INFALTABLES DREAN Cencopay | 18 CSI ó 15% en Electrodomésticos Cencopay | 18 CSI ó 15% en Electrodomésticos",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.jumbo.com.ar/55881?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/ddf1596e-df41-4a8c-bded-0eb1895ce67d___a025ceb45da674f272c391f6f7091342.webp",
+        "fecha": "2026-01-01"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "18 Cuotas S/Int en Cencopay | 18 Csi Ó 15% En Un Pago Pequeños Electros",
+        "descripcion": "cencopay CRÉDITO oPCIÓN]) 18cuoTAS SIN INTERÉS OPCIÓN 2 159 12 SUOTAERÉS PEQUEÑOS ELECTROS cdcai 1 60L Kitchanaid VÁLIDO TODOS LOS JUEVES DE ENERO. PRODUCTOS SELECCIONADOS. Cencopay | 18 CSI ó 15% en un pago en Pequeños Electros Cencopay | 18 CSI ó 15% en un pago en Pequeños Electros",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.jumbo.com.ar/55887?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/e4521649-961f-48e8-9fd4-21e8a4478af2___56fe0157659473e91c06e92e4a882859.webp",
+        "fecha": "2026-01-01"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "18 Cuotas S/Int en Cencopay | 18 Csi Ó 15% En Un Pago Heladeras Y Más",
+        "descripcion": "cencopay CRÉDITO @oeae oPCIÓN]) 18cuoTAS SIN INTERÉS OPCIÓN 2 15% 12 SUOTAERÉS ELECTROS VÁLIDO TODOS LOS JUEVES DE ENERO. PRODUCTOS SELECCIONADOS. Cencopay | 18 CSI ó 15% en un pago en Heladeras y más Cencopay | 18 CSI ó 15% en un pago en Heladeras y más",
+        "categoria": [
+            "📺 Electro"
+        ],
+        "link": "https://www.jumbo.com.ar/55882?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6709d4bf-b1e2-4b0d-9286-8e32b2a50d4d___8c53944340655835e01e2c947bf121e7.webp",
+        "fecha": "2026-01-01"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Oferta en La Hacienda",
+        "descripcion": "LANZAMIENTO qgl QUAL 94 dACIENDA 3 SPASRÉS cenco pa Credito CUOTAS 6 šV NFgRÉS VÁLIDO DEL 08/11/2025 AL 31/03/2026. La Hacienda La Hacienda",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.jumbo.com.ar/47442?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/7f9f0347-9373-4baa-97a9-b561e1b198aa___3aa765d3ef6e2222841839ac3b5561fa.webp",
+        "fecha": "2026-01-01"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Oferta en Hydrum",
+        "descripcion": "Asa para transportar Boquilla con tapa LANZAMIENTO ~HYDRUM 3CyoTAs SIN INTÉRÉS cenco CUOTAS 0 6 šwCNT:RÉS Credito Aislamiento al vacío de doble pared VÁLIDO DEL 24/11/2025 AL 31/03/2026 . Hydrum Hydrum",
+        "categoria": [
+            "⚡ Varios"
+        ],
+        "link": "https://www.jumbo.com.ar/54755?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6fcb0b10-2883-4018-a9b8-26f657354bcb___5ca8e8fcc8d04604865bb812a5fd07b8.webp",
+        "fecha": "2026-01-01"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "30% Off en Varios",
         "descripcion": "30% DE DESCUENTO 52o3 cMevaug Gevcas ExTRA BRUT Goa 1 4 spaRKLING WINE BEBER CON PROHIBIDA SU VENTA MODERACIÓN. MENORES DE 18 ANOS.  ",
         "categoria": [
-            "🍝 Almacén"
+            "⚡ Varios"
         ],
         "link": "https://www.jumbo.com.ar/55674?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/b9e7b66c-ce3f-4361-92bd-9cfe1acda790___2f59473c7c7cbe54c2caa66e80949c6f.png",
