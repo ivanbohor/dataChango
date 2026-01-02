@@ -6,15 +6,6 @@ import streamlit.components.v1 as components
 import math
 import base64
 
-# --- OCULTAR LA BARRA DE STREAMLIT ---
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-
 # --- CONFIGURACIÓN DE PÁGINA ---
 st.set_page_config(
     page_title="DataChango 🛒",
@@ -23,23 +14,56 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# --- INYECCIÓN DE GOOGLE TAG MANAGER (GTM) ---
-def inyectar_gtm():
-    GTM_ID = "GTM-PFPW7P44" # Tu ID Real
+# --- INYECCIÓN DE GTM + ESTILOS FORZADOS (JAVA SCRIPT NUCLEAR) ---
+def inyectar_gtm_y_estilos():
+    # Tu ID real de GTM
+    GTM_ID = "GTM-PFPW7P44"
     
-    gtm_code = f"""
-    <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
-    new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    }})(window,document,'script','dataLayer','{GTM_ID}');</script>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={GTM_ID}"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    """
-    components.html(gtm_code, height=0, width=0)
+    # Este script hace 2 cosas:
+    # 1. Inyecta Google Tag Manager en la ventana principal (Padre)
+    # 2. Inyecta CSS en la ventana principal para ocultar la barra negra y el footer
+    js_code = f"""
+    <script>
+        (function() {{
+            var parentHead = window.parent.document.head;
+            var parentBody = window.parent.document.body;
 
-inyectar_gtm()
-st.markdown(hide_st_style, unsafe_allow_html=True)
+            // --- A. INYECCIÓN DE ESTILOS (OCULTAR BARRA) ---
+            if (!window.parent.document.getElementById('custom-styles')) {{
+                var style = window.parent.document.createElement('style');
+                style.id = 'custom-styles';
+                style.innerHTML = `
+                    header[data-testid="stHeader"] {{ display: none !important; }}
+                    footer {{ display: none !important; }}
+                    #MainMenu {{ display: none !important; }}
+                    .stApp {{ margin-top: 0px !important; }} 
+                `;
+                parentHead.appendChild(style);
+                console.log("Estilos inyectados: Barra oculta.");
+            }}
+
+            // --- B. INYECCIÓN DE GOOGLE TAG MANAGER ---
+            if (!window.parent.document.getElementById('gtm-injected')) {{
+                // 1. Script en HEAD
+                var script = window.parent.document.createElement('script');
+                script.id = 'gtm-injected';
+                script.innerHTML = "(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','{GTM_ID}');";
+                parentHead.appendChild(script);
+                
+                // 2. Noscript en BODY
+                var noscript = window.parent.document.createElement('noscript');
+                noscript.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id={GTM_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe>';
+                parentBody.appendChild(noscript);
+                
+                console.log("GTM inyectado correctamente.");
+            }}
+        }})();
+    </script>
+    """
+    components.html(js_code, height=0, width=0)
+
+# Ejecutamos la inyección al inicio
+inyectar_gtm_y_estilos()
 
 # --- 1. GESTIÓN DE ESTADO ---
 if 'categoria_activa' not in st.session_state:
@@ -78,9 +102,15 @@ def sanitizar_oferta(oferta):
     return oferta
 
 def cargar_datos():
-    archivos = {"Carrefour": "ofertas_carrefour.json", "Jumbo": "ofertas_jumbo.json", "Coto": "ofertas_coto.json", "MasOnline": "ofertas_masonline.json"}
+    archivos = {
+        "Carrefour": "ofertas_carrefour.json",
+        "Jumbo": "ofertas_jumbo.json",
+        "Coto": "ofertas_coto.json",
+        "MasOnline": "ofertas_masonline.json"
+    }
     todas_ofertas = []
     conteo_ofertas = {k: 0 for k in archivos.keys()} 
+
     for nombre, archivo in archivos.items():
         if os.path.exists(archivo):
             try:
@@ -92,6 +122,7 @@ def cargar_datos():
                     todas_ofertas.extend(datos)
                     conteo_ofertas[nombre] = len(datos)
             except: pass
+            
     return todas_ofertas, conteo_ofertas
 
 def get_img_as_base64(file):
@@ -100,7 +131,8 @@ def get_img_as_base64(file):
         return base64.b64encode(data).decode()
     except: return ""
 
-# --- 3. ESTILOS GLOBALES (CSS) ---
+# --- 3. ESTILOS GLOBALES (CSS INTERNO) ---
+# Mantenemos esto para los elementos DENTRO de la app (botones, tarjetas)
 st.markdown("""
     <style>
         .stApp { background-color: #0e3450; }
@@ -143,7 +175,7 @@ if os.path.exists(logo_file):
             <span style="font-size: 0.95rem; text-transform: none; color: #e0e0e0; letter-spacing: 0.5px;">DataChango hace las búsquedas de ofertas por vos, ahorrandote tiempo y dinero!</span>
         </h4>
         <div style="text-align: center; margin-top: 10px; font-weight: bold; color: white; font-size: 0.9rem;">
-            ¿Ideas, sugerencias? <a href="mailto:datachangoweb@gmail.com" class="contact-link-text">Hablemos </a>🧉
+            ¿Ideas, sugerencias? <a href="mailto:datachangoweb@gmail.com" class="contact-link-text">Hablemos</a>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -164,7 +196,7 @@ def on_change_hiper(nombre):
 
 # --- MENU DESPLEGABLE ---
 with st.expander("🎯 FILTROS Y CATEGORÍAS", expanded=False):
-    st.markdown('<p class="filter-title">Filtrar por Supermercado</p>', unsafe_allow_html=True)
+    st.markdown('<p class="filter-title">Filtros por Supermercado</p>', unsafe_allow_html=True)
     c_todo, c_h1, c_h2, c_h3, c_h4 = st.columns(5)
     with c_todo: st.checkbox("✅ Todo", key='filtro_ver_todo', on_change=on_change_ver_todo)
     col_hipers = [c_h1, c_h2, c_h3, c_h4]
@@ -172,7 +204,7 @@ with st.expander("🎯 FILTROS Y CATEGORÍAS", expanded=False):
         with col_hipers[i]: st.checkbox(f"{emojis[h]} {h} ({conteos[h]})", key=f"chk_{h}", on_change=on_change_hiper, args=(h,))
 
     st.markdown("---")
-    st.markdown('<p class="filter-title">⚡Por Categoría</p>', unsafe_allow_html=True)
+    st.markdown('<p class="filter-title">⚡ Filtrar por Rubro</p>', unsafe_allow_html=True)
 
     categorias = [
         ("🥩 Carnes", "carne"), ("🧀 Lácteos y Frescos", "lacteos"), ("🍷 Bebidas", "bebida"),
@@ -221,14 +253,14 @@ else:
     nombres_mostrar = "Todos los Supermercados" if st.session_state.filtro_ver_todo else ", ".join(hipers_activos)
     
     # === AQUI ESTÁ EL CAFECITO DISCRETO ===
-    url_cafecito = "https://cafecito.app/datachango" # <--- ¡Pon tu usuario aquí!
+    url_cafecito = "https://cafecito.app/datachango" 
     st.markdown(f"""
     <div style="text-align: center; margin-bottom: 20px;">
         <div style="color: #ccc; font-size: 1rem; margin-bottom: 8px;">
             Mostrando <span style="color: white; font-weight: bold;">{len(ofertas_filtradas)}</span> ofertas de: {nombres_mostrar}
         </div>
         <div style="font-size: 0.9rem; color: #eee;">
-            ¿Te sirvió DataChango? <a href="{url_cafecito}" target="_blank" style="color: #cfa539; text-decoration: underline; font-weight: bold; margin-left: 5px;">Invitame un Cafecito ☕ </a>
+            ¿Te sirvió DataChango? <a href="{url_cafecito}" target="_blank" style="color: #cfa539; text-decoration: underline; font-weight: bold; margin-left: 5px;">Invitame un Cafecito ☕</a>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -271,7 +303,7 @@ else:
         cats_visuales = [c for c in oferta.get('categoria', []) if "Bancarias" not in c][:2]
         cats_html = "".join([f'<span class="tag">{c}</span>' for c in cats_visuales])
         
-        texto_copiar = f"Mira esta oferta que encontró DataChango: {link_oferta}".replace("'", "")
+        texto_copiar = f"Mira esta oferta: {link_oferta}".replace("'", "")
         btn_id = f"btn-copy-{i}"
 
         cards_html += f"""
