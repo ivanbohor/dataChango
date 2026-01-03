@@ -1,14 +1,25 @@
 [
     {
         "supermercado": "Carrefour",
-        "titulo": "15% Off en Varios Productos",
-        "descripcion": "TE LO PIERDAS:iNO T553 iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO iNO TELO PIERDAS! iNO TELO PIERDAS! NO TE LO PIERDAS! iNO TE LO PIERDAS! 15%OFF UTILIZANDO EL CUPÓN: DESCUENTO COMPRAR EXCLUSIVO ONLINE REGALO SIN TOPE HASTA EL DOMINGO 04/01 en tu compra Cupón válido desde el Viernes 02/01a las 19hs hasta el Domingo 04/01 las 23.59hs del super No acumulable con otras promociones. Cupón válldo únlcamente para Allmentos Bebldas; Perfumería LImpleza iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIEF",
+        "titulo": "Precio Especial en Varios Productos",
+        "descripcion": "VÁLIDO SÓLO POR EL 02/01 EXCLUSIVO ONLINE TE REGALAMOS CUPÓN: ENRed] INMEDIaTA DESC-5K-ENE $5O0o DESCUENTO RECIBILO EN MÁX Si estás en CABA, TANDIL, CÓRDOBA 0 MENDOZA IH 24 recibí tu pedido en menos de 1 HORA mínimo de compra: $25.000 Válido sólo por el 02/01 de 2025. Exclusivo para carrefour comar para modalidad de entrega inmediata. No acumula con otras promociones. Aplica en compras mayores 525.000. No aplica compras programadas_ Ver legales en carrefour com.arflegales",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/4a0e9cc3-3658-4e22-b1c5-1f248708e4c8___70a4eef6a564a5fdc576d2cf06e70262.webp",
-        "fecha": "2026-01-03"
+        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/799335e9-eef9-4ca2-a538-fcde60deb7f8___3a86ea0eacd24aef4c5c9ec6027464e8.png",
+        "fecha": "2026-01-02"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Promoción Bancaria",
+        "descripcion": "Los días DMM VGD Pagando Con DESCUENTO EN EL ACTO SIN TOPE 158 Tarjeta Mi Carrefour Crédito Válldo dfas vlernes, sabado; domlngo lunes mlercoles de Enero No Incluye electrodomestlcos; electrónlcatelefonla celular; carnlcerla nlleches Infantlles  maternlzadas. No acumulable con otras promoclones Exclusivo online Ver legales carrefour com arldescuentos-bancarlos APROVECHAR Cwrofour",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.carrefour.com.ar/ALMACEN",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ccabf24e-f8f1-4998-9680-fad22be1f0fa___ad290acf36f442d4e2d18b692caff650.png",
+        "fecha": "2026-01-02"
     },
     {
         "supermercado": "Carrefour",
@@ -19,31 +30,19 @@
         ],
         "link": "https://www.carrefour.com.ar/23609?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/8c1fda69-a935-4f89-ba80-e753a071d35f___d89d51e6f6c97143c89d8c8737022900.webp",
-        "fecha": "2026-01-03"
+        "fecha": "2026-01-02"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "3 Cuotas S/Int en Juguetería",
-        "descripcion": "3 CUOTAS SIN INTERÉS Hasta el 05/01 DESCUENTO EN LA 2DA UNIDAD REYES MAGOS Carrefour iNi los Reyes Magos se pierden estas ofertas! 80 En todos los: Juguetes y Juegos de Verano VER MÁS 1 Sólo consumo familiar; válido por usuarioldocumento.",
-        "categoria": [
-            "💳 Bancarias",
-            "🧸 Juguetería"
-        ],
-        "link": "https://www.carrefour.com.ar/regalos",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/b8b5567e-ccd3-4b9f-ad07-92c032df9ff1___7eff3e685fecd3a43d31898a8404b492.webp",
-        "fecha": "2026-01-03"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "18 Cuotas S/Int en Smart TV",
-        "descripcion": "ondroick PRECIO NORMAL 5798-000 Hasta el 05/01 18 OFERTA $ 699.000 CUOTAS 18 CUOTAS SIN INTERES DE SIN INTERES 838.833 Smart Tv 50 Hyundai Android 4k Hyled VER MÁS",
+        "titulo": "18 Cuotas S/Int en Electro y Tecno",
+        "descripcion": "PRECIO NORMAL 84-299-000 2r Hasta el 05/01 CONSOLA PLAY STATION 5 EDICIÓN DIGITAL SLIM GT7 ASTRO OFERTA 81.199.000 18 CUOTAS SIN INTERÉS DE 866.611 Soi VER MÁS Solo consumo familiar; valido por usuarioldocumento",
         "categoria": [
             "💳 Bancarias",
             "📺 Electro y Tecno"
         ],
-        "link": "https://www.carrefour.com.ar/smart-tv-android-50-hyundai-4k-hyled-hyled-50uhd7a/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/58270852-4e3e-43f8-ac43-3c35195f3786___dd4b48d1a05c5d44ea5b89ff5ad57318.webp",
-        "fecha": "2026-01-03"
+        "link": "https://www.carrefour.com.ar/consola-play-station-5-hw-2015-cfi-2015b01x-digital-gt7-astro-argentina/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/87f16429-9e7c-48d1-a55c-5702f6eec5e0___2d5b87499c94ba47b2fbbc60232c0417.webp",
+        "fecha": "2026-01-02"
     },
     {
         "supermercado": "Carrefour",
@@ -55,7 +54,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23611?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/fd83423e-8350-4656-b247-2b2ddc104204___fd24d1ff483be6dc76ba921bad3dd1bb.webp",
-        "fecha": "2026-01-03"
+        "fecha": "2026-01-02"
     },
     {
         "supermercado": "Carrefour",
@@ -67,7 +66,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23612?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/0652546b-e4bb-4eed-b78e-92ec0b2a262e___7c87badd012a6b93525fa8da09597a91.webp",
-        "fecha": "2026-01-03"
+        "fecha": "2026-01-02"
     },
     {
         "supermercado": "Carrefour",
@@ -78,7 +77,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23605?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/243bbf10-37fb-402f-88a8-9a9b8995bded___a603485dd428a0d3986c79f46683263b.webp",
-        "fecha": "2026-01-03"
+        "fecha": "2026-01-02"
     },
     {
         "supermercado": "Carrefour",
@@ -89,7 +88,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23609?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/448bf98f-2bec-43d8-be7f-b786f5d9d4d0___d48947bdbcd909ee03e0031b82cca328.webp",
-        "fecha": "2026-01-03"
+        "fecha": "2026-01-02"
     },
     {
         "supermercado": "Carrefour",
@@ -101,7 +100,7 @@
         ],
         "link": "https://www.carrefour.com.ar/regalos",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ba32fc9a-eb54-4a9b-97b5-f5b4335de76a___b15a8638508c67550563e29848480dea.webp",
-        "fecha": "2026-01-03"
+        "fecha": "2026-01-02"
     },
     {
         "supermercado": "Carrefour",
@@ -112,7 +111,7 @@
         ],
         "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3dea4ebb-2370-4e0a-af0f-84a8a79afcc0___f105bc12744568c2435c26bfd5aa779d.webp",
-        "fecha": "2026-01-03"
+        "fecha": "2026-01-02"
     },
     {
         "supermercado": "Carrefour",
@@ -124,17 +123,17 @@
         ],
         "link": "https://www.carrefour.com.ar/23607?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9402e2e3-cc87-4be4-b49a-d4d2288486d4___14da179d5b4f7c2f2a96a7ca89c874fd.webp",
-        "fecha": "2026-01-03"
+        "fecha": "2026-01-02"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Precio Especial en Pollo",
-        "descripcion": "PRECIO ORIGINAL: 444-600 *K6 Hasta el 05/01 Cuarto Trasero de Pollo PRECIO $ 2.29OxKg OFERTA VER MÁS",
+        "titulo": "50% Off en Alimento Mascotas",
+        "descripcion": "hisk En: Hasta el 05/01 iaake 501 DESCUENTO EN LA 204 UNIDAD Tiernit Cnn AouiI@_ Alimento Seco para Mascotas VER MÁS 21se9bo",
         "categoria": [
-            "🥩 Carnicería"
+            "🐶 Mascotas"
         ],
-        "link": "https://www.carrefour.com.ar/cuarto-trasero-congelado-x-kg-704559/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/79f408bc-1da7-43f6-8782-7d2788b4e652___eb428ef80b54a5e73bb4ebc97a0e7fcf.webp",
-        "fecha": "2026-01-03"
+        "link": "https://www.carrefour.com.ar/23614?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/4cd63fc6-0a84-41a5-a3be-5e8c306dbb18___b0884c1ae36fa719cfd66325891408e9.webp",
+        "fecha": "2026-01-02"
     }
 ]
