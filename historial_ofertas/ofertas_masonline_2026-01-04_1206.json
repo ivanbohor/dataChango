@@ -35,7 +35,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "Oferta en Aires Acondicionados",
+        "titulo": "Oferta en Smart TV",
         "descripcion": "Del Olal 06 de enero ChangoMâs MâsOnline com.ar Todos seleccionados I2quotes SIN INTERÉS VISA CABAL de todos los Bancos Smart tv Aires acond. Heladeras inverter OFERTAS FLASH Freezer Lavarropas Regaláen Reyes _ Regaláen Reyes Regaláen Reyes _ Regaláen Reyes PARA MÁS INFORMACIÓNO LIMITACIONES APLCABLES, CONSULTE ENMASONLINE COM AR/PROMOCIONES-BANCARIAS. DORINKA SRL 30-67813830-C BOLVIA 5831 CABA Regaláen Reyes _ Regaláen Reyes _ QUIERO VER MÁs ",
         "categoria": [
             "💳 Bancarias",
@@ -103,6 +103,17 @@
     },
     {
         "supermercado": "MasOnline",
+        "titulo": "Oferta en Aires Acondicionados",
+        "descripcion": "PHILCO) Geahea [co]TTs Aire Acondicionado Split Inverter Philco 8750 Watt Frio Calor Phin90hc3awfpi ",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.masonline.com.ar/aire-acondicionado-philco-inverter-frio-calor-8750w/p",
+        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/354136-230-230?v=638827482345770000&width=230&height=230&aspect=true",
+        "fecha": "2026-01-04"
+    },
+    {
+        "supermercado": "MasOnline",
         "titulo": "Oferta en Varios Productos",
         "descripcion": "ChangoMâs MâsOnline OFERTAS FLASH Lácteos y congelados BUMTERLLK 1 Hasta 359 Uni cuonto euu Novedad image ",
         "categoria": [
@@ -125,7 +136,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "40% Off en Perfumería",
+        "titulo": "40% Off en Art. Limpieza",
         "descripcion": "ChangoMâs MâsOnline OFERTAS FLASH Perfumería y limpieza Hasta 40% Desariento Novedad image ",
         "categoria": [
             "🧹 Limpieza",

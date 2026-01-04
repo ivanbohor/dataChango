@@ -14,13 +14,20 @@ NOMBRE_SUPER = "Jumbo"
 URL_SUPER = "https://www.jumbo.com.ar"
 ARCHIVO_SALIDA = "ofertas_jumbo.json"
 
-print(f">>> 🐘 Iniciando Scraper {NOMBRE_SUPER} (V16.1: Fix 100% Quesos)...")
+print(f">>> 🐘 Iniciando Scraper {NOMBRE_SUPER} (V18: Fix Electro + Anti-Duplicados)...")
 
 if os.path.exists(ARCHIVO_SALIDA): os.remove(ARCHIVO_SALIDA)
 
 reader = easyocr.Reader(['es'], gpu=False) 
 
-# --- 1. DICCIONARIO MAESTRO (V41) ---
+# --- FUNCIONES DE NORMALIZACIÓN (CLAVE PARA V18) ---
+def normalizar_texto(texto):
+    if not texto: return ""
+    t = texto.lower()
+    return ''.join(c for c in unicodedata.normalize('NFD', t) if unicodedata.category(c) != 'Mn')
+
+# --- 1. DICCIONARIO MAESTRO (V43 - SIN ACENTOS) ---
+# Claves en minúscula y sin tildes para coincidir con normalizar_texto()
 DB_MAESTRA = {
     # 🥩 CARNICERÍA
     "carne": ("Carne Vacuna", "🥩 Carnicería"),
@@ -151,11 +158,16 @@ DB_MAESTRA = {
     "pantene": ("Cuidado Capilar", "🧴 Perfumería y Bebé"),
     "nivea": ("Cremas", "🧴 Perfumería y Bebé"),
 
-    # 📺 ELECTRO Y TECNO
+    # 📺 ELECTRO Y TECNO (KEYS NORMALIZADAS)
     "electro": ("Electro", "📺 Electro y Tecno"),
     "televisor": ("Smart TV", "📺 Electro y Tecno"),
+    "tv": ("Smart TV", "📺 Electro y Tecno"),
     "smart tv": ("Smart TV", "📺 Electro y Tecno"),
-    "aire acondicionado": ("Aires Acondicionados", "📺 Electro y Tecno"),
+    "aire": ("Aires Acondicionados", "📺 Electro y Tecno"),
+    "climatizacion": ("Climatización", "📺 Electro y Tecno"),
+    "linea blanca": ("Línea Blanca", "📺 Electro y Tecno"), # Key sin tilde
+    "audio": ("Audio", "📺 Electro y Tecno"),
+    "parlante": ("Audio", "📺 Electro y Tecno"),
     "ventilador": ("Ventiladores", "📺 Electro y Tecno"),
     "heladera": ("Heladeras", "📺 Electro y Tecno"),
     "lavarropas": ("Lavarropas", "📺 Electro y Tecno"),
@@ -218,19 +230,28 @@ DB_MAESTRA = {
     "piedras": ("Piedras Sanitarias", "🐶 Mascotas"),
 }
 
-# --- 2. LÓGICA DE DETECCIÓN MULTI-ETIQUETA ---
-def detectar_categorias_inteligente(texto_completo, link=""):
-    t_limpio = texto_completo.lower().replace("jumbo", "")
+# --- 2. LÓGICA DE DETECCIÓN MULTI-ETIQUETA (REFORZADA CON TITULO) ---
+def detectar_categorias_inteligente(texto_completo, titulo_generado=""):
+    # Normalizamos todo para comparar sin acentos
+    t_limpio = normalizar_texto(texto_completo + " " + titulo_generado).replace("jumbo", "")
     etiquetas = []
     
     if any(k in t_limpio for k in ["banco", "tarjeta", "cencosud", "cencopay", "modo", "ahorro", "financiacion", "cuotas"]):
         etiquetas.append("💳 Bancarias")
 
+    # Búsqueda en Diccionario
     for keyword, (producto, categoria_final) in DB_MAESTRA.items():
         if re.search(r'\b' + re.escape(keyword) + r'\b', t_limpio):
             if categoria_final not in etiquetas:
                 etiquetas.append(categoria_final)
 
+    # REGLAS DURAS PARA ELECTRO (Si el título lo dice, ES electro)
+    palabras_electro = ["tv", "smart", "aire", "heladera", "lavarropas", "celular", "audio", "tecnologia", "linea blanca", "electro"]
+    if any(p in t_limpio for p in palabras_electro):
+        if "📺 Electro y Tecno" not in etiquetas:
+            etiquetas.append("📺 Electro y Tecno")
+
+    # Fallback y Limpieza
     if not etiquetas:
         if "fresco" in t_limpio: etiquetas.append("🧀 Lácteos y Frescos")
         elif "limpie" in t_limpio: etiquetas.append("🧹 Limpieza")
@@ -238,14 +259,17 @@ def detectar_categorias_inteligente(texto_completo, link=""):
         elif "casa" in t_limpio: etiquetas.append("🏠 Hogar y Bazar")
         else:
             etiquetas.append("🍝 Almacén") 
+    
+    # Si dice Electro, borra Almacén (Prioridad Electro)
+    if "📺 Electro y Tecno" in etiquetas and "🍝 Almacén" in etiquetas:
+        etiquetas.remove("🍝 Almacén")
             
     return etiquetas
 
 def es_oferta_valida(texto):
-    t = texto.lower()
-    if any(x in t for x in ["horarios", "sucursales", "copyright", "ver más", "retira", "beneficio", "descubri", "conoce"]): return False
+    t = normalizar_texto(texto)
+    if any(x in t for x in ["horarios", "sucursales", "copyright", "ver mas", "retira", "beneficio", "descubri", "conoce"]): return False
 
-    # Filtros obligatorios para evitar publicidad pura
     tiene_precio = bool(re.search(r'\$\s?\d+', t))
     tiene_porcentaje = bool(re.search(r'\d+\s?%', t))
     tiene_cuotas = bool(re.search(r'\d+\s*(?:cuotas|csi|pagos)', t))
@@ -261,18 +285,19 @@ def obtener_link_especifico(elemento_img):
     except: pass
     return URL_SUPER
 
-# --- 3. LIMPIEZA Y FORMATEO (FIX ANTI-100%) ---
+# --- 3. LIMPIEZA Y FORMATEO ---
 def limpiar_texto_ocr(texto_sucio, texto_alt=""):
     texto_combinado = texto_sucio
-    if texto_alt and texto_alt.lower() not in texto_sucio.lower():
+    if texto_alt and normalizar_texto(texto_alt) not in normalizar_texto(texto_sucio):
         texto_combinado += " " + texto_alt
 
     t = texto_combinado.replace("\n", " ").strip()
     t = t.replace("Ax2", "4x2").replace("ax2", "4x2").replace("Ax1", "2x1")
     t = t.replace("18CUOTAS", "18 Cuotas").replace("12CUOTAS", "12 Cuotas")
-    t_lower = t.lower()
     
-    if any(k in t_lower for k in ["banco", "tarjeta", "cencosud", "cencopay", "modo"]):
+    t_norm = normalizar_texto(t) # Trabajamos con texto normalizado para comparar
+    
+    if any(k in t_norm for k in ["banco", "tarjeta", "cencosud", "cencopay", "modo"]):
         return "Promoción Bancaria"
 
     prefijo = "Oferta"
@@ -284,35 +309,33 @@ def limpiar_texto_ocr(texto_sucio, texto_alt=""):
     elif match_cuotas: prefijo = f"{match_cuotas.group(1)} Cuotas S/Int"
     elif match_desc: 
         num = int(match_desc.group(1))
-        # CORRECCIÓN V16.1: Si es 100%, solo es válido si dice "2do" (2x1)
         if num == 100:
-            if "2do" in t_lower or "segunda" in t_lower: prefijo = "2x1"
-            else: prefijo = "Oferta" # 100% suelto suele ser "100% Calidad", lo ignoramos como descuento.
+            if "2do" in t_norm or "segunda" in t_norm: prefijo = "2x1"
+            else: prefijo = "Oferta"
         elif num > 100:
             if str(num).startswith("2"): prefijo = f"2do al {str(num)[1:]}%"
             else: prefijo = f"{num % 100}% Off"
         else:
-            if "2do" in t_lower or "segunda" in t_lower: prefijo = f"2do al {num}%"
+            if "2do" in t_norm or "segunda" in t_norm: prefijo = f"2do al {num}%"
             else: prefijo = f"{num}% Off"
     
-    if "hasta" in t_lower and "50" in t: prefijo = "Hasta 50% Off"
+    if "hasta" in t_norm and "50" in t: prefijo = "Hasta 50% Off"
     
     prods_encontrados = []
     for keyword, (producto, _) in DB_MAESTRA.items():
-        if re.search(r'\b' + re.escape(keyword) + r'\b', t_lower):
+        if re.search(r'\b' + re.escape(keyword) + r'\b', t_norm):
             prods_encontrados.append(producto)
     
     if prods_encontrados: 
         prod_str = ", ".join(list(set(prods_encontrados))[:2])
         return f"{prefijo} en {prod_str}"
     
-    # Fallback mejorado: Si el título es muy largo, lo cortamos
-    if not prods_encontrados and texto_alt and len(texto_alt) > 3 and "oferta" not in texto_alt.lower():
-        titulo_alt = texto_alt.title()
-        # Evitar redundancia fea "Hasta 50% en Hasta 50%..."
-        if "hasta" in titulo_alt.lower() or "%" in titulo_alt:
-            return f"{prefijo} en Varios Productos"
-        return f"{prefijo} en {titulo_alt[:40]}..." # Cortamos a 40 chars
+    # FALLBACK DE SEGURIDAD (Para no perder ofertas raras)
+    # Si no encontró producto en el diccionario, usa el texto original del banner
+    if not prods_encontrados and texto_alt:
+        titulo_alt = texto_alt.title()[:50] # Cortamos para que no sea eterno
+        if len(titulo_alt) > 5 and "oferta" not in normalizar_texto(titulo_alt):
+             return f"{prefijo} en {titulo_alt}"
 
     return f"{prefijo} en Varios Productos"
 
@@ -331,8 +354,11 @@ def procesar_oferta(elemento_img, src, texto_alt, titulos_procesados, ofertas_en
         
         if not es_oferta_valida(texto_analisis): return
         
-        cats = detectar_categorias_inteligente(texto_analisis, link_real)
+        # 1. Generamos el título
         titulo_bonito = limpiar_texto_ocr(texto_ocr, texto_alt)
+        
+        # 2. Categorizamos usando el título
+        cats = detectar_categorias_inteligente(texto_analisis, titulo_bonito)
         
         if titulo_bonito not in titulos_procesados:
             oferta = {

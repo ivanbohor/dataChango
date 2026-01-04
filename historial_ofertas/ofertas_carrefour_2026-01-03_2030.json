@@ -8,7 +8,7 @@
         ],
         "link": "https://www.carrefour.com.ar/almacen",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/4a0e9cc3-3658-4e22-b1c5-1f248708e4c8___70a4eef6a564a5fdc576d2cf06e70262.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     },
     {
         "supermercado": "Carrefour",
@@ -19,7 +19,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23609?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/8c1fda69-a935-4f89-ba80-e753a071d35f___d89d51e6f6c97143c89d8c8737022900.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     },
     {
         "supermercado": "Carrefour",
@@ -31,7 +31,7 @@
         ],
         "link": "https://www.carrefour.com.ar/regalos",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/b8b5567e-ccd3-4b9f-ad07-92c032df9ff1___7eff3e685fecd3a43d31898a8404b492.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     },
     {
         "supermercado": "Carrefour",
@@ -43,7 +43,7 @@
         ],
         "link": "https://www.carrefour.com.ar/smart-tv-android-50-hyundai-4k-hyled-hyled-50uhd7a/p",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/58270852-4e3e-43f8-ac43-3c35195f3786___dd4b48d1a05c5d44ea5b89ff5ad57318.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     },
     {
         "supermercado": "Carrefour",
@@ -55,7 +55,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23611?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/fd83423e-8350-4656-b247-2b2ddc104204___fd24d1ff483be6dc76ba921bad3dd1bb.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     },
     {
         "supermercado": "Carrefour",
@@ -67,18 +67,18 @@
         ],
         "link": "https://www.carrefour.com.ar/23612?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/0652546b-e4bb-4eed-b78e-92ec0b2a262e___7c87badd012a6b93525fa8da09597a91.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "3x2 en Vinos",
+        "titulo": "3x2 en Espumantes",
         "descripcion": "3x2 LLEVANDO 3 PAGÁS 2 Vinos y Espumantes",
         "categoria": [
             "🍷 Bebidas"
         ],
         "link": "https://www.carrefour.com.ar/23605?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/243bbf10-37fb-402f-88a8-9a9b8995bded___a603485dd428a0d3986c79f46683263b.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     },
     {
         "supermercado": "Carrefour",
@@ -89,7 +89,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23609?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/448bf98f-2bec-43d8-be7f-b786f5d9d4d0___d48947bdbcd909ee03e0031b82cca328.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     },
     {
         "supermercado": "Carrefour",
@@ -101,7 +101,7 @@
         ],
         "link": "https://www.carrefour.com.ar/regalos",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ba32fc9a-eb54-4a9b-97b5-f5b4335de76a___b15a8638508c67550563e29848480dea.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     },
     {
         "supermercado": "Carrefour",
@@ -112,7 +112,7 @@
         ],
         "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3dea4ebb-2370-4e0a-af0f-84a8a79afcc0___f105bc12744568c2435c26bfd5aa779d.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     },
     {
         "supermercado": "Carrefour",
@@ -124,7 +124,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23607?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9402e2e3-cc87-4be4-b49a-d4d2288486d4___14da179d5b4f7c2f2a96a7ca89c874fd.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     },
     {
         "supermercado": "Carrefour",
@@ -135,6 +135,6 @@
         ],
         "link": "https://www.carrefour.com.ar/cuarto-trasero-congelado-x-kg-704559/p",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/79f408bc-1da7-43f6-8782-7d2788b4e652___eb428ef80b54a5e73bb4ebc97a0e7fcf.webp",
-        "fecha": "2026-01-04"
+        "fecha": "2026-01-03"
     }
 ]
