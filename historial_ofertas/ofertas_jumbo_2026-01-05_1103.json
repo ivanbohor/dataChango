@@ -12,9 +12,10 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Art. Limpieza, Almacén",
+        "titulo": "40% Off en Pasta Dental, Art. Limpieza",
         "descripcion": "OFERTAS dela SEMANAA) NuEvA TECNOLOGLa Afyimo Guidado Defiaras #u85   gs295 ALMACÉN, BEBIDAS, FRESCOS, 140% PERFUMERIA Y LIMPIEZA VÁLIDO DEL 05/01 AL 08/01. SELECCIONADOS. [leGa skip BIO-ENZIMAS AgAr dedioc Terrabusi 5848 5sL cehi EXCLUSIVO ONLINE Diente Blancos ua(vintvig suinne UtuV ! SENSITIVE Iut (ioforn FAnynoouiuu Blanqueadora Colgate Cant Moto 1009 (73mu Cheel degcreNdk Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
+            "🧀 Lácteos y Frescos",
             "🧹 Limpieza",
             "🧴 Perfumería y Bebé",
             "📺 Electro y Tecno"
@@ -86,7 +87,7 @@
             "💳 Bancarias",
             "📺 Electro y Tecno"
         ],
-        "link": "https://www.jumbo.com.ar/55951?map=productClusterIds",
+        "link": "https://www.jumbo.com.ar/55953?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/89b8831c-950f-494b-8c68-9c91eb41ceaa___57c2de01a36fd9eaef6ddc100f5996e8.webp",
         "fecha": "2026-01-05"
     },

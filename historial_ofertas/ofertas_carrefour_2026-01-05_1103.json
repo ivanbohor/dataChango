@@ -78,5 +78,51 @@
         "link": "https://www.carrefour.com.ar/23609?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/448bf98f-2bec-43d8-be7f-b786f5d9d4d0___d48947bdbcd909ee03e0031b82cca328.webp",
         "fecha": "2026-01-05"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "80% Off en Juguetería",
+        "descripcion": "3 80% CUOTAS DESCUENTO SIN INTERES EN LA 204 UNIDAD En todos los: Hasta el 05/01 Juguetes y VER MÁS Juegos de Verano",
+        "categoria": [
+            "💳 Bancarias",
+            "🧸 Juguetería"
+        ],
+        "link": "https://www.carrefour.com.ar/regalos",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ba32fc9a-eb54-4a9b-97b5-f5b4335de76a___b15a8638508c67550563e29848480dea.webp",
+        "fecha": "2026-01-05"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "50% Off en Varios Productos",
+        "descripcion": "HASTA CUOTAS SIN INTERES HASTA 50% DE DESCUENTO HaSTA EL 06/01 EXCLUSIVO ONLINE",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3dea4ebb-2370-4e0a-af0f-84a8a79afcc0___f105bc12744568c2435c26bfd5aa779d.webp",
+        "fecha": "2026-01-05"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "35% Off en Varios Productos",
+        "descripcion": "25P DESCUENTO 35% DESCUENTO En selecclonados de: Gaseosas, Cervezas, Jugos- Arroz, Pan Rallado y más Hasta el 05/01 MÁS",
+        "categoria": [
+            "🍷 Bebidas",
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23607?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9402e2e3-cc87-4be4-b49a-d4d2288486d4___14da179d5b4f7c2f2a96a7ca89c874fd.webp",
+        "fecha": "2026-01-05"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Precio Especial en Pollo",
+        "descripcion": "PRECIO ORIGINAL: 444-600 *K6 Hasta el 05/01 Cuarto Trasero de Pollo PRECIO $ 2.29OxKg OFERTA VER MÁS",
+        "categoria": [
+            "🥩 Carnicería"
+        ],
+        "link": "https://www.carrefour.com.ar/cuarto-trasero-congelado-x-kg-704559/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/79f408bc-1da7-43f6-8782-7d2788b4e652___eb428ef80b54a5e73bb4ebc97a0e7fcf.webp",
+        "fecha": "2026-01-05"
     }
 ]
