@@ -12,10 +12,9 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Pasta Dental, Perfumería",
+        "titulo": "40% Off en Almacén, Perfumería",
         "descripcion": "OFERTAS dela SEMANAA) NuEvA TECNOLOGLa Afyimo Guidado Defiaras #u85   gs295 ALMACÉN, BEBIDAS, FRESCOS, 140% PERFUMERIA Y LIMPIEZA VÁLIDO DEL 05/01 AL 08/01. SELECCIONADOS. [leGa skip BIO-ENZIMAS AgAr dedioc Terrabusi 5848 5sL cehi EXCLUSIVO ONLINE Diente Blancos ua(vintvig suinne UtuV ! SENSITIVE Iut (ioforn FAnynoouiuu Blanqueadora Colgate Cant Moto 1009 (73mu Cheel degcreNdk Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
-            "🧀 Lácteos y Frescos",
             "🧹 Limpieza",
             "🧴 Perfumería y Bebé",
             "📺 Electro y Tecno"
@@ -103,7 +102,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "30% Off en Art. Limpieza, Insecticidas",
+        "titulo": "30% Off en Jabón Ropa, Insecticidas",
         "descripcion": "130% EXCLUSIVO ONLINE 48953 Fuyi Sun MatA Insecticida Mosourros Moscas skip VÁLIDO DEL 03@81@cowepos : Limpieza ",
         "categoria": [
             "🧹 Limpieza"
@@ -136,7 +135,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Cuidado Personal, Perfumería",
+        "titulo": "40% Off en Perfumería, Cuidado Personal",
         "descripcion": "140% EXCLUSIVO ONLINE 8 Dove Dove FZecoslraén jginat Keratina' VÁLIDö 05/01 AL 08 /07SELECCONADOS. Perfumería ",
         "categoria": [
             "🧴 Perfumería y Bebé"
@@ -170,7 +169,18 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "25% Off en Lavarropas, Línea Blanca",
+        "titulo": "Oferta en Cuidado Personal",
+        "descripcion": "Nuevo Dove UVrepair & glow 1l40 % Óleo Bifásico FPC DTO Eefrr Ptese 7Oh de protección UV* uiuo \"Testeo irstrumentol con el uso regular luego 3Uscs  ",
+        "categoria": [
+            "🧴 Perfumería y Bebé"
+        ],
+        "link": "https://www.jumbo.com.ar/uv%20repair?_q=uv%20repair&map=ft",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/1866a491-afc3-43d5-9cc2-c8c242e1452c___1c9be927db6f8d31e5e127078da13598.jpg",
+        "fecha": "2026-01-06"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "25% Off en Lavarropas, Microondas",
         "descripcion": "llega EN24HS Lavarropas, microondas Y más ceocg {12 SNERÉS 125% CRÉDITO {12 SNERÉS 120% Ohk Linea Blanca Linea Blanca",
         "categoria": [
             "📺 Electro y Tecno"
@@ -214,13 +224,13 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Oferta en Cuidado Personal",
-        "descripcion": "Nuevo Dove UVrepair & glow 1l40 % Óleo Bifásico FPC DTO Eefrr Ptese 7Oh de protección UV* uiuo \"Testeo irstrumentol con el uso regular luego 3Uscs  ",
+        "titulo": "6x12 en Electro",
+        "descripcion": "Todos los días 3,6x12qu0625 CONCRABIFTA sin interés\" EN ELECTRODOMÉSTICOS SELECCIONADOS FROMCCIONVALIDA DEL 01/o1/2026 AL 31/01/2026 Iuioocterooy WeRV5Galesy Excugiones EncengorayAR CFTNA: 0,0% Electro Electro",
         "categoria": [
-            "🧴 Perfumería y Bebé"
+            "📺 Electro y Tecno"
         ],
-        "link": "https://www.jumbo.com.ar/uv%20repair?_q=uv%20repair&map=ft",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/1866a491-afc3-43d5-9cc2-c8c242e1452c___1c9be927db6f8d31e5e127078da13598.jpg",
+        "link": "https://www.jumbo.com.ar/electro",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/68ed13fe-f9ee-4257-8a05-b1a6be51ed7f___1615c495762c04f314f954da5c32faf6.jpg",
         "fecha": "2026-01-06"
     }
 ]
