@@ -1,17 +1,6 @@
 [
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Seleccionados (🍝 Almacén)",
-        "descripcion": "3",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/11564?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/71685ddd-92f0-4e22-ad08-31542f6980a8___20a95c686cf5560b5c24d05f0c44fb96.webp",
-        "fecha": "2026-01-07"
-    },
-    {
-        "supermercado": "Carrefour",
         "titulo": "18 Cuotas S/Int en Smart TV",
         "descripcion": "androidtv PRECIO NORMAL 4798.-000 OFERTA $699.000 18 CUOTAS SIN INTERÉS DE $38.833 AHORRO GIGANTE Hasta el 12/01 VER MÁS NETFLIX utne HBogo Fok 3soouh Youlzbe SMART TV ANDROID 50\" HYUNDAI 4K HYLED Sólo consumo familiar; válido por usuarioldocumento .",
         "categoria": [
@@ -19,30 +8,6 @@
         ],
         "link": "https://www.carrefour.com.ar/smart-tv-android-50-hyundai-4k-hyled-hyled-50uhd7a/p",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c3c4fe70-896d-4f02-932d-dccfaa905f21___a22c281c8b62cb365e48e596a652c146.webp",
-        "fecha": "2026-01-07"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "30% Off en Seleccionados (🍝 Almacén)",
-        "descripcion": "EXCLUSIVO ONLINE Para tarjetas de crédito VISA y Mastercard Comprá el día que quieras y programá la entrega para los días Miércoles de Enero 30% VISA DESCUENTO Tope de devolución por semana: $12.000 Por resumen de cuenta No Incluye electrodomestlcos electrónlca telefonla celular; carnlcerla y leches Infantlles y maternlzadas- Ver legales en carrefour com arldescuentos-bancarlos. Banco Nación",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/400563e6-c8e6-4f54-ba60-d01ff3202372___401532af295b9c2265e852bb3aa216ca.png",
-        "fecha": "2026-01-07"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "70% Off en Varios Productos",
-        "descripcion": "Gicun Dtour AHORRO GIGANTE Hasta 2040e Fhoaeo\" MUEv 70% 80 BZ8GRES Lucchetti Yogur Hasta el 12/01 DESCUENTO ERENISIMA DESCUENTO cuasico^@ JEN LA 2D4 UNIDAD skip EN LA 2DA UNIDAD N'34 VER MÁS buzon 1 Tuuarea FTatata Nutrivis 2pm En seleccionados de: 4a paaa dilvif bocoli a5 crginnl Fideos, Yogures, Galletitas y Jabón para la Ropa Sólo consumo familiar; válido por usuarioldocumento",
-        "categoria": [
-            "🧀 Lácteos y Frescos",
-            "🧹 Limpieza",
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/23655?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1b5bf833-a78c-4f20-aecf-d292afbac745___89f4b81b9b35599f64ec6a0afee624d0.webp",
         "fecha": "2026-01-07"
     },
     {
@@ -58,18 +23,42 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Café",
-        "descripcion": "ConlDou MCanrour S AHORRO GIGANTE 352 4O/ NESCAFE 25uvasos 48205 DESCUENTO DESCUENTO dolco Agua LhAJDIKA COwuR OriginAL Nesquik @mfort Oyudh OFF! Origina amly Pesoneto MAGISTRAL 3609 En seleccionados de: Ohn eaoln Orkinal Sr PACK AHORRO Café, Detergente, Lavandina, Suavizantes y más Hasta el 12/01 VER MÁS Sólo consumo familiar; válido por usuarioldocumento .",
+        "titulo": "Oferta en Seleccionados (🍝 Almacén)",
+        "descripcion": "Carrefour banco DESCUENTO EN EL ACTO SIN TOPE HOY MARTES Tarjeta Mi Carrefour Pagando Con Crédito 20P No Incluye electrodomestcos; electronlca, telefonfa celular; carnlcerfa nl leches Infantles  Valldo los dfas martes de Enero No acumulable con otras promoclones. maternlzadas. Exclusivo online Ver legales en carrefourcomtardescuentos-bancerlos APROVECHAR Caofour",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/23660?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2d427943-f039-4ca3-a4f6-acba9d077062___57ccc79d67cff2a8ac1fdf1bbac0476a.webp",
+        "link": "https://www.carrefour.com.ar/almacen",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/864af5f0-6a2f-4d2a-b8c6-2dd1afa8cc69___c9b5fa93add363ae1680213b42bb7a7b.png",
         "fecha": "2026-01-07"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "3x2 en Leche",
+        "titulo": "70% Off en Varios Productos",
+        "descripcion": "Gicun Dtour AHORRO GIGANTE Hasta 2040e Fhoaeo\" MUEv 70% 80 BZ8GRES Lucchetti Yogur Hasta el 12/01 DESCUENTO ERENISIMA DESCUENTO cuasico^@ JEN LA 2D4 UNIDAD skip EN LA 2DA UNIDAD N'34 VER MÁS buzon 1 Tuuarea FTatata Nutrivis 2pm En seleccionados de: 4a paaa dilvif bocoli a5 crginnl Fideos, Yogures, Galletitas y Jabón para la Ropa Sólo consumo familiar; válido por usuarioldocumento",
+        "categoria": [
+            "🍝 Almacén",
+            "🧹 Limpieza",
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/23655?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1b5bf833-a78c-4f20-aecf-d292afbac745___89f4b81b9b35599f64ec6a0afee624d0.webp",
+        "fecha": "2026-01-07"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Heladeras",
+        "descripcion": "PRECIO NORMAL 81-499-000 Hasta el 12/01 Heladera Samsung Inverter 298 Lts OFERTA 81.099.000 12 CUOTAS SIN INTERÉS DE 891.583 VER MÁS Solo consumo familiar; válido por usuarioldocumento",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/heladera-samsung-no-frost-inverter-298-lts-rt29k577j-gris/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/24f2bcd3-417a-4158-a092-f50934dc5289___245a2aec42797e8ee35766a950ba90c9.webp",
+        "fecha": "2026-01-07"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Yogur",
         "descripcion": "Leches, Yogures, Aguas; Jugos y más 3x2 LLEVANDO 3 PAGÁS 2 Gng VER PROMO",
         "categoria": [
             "🧀 Lácteos y Frescos"
@@ -125,12 +114,12 @@
     {
         "supermercado": "Carrefour",
         "titulo": "50% Off en Seleccionados (🍝 Almacén)",
-        "descripcion": "HASTA CUOTAS SIN INTERES HASTA 50% DE DESCUENTO HaSTA EL 13/01 EXCLUSIVO ONLINE",
+        "descripcion": "HASTA CUOTAS SIN INTERES HASTA 50% DE DESCUENTO HaSTA EL 06/01 EXCLUSIVO ONLINE",
         "categoria": [
             "🍝 Almacén"
         ],
         "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d19be331-f938-4fc2-9e1d-687f22f3ee12___e3361f32a250d2be80773d7a85082cb7.webp",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3dea4ebb-2370-4e0a-af0f-84a8a79afcc0___f105bc12744568c2435c26bfd5aa779d.webp",
         "fecha": "2026-01-07"
     },
     {

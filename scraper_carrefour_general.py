@@ -19,16 +19,13 @@ NOMBRE_SUPER = "Carrefour"
 URL_SUPER = "https://www.carrefour.com.ar"
 ARCHIVO_SALIDA = "ofertas_carrefour.json"
 
-# Filtro general para el resto de la página
-MIN_ANCHO_BANNER = 150 
-
-print(f">>> 🇫🇷 Iniciando Scraper {NOMBRE_SUPER} (V49: Slider Sniper)...")
+print(f">>> 🇫🇷 Iniciando Scraper {NOMBRE_SUPER} (V51: Hybrid Vision)...")
 
 if os.path.exists(ARCHIVO_SALIDA): os.remove(ARCHIVO_SALIDA)
 
 reader = easyocr.Reader(['es'], gpu=False) 
 
-# --- 1. DICCIONARIO MAESTRO (CON PLURALES Y LÁCTEOS) ---
+# --- 1. DICCIONARIO MAESTRO ---
 DB_MAESTRA = {
     # 🧀 LÁCTEOS Y FRESCOS
     "lacteo": ("Lácteos", "🧀 Lácteos y Frescos"),
@@ -113,7 +110,6 @@ def detectar_categorias_inteligente(texto_sanitizado, es_cluster=False):
     t_limpio = normalizar_texto(texto_sanitizado.replace("carrefour", ""))
     etiquetas = []
     
-    # 1. Busqueda estricta en diccionario
     for keyword, (producto, categoria_final) in DB_MAESTRA.items():
         if re.search(r'\b' + re.escape(keyword) + r'\b', t_limpio):
             if categoria_final not in etiquetas:
@@ -121,7 +117,6 @@ def detectar_categorias_inteligente(texto_sanitizado, es_cluster=False):
     
     if any(k in t_limpio for k in ["banco", "tarjeta", "modo"]): etiquetas.append("💳 Bancarias")
 
-    # 2. Inferencias
     if not etiquetas:
         if re.search(r'\b(12|18|24)\s*(cuotas|pagos)', t_limpio):
             etiquetas.append("📺 Electro y Tecno")
@@ -229,75 +224,89 @@ def intentar_cerrar_popups(driver):
     try:
         wait = WebDriverWait(driver, 5)
         xpath_busqueda = "//button[contains(., 'Aceptar') or contains(., 'Cerrar') or contains(., 'Entendido') or contains(@class, 'close') or contains(@class, 'vtex-modal')]"
-        boton = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_busqueda)))
-        boton.click()
+        botones = driver.find_elements(By.XPATH, xpath_busqueda)
+        for btn in botones:
+            if btn.is_displayed():
+                btn.click()
+                time.sleep(0.5)
     except: pass
 
 def scroll_progresivo(driver):
-    print("   📜 Scroll Progresivo...")
-    altura = driver.execute_script("return document.body.scrollHeight")
-    for i in range(0, altura, 500):
+    print("   📜 Scroll Progresivo (Carga Profunda)...")
+    # Scroll lento hasta el fondo para activar Lazy Loading de TODA la página
+    altura_total = driver.execute_script("return document.body.scrollHeight")
+    paso = 400
+    for i in range(0, altura_total, paso):
         driver.execute_script(f"window.scrollTo(0, {i});")
-        time.sleep(0.2)
+        time.sleep(0.3) 
+    
+    time.sleep(1)
     driver.execute_script("window.scrollTo(0, 0);")
     time.sleep(1)
 
 def extraccion_masiva_js(driver, titulos_procesados, ofertas_encontradas):
-    print(f"   ☢️ Extracción JS (V49: SLIDER SNIPER ACTIVO)...")
+    print(f"   ☢️ Extracción JS (V51: Hybrid Vision - Slider + Grid)...")
     
-    script_js = f"""
-    var minSize = {MIN_ANCHO_BANNER}; 
+    # Este script busca CUALQUIER imagen dentro de un link que parezca banner
+    script_js = """
     var items = [];
     
-    // 1. ESTRATEGIA SNIPER: Buscar Específicamente el Slider de VTEX (Tu HTML)
-    // Buscamos imagenes que tengan la clase 'vtex-slider-layout...'
-    var sliderImages = document.querySelectorAll('img[class*="vtex-slider-layout"]');
-    sliderImages.forEach(img => {{
-        var src = img.src || img.dataset.src;
+    function esBannerValido(src) {
+        if (!src) return false;
+        var s = src.toLowerCase();
+        if (s.includes('logo') || s.includes('icon') || s.includes('facebook') || s.includes('instagram')) return false;
+        if (s.length < 20) return false;
+        return true;
+    }
+
+    // 1. IMAGENES DIRECTAS (<a href><img></a>)
+    var anchors = document.querySelectorAll('a');
+    anchors.forEach(a => {
+        var img = a.querySelector('img');
+        if (img) {
+            var src = img.src || img.dataset.src || img.srcset;
+            if (src && src.includes(' ')) src = src.split(' ')[0];
+
+            if (esBannerValido(src)) {
+                // ESTRATEGIA HÍBRIDA:
+                // Aceptamos si es grande (>150px) O si es LazyLoading (width=0) pero es de VTEX/Carrefour
+                var width = img.naturalWidth || img.width || 0;
+                var esGrande = width > 150;
+                var esLazy = (width == 0) && (src.includes('carrefourar') || src.includes('vtex'));
+
+                if (esGrande || esLazy) {
+                    items.push({src: src, href: a.href});
+                }
+            }
+        }
         
-        // NO USAMOS FILTRO DE TAMAÑO ESTRICTO AQUÍ
-        // Porque los sliders a veces reportan width=0 hasta que se ven.
-        // Solo verificamos que tenga src válido.
-        if (src && src.length > 20) {{
-             var parent = img.closest('a');
-             console.log("Slider Image found: " + src);
-             items.push({{src: src, href: parent ? parent.href : ""}});
-        }}
-    }});
-
-    // 2. ESTRATEGIA GENERAL (Para el resto de la página)
-    var anchors = document.querySelectorAll('a img');
-    anchors.forEach(img => {{
-        // Evitamos duplicar lo que ya agarró el sniper
-        if (!img.className.includes('vtex-slider-layout')) {{
-            var src = img.src || img.dataset.src;
-            var esGrande = (img.naturalWidth > minSize) || (img.width > minSize);
-            if (src && src.length > 20 && src.includes('carrefourar') && esGrande) {{
-                items.push({{src: src, href: img.closest('a') ? img.closest('a').href : ""}});
-            }}
-        }}
-    }});
-
-    // 3. BACKGROUNDS CSS
-    document.querySelectorAll('a div').forEach(div => {{
-        var bg = window.getComputedStyle(div).backgroundImage;
-        var esGrande = div.offsetWidth > minSize;
-        if (bg && bg.includes('url') && bg.includes('carrefourar') && esGrande) {{
-             var srcBg = bg.replace('url("', '').replace('")', '').replace('url(', '').replace(')', '').replace(/"/g, "");
-             items.push({{src: srcBg, href: div.closest('a') ? div.closest('a').href : ""}});
-        }}
-    }});
+        // 2. BACKGROUND IMAGES (divs con fondo)
+        var div = a.querySelector('div');
+        if (div) {
+            var bg = window.getComputedStyle(div).backgroundImage;
+            if (bg && bg.includes('url') && esBannerValido(bg)) {
+                 var srcBg = bg.replace('url("', '').replace('")', '').replace('url(', '').replace(')', '').replace(/"/g, "");
+                 if (div.offsetWidth > 150) {
+                    items.push({src: srcBg, href: a.href});
+                 }
+            }
+        }
+    });
 
     return items;
     """
     
     try:
         items_crudos = driver.execute_script(script_js)
-        items_unicos = {i['src']: i for i in items_crudos}.values()
-        print(f"      -> {len(items_unicos)} Banners (incluyendo Sliders ocultos).")
-        for item in items_unicos:
+        # Limpieza de duplicados por URL de imagen
+        uniqs = {i['src']: i for i in items_crudos}.values()
+        
+        print(f"      -> {len(uniqs)} Candidatos encontrados (Barriendo todo).")
+        
+        for item in uniqs:
             if item['src'] not in [o['imagen'] for o in ofertas_encontradas]:
                 procesar_oferta(item['src'], item['href'], "JS-Massive", titulos_procesados, ofertas_encontradas)
+                
     except Exception as e: print(f"Error JS: {e}")
 
 def obtener_ofertas_carrefour():
@@ -310,8 +319,8 @@ def obtener_ofertas_carrefour():
 
     try:
         driver.get(URL_SUPER)
+        time.sleep(5) 
         intentar_cerrar_popups(driver)
-        # Hacemos scroll para forzar la carga de imagenes lazy del slider
         scroll_progresivo(driver)
         extraccion_masiva_js(driver, titulos, ofertas)
 

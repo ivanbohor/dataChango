@@ -1,17 +1,6 @@
 [
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Seleccionados (🍝 Almacén)",
-        "descripcion": "3",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/11564?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/71685ddd-92f0-4e22-ad08-31542f6980a8___20a95c686cf5560b5c24d05f0c44fb96.webp",
-        "fecha": "2026-01-07"
-    },
-    {
-        "supermercado": "Carrefour",
         "titulo": "18 Cuotas S/Int en Smart TV",
         "descripcion": "androidtv PRECIO NORMAL 4798.-000 OFERTA $699.000 18 CUOTAS SIN INTERÉS DE $38.833 AHORRO GIGANTE Hasta el 12/01 VER MÁS NETFLIX utne HBogo Fok 3soouh Youlzbe SMART TV ANDROID 50\" HYUNDAI 4K HYLED Sólo consumo familiar; válido por usuarioldocumento .",
         "categoria": [
@@ -58,13 +47,13 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Café",
-        "descripcion": "ConlDou MCanrour S AHORRO GIGANTE 352 4O/ NESCAFE 25uvasos 48205 DESCUENTO DESCUENTO dolco Agua LhAJDIKA COwuR OriginAL Nesquik @mfort Oyudh OFF! Origina amly Pesoneto MAGISTRAL 3609 En seleccionados de: Ohn eaoln Orkinal Sr PACK AHORRO Café, Detergente, Lavandina, Suavizantes y más Hasta el 12/01 VER MÁS Sólo consumo familiar; válido por usuarioldocumento .",
+        "titulo": "Oferta en Seleccionados (🍝 Almacén)",
+        "descripcion": "sombrllla Pleyere Yananiequetoan eposera Plega de iGangas de verano! TIENDAS OFICIALES EXCLUSIVO ONLINE Hasta 880.000 Hasta el 13/01 conservadore ermo y Mate",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/23660?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2d427943-f039-4ca3-a4f6-acba9d077062___57ccc79d67cff2a8ac1fdf1bbac0476a.webp",
+        "link": "https://www.carrefour.com.ar/23394?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/76ec9e29-7ad4-44ba-a6a6-c04bf98dcc83___133e8486aa19f6100b545965bc1e55f5.webp",
         "fecha": "2026-01-07"
     },
     {

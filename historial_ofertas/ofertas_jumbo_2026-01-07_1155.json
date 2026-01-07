@@ -1,18 +1,18 @@
 [
     {
         "supermercado": "Jumbo",
-        "titulo": "35% Off en Varios Productos",
-        "descripcion": "Babysec Nuevo Muevoi Hpehasa Ladysoft. 1135% Babysec Babysec 0304 XXG ULIKA sott Ladysoft| Ladysoft Ladysoft Ladysoft Babysec biaros ULTRA Tra Supcr Premium Comprar  ",
+        "titulo": "40% Off en Limpiadores",
+        "descripcion": "nuevo NUEVO (Cif (Cif ACTIVEGEL ACTIVEGEL 40% DTO xio MAS ESPUMA  ",
         "categoria": [
-            "🍝 Almacén"
+            "🧹 Limpieza"
         ],
-        "link": "https://www.jumbo.com.ar/babysec%20ladysoft?_q=babysec%20ladysoft&fuzzy=auto&initialMap=ft&initialQuery=babysec%20ladysoft&map=brand,brand,ft&operator=or&query=/babysec/ladysoft/babysec%20ladysoft&searchState",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/36747346-2638-44c7-b2ec-77b09a0e6021___5ca025f910c356fb5f80d430f59789ca.jpg",
+        "link": "https://www.jumbo.com.ar/55995?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/61c56d73-f56e-4831-a5e5-6e89d67f84be___e9af54f3038f00c422e4f458246f29e7.jpg",
         "fecha": "2026-01-07"
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Art. Limpieza, Pasta Dental",
+        "titulo": "40% Off en Pasta Dental, Almacén",
         "descripcion": "OFERTAS dela SEMANAA) NuEvA TECNOLOGLa Afyimo Guidado Defiaras #u85   gs295 ALMACÉN, BEBIDAS, FRESCOS, 140% PERFUMERIA Y LIMPIEZA VÁLIDO DEL 05/01 AL 08/01. SELECCIONADOS. [leGa skip BIO-ENZIMAS AgAr dedioc Terrabusi 5848 5sL cehi EXCLUSIVO ONLINE Diente Blancos ua(vintvig suinne UtuV ! SENSITIVE Iut (ioforn FAnynoouiuu Blanqueadora Colgate Cant Moto 1009 (73mu Cheel degcreNdk Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
             "🧀 Lácteos y Frescos",
@@ -37,17 +37,6 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2x1 en Cervezas",
-        "descripcion": "VERANOy PICADITA PATAGONIA Kh247 HASTA CERVEZAS 2x1 Y SNACKS PRODUCTOS SELECCIONADOS. (EXCESOEN Grasas ExcESOE Grasas EN TotalES SaTuRaDAS| wisiheg[ (s [ExcESO SoDio EN EXCESQ PATAGONIA Calorias EN PAPA l EXCLUSIVO ONLINE CHIP 'SUPER 10ve7e@ MEC 24.7 PRINATrO VÁLIDODEL05/0IAL08/01. BEBER CONMODERACIÓN Hasta 2x1 en Cerveza y Snacks Hasta 2x1 en Cerveza y Snacks",
-        "categoria": [
-            "🍷 Bebidas"
-        ],
-        "link": "https://www.jumbo.com.ar/56034?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/00050a0d-49a9-4adf-afc5-a2d427afc354___9a10a69d413bf65ede2570447611c56a.webp",
-        "fecha": "2026-01-07"
-    },
-    {
-        "supermercado": "Jumbo",
         "titulo": "Oferta en Milanesas, Corte Nalga",
         "descripcion": "más fresco más rico MILANESA DE NALGA $16999 DE NOVILLITO VÁLIDO DEL 05/01 AL 08/01 PRECIO SIN IMPUESTOS: $15,383.71 Milanesa de nalga y más Milanesa de nalga y más",
         "categoria": [
@@ -66,6 +55,17 @@
         ],
         "link": "https://www.jumbo.com.ar/55362?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6fe1c69e-bfd6-479b-998a-0c8a06cb8b40___6911bae93bb356d1615849626e5d9b19.webp",
+        "fecha": "2026-01-07"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "2x1 en Cervezas",
+        "descripcion": "VERANOy PICADITA PATAGONIA Kh247 HASTA CERVEZAS 2x1 Y SNACKS PRODUCTOS SELECCIONADOS. (EXCESOEN Grasas ExcESOE Grasas EN TotalES SaTuRaDAS| wisiheg[ (s [ExcESO SoDio EN EXCESQ PATAGONIA Calorias EN PAPA l EXCLUSIVO ONLINE CHIP 'SUPER 10ve7e@ MEC 24.7 PRINATrO VÁLIDODEL05/0IAL08/01. BEBER CONMODERACIÓN Hasta 2x1 en Cerveza y Snacks Hasta 2x1 en Cerveza y Snacks",
+        "categoria": [
+            "🍷 Bebidas"
+        ],
+        "link": "https://www.jumbo.com.ar/56034?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/00050a0d-49a9-4adf-afc5-a2d427afc354___9a10a69d413bf65ede2570447611c56a.webp",
         "fecha": "2026-01-07"
     },
     {
@@ -114,17 +114,6 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Limpiadores",
-        "descripcion": "nuevo NUEVO (Cif (Cif ACTIVEGEL ACTIVEGEL 40% DTO xio MAS ESPUMA  ",
-        "categoria": [
-            "🧹 Limpieza"
-        ],
-        "link": "https://www.jumbo.com.ar/55995?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/61c56d73-f56e-4831-a5e5-6e89d67f84be___e9af54f3038f00c422e4f458246f29e7.jpg",
-        "fecha": "2026-01-07"
-    },
-    {
-        "supermercado": "Jumbo",
         "titulo": "30% Off en Art. Limpieza, Insecticidas",
         "descripcion": "130% EXCLUSIVO ONLINE 48953 Fuyi Sun MatA Insecticida Mosourros Moscas skip VÁLIDO DEL 03@81@cowepos : Limpieza ",
         "categoria": [
@@ -158,7 +147,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Perfumería, Cuidado Personal",
+        "titulo": "40% Off en Cuidado Personal, Perfumería",
         "descripcion": "140% EXCLUSIVO ONLINE 8 Dove Dove FZecoslraén jginat Keratina' VÁLIDö 05/01 AL 08 /07SELECCONADOS. Perfumería ",
         "categoria": [
             "🧴 Perfumería y Bebé"
@@ -187,6 +176,61 @@
         ],
         "link": "https://www.jumbo.com.ar/uv%20repair?_q=uv%20repair&map=ft",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/1866a491-afc3-43d5-9cc2-c8c242e1452c___1c9be927db6f8d31e5e127078da13598.jpg",
+        "fecha": "2026-01-07"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "25% Off en Microondas, Lavarropas",
+        "descripcion": "llega EN24HS Lavarropas, microondas Y más ceocg {12 SNERÉS 125% CRÉDITO {12 SNERÉS 120% Ohk Linea Blanca Linea Blanca",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/55953?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/ecbd6228-0ca5-4299-82b6-291b44e006d0___4f1f3060370542f927c1114d90fb5a6e.webp",
+        "fecha": "2026-01-07"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "20% Off en Smart TV",
+        "descripcion": "llega EN24HS EXCLUSIVO ONLINE 0 TVs y Celulares 112 SNERÉS 120% aorovechón cenco)ay CRÉDITO Crystal UHD Tv y Celulares Tv y Celulares",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/55957?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/a005036b-cbff-4fd5-8647-26c21375afc1___ecf3da820aedb512fdde4d61bff3d6ec.webp",
+        "fecha": "2026-01-07"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "35% Off en Climatización",
+        "descripcion": "llega EN24HS Climatización cenco pãg 112 SNERÉS 135% CRÉDITO 112 SNERÉS 130% Aires acondicionados y Ventiladores Aires acondicionados y Ventiladores",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/55955?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/84902f5d-6e31-46d5-8e1b-0ee2f5f176c6___e5610706339178a0f86d7d984afbf736.webp",
+        "fecha": "2026-01-07"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "40% Off en Audio",
+        "descripcion": "llega EN24HS Audio y más cenco pãy 112 SNERÉS 9 40% CRÉDITO 112 SNERÉS 135% Audio y más Audio y más",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/55960?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/01c13ffd-88d1-4fce-bc91-7ec7ef5f1718___264891f8559a283b4f4d8b63ae4fff08.webp",
+        "fecha": "2026-01-07"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "6x12 en Electro",
+        "descripcion": "Todos los días 3,6x12qu0625 CONCRABIFTA sin interés\" EN ELECTRODOMÉSTICOS SELECCIONADOS FROMCCIONVALIDA DEL 01/o1/2026 AL 31/01/2026 Iuioocterooy WeRV5Galesy Excugiones EncengorayAR CFTNA: 0,0% Electro Electro",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/electro",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/68ed13fe-f9ee-4257-8a05-b1a6be51ed7f___1615c495762c04f314f954da5c32faf6.jpg",
         "fecha": "2026-01-07"
     }
 ]
