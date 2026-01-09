@@ -24,12 +24,12 @@
     {
         "supermercado": "MasOnline",
         "titulo": "3x2 en Varios Productos",
-        "descripcion": "Del 09al12 de enero ChangoMâs MâsOniine comnar OFERTAS FLASH Lácteos IASERENISIMA Actimel 823 3x2 seleccionados Danette Nd Cápsulas NesLAFe Rbu LLEVÁS 3, PAGÁS 2 decafé NESPRESSO 80s{8 QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM.AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
+        "descripcion": "Del 09al12 de enero ChangoMâs MâsOnine conar OFERTAS FLASH Lácteos ASERENISIMA Actimel 823 seleccionados Leches largavida Danefte NiIo 3x2 Cápsulas NeslaFe Rbu LLEVÁS 3, PAGÁS 2 decafé NESPRESSO 80s{8 QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.AB.A ",
         "categoria": [
             "🍝 Almacén"
         ],
         "link": "https://www.masonline.com.ar/335?map=productClusterIds",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/33c111a6-4164-4ee1-9370-133b2abc90c4/image/attachments/01_Banner_Home%20(07%20al%2013)_BHC_DKP%20copia%202.webp",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/33c111a6-4164-4ee1-9370-133b2abc90c4/image/attachments/Home_capsulas_leche_dkt2.webp",
         "fecha": "2026-01-09"
     },
     {
@@ -46,17 +46,17 @@
     {
         "supermercado": "MasOnline",
         "titulo": "Oferta en Gaseosas",
-        "descripcion": "Del 09al12 de enero changoMâs MâsOnline comar OFERTAS FLASH Gaseosas % (2,25 / 2,5L) seleccionadas 50 Descuento @cagl @ccGl Segunda zero Schmeppes Unidad Sprite FANTH QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.AB.A ",
+        "descripcion": "Del09al12 de enero changoMâs MâsOnline com ar OFERTAS FLASH Gaseosas % (2,25 / 25L) seleccionadas 50 Descuento @cayal @ccGl Segunda zero Unidad Schweppes , Sprite FANTH QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.AB.A ",
         "categoria": [
             "🍷 Bebidas"
         ],
         "link": "https://www.masonline.com.ar/2618?map=productClusterIds",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/e237d990-cb6e-4815-9814-ff9757c22804/image/attachments/01_Banner_Home%20(07%20al%2013)_BHC_DKP%20copia%206.webp",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/e237d990-cb6e-4815-9814-ff9757c22804/image/attachments/Home_gaseosas_dkt2.webp",
         "fecha": "2026-01-09"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Aires Acondicionados",
+        "titulo": "12 Cuotas S/Int en Lavarropas",
         "descripcion": "Del07al13 de enero ChangoMâs MâsOnline (comar Mas Ofertas Verano ToDOS BELECCIONADOE 12 cuotas SIN INTERÉS VISA CABAL de todos los Bancos Mlês Smart tv Aires acond Heladeras Freezer Lavarropas QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM.AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
         "categoria": [
             "💳 Bancarias",
@@ -157,7 +157,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "40% Off en Perfumería",
+        "titulo": "40% Off en Art. Limpieza",
         "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdr Perfumería Y limpieza Hasta 40% Doscuento PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
         "categoria": [
             "🧹 Limpieza",
@@ -165,6 +165,19 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/89a33b33-bd19-4887-896d-713c7fe12f14/multimedia/attachments/01_Regionales_Verano_Regional_4-%20Perfumeria2.webp",
+        "fecha": "2026-01-09"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "12 Cuotas S/Int en Aire Libre",
+        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdi Juegos al aire libre Hasta 2xI LLEVÁS 2 PAGÁS1 Hasta 12 cuotas SIN INTERÉS PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
+        "categoria": [
+            "💳 Bancarias",
+            "📺 Electro y Tecno",
+            "🚗 Auto y Aire Libre"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/d44a887f-67d9-11f0-b37f-8766f952b10c/multimedia/attachments/01_Regionales_Verano_Regional_5-%20Aire%20libre.webp",
         "fecha": "2026-01-09"
     },
     {

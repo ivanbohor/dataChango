@@ -21,7 +21,7 @@ MODO_PRUEBA = True
 # --- DATOS DE PROMOS BANCARIAS (CARGA Y TRANSFORMACIÓN) ---
 def cargar_y_transformar_promos():
     # Lista de archivos a leer
-    archivos_json = ["promos_bancarias.json", "promos_bancarias_coto.json"]
+    archivos_json = ["promos_bancarias.json", "promos_bancarias_coto.json", "promos_bancarias_jumbo.json", "promos_bancarias_masonline.json"]
     
     estructura = {
         "Carrefour": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]},

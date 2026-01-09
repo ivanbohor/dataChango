@@ -12,17 +12,6 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Hogar, Decoración",
-        "descripcion": "Casa y Deco CROSS-CHECV 4HYDRUM { 3seRÉs 150% kreo Ymás! VÁLIDO DEL 09/01 AL 15/01. PRODUCTOS SELECCIONADOS . Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
-        "categoria": [
-            "🏠 Hogar y Bazar"
-        ],
-        "link": "https://www.jumbo.com.ar/56133?map=productClusterIds&evento=fdshogar",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/1e5bfd3b-7f67-4288-b5d0-646bf7f74f32___28a97a6a78760117a45b9762f7a00f83.webp",
-        "fecha": "2026-01-09"
-    },
-    {
-        "supermercado": "Jumbo",
         "titulo": "2do al 70% en Jumbo Prime | Hasta 2Do Al 70% Jumbo Prime | Hasta",
         "descripcion": "Del 7al 13 de enero DESCUENTOS EXCLUSIVOS PARASOCIOS prime Es momento de ser HASTA 2DO AL % [Bijyf8 70 itric 1004 DTO MARAYIAL Pr|me karon 1@ EN CERVEZAS Y cuguula _ ineken BuHoor] JUGOS REFRIGERADOS Mnnnly 7hfff BFR?U BEBER CON MODERACIÓN. PROHIBIDA SUVENTA A MENORES DE 18 AÑOS Jumbo Prime | Hasta 2do al 70% Jumbo Prime | Hasta 2do al 70%",
         "categoria": [
@@ -56,7 +45,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2do al 70% en Pastas Frescas, Almacén",
+        "titulo": "2do al 70% en Productos Nestlé, Almacén",
         "descripcion": "HASTA 2DOAL 70% EL SABOR DF LA PASTA {Con cacao caseka 100% de origen DESDE 191 2 Iresponsable EXCESOEN AZUCARES Oon x3 Ví.ENTE Nestle 4/ Shnkee TALLARIN Nesquik @realitas  rigínal Transformá CLÁSiCA [ techeg VERLEGALES. Almacén ",
         "categoria": [
             "🧀 Lácteos y Frescos",
@@ -68,10 +57,9 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2do al 80% en Shampoo, Pasta Dental",
+        "titulo": "2do al 80% en Cuidado Personal, Shampoo",
         "descripcion": "HASTA 2DOAL 80% SUPER 60 ECONÓMICO UNIDADES Dove Pecnshcián Colgate KERATINA ; Shampoo Helo SENSITIVE PRO AlIvIo inmediato ENCIAS Carefree protección largos VERLEGALES. Cuidado Personal ",
         "categoria": [
-            "🧀 Lácteos y Frescos",
             "🧴 Perfumería y Bebé"
         ],
         "link": "https://www.jumbo.com.ar/56089?map=productClusterIds",
@@ -91,7 +79,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "35% Off en Art. Limpieza, Jabón Ropa",
+        "titulo": "35% Off en Jabón Ropa, Art. Limpieza",
         "descripcion": "HASTA 35% HASTA 20% DE AHORRO* Ve] LIMON MAGISTRAE skip Scoor0 (ncdaca VERLEGALES. Limpieza ",
         "categoria": [
             "💳 Bancarias",
@@ -143,6 +131,28 @@
         ],
         "link": "https://www.jumbo.com.ar/skip?_q=skip&map=ft",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/16e30d7f-bf00-469a-b8ec-611b70831f63___1ab87050e4d8929863f6004a642aee7b.jpg",
+        "fecha": "2026-01-09"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Hasta 50% Off en Hasta 50% En Pequeños Electros Hasta 50% En Pequeñ",
+        "descripcion": "llega EN24HS Pequeños electros 150% cCnco c9co š 55% CRÉDITO SNERÉS (ster 22 22 VERLEGALES 'R-une Hasta 50% en Pequeños Electros Hasta 50% en Pequeños Electros",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/56153?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/89f8645e-97e2-4525-84b2-d313b33f7cbd___56bcc7aa0283ca6347dfe2662e4ad4bc.webp",
+        "fecha": "2026-01-09"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "6x12 en Electro",
+        "descripcion": "Todos los días 3,6x12qu0625 CONCRABIFTA sin interés\" EN ELECTRODOMÉSTICOS SELECCIONADOS FROMCCIONVALIDA DEL 01/o1/2026 AL 31/01/2026 Iuioocterooy WeRV5Galesy Excugiones EncengorayAR CFTNA: 0,0% Electro Electro",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/electro",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/68ed13fe-f9ee-4257-8a05-b1a6be51ed7f___1615c495762c04f314f954da5c32faf6.jpg",
         "fecha": "2026-01-09"
     }
 ]

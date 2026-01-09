@@ -12,6 +12,17 @@
     },
     {
         "supermercado": "Carrefour",
+        "titulo": "10% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "CON TODOS LOS MEDIOS DE PAGO Exclusivo pagando con Cuenta Digital Mi Carrefour Crédito iAprovechá! Mi Carrefour Con tu compra los JUEVES DE ENERO EN EL ACTO EN EL ACTO 10% EN UN PAGO 20 EN UN PAGO Exclusivo online Tope de descuento $8.000 por semana por usuario BENEFICIO ACUMULABLE CON TODAS LAS PROMOCIONES Tope de descuento $10.000 por semana por usuario Beneficio del 10%  del 209 de aesgueni Acumulables con otras promociones combinables entre descuento aplicará en checkout: No incluye electrodomesticos electronicz telefonie ceular camicene nilechesinfaniles maternizadas (etapa 21 No incluye productos vendidos ni entregados por 2l fabricarte distribuidor: Ver legales en carrefour comarldescuentos bancarlos.",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/almacen",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/30e638c4-bc3e-42aa-bb9d-8c17e83facd4___3fef3dc58074ce6e671fcfebe1e9627f.webp",
+        "fecha": "2026-01-09"
+    },
+    {
+        "supermercado": "Carrefour",
         "titulo": "70% Off en Varios Productos",
         "descripcion": "Gicun Dtour AHORRO GIGANTE Hasta 2040e Fhoaeo\" MUEv 70% 80 BZ8GRES Lucchetti Yogur Hasta el 12/01 DESCUENTO ERENISIMA DESCUENTO cuasico^@ JEN LA 2D4 UNIDAD skip EN LA 2DA UNIDAD N'34 VER MÁS buzon 1 Tuuarea FTatata Nutrivis 2pm En seleccionados de: 4a paaa dilvif bocoli a5 crginnl Fideos, Yogures, Galletitas y Jabón para la Ropa Sólo consumo familiar; válido por usuarioldocumento",
         "categoria": [
@@ -36,6 +47,17 @@
     },
     {
         "supermercado": "Carrefour",
+        "titulo": "10% Off en Celulares",
+        "descripcion": "CON TODOS LOS MEDIOS DE PAGO EXCLUSIVO ONLINE EN EL ACTO 10 EN UN PAGO 0 Tope de descuento $8000 por semana por usuarlo 00 @Nore=b RECIBILO EN MAX INMEDINT IH 24 Si estas en CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL recibí tu pedido en menos de IHORA iAprovechá! Con tu compra los JUEVES DE ENERO COMPRAR Excluslvo pagando con Cuenta Ditn Arur Credre Micaratour BENEFICIO ACUMULABLE CON TODAS LAS PROMOCIONES EN EL AcTo EN UN PAGO 20' Topede descuento $10.000 por semana por usuaro Beneficlo del 10% 0 del 20% de desaento Acumuladles con otras cromoclones comblnables entre s(.L descuento aPlcara checkouta No Inclueelectodomestlcos electionice telefonia celular camiceria nniecnes Intantiies YMaternzadas (etapa Ty 2) No Incluye productos vendidos nientegados pa 2lfabdcants isidioudorE legales en carrefourcom.ar /descuentos bancarlos",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/51956be7-9228-4332-8ade-921f0f38d0d4___25ce753712d5ce8bf0e372911d14ce1c.webp",
+        "fecha": "2026-01-09"
+    },
+    {
+        "supermercado": "Carrefour",
         "titulo": "Oferta en Café",
         "descripcion": "ConlDou MCanrour S AHORRO GIGANTE 352 4O/ NESCAFE 25uvasos 48205 DESCUENTO DESCUENTO dolco Agua LhAJDIKA COwuR OriginAL Nesquik @mfort Oyudh OFF! Origina amly Pesoneto MAGISTRAL 3609 En seleccionados de: Ohn eaoln Orkinal Sr PACK AHORRO Café, Detergente, Lavandina, Suavizantes y más Hasta el 12/01 VER MÁS Sólo consumo familiar; válido por usuarioldocumento .",
         "categoria": [
@@ -47,29 +69,18 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "9 Cuotas S/Int en Seleccionados (🍝 Almacén)",
-        "descripcion": "HASTA 9 CUOTAS SIN INTERÉS AHORRO GIGANTE Hasta el 12/01 IeChRolUGGT Fahinek 11:35 VER MÁS En seleccionados de: Notebooks, Celulares, p9 Sólo consumo familiar; válido por usuarioldocumento. Parlantes y Torres de Sonido",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/23664?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/0b067925-1c88-47a9-afe8-bc6cea65a3e7___062d3f6a5db20fce01a639374f7a6209.webp",
-        "fecha": "2026-01-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "12 Cuotas S/Int en Heladeras",
-        "descripcion": "PRECIO NORMAL 81-499-000 Hasta el 12/01 Heladera Samsung Inverter 298 Lts OFERTA 81.099.000 12 CUOTAS SIN INTERÉS DE 891.583 VER MÁS Solo consumo familiar; válido por usuarioldocumento",
+        "titulo": "18 Cuotas S/Int en Smart TV",
+        "descripcion": "androidtv PRECIO NORMAL 4798.-000 OFERTA $699.000 18 CUOTAS SIN INTERÉS DE $38.833 AHORRO GIGANTE Hasta el 12/01 VER MÁS NETFLIX utne HBogo Fok 3soouh Youlzbe SMART TV ANDROID 50\" HYUNDAI 4K HYLED Sólo consumo familiar; válido por usuarioldocumento .",
         "categoria": [
             "📺 Electro y Tecno"
         ],
-        "link": "https://www.carrefour.com.ar/heladera-samsung-no-frost-inverter-298-lts-rt29k577j-gris/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/24f2bcd3-417a-4158-a092-f50934dc5289___245a2aec42797e8ee35766a950ba90c9.webp",
+        "link": "https://www.carrefour.com.ar/smart-tv-android-50-hyundai-4k-hyled-hyled-50uhd7a/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c3c4fe70-896d-4f02-932d-dccfaa905f21___a22c281c8b62cb365e48e596a652c146.webp",
         "fecha": "2026-01-09"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "3x2 en Leche",
+        "titulo": "3x2 en Yogur",
         "descripcion": "Leches, Yogures, Aguas; Jugos y más 3x2 LLEVANDO 3 PAGÁS 2 Gng VER PROMO",
         "categoria": [
             "🧀 Lácteos y Frescos"
