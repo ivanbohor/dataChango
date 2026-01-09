@@ -3,7 +3,9 @@ import json
 import os
 import unicodedata
 import streamlit.components.v1 as components
+import math
 import base64
+import datetime 
 
 # --- CONFIGURACIÓN DE PÁGINA ---
 st.set_page_config(
@@ -16,18 +18,53 @@ st.set_page_config(
 # --- 🧪 MODO PRUEBA ---
 MODO_PRUEBA = True 
 
-# --- INYECCIÓN DE GTM + SCRIPTS GLOBALES ---
+# --- DATOS DE PROMOS BANCARIAS (CARGA Y TRANSFORMACIÓN) ---
+def cargar_y_transformar_promos():
+    # Lista de archivos a leer
+    archivos_json = ["promos_bancarias.json", "promos_bancarias_coto.json"]
+    
+    estructura = {
+        "Carrefour": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]},
+        "Coto": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]},
+        "Jumbo": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]},
+        "MasOnline": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]}
+    }
+
+    for archivo in archivos_json:
+        if os.path.exists(archivo):
+            try:
+                with open(archivo, "r", encoding="utf-8") as f:
+                    datos_planos = json.load(f)
+                
+                for p in datos_planos:
+                    super_nm = p.get("supermercado")
+                    dia = p.get("dia")
+                    banco = p.get("banco")
+                    desc = p.get("descuento")
+                    tope = p.get("tope", "Sin tope")
+                    ver_legales = "SI" if p.get("ver_legales") else "NO"
+                    link = p.get("link", "#")
+
+                    if super_nm in estructura and dia in estructura[super_nm]:
+                        valor_formateado = f"{banco}|{desc}|{tope}|{ver_legales}|{link}"
+                        estructura[super_nm][dia].append(valor_formateado)
+                        
+            except Exception as e:
+                print(f"Error cargando {archivo}: {e}")
+            
+    return estructura
+
+PROMOS_DATA = cargar_y_transformar_promos()
+
+# --- INYECCIÓN DE SCRIPTS GLOBALES ---
 def inyectar_recursos_globales():
     GTM_ID = "GTM-PFPW7P44"
-    
     js_global = f"""
     <script>
         (function() {{
             var parentHead = window.parent.document.head;
             var parentBody = window.parent.document.body;
             var parentDoc = window.parent.document;
-
-            // 1. LIMPIEZA DE ESTRUCTURA STREAMLIT
             if (!parentDoc.getElementById('custom-styles')) {{
                 var style = parentDoc.createElement('style');
                 style.id = 'custom-styles';
@@ -40,16 +77,12 @@ def inyectar_recursos_globales():
                 `;
                 parentHead.appendChild(style);
             }}
-
-            // 2. GOOGLE TAG MANAGER
             if (!parentDoc.getElementById('gtm-injected')) {{
                 var script = parentDoc.createElement('script');
                 script.id = 'gtm-injected';
                 script.text = "(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','{GTM_ID}');";
                 parentHead.insertBefore(script, parentHead.firstChild);
             }}
-
-            // 3. LOGICA COPIAR LINK (Compatible con iframes)
             if (!window.parent.copyListenerAttached) {{
                 parentDoc.addEventListener('click', function(e) {{
                     var target = e.target.closest('.js-copy-btn');
@@ -60,7 +93,6 @@ def inyectar_recursos_globales():
                             textArea.value = textToCopy;
                             textArea.style.position = "fixed";
                             textArea.style.left = "-9999px";
-                            textArea.style.top = "0";
                             parentBody.appendChild(textArea);
                             textArea.focus();
                             textArea.select();
@@ -68,7 +100,7 @@ def inyectar_recursos_globales():
                                 var successful = parentDoc.execCommand('copy');
                                 if(successful) {{
                                     var originalHtml = target.innerHTML;
-                                    target.innerHTML = "Copy";
+                                    target.innerHTML = "👍";
                                     target.classList.add('copied');
                                     setTimeout(function() {{
                                         target.innerHTML = originalHtml;
@@ -89,16 +121,15 @@ def inyectar_recursos_globales():
 
 inyectar_recursos_globales()
 
-# --- CONSTANTES ---
+# --- CONSTANTES Y ESTADO ---
 HIPERS = ["Carrefour", "Jumbo", "Coto", "MasOnline"]
 
-# --- 1. GESTIÓN DE ESTADO ---
 if 'categoria_activa' not in st.session_state: st.session_state.categoria_activa = None
 if 'filtro_ver_todo' not in st.session_state: st.session_state.filtro_ver_todo = True
 for h in HIPERS:
     if f"chk_{h}" not in st.session_state: st.session_state[f"chk_{h}"] = False
 
-# --- 2. UTILIDADES ---
+# --- UTILIDADES ---
 def normalizar_texto(texto):
     if not isinstance(texto, str): return ""
     return ''.join(c for c in unicodedata.normalize('NFD', texto.lower().strip()) if unicodedata.category(c) != 'Mn')
@@ -128,7 +159,6 @@ def cargar_datos():
     archivos = {"Carrefour": "ofertas_carrefour.json", "Jumbo": "ofertas_jumbo.json", "Coto": "ofertas_coto.json", "MasOnline": "ofertas_masonline.json"}
     todas_ofertas = []
     conteo_ofertas = {k: 0 for k in archivos.keys()} 
-    
     for nombre, archivo in archivos.items():
         if os.path.exists(archivo):
             try:
@@ -143,10 +173,8 @@ def cargar_datos():
             except: pass
         elif MODO_PRUEBA:
             fake = []
-            if nombre == "Coto":
-                fake = [{"titulo": "Asado del Centro", "categoria": ["🥩 Carnes"], "supermercado": "Coto", "imagen": "https://via.placeholder.com/300?text=Carne", "link": "#", "origen_filtro": "Coto", "fecha": "2024-01-01"}] * 5
-            elif nombre == "Jumbo":
-                fake = [{"titulo": "Detergente Ala", "categoria": ["🧹 Limpieza"], "supermercado": "Jumbo", "imagen": "https://via.placeholder.com/300?text=Jabon", "link": "#", "origen_filtro": "Jumbo", "fecha": "2024-01-01"}] * 3
+            if nombre == "Coto": fake = [{"titulo": "Asado", "categoria": ["🥩 Carnes"], "supermercado": "Coto", "imagen": "https://via.placeholder.com/300", "link": "#", "origen_filtro": "Coto", "fecha": "2026-01-01"}] * 3
+            if nombre == "Jumbo": fake = [{"titulo": "Detergente", "categoria": ["🧹 Limpieza"], "supermercado": "Jumbo", "imagen": "https://via.placeholder.com/300", "link": "#", "origen_filtro": "Jumbo", "fecha": "2026-01-01"}] * 2
             if fake:
                 todas_ofertas.extend(fake)
                 conteo_ofertas[nombre] = len(fake)
@@ -157,26 +185,17 @@ def get_img_as_base64(file):
         with open(file, "rb") as f: return base64.b64encode(f.read()).decode()
     except: return ""
 
-# --- 3. ESTILOS GLOBALES (BORDES RESTAURADOS) ---
+# --- 3. ESTILOS GLOBALES ---
 st.markdown("""
     <style>
         .stApp { background-color: #0e3450; }
         h1, h2, h3, h4, h5, h6, p, div, label, span { color: #ffffff !important; }
         
-        /* Checkbox & Buttons */
         div[data-testid="stCheckbox"] label span[data-checked="true"] svg { fill: white !important; stroke: white !important; stroke-width: 3px !important; }
-        
-        div[data-testid="stButton"] button[kind="primary"] { 
-            background-color: #c7501e !important; color: white !important; border: 1px solid #c7501e !important; box-shadow: 0 0 5px rgba(199, 80, 30, 0.5);
-        }
-        div[data-testid="stButton"] button[kind="secondary"] { 
-            background-color: transparent; color: white; border: 1px solid #cfa539; 
-        }
-        div[data-testid="stButton"] button[kind="secondary"]:hover { 
-            background-color: #c7501e; border-color: #c7501e; 
-        }
+        div[data-testid="stButton"] button[kind="primary"] { background-color: #c7501e !important; color: white !important; border: 1px solid #c7501e !important; box-shadow: 0 0 5px rgba(199, 80, 30, 0.5); }
+        div[data-testid="stButton"] button[kind="secondary"] { background-color: transparent; color: white; border: 1px solid #cfa539; }
+        div[data-testid="stButton"] button[kind="secondary"]:hover { background-color: #c7501e; border-color: #c7501e; }
 
-        /* HEADER */
         .header-container { display: flex; align-items: center; gap: 15px; padding-bottom: 5px; margin-bottom: 10px; border-bottom: 1px solid rgba(207, 165, 57, 0.3); }
         .logo-img { width: 100px; height: 100px; object-fit: contain; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.3); flex-shrink: 0; }
         .header-text-col { display: flex; flex-direction: column; justify-content: center; flex: 1; }
@@ -190,97 +209,53 @@ st.markdown("""
             .app-subtitle { font-size: 1.1rem; text-align: center; }
         }
 
-        /* CAJA DE FILTROS (Borde Dorado Restaurado) */
-        div[data-testid="stExpander"] { 
-            border: 1px solid #cfa539 !important; /* BORDE RESTAURADO */
-            border-radius: 8px; 
-            background-color: rgba(11, 42, 64, 0.5); 
-        }
+        div[data-testid="stExpander"] { border: 1px solid #cfa539 !important; border-radius: 8px; background-color: rgba(11, 42, 64, 0.5); }
         .streamlit-expanderHeader { font-size: 1rem !important; color: #cfa539 !important; background-color: transparent !important; }
 
-        /* GRID CSS */
-        .grid-container { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); 
-            gap: 15px; 
-            padding-bottom: 5px;
-            width: 100%;
-        }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; padding-bottom: 5px; width: 100%; }
+        @media (min-width: 600px) { .grid-container { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; } }
         
-        @media (min-width: 600px) { 
-            .grid-container { 
-                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
-                gap: 20px; 
-            } 
-        }
-        
-        /* TARJETA DE OFERTA (Diseño Restaurado con Borde #cfa539) */
-        .oferta-card { 
-            background-color: #16425b; 
-            border-radius: 10px; 
-            padding: 8px; 
-            border: 1px solid #cfa539; /* BORDE DORADO SOLIDO */
-            display: flex; 
-            flex-direction: column; 
-            height: 310px;
-            box-sizing: border-box; 
-            transition: transform 0.2s, border-color 0.2s;
-            overflow: hidden; 
-            position: relative;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-        }
-        
+        .oferta-card { background-color: #16425b; border-radius: 10px; padding: 8px; border: 1px solid #cfa539; display: flex; flex-direction: column; height: 310px; box-sizing: border-box; transition: transform 0.2s, border-color 0.2s; overflow: hidden; position: relative; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
         @media (min-width: 600px) { .oferta-card { padding: 10px; height: 340px; } }
+        .oferta-card:hover { transform: translateY(-4px); border-color: #c7501e; box-shadow: 0 8px 12px rgba(199, 80, 30, 0.2); }
         
-        .oferta-card:hover { 
-            transform: translateY(-4px); 
-            border-color: #c7501e; /* Borde naranja al pasar mouse */
-            box-shadow: 0 8px 12px rgba(199, 80, 30, 0.2);
-        }
-        
-        .img-container { 
-            height: 120px; background: white; border-radius: 6px; 
-            display: flex; align-items: center; justify-content: center; margin-bottom: 8px; 
-            width: 100%;
-        }
+        .img-container { height: 120px; background: white; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; width: 100%; }
         @media (min-width: 600px) { .img-container { height: 140px; margin-bottom: 10px; } }
-        
         .img-container img { max-height: 95%; max-width: 95%; object-fit: contain; }
         
-        .card-title { 
-            color: white; font-size: 0.85rem; font-weight: 600; overflow: hidden; 
-            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; 
-            margin-bottom: 6px; height: 34px; word-wrap: break-word; line-height: 1.2;
-        }
+        .card-title { color: white; font-size: 0.85rem; font-weight: 600; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-bottom: 6px; height: 34px; word-wrap: break-word; line-height: 1.2; }
         @media (min-width: 600px) { .card-title { font-size: 0.95rem; margin-bottom: 8px; height: 38px; } }
         
-        /* ETIQUETAS: LETRA BLANCA SIEMPRE */
-        .tag-pill {
-            font-size: 0.65rem; padding: 3px 8px; border-radius: 10px; 
-            font-weight: bold; 
-            color: white !important; 
-            border: none;
-            display: inline-block;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-        }
+        .tag-pill { font-size: 0.65rem; padding: 3px 8px; border-radius: 10px; font-weight: bold; color: white !important; border: none; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
         
-        /* BOTONES */
-        .btn-ver-link { 
-            background: #c7501e; color: white !important; text-align: center; padding: 6px; 
-            border-radius: 5px; text-decoration: none; font-size: 0.8rem; font-weight: bold; 
-            display: block; width: 100%;
-        }
+        .btn-ver-link { background: #c7501e; color: white !important; text-align: center; padding: 6px; border-radius: 5px; text-decoration: none; font-size: 0.8rem; font-weight: bold; display: block; width: 100%; }
         @media (min-width: 600px) { .btn-ver-link { padding: 8px; font-size: 0.9rem; } }
         .btn-ver-link:hover { background-color: #a84015; text-decoration: none; opacity: 0.9; }
 
-        .js-copy-btn {
-            background: transparent; border: 1px solid; border-radius: 5px; 
-            cursor: pointer; display: flex; align-items: center; justify-content: center;
-            width: 35px; min-width: 35px; transition: all 0.2s;
-            color: inherit; 
-        }
+        .js-copy-btn { background: transparent; border: 1px solid; border-radius: 5px; cursor: pointer; display: flex; align-items: center; justify-content: center; width: 35px; min-width: 35px; transition: all 0.2s; color: inherit; }
         .js-copy-btn:hover { background-color: rgba(255,255,255,0.1); }
         .js-copy-btn.copied { background-color: #2e7d32 !important; border-color: #2e7d32 !important; color: white !important; }
+
+        /* --- ESTILOS TABLA PROMOS BANCARIAS --- */
+        .promo-table-container { overflow-x: auto; margin-bottom: 20px; border-radius: 8px; border: 1px solid #cfa539; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        .promo-table { width: 100%; border-collapse: collapse; min-width: 600px; font-size: 0.85rem; }
+        .promo-table th { background-color: #0b2a40; color: #cfa539; padding: 12px 8px; text-transform: uppercase; border-bottom: 2px solid #cfa539; text-align: center; font-weight: 800; letter-spacing: 0.5px; }
+        .promo-table td { padding: 8px; text-align: center; border-bottom: 1px solid rgba(207, 165, 57, 0.2); color: #ddd; vertical-align: top; }
+        .promo-table tr:last-child td { border-bottom: none; }
+        .promo-table tr:nth-child(even) { background-color: rgba(255,255,255,0.03); }
+        
+        .today-col { background-color: rgba(207, 165, 57, 0.15) !important; border-left: 1px solid rgba(207, 165, 57, 0.3); border-right: 1px solid rgba(207, 165, 57, 0.3); }
+        .today-header { background-color: #c7501e !important; color: white !important; border-bottom: 2px solid white !important; }
+
+        .promo-badge { display: block; background-color: #1e3a5f; padding: 6px; border-radius: 4px; margin-bottom: 6px; border: 1px solid rgba(255,255,255,0.1); font-size: 0.75rem; text-align: left; position: relative; }
+        .promo-badge strong { color: #fff; display: block; font-size: 0.9rem; margin-bottom: 2px; }
+        .promo-badge .banco-nm { color: #aaa; font-weight: normal; font-size: 0.8rem; margin-bottom: 2px; display: block;}
+        
+        /* Estilos nuevos para Tope y Legales */
+        .tope-txt { font-size: 0.7rem; color: #a4d4ae; margin-top: 2px; display: block; font-style: italic;}
+        .link-legales { font-size: 0.7rem; color: #4fc3f7 !important; text-decoration: none; border-bottom: 1px dotted #4fc3f7; margin-top: 2px; display: inline-block; }
+        .link-legales:hover { color: white !important; border-bottom-style: solid; }
+
     </style>
 """, unsafe_allow_html=True)
 
@@ -298,7 +273,7 @@ st.markdown(f"""
     </div>
 </div>
 <div class="contact-container">
-    <div>Sugerencias? <a href="mailto:datachangoweb@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-link-text">Hablemos🧉</a></div>
+    <div>¿Ideas? <a href="mailto:datachangoweb@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-link-text">Hablemos</a></div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -320,6 +295,7 @@ def on_change_hiper(nombre):
     if st.session_state[f"chk_{nombre}"]: st.session_state.filtro_ver_todo = False
     if not any(st.session_state[f"chk_{h}"] for h in HIPERS): st.session_state.filtro_ver_todo = True
 
+# --- CAJA DE FILTROS ---
 with st.expander("🔎 Filtrar Ofertas", expanded=False):
     c_todo, c_h1, c_h2, c_h3, c_h4 = st.columns(5)
     with c_todo: st.checkbox("Todo", key='filtro_ver_todo', on_change=on_change_ver_todo)
@@ -341,6 +317,67 @@ with st.expander("🔎 Filtrar Ofertas", expanded=False):
                 toggle_categoria(key)
                 st.rerun()
 
+# --- MODULO DE PROMOS BANCARIAS ---
+with st.expander("💳 Ver Calendario de Promociones Bancarias", expanded=False):
+    dia_semana_hoy = datetime.datetime.today().weekday()
+    dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
+    headers = ["LUN", "MAR", "MIÉ", "JUE", "VIE", "SÁB", "DOM"]
+    
+    html_table = '<div class="promo-table-container"><table class="promo-table"><thead><tr><th style="text-align:left; padding-left:15px;">Supermercado</th>'
+    
+    for i, h in enumerate(headers):
+        clase_hoy = "today-header" if i == dia_semana_hoy else ""
+        html_table += f'<th class="{clase_hoy}">{h}</th>'
+    html_table += '</tr></thead><tbody>'
+    
+    for hiper, dias_data in PROMOS_DATA.items():
+        estilo = ESTILOS_SUPER.get(hiper, ESTILOS_SUPER["default"])
+        icono = estilo["icono"]
+        
+        html_table += f'<tr><td style="font-weight:bold; color:white; border-right:1px solid #cfa539; padding-left:10px;">{icono} {hiper}</td>'
+        
+        for i, dia_key in enumerate(dias):
+            clase_celda = "today-col" if i == dia_semana_hoy else ""
+            promos = dias_data.get(dia_key, [])
+            
+            content = ""
+            if promos:
+                for p in promos:
+                    # Formato recibido: BANCO|DESCUENTO|TOPE|VER_LEGALES|LINK
+                    partes = p.split("|")
+                    if len(partes) >= 5:
+                        banco = partes[0]
+                        desc = partes[1]
+                        tope = partes[2]
+                        ver_legales = partes[3] # "SI" o "NO"
+                        link = partes[4]
+
+                        # Bloque Base
+                        html_promo = f'<div class="promo-badge">'
+                        html_promo += f'<strong>{desc}</strong>'
+                        html_promo += f'<span class="banco-nm">{banco}</span>'
+                        
+                        # Lógica Condicional: Link o Tope
+                        if ver_legales == "SI":
+                            html_promo += f'<a href="{link}" target="_blank" class="link-legales">Ver legales 🔗</a>'
+                        else:
+                            # Solo mostramos el tope si no es "Sin tope" y no es nulo
+                            if tope and "sin tope" not in tope.lower() and tope != "None":
+                                html_promo += f'<span class="tope-txt">Tope: {tope}</span>'
+                        
+                        html_promo += '</div>'
+                        content += html_promo
+            else:
+                content = "-"
+            
+            html_table += f'<td class="{clase_celda}">{content}</td>'
+        html_table += '</tr>'
+        
+    html_table += '</tbody></table></div>'
+    st.markdown(html_table, unsafe_allow_html=True)
+
+
+# --- RENDERIZADO GRID ---
 hipers_activos = HIPERS if st.session_state.filtro_ver_todo else [h for h in HIPERS if st.session_state[f"chk_{h}"]]
 filtro_cat = st.session_state.categoria_activa
 mapa_categorias = {"carne": "Carnicería", "lacteos": "Lácteos", "bebida": "Bebidas", "almacen": "Almacén", "limpieza": "Limpieza", "perfumeria": "Perfumería", "electro": "Electro", "hogar": "Hogar", "automotor": "Auto", "juguete": "Juguetería", "mascota": "Mascotas"}
@@ -353,7 +390,6 @@ for oferta in ofertas_raw:
         if not any(tag_buscado.lower() in c.lower() or c.lower() in tag_buscado.lower() for c in oferta.get("categoria", [])): continue
     ofertas_globales.append(oferta)
 
-# --- 6. RENDERIZADO GRID ---
 if not ofertas_globales:
     st.warning(f"🤷‍♂️ No encontré ofertas para este filtro.")
 else:
@@ -399,7 +435,6 @@ else:
             fecha = oferta.get('fecha', '')
             cats_vis = [c for c in oferta.get('categoria', []) if "Bancarias" not in c][:1] 
             tag = cats_vis[0] if cats_vis else "Oferta"
-            
             txt_copy = f"Mira esta oferta de {hiper}: {link}".replace("'", "")
             
             card = f"""
@@ -428,10 +463,9 @@ st.markdown("<br><hr style='border-color: #cfa539; opacity: 0.3;'>", unsafe_allo
 with st.expander("⚖️ Aviso Legal y Exención de Responsabilidad", expanded=False):
     st.markdown("""
     <div style='color:#ccc;font-size:0.8rem;line-height:1.6;text-align:justify;background-color:rgba(0,0,0,0.2);padding:15px;border-radius:8px;'>
-        <p><strong>Carácter de la Información:</strong> "DataChango" funciona exclusivamente como un agregador y buscador de ofertas. No somos un supermercado ni una tienda online. Nuestra función se limita a recopilar y organizar información pública disponible en los sitios web de terceros.</p>
-        <p><strong>Precios Referenciales y No Vinculantes:</strong> Los precios, promociones, descuentos y stock mostrados en este sitio tienen un carácter meramente informativo y referencial. Debido a la naturaleza dinámica de las ofertas, la información puede no estar actualizada en tiempo real. El precio y las condiciones válidas y finales para la compra son SIEMPRE los que figuran en el sitio web oficial del supermercado o vendedor al momento de finalizar la transacción.</p>
-        <p><strong>Deslinde de Responsabilidad:</strong> "DataChango" no garantiza la exactitud, vigencia o integridad de la información. No nos responsabilizamos por discrepancias de precios, falta de stock, cambios en las condiciones de las promociones o cualquier perjuicio derivado del uso de esta información. El usuario tiene la obligación de verificar todos los datos directamente en la web del vendedor antes de realizar cualquier compra.</p>
-        <p><strong>Propiedad Intelectual:</strong> Todas las marcas comerciales, logotipos, nombres de productos y fotografías mostradas en este sitio son propiedad de sus respectivos titulares y se utilizan aquí únicamente con fines identificatorios y de referencia informativa para el usuario (uso nominativo), sin implicar asociación, patrocinio o endoso alguno por parte de dichas marcas hacia este sitio.</p>
+        <p><strong>Carácter de la Información:</strong> "DataChango" funciona exclusivamente como un agregador...</p>
+        <p><strong>Precios Referenciales:</strong> Los precios son informativos...</p>
+        <p><strong>Deslinde:</strong> No garantizamos la exactitud...</p>
     </div>
     """, unsafe_allow_html=True)
 
