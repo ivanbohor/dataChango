@@ -100,7 +100,7 @@ def inyectar_recursos_globales():
                                 var successful = parentDoc.execCommand('copy');
                                 if(successful) {{
                                     var originalHtml = target.innerHTML;
-                                    target.innerHTML = "Copy!";
+                                    target.innerHTML = "Copy";
                                     target.classList.add('copied');
                                     setTimeout(function() {{
                                         target.innerHTML = originalHtml;
@@ -435,7 +435,7 @@ else:
             fecha = oferta.get('fecha', '')
             cats_vis = [c for c in oferta.get('categoria', []) if "Bancarias" not in c][:1] 
             tag = cats_vis[0] if cats_vis else "Oferta"
-            txt_copy = f"Mira esta oferta de {hiper}: {link}".replace("'", "")
+            txt_copy = f"Mira esta oferta que encontre en DataChango: {link}".replace("'", "")
             
             card = f"""
             <div class="oferta-card">
