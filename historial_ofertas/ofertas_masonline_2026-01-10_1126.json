@@ -45,7 +45,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Smart TV",
+        "titulo": "12 Cuotas S/Int en Lavarropas",
         "descripcion": "Del07al13 de enero ChangoMâs MâsOnline (comar Mas Ofertas Verano ToDOS BELECCIONADOE 12 cuotas SIN INTERÉS VISA CABAL de todos los Bancos Mlês Smart tv Aires acond Heladeras Freezer Lavarropas QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM.AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
         "categoria": [
             "💳 Bancarias",
@@ -58,17 +58,28 @@
     {
         "supermercado": "MasOnline",
         "titulo": "15% Off en Varios Productos",
-        "descripcion": "SIN - BILLETERAS VIRTUALES TOPE 15% Sábado y Domingo PAGÁ CON QR Descuento Aplica exclusiones. (BV)=  ",
+        "descripcion": "cuenta DNI SIN \" ; Jueves_ Viernes y Sábado 15% Pagando con Cuenta DNI en Sucursal Exclusivamente Descuento Aplica exclusiones. (CD)*  ",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.masonline.com.ar/promociones-bancarias?dia=viernes",
-        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/61e673f2-10ed-4f34-8015-e6c5caf6c02b___2ca2f47b880c1a9de9c099232da137ce.webp",
+        "link": "https://www.masonline.com.ar/promociones-bancarias",
+        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/fb26fecd-49bf-4ebe-95c4-3366b98d4284___6dbd9077ffdb0d39e7332fe393473337.png",
         "fecha": "2026-01-10"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "Oferta en Smart TV",
+        "titulo": "10% Off en Varios Productos",
+        "descripcion": "anses TODOLOS DiAS 10% tonsdecfointsigrooglopo  Tope Blopo mensual Descuento benefkclano d ANSES (A)v Todoslosmediosdo pago slendo  ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar/promociones-bancarias",
+        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/95615025-58c5-4c72-bcf4-1328b8f4f796___73c0013dba6c6d35a75fd0fa93c69fc6.webp",
+        "fecha": "2026-01-10"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Celulares",
         "descripcion": "Anr Hasta 402 Descuento Hasta 12 SNOtRES SIN smart tv y celulares smart tv y celulares",
         "categoria": [
             "📺 Electro y Tecno"
@@ -146,7 +157,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "40% Off en Perfumería",
+        "titulo": "40% Off en Art. Limpieza",
         "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdr Perfumería Y limpieza Hasta 40% Doscuento PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
         "categoria": [
             "🧹 Limpieza",
@@ -158,7 +169,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Aire Libre",
+        "titulo": "12 Cuotas S/Int en Aires Acondicionados",
         "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdi Juegos al aire libre Hasta 2xI LLEVÁS 2 PAGÁS1 Hasta 12 cuotas SIN INTERÉS PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
         "categoria": [
             "💳 Bancarias",
