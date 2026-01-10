@@ -12,7 +12,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "3x2 en Vinos",
+        "titulo": "3x2 en Espumantes",
         "descripcion": "Del09al 12 de enero ChangoMâs MâsOnline comaa OFERTAS FLASH Vinos y 3x2 espumantes LLEVÁS 3, PAGÁS 2 COMBINALO COMO QUIERAS QUIERO VER MÁs BEBERCONMODERACIÓN PROHIBIDA SUVENTA AMENORES DE18 AÑOS.PARA MÁSINFORMACIÓN OLMITACIONES APLICABLES, CONSULTEENMASONLINECOMAR/LEGALES. DORINKA SRL 30-67813830-0BOLIVIA 5831,C.ABA ",
         "categoria": [
             "🍷 Bebidas"
@@ -56,7 +56,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Smart TV",
+        "titulo": "12 Cuotas S/Int en Aires Acondicionados",
         "descripcion": "Del07al13 de enero ChangoMâs MâsOnline (comar Mas Ofertas Verano ToDOS BELECCIONADOE 12 cuotas SIN INTERÉS VISA CABAL de todos los Bancos Mlês Smart tv Aires acond Heladeras Freezer Lavarropas QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM.AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
         "categoria": [
             "💳 Bancarias",
@@ -90,7 +90,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "Oferta en Smart TV",
+        "titulo": "Oferta en Celulares",
         "descripcion": "Anr Hasta 402 Descuento Hasta 12 SNOtRES SIN smart tv y celulares smart tv y celulares",
         "categoria": [
             "📺 Electro y Tecno"
@@ -113,24 +113,13 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "Oferta en Electro Philco",
+        "titulo": "Oferta en Aires Acondicionados",
         "descripcion": "PHILCO) Geahea [co]TTs Aire Acondicionado Split Inverter Philco 8750 Watt Frio Calor Phin90hc3awfpi ",
         "categoria": [
             "📺 Electro y Tecno"
         ],
         "link": "https://www.masonline.com.ar/aire-acondicionado-philco-inverter-frio-calor-8750w/p",
         "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/354136-230-230?v=638827482345770000&width=230&height=230&aspect=true",
-        "fecha": "2026-01-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Oferta en Aires Acondicionados",
-        "descripcion": " Aire Acondicionado Split Inverter Hyundai 5000 Watt Frio Calor Hy11inv 5000fc ",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.masonline.com.ar/aire-acondicionado-hyundai-split-inverter-frio-calor-5000-frigorias-hy11inv-5000fcw/p",
-        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/359901-230-230?v=638913780394600000&width=230&height=230&aspect=true",
         "fecha": "2026-01-09"
     },
     {
@@ -176,19 +165,6 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/89a33b33-bd19-4887-896d-713c7fe12f14/multimedia/attachments/01_Regionales_Verano_Regional_4-%20Perfumeria2.webp",
-        "fecha": "2026-01-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Aires Acondicionados",
-        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdi Juegos al aire libre Hasta 2xI LLEVÁS 2 PAGÁS1 Hasta 12 cuotas SIN INTERÉS PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
-        "categoria": [
-            "💳 Bancarias",
-            "📺 Electro y Tecno",
-            "🚗 Auto y Aire Libre"
-        ],
-        "link": "https://www.masonline.com.ar",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/d44a887f-67d9-11f0-b37f-8766f952b10c/multimedia/attachments/01_Regionales_Verano_Regional_5-%20Aire%20libre.webp",
         "fecha": "2026-01-09"
     },
     {

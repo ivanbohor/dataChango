@@ -100,7 +100,7 @@ def inyectar_recursos_globales():
                                 var successful = parentDoc.execCommand('copy');
                                 if(successful) {{
                                     var originalHtml = target.innerHTML;
-                                    target.innerHTML = "👍";
+                                    target.innerHTML = "Copy!";
                                     target.classList.add('copied');
                                     setTimeout(function() {{
                                         target.innerHTML = originalHtml;
@@ -318,7 +318,7 @@ with st.expander("🔎 Filtrar Ofertas", expanded=False):
                 st.rerun()
 
 # --- MODULO DE PROMOS BANCARIAS ---
-with st.expander("💳 Ver Calendario de Promociones Bancarias", expanded=False):
+with st.expander("💳 Calendario de Descuentos Bancarios(Online)", expanded=False):
     dia_semana_hoy = datetime.datetime.today().weekday()
     dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
     headers = ["LUN", "MAR", "MIÉ", "JUE", "VIE", "SÁB", "DOM"]
@@ -460,12 +460,14 @@ else:
 
 # --- 7. FOOTER ---
 st.markdown("<br><hr style='border-color: #cfa539; opacity: 0.3;'>", unsafe_allow_html=True)
+
 with st.expander("⚖️ Aviso Legal y Exención de Responsabilidad", expanded=False):
     st.markdown("""
     <div style='color:#ccc;font-size:0.8rem;line-height:1.6;text-align:justify;background-color:rgba(0,0,0,0.2);padding:15px;border-radius:8px;'>
-        <p><strong>Carácter de la Información:</strong> "DataChango" funciona exclusivamente como un agregador...</p>
-        <p><strong>Precios Referenciales:</strong> Los precios son informativos...</p>
-        <p><strong>Deslinde:</strong> No garantizamos la exactitud...</p>
+        <p><strong>Carácter de la Información:</strong> "DataChango" funciona exclusivamente como un agregador y buscador de ofertas. No somos un supermercado ni una tienda online. Nuestra función se limita a recopilar y organizar información pública disponible en los sitios web de terceros.</p>
+        <p><strong>Precios Referenciales y No Vinculantes:</strong> Los precios, promociones, descuentos y stock mostrados en este sitio tienen un carácter meramente informativo y referencial. Debido a la naturaleza dinámica de las ofertas, la información puede no estar actualizada en tiempo real. El precio y las condiciones válidas y finales para la compra son SIEMPRE los que figuran en el sitio web oficial del supermercado o vendedor al momento de finalizar la transacción.</p>
+        <p><strong>Deslinde de Responsabilidad:</strong> "DataChango" no garantiza la exactitud, vigencia o integridad de la información. No nos responsabilizamos por discrepancias de precios, falta de stock, cambios en las condiciones de las promociones o cualquier perjuicio derivado del uso de esta información. El usuario tiene la obligación de verificar todos los datos directamente en la web del vendedor antes de realizar cualquier compra.</p>
+        <p><strong>Propiedad Intelectual:</strong> Todas las marcas comerciales, logotipos, nombres de productos y fotografías mostradas en este sitio son propiedad de sus respectivos titulares y se utilizan aquí únicamente con fines identificatorios y de referencia informativa para el usuario (uso nominativo), sin implicar asociación, patrocinio o endoso alguno por parte de dichas marcas hacia este sitio.</p>
     </div>
     """, unsafe_allow_html=True)
 
