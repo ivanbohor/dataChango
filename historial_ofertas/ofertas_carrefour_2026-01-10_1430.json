@@ -8,7 +8,18 @@
         ],
         "link": "https://www.carrefour.com.ar/11564?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/71685ddd-92f0-4e22-ad08-31542f6980a8___20a95c686cf5560b5c24d05f0c44fb96.webp",
-        "fecha": "2026-01-11"
+        "fecha": "2026-01-10"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "15% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "TE LO PIERDAS:iNO T553 iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO iNO TELO PIERDAS! iNO TELO PIERDAS! NO TE LO PIERDAS! iNO TE LO PIERDAS! 15%OFF UTILIZANDO EL CUPÓN: DESCUENTO COMPRAR EXCLUSIVO ONLINE REGALO SIN TOPE HASTA EL SÁBADO 10/01 en tu compra Cupón válido desde el Viernes 30/01 las 19hs hasta el Sábado 1O/01a las 23.59hs del super No acumulable con otras promociones. Cupón válldo únlcamente para Allmentos Bebldas; Perfumería LImpleza iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIEF",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/almacen",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/91b5e902-e37c-44c4-a5c5-5e57c3039576___fb7c97b261ed09e2414020e48c72fde3.webp",
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
@@ -17,33 +28,9 @@
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/ALMACEN",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/39370186-769d-40ec-a5ad-b0056f025c6d___48b04e5efcacec1c944776bb6f2192cb.png",
-        "fecha": "2026-01-11"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "70% Off en Varios Productos",
-        "descripcion": "Gicun Dtour AHORRO GIGANTE Hasta 2040e Fhoaeo\" MUEv 70% 80 BZ8GRES Lucchetti Yogur Hasta el 12/01 DESCUENTO ERENISIMA DESCUENTO cuasico^@ JEN LA 2D4 UNIDAD skip EN LA 2DA UNIDAD N'34 VER MÁS buzon 1 Tuuarea FTatata Nutrivis 2pm En seleccionados de: 4a paaa dilvif bocoli a5 crginnl Fideos, Yogures, Galletitas y Jabón para la Ropa Sólo consumo familiar; válido por usuarioldocumento",
-        "categoria": [
-            "🧹 Limpieza",
-            "🧀 Lácteos y Frescos",
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/23655?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1b5bf833-a78c-4f20-aecf-d292afbac745___89f4b81b9b35599f64ec6a0afee624d0.webp",
-        "fecha": "2026-01-11"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Smart TV",
-        "descripcion": "HASTA HASTA 12 SUOEALS 308 DESCUENTO SIN AHORRO GIGANTE Oled Hasta el 12/01 43\" Woe ll VER MÁS En seleccionados de Aires Acondicionados y Smart TVs Sólo consumo familiar, válido por usuarioldocumento. Fui-iDVV",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23663?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/70a5ac1a-1a6c-4935-8e4e-483a69739445___0959ab28e50a99828c961b031d4fead7.webp",
-        "fecha": "2026-01-11"
+        "link": "https://www.carrefour.com.ar/almacen",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/188e784a-a8ff-484b-a344-de02454527cc___48b04e5efcacec1c944776bb6f2192cb.png",
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
@@ -53,8 +40,30 @@
             "🍝 Almacén"
         ],
         "link": "https://www.carrefour.com.ar/23660?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2d427943-f039-4ca3-a4f6-acba9d077062___57ccc79d67cff2a8ac1fdf1bbac0476a.webp",
-        "fecha": "2026-01-11"
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/f56326e7-0dff-49ae-91fc-43cf62f1856c___57ccc79d67cff2a8ac1fdf1bbac0476a.webp",
+        "fecha": "2026-01-10"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Lavarropas",
+        "descripcion": "HASTA HASTA 12 SUOEALS 308  DESCUENTO SIN AHORRO GIGANTE Hasta el 12/01 VER MÁS En seleccionados de Lavarropas Automáticos y Heladeras Sólo consumo familiar, válido por usuarioldocumento.",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23662?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/8bb1164b-3846-4559-a2bd-a0f6aceadf7b___216b450c26873b03e7fd292a0adc0cde.webp",
+        "fecha": "2026-01-10"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Leche",
+        "descripcion": "ERENISIMA LLEVANDO 3 PAGÁS 2 AHORRO GIGANTE Cauc' Muey LECHE JARGA VIDA thr Lrlena Yogur EXSESOEN 3x2 JERENISIMA [=22 Clasico Yogur firme ERENISIMA En Seleccionados de: Glaico Leches, Yogures;, {Frmfer Aguas, jugos y más Hasta el 12/01 iecrelalca BBCREMES VER MÁS Koqur canceronios ERENISIMA Gagco Sólo consumo familiar; válido por usuarioldocumento . naFaNJA Mango GnG",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/23659?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/a151e31a-e20e-4d03-a6e1-b9a3b2c6b5e7___4463d6c2a107a13c8d30559e05ac0106.webp",
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
@@ -65,18 +74,31 @@
         ],
         "link": "https://www.carrefour.com.ar/23722?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/e4cfb3e2-044c-443d-be06-0a6073c3fbb1___811ddf0d838012c448d26d9dd97a43f5.webp",
-        "fecha": "2026-01-11"
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "9 Cuotas S/Int en Seleccionados (🍝 Almacén)",
-        "descripcion": "HASTA 9 CUOTAS SIN INTERÉS AHORRO GIGANTE Hasta el 12/01 IeChRolUGGT Fahinek 11:35 VER MÁS En seleccionados de: Notebooks, Celulares, p9 Sólo consumo familiar; válido por usuarioldocumento. Parlantes y Torres de Sonido",
+        "titulo": "Oferta en Smart TV",
+        "descripcion": "HASTA HASTA 12 SUOEALS 308 DESCUENTO SIN AHORRO GIGANTE Oled Hasta el 12/01 43\" Woe ll VER MÁS En seleccionados de Aires Acondicionados y Smart TVs Sólo consumo familiar, válido por usuarioldocumento. Fui-iDVV",
         "categoria": [
-            "🍝 Almacén"
+            "📺 Electro y Tecno"
         ],
-        "link": "https://www.carrefour.com.ar/23664?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/0b067925-1c88-47a9-afe8-bc6cea65a3e7___062d3f6a5db20fce01a639374f7a6209.webp",
-        "fecha": "2026-01-11"
+        "link": "https://www.carrefour.com.ar/23663?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2d8241d3-ac4f-4811-b208-a97d6ce517e1___0959ab28e50a99828c961b031d4fead7.webp",
+        "fecha": "2026-01-10"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "70% Off en Varios Productos",
+        "descripcion": "Gicun Dtour AHORRO GIGANTE Hasta 2040e Fhoaeo\" MUEv 70% 80 BZ8GRES Lucchetti Yogur Hasta el 12/01 DESCUENTO ERENISIMA DESCUENTO cuasico^@ JEN LA 2D4 UNIDAD skip EN LA 2DA UNIDAD N'34 VER MÁS buzon 1 Tuuarea FTatata Nutrivis 2pm En seleccionados de: 4a paaa dilvif bocoli a5 crginnl Fideos, Yogures, Galletitas y Jabón para la Ropa Sólo consumo familiar; válido por usuarioldocumento",
+        "categoria": [
+            "🧀 Lácteos y Frescos",
+            "🍝 Almacén",
+            "🧹 Limpieza"
+        ],
+        "link": "https://www.carrefour.com.ar/23655?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d1df3d69-e004-4e22-bc30-26f2e3e671d7___89f4b81b9b35599f64ec6a0afee624d0.webp",
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
@@ -87,29 +109,7 @@
         ],
         "link": "https://www.carrefour.com.ar/heladera-inv-nf-gafa-hgnf251p-262l-plata--/p",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/4398c879-d177-4c13-be00-3d7d07cb961e___7bea03f62fbce42ff554ea6360b08ab1.webp",
-        "fecha": "2026-01-11"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "3x2 en Leche",
-        "descripcion": "Leches, Yogures, Aguas; Jugos y más 3x2 LLEVANDO 3 PAGÁS 2 Gng VER PROMO",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.carrefour.com.ar/23659?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ec86156b-17e5-40f4-a5d7-eb4b920b9541___69a67ccf8d90dee482a75f1f88ae62d5.webp",
-        "fecha": "2026-01-11"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Lavarropas",
-        "descripcion": "Lavarropas y Heladeras ate CUOTAS SIN INTERÉS HASTA 30 DESCUENTO VER PROMO",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23662?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/aef0b35b-f731-4c74-a6c3-b3ba57aca05b___699afb847fc75e8161417cba8111c379.webp",
-        "fecha": "2026-01-11"
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
@@ -120,7 +120,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23657?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/36b5b25e-8df9-4937-8025-2567d4b879b1___b117aa3acd06353692169f828e4749b0.webp",
-        "fecha": "2026-01-11"
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
@@ -131,7 +131,7 @@
         ],
         "link": "https://www.carrefour.com.ar/suprema-congelada-x-kg-704563/p",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ff002d2d-7151-4a47-a6a8-25be87cb784a___539b8c6d0fae9eb3060ae89d768b9ddb.webp",
-        "fecha": "2026-01-11"
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
@@ -142,7 +142,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23658?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/129108ff-56ca-4631-ad8a-4ca40c977dae___24efa111dddc657821a1129a886a92f2.webp",
-        "fecha": "2026-01-11"
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
@@ -153,7 +153,7 @@
         ],
         "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d19be331-f938-4fc2-9e1d-687f22f3ee12___e3361f32a250d2be80773d7a85082cb7.webp",
-        "fecha": "2026-01-11"
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
@@ -164,7 +164,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23662?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3927a2c6-42d0-4218-aec7-261c929f5253___943f583b1370ceee1df4243a4cc09f3a.webp",
-        "fecha": "2026-01-11"
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
@@ -175,7 +175,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23661?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/30f24711-7ed9-431c-b57e-59ca2a85a8b9___8d9f0ebb6b457334c1ed24c29626d4c8.webp",
-        "fecha": "2026-01-11"
+        "fecha": "2026-01-10"
     },
     {
         "supermercado": "Carrefour",
@@ -186,6 +186,6 @@
         ],
         "link": "https://www.carrefour.com.ar/23666?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/74d8d425-0af5-40b3-a3fc-c220d30072ea___26d6edd05a9356738f2002a1bebae3e1.webp",
-        "fecha": "2026-01-11"
+        "fecha": "2026-01-10"
     }
 ]
