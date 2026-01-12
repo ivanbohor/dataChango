@@ -2,17 +2,17 @@
     {
         "supermercado": "Carrefour",
         "titulo": "Oferta en Seleccionados (🍝 Almacén)",
-        "descripcion": "Oferta Detectada",
+        "descripcion": "3",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/20666?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/61187cb6-3c7c-4fea-ae83-444a0ade661a___ab830f59ded4b04cd5ec9a79d866c61c.png",
+        "link": "https://www.carrefour.com.ar/11564?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/71685ddd-92f0-4e22-ad08-31542f6980a8___20a95c686cf5560b5c24d05f0c44fb96.webp",
         "fecha": "2026-01-12"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "3 Cuotas S/Int en Almacén",
+        "titulo": "3 Cuotas S/Int en Seleccionados (🍝 Almacén)",
         "descripcion": "20% DESCUENTO PAGANDO CON DINERO EN CUENTA Tope de descuento por usuario $15.000 mercado pa9o Sólo por el 12/01 VER MÁs Exclusivo Online HASTA 3 Cuotas CaganssiconrJeta sin interés syeta a r.lslón aedtkla de Mofcado Pago Ver legales en www.carrefour: com arldescuentos-bancarios",
         "categoria": [
             "🍝 Almacén"
@@ -30,17 +30,6 @@
         ],
         "link": "https://www.carrefour.com.ar/23659?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/a151e31a-e20e-4d03-a6e1-b9a3b2c6b5e7___4463d6c2a107a13c8d30559e05ac0106.webp",
-        "fecha": "2026-01-12"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "15% Off en Seleccionados (🍝 Almacén)",
-        "descripcion": "EXCLUSIVO ONLINE Comprando con ENTREGA INMEDIATA los Lunes de Enero de 2026 NUEVO Club Haclendo tu compra del super LA NACION onllne los Lunes de Enero COMPRAR 15% DESCUENTO SIN TOPE Utiliande Cupon ootenido NACION httpsslsuscripciones lanacion com ar/suscripcion Vereaple GotreteranaatSeaaaraaa , Incuaelactodomesdcorelcbonla telencnlaceuorcamkeriaechesInanuier maternizadasetapa T21 EN0reEb RECIBILO EN MAX INMEDINtn IH 24 Si estas en CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL recibí tu pedido en menos de IHORA",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/6e090238-4882-4fc4-8cdc-13f48530966b___d039da60487206dd527a70fc5787b326.webp",
         "fecha": "2026-01-12"
     },
     {
@@ -78,30 +67,6 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "70% Off en Varios Productos",
-        "descripcion": "Gicun Dtour AHORRO GIGANTE Hasta 2040e Fhoaeo\" MUEv 70% 80 BZ8GRES Lucchetti Yogur Hasta el 12/01 DESCUENTO ERENISIMA DESCUENTO cuasico^@ JEN LA 2D4 UNIDAD skip EN LA 2DA UNIDAD N'34 VER MÁS buzon 1 Tuuarea FTatata Nutrivis 2pm En seleccionados de: 4a paaa dilvif bocoli a5 crginnl Fideos, Yogures, Galletitas y Jabón para la Ropa Sólo consumo familiar; válido por usuarioldocumento",
-        "categoria": [
-            "🍝 Almacén",
-            "🧀 Lácteos y Frescos",
-            "🧹 Limpieza"
-        ],
-        "link": "https://www.carrefour.com.ar/23655?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d1df3d69-e004-4e22-bc30-26f2e3e671d7___89f4b81b9b35599f64ec6a0afee624d0.webp",
-        "fecha": "2026-01-12"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Lavarropas",
-        "descripcion": "HASTA HASTA 12 SUOEALS 308  DESCUENTO SIN AHORRO GIGANTE Hasta el 12/01 VER MÁS En seleccionados de Lavarropas Automáticos y Heladeras Sólo consumo familiar, válido por usuarioldocumento.",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23662?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/8bb1164b-3846-4559-a2bd-a0f6aceadf7b___216b450c26873b03e7fd292a0adc0cde.webp",
-        "fecha": "2026-01-12"
-    },
-    {
-        "supermercado": "Carrefour",
         "titulo": "12 Cuotas S/Int en Heladeras",
         "descripcion": "PRECIO NORMAL 81-499-000 Hasta el 12/01 Heladera Samsung Inverter 298 Lts OFERTA 81.099.000 12 CUOTAS SIN INTERÉS DE 891.583 VER MÁS Solo consumo familiar; válido por usuarioldocumento",
         "categoria": [
@@ -109,6 +74,17 @@
         ],
         "link": "https://www.carrefour.com.ar/heladera-samsung-no-frost-inverter-298-lts-rt29k577j-gris/p",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/24f2bcd3-417a-4158-a092-f50934dc5289___245a2aec42797e8ee35766a950ba90c9.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Lavarropas",
+        "descripcion": "Lavarropas y Heladeras ate CUOTAS SIN INTERÉS HASTA 30 DESCUENTO VER PROMO",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23662?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/aef0b35b-f731-4c74-a6c3-b3ba57aca05b___699afb847fc75e8161417cba8111c379.webp",
         "fecha": "2026-01-12"
     },
     {
@@ -157,13 +133,35 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Aires Acondicionados",
-        "descripcion": "Hiscnse",
+        "titulo": "12 Cuotas S/Int en Lavarropas",
+        "descripcion": "Hasta 12cuotAs HASTA 30 Plooescuenro En seleccionados de: Lavarropas y Heladeras Hasta el 12/01",
         "categoria": [
             "📺 Electro y Tecno"
         ],
-        "link": "https://www.carrefour.com.ar/freidora-de-aire-digital-hisense-6-3-l-1300-w-h06afbk1s1-1750545/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/651283-170-170?v=638816186121170000&width=170&height=170&aspect=true",
+        "link": "https://www.carrefour.com.ar/23662?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3927a2c6-42d0-4218-aec7-261c929f5253___943f583b1370ceee1df4243a4cc09f3a.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "35% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "Hasta el 12/01 35% DESCUENTO En selecclonados de: Congelados, Aderezos Aceites y más VER MÁS",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23661?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/30f24711-7ed9-431c-b57e-59ca2a85a8b9___8d9f0ebb6b457334c1ed24c29626d4c8.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Seleccionados (Electro)",
+        "descripcion": "Hasta el 12/01 Hasta HASTA En seleccionados de: 12 CUOTAS 509 DESCUENTO Plletas, Muebles de Exterlor SIN INTERÉS y Alre Llbre VER MÁS INTEX",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23666?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/74d8d425-0af5-40b3-a3fc-c220d30072ea___26d6edd05a9356738f2002a1bebae3e1.webp",
         "fecha": "2026-01-12"
     }
 ]

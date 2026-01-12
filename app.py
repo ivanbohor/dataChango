@@ -15,13 +15,24 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# --- 🧪 MODO PRUEBA ---
-MODO_PRUEBA = True 
+# --- 🧪 MODO PRUEBA (Desactivar en producción si ya tienes los JSON) ---
+MODO_PRUEBA = False 
 
-# --- DATOS DE PROMOS BANCARIAS (CARGA Y TRANSFORMACIÓN) ---
+# --- FUNCIONES DE CARGA CON CACHÉ ---
+
+@st.cache_data(ttl=3600, show_spinner=False)
 def cargar_y_transformar_promos():
-    # Lista de archivos a leer
-    archivos_json = ["promos_bancarias.json", "promos_bancarias_coto.json", "promos_bancarias_jumbo.json", "promos_bancarias_masonline.json"]
+    """
+    Carga los JSON de promociones bancarias y los estructura para la tabla.
+    Se cachea por 1 hora (3600s) para mejorar performance.
+    """
+    # Lista completa de archivos
+    archivos_json = [
+        "promos_bancarias.json",       # Carrefour
+        "promos_bancarias_coto.json",  # Coto
+        "promos_bancarias_jumbo.json", # Jumbo
+        "promos_bancarias_masonline.json" # MasOnline
+    ]
     
     estructura = {
         "Carrefour": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]},
@@ -46,6 +57,7 @@ def cargar_y_transformar_promos():
                     link = p.get("link", "#")
 
                     if super_nm in estructura and dia in estructura[super_nm]:
+                        # Formato interno: BANCO|DESCUENTO|TOPE|VER_LEGALES|LINK
                         valor_formateado = f"{banco}|{desc}|{tope}|{ver_legales}|{link}"
                         estructura[super_nm][dia].append(valor_formateado)
                         
@@ -54,7 +66,78 @@ def cargar_y_transformar_promos():
             
     return estructura
 
+@st.cache_data(ttl=3600, show_spinner=False)
+def cargar_datos_ofertas():
+    """
+    Carga los JSON de ofertas de productos (Carne, Leche, etc).
+    Se cachea por 1 hora.
+    """
+    archivos = {
+        "Carrefour": "ofertas_carrefour.json", 
+        "Jumbo": "ofertas_jumbo.json", 
+        "Coto": "ofertas_coto.json", 
+        "MasOnline": "ofertas_masonline.json"
+    }
+    todas_ofertas = []
+    conteo_ofertas = {k: 0 for k in archivos.keys()} 
+    
+    for nombre, archivo in archivos.items():
+        if os.path.exists(archivo):
+            try:
+                with open(archivo, "r", encoding="utf-8") as f:
+                    datos = json.load(f)
+                    if isinstance(datos, list):
+                        for d in datos: 
+                            d["origen_filtro"] = nombre
+                            # Aplicamos sanitización aquí para cachearla ya limpia
+                            d = sanitizar_oferta(d)
+                        todas_ofertas.extend(datos)
+                        conteo_ofertas[nombre] = len(datos)
+            except: pass
+        elif MODO_PRUEBA:
+            # Datos fake solo si no existen los archivos y estamos en modo prueba
+            fake = []
+            if nombre == "Coto": fake = [{"titulo": "Asado (Fake)", "categoria": ["🥩 Carnes"], "supermercado": "Coto", "imagen": "https://via.placeholder.com/300", "link": "#", "origen_filtro": "Coto", "fecha": "2026-01-01"}]
+            if fake:
+                todas_ofertas.extend(fake)
+                conteo_ofertas[nombre] = len(fake)
+                
+    return todas_ofertas, conteo_ofertas
+
+# --- UTILIDADES ---
+def normalizar_texto(texto):
+    if not isinstance(texto, str): return ""
+    return ''.join(c for c in unicodedata.normalize('NFD', texto.lower().strip()) if unicodedata.category(c) != 'Mn')
+
+def sanitizar_oferta(oferta):
+    cats_sucias = oferta.get("categoria", [])
+    cats_limpias = []
+    if isinstance(cats_sucias, str): cats_sucias = [cats_sucias]
+    for c in cats_sucias:
+        c_lower = c.lower()
+        if "fresco" in c_lower: cats_limpias.append("🧀 Lácteos y Frescos")
+        elif "vario" in c_lower:
+            titulo = oferta.get("titulo", "").lower()
+            if "toalla" in titulo or "sabana" in titulo: cats_limpias.append("🏠 Hogar y Bazar")
+            elif "tv" in titulo or "celu" in titulo: cats_limpias.append("📺 Electro y Tecno")
+            elif "juguete" in titulo: cats_limpias.append("🧸 Juguetes")
+            else: cats_limpias.append("🍝 Almacén")
+        elif "banco" in c_lower or "tarjeta" in c_lower: cats_limpias.append("💳 Bancarias")
+        elif "hogar" in c_lower: cats_limpias.append("🏠 Hogar y Bazar")
+        elif "automotor" in c_lower: cats_limpias.append("🚗 Auto y Aire Libre")
+        elif "electro" in c_lower: cats_limpias.append("📺 Electro y Tecno")
+        else: cats_limpias.append(c)
+    oferta["categoria"] = list(set(cats_limpias))
+    return oferta
+
+def get_img_as_base64(file):
+    try:
+        with open(file, "rb") as f: return base64.b64encode(f.read()).decode()
+    except: return ""
+
+# --- CARGA DE DATOS (INVOCACIÓN CACHEADA) ---
 PROMOS_DATA = cargar_y_transformar_promos()
+ofertas_raw, conteos = cargar_datos_ofertas()
 
 # --- INYECCIÓN DE SCRIPTS GLOBALES ---
 def inyectar_recursos_globales():
@@ -129,63 +212,7 @@ if 'filtro_ver_todo' not in st.session_state: st.session_state.filtro_ver_todo =
 for h in HIPERS:
     if f"chk_{h}" not in st.session_state: st.session_state[f"chk_{h}"] = False
 
-# --- UTILIDADES ---
-def normalizar_texto(texto):
-    if not isinstance(texto, str): return ""
-    return ''.join(c for c in unicodedata.normalize('NFD', texto.lower().strip()) if unicodedata.category(c) != 'Mn')
-
-def sanitizar_oferta(oferta):
-    cats_sucias = oferta.get("categoria", [])
-    cats_limpias = []
-    if isinstance(cats_sucias, str): cats_sucias = [cats_sucias]
-    for c in cats_sucias:
-        c_lower = c.lower()
-        if "fresco" in c_lower: cats_limpias.append("🧀 Lácteos y Frescos")
-        elif "vario" in c_lower:
-            titulo = oferta.get("titulo", "").lower()
-            if "toalla" in titulo or "sabana" in titulo: cats_limpias.append("🏠 Hogar y Bazar")
-            elif "tv" in titulo or "celu" in titulo: cats_limpias.append("📺 Electro y Tecno")
-            elif "juguete" in titulo: cats_limpias.append("🧸 Juguetes")
-            else: cats_limpias.append("🍝 Almacén")
-        elif "banco" in c_lower or "tarjeta" in c_lower: cats_limpias.append("💳 Bancarias")
-        elif "hogar" in c_lower: cats_limpias.append("🏠 Hogar y Bazar")
-        elif "automotor" in c_lower: cats_limpias.append("🚗 Auto y Aire Libre")
-        elif "electro" in c_lower: cats_limpias.append("📺 Electro y Tecno")
-        else: cats_limpias.append(c)
-    oferta["categoria"] = list(set(cats_limpias))
-    return oferta
-
-def cargar_datos():
-    archivos = {"Carrefour": "ofertas_carrefour.json", "Jumbo": "ofertas_jumbo.json", "Coto": "ofertas_coto.json", "MasOnline": "ofertas_masonline.json"}
-    todas_ofertas = []
-    conteo_ofertas = {k: 0 for k in archivos.keys()} 
-    for nombre, archivo in archivos.items():
-        if os.path.exists(archivo):
-            try:
-                with open(archivo, "r", encoding="utf-8") as f:
-                    datos = json.load(f)
-                    if isinstance(datos, list):
-                        for d in datos: 
-                            d["origen_filtro"] = nombre
-                            d = sanitizar_oferta(d)
-                        todas_ofertas.extend(datos)
-                        conteo_ofertas[nombre] = len(datos)
-            except: pass
-        elif MODO_PRUEBA:
-            fake = []
-            if nombre == "Coto": fake = [{"titulo": "Asado", "categoria": ["🥩 Carnes"], "supermercado": "Coto", "imagen": "https://via.placeholder.com/300", "link": "#", "origen_filtro": "Coto", "fecha": "2026-01-01"}] * 3
-            if nombre == "Jumbo": fake = [{"titulo": "Detergente", "categoria": ["🧹 Limpieza"], "supermercado": "Jumbo", "imagen": "https://via.placeholder.com/300", "link": "#", "origen_filtro": "Jumbo", "fecha": "2026-01-01"}] * 2
-            if fake:
-                todas_ofertas.extend(fake)
-                conteo_ofertas[nombre] = len(fake)
-    return todas_ofertas, conteo_ofertas
-
-def get_img_as_base64(file):
-    try:
-        with open(file, "rb") as f: return base64.b64encode(f.read()).decode()
-    except: return ""
-
-# --- 3. ESTILOS GLOBALES ---
+# --- 3. ESTILOS GLOBALES (CSS) ---
 st.markdown("""
     <style>
         .stApp { background-color: #0e3450; }
@@ -277,9 +304,6 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-# --- 5. LOGICA ---
-ofertas_raw, conteos = cargar_datos()
-
 ESTILOS_SUPER = {
     "Carrefour": {"color": "#1e40af", "icono": "🔵"}, 
     "Coto":      {"color": "#d32f2f", "icono": "🔴"}, 
@@ -318,7 +342,7 @@ with st.expander("🔎 Filtrar Ofertas", expanded=False):
                 st.rerun()
 
 # --- MODULO DE PROMOS BANCARIAS ---
-with st.expander("💳 Calendario de Descuentos Bancarios(Online)", expanded=False):
+with st.expander("💳 Calendario de Descuentos Bancarios (Online)", expanded=False):
     dia_semana_hoy = datetime.datetime.today().weekday()
     dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
     headers = ["LUN", "MAR", "MIÉ", "JUE", "VIE", "SÁB", "DOM"]

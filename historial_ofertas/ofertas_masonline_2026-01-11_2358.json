@@ -8,7 +8,7 @@
         ],
         "link": "https://www.masonline.com.ar/335?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/33c111a6-4164-4ee1-9370-133b2abc90c4/image/attachments/01_Banner_Home%20(07%20al%2013)_BHC_DKP%20copia%202.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
@@ -19,7 +19,7 @@
         ],
         "link": "https://www.masonline.com.ar/397?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/feb19b70-632a-4b02-a15a-b28d24896803/image/attachments/Home_Galletas_dkt2.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
@@ -30,7 +30,7 @@
         ],
         "link": "https://www.masonline.com.ar/2618?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/e237d990-cb6e-4815-9814-ff9757c22804/image/attachments/01_Banner_Home%20(07%20al%2013)_BHC_DKP%20copia%206.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
@@ -41,7 +41,7 @@
         ],
         "link": "https://www.masonline.com.ar/aire-libre",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/64acbcc9-722c-11f0-b37f-f6baeb9af05c/image/attachments/Home_Jardin_dkt.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
@@ -53,29 +53,29 @@
         ],
         "link": "https://www.masonline.com.ar/masofertas-electroyhogar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/65befd4a-371e-4605-91c1-f1b59d34b0b0/image/attachments/Home_GM_dkt.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
         "titulo": "15% Off en Varios Productos",
-        "descripcion": "ChangoMâs MâsOnline comar SIN TOPE Beneficio Lunes y Jueves Mâs club' 15% 7 Exclusivo MâsOnline Descuento comar entu compra No acumulable con otras promociones. Consultas detalles y legales en WWW.masonline com.ar/promociones-bancarias Martes y Miércoles Exclusivo Sucursal QUIERO VERMÁs ",
+        "descripcion": "SIN - BILLETERAS VIRTUALES TOPE 15% Sábado y Domingo PAGÁ CON QR Descuento Aplica exclusiones. (BV)=  ",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.masonline.com.ar/masclub",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/a8b24713-a07f-4c83-bb54-d6d2c86a8071/image/attachments/11_masclub_dkp.webp",
-        "fecha": "2026-01-12"
+        "link": "https://www.masonline.com.ar/promociones-bancarias?dia=viernes",
+        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/61e673f2-10ed-4f34-8015-e6c5caf6c02b___2ca2f47b880c1a9de9c099232da137ce.webp",
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "Oferta en Smart TV",
+        "titulo": "Oferta en Celulares",
         "descripcion": "Anr Hasta 402 Descuento Hasta 12 SNOtRES SIN smart tv y celulares smart tv y celulares",
         "categoria": [
             "📺 Electro y Tecno"
         ],
         "link": "https://www.masonline.com.ar/411?map=productClusterIds",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/4817208d-c052-4c82-999a-b0e64eddbbdb___710326c7834d4e423bd2a5dbb732c9de.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
@@ -87,7 +87,7 @@
         ],
         "link": "https://www.masonline.com.ar/3353?map=productClusterIds",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/ec70936b-ccb7-4c42-b6d3-894d2943bd0b___cf8a216e9500968a13ad170fddb7666a.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
@@ -98,7 +98,7 @@
         ],
         "link": "https://www.masonline.com.ar/aire-acondicionado-philco-inverter-frio-calor-8750w/p",
         "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/354136-230-230?v=638827482345770000&width=230&height=230&aspect=true",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
@@ -109,7 +109,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/bd7f6158-6e8f-494b-9afe-5f4b1e7515d3/multimedia/attachments/01_Regionales_Verano_Regional_1-%20Almacen.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
@@ -120,7 +120,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/a4f285b3-837e-11f0-b37f-c3815824db45/multimedia/attachments/01_Regionales_Verano_Regional_2-%20Bebidas2.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
@@ -131,11 +131,11 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/4ea7067a-d892-4f4d-bca3-3ff9779209a5/multimedia/attachments/01_Regionales_Verano_Regional_3-%20Lacteos.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "40% Off en Perfumería",
+        "titulo": "40% Off en Art. Limpieza",
         "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdr Perfumería Y limpieza Hasta 40% Doscuento PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
         "categoria": [
             "🧹 Limpieza",
@@ -143,7 +143,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/89a33b33-bd19-4887-896d-713c7fe12f14/multimedia/attachments/01_Regionales_Verano_Regional_4-%20Perfumeria2.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     },
     {
         "supermercado": "MasOnline",
@@ -155,6 +155,6 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/80c63c95-9789-4c6d-adb9-2236ee5905fb/multimedia/attachments/01_Regionales_Verano_Regional_6-%20Pequen%CC%83o%20electro.webp",
-        "fecha": "2026-01-12"
+        "fecha": "2026-01-11"
     }
 ]

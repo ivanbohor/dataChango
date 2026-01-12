@@ -1,0 +1,103 @@
+[
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Seleccionados (🍝 Almacén)",
+        "descripcion": "3",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/11564?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/71685ddd-92f0-4e22-ad08-31542f6980a8___20a95c686cf5560b5c24d05f0c44fb96.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "10% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "Los días L MIIM S D de Enero PAGANDO CON Carrefour banco Tu banco digital atendido por personas NUEVA ACUMULABLE 10% CON TODAS LAS PROMOS Cuenta Digital Donde tu dinero iSIN TOPE! Mi Carrefour iRINDE MÁS! Exclusivo online APROVECHAR",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/ALMACEN",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/39370186-769d-40ec-a5ad-b0056f025c6d___48b04e5efcacec1c944776bb6f2192cb.png",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "70% Off en Varios Productos",
+        "descripcion": "Gicun Dtour AHORRO GIGANTE Hasta 2040e Fhoaeo\" MUEv 70% 80 BZ8GRES Lucchetti Yogur Hasta el 12/01 DESCUENTO ERENISIMA DESCUENTO cuasico^@ JEN LA 2D4 UNIDAD skip EN LA 2DA UNIDAD N'34 VER MÁS buzon 1 Tuuarea FTatata Nutrivis 2pm En seleccionados de: 4a paaa dilvif bocoli a5 crginnl Fideos, Yogures, Galletitas y Jabón para la Ropa Sólo consumo familiar; válido por usuarioldocumento",
+        "categoria": [
+            "🧀 Lácteos y Frescos",
+            "🧹 Limpieza",
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23655?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1b5bf833-a78c-4f20-aecf-d292afbac745___89f4b81b9b35599f64ec6a0afee624d0.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Smart TV",
+        "descripcion": "HASTA HASTA 12 SUOEALS 308 DESCUENTO SIN AHORRO GIGANTE Oled Hasta el 12/01 43\" Woe ll VER MÁS En seleccionados de Aires Acondicionados y Smart TVs Sólo consumo familiar, válido por usuarioldocumento. Fui-iDVV",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23663?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/70a5ac1a-1a6c-4935-8e4e-483a69739445___0959ab28e50a99828c961b031d4fead7.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Café",
+        "descripcion": "ConlDou MCanrour S AHORRO GIGANTE 352 4O/ NESCAFE 25uvasos 48205 DESCUENTO DESCUENTO dolco Agua LhAJDIKA COwuR OriginAL Nesquik @mfort Oyudh OFF! Origina amly Pesoneto MAGISTRAL 3609 En seleccionados de: Ohn eaoln Orkinal Sr PACK AHORRO Café, Detergente, Lavandina, Suavizantes y más Hasta el 12/01 VER MÁS Sólo consumo familiar; válido por usuarioldocumento .",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23660?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2d427943-f039-4ca3-a4f6-acba9d077062___57ccc79d67cff2a8ac1fdf1bbac0476a.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "90% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "EXCLUSIVO ONLINE TIENDAS OFICIALES DE 90% AHORRO DE CLORO El agua de tu pile limpia isin esfuerzos! IONIZADOR SOLAR DESDE $47.999 INSTAINCIÓN ELIMINA BACTERIAS NO ES NOCIVO PARA LA PIEL Del 09/01 al 11/01",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23722?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/e4cfb3e2-044c-443d-be06-0a6073c3fbb1___811ddf0d838012c448d26d9dd97a43f5.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Heladeras",
+        "descripcion": "PRECIO NORMAL 414155-000 Heladera Gafa NF 262L Inv Plata OFERTA 8799.000 12 CUOTAS SIN INTERÉS DE 866.583 VER MÁS Solo consumo familiar; valido por usuarioldocumento",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/heladera-inv-nf-gafa-hgnf251p-262l-plata--/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/4398c879-d177-4c13-be00-3d7d07cb961e___7bea03f62fbce42ff554ea6360b08ab1.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Leche",
+        "descripcion": "Leches, Yogures, Aguas; Jugos y más 3x2 LLEVANDO 3 PAGÁS 2 Gng VER PROMO",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/23659?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ec86156b-17e5-40f4-a5d7-eb4b920b9541___69a67ccf8d90dee482a75f1f88ae62d5.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Lavarropas",
+        "descripcion": "Lavarropas y Heladeras ate CUOTAS SIN INTERÉS HASTA 30 DESCUENTO VER PROMO",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23662?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/aef0b35b-f731-4c74-a6c3-b3ba57aca05b___699afb847fc75e8161417cba8111c379.webp",
+        "fecha": "2026-01-12"
+    }
+]

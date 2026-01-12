@@ -19,10 +19,11 @@ NOMBRE_SUPER = "Carrefour"
 URL_SUPER = "https://www.carrefour.com.ar"
 ARCHIVO_SALIDA = "ofertas_carrefour.json"
 
-print(f">>> 🇫🇷 Iniciando Scraper {NOMBRE_SUPER} (V51: Hybrid Vision)...")
+print(f">>> 🇫🇷 Iniciando Scraper {NOMBRE_SUPER} (V54: URL Intelligence)...")
 
 if os.path.exists(ARCHIVO_SALIDA): os.remove(ARCHIVO_SALIDA)
 
+# Inicializamos OCR una sola vez
 reader = easyocr.Reader(['es'], gpu=False) 
 
 # --- 1. DICCIONARIO MAESTRO ---
@@ -57,6 +58,7 @@ DB_MAESTRA = {
     "pollo": ("Pollo", "🥩 Carnicería"),
     "pollos": ("Pollo", "🥩 Carnicería"),
     "cerdo": ("Cerdo", "🥩 Carnicería"),
+    "suprema": ("Pollo", "🥩 Carnicería"), 
 
     # 🍝 ALMACÉN
     "fideo": ("Fideos", "🍝 Almacén"),
@@ -106,8 +108,9 @@ def sanitizar_texto_exclusiones(texto):
     return texto[:indice_corte]
 
 # --- LÓGICA DE CATEGORIZACIÓN ---
-def detectar_categorias_inteligente(texto_sanitizado, es_cluster=False):
-    t_limpio = normalizar_texto(texto_sanitizado.replace("carrefour", ""))
+def detectar_categorias_inteligente(texto_sanitizado, href_real=""):
+    # Buscamos tanto en el texto OCR como en la URL
+    t_limpio = normalizar_texto(texto_sanitizado.replace("carrefour", "") + " " + href_real)
     etiquetas = []
     
     for keyword, (producto, categoria_final) in DB_MAESTRA.items():
@@ -126,25 +129,39 @@ def detectar_categorias_inteligente(texto_sanitizado, es_cluster=False):
     cats_prod = [c for c in etiquetas if c != "💳 Bancarias"]
     if cats_prod: return list(set(cats_prod))
     
-    if es_cluster: return ["🍝 Almacén"]
+    # Si la URL tiene pistas de cluster
+    if "productclusterids" in href_real.lower(): return ["🍝 Almacén"]
     return ["🍝 Almacén"] 
 
-# --- VALIDACIÓN ---
+# --- VALIDACIÓN (MEJORADA V54) ---
 def es_oferta_valida(texto_sanitizado, href_real):
     t_norm = normalizar_texto(texto_sanitizado)
     href_lower = (href_real or "").lower()
 
+    # 1. Clusters y Colecciones siempre pasan
     if "productclusterids" in href_lower or "collection" in href_lower: return True
+    
+    # 2. Filtro negativo
     if any(x in t_norm for x in ["horarios", "sucursales", "copyright", "seguinos", "whatsapp", "app"]): return False
 
+    # 3. Señales de Oferta en TEXTO
     senales = ["%", "off", "2x1", "3x2", "4x2", "2da", "cuotas", "ahorro", "descuento", "precio", "$", "oferta", "llevando"]
     tiene_senal = any(s in t_norm for s in senales)
 
+    # 4. Si es producto (/p), validamos por TEXTO o por URL
+    # Aquí estaba el fallo: si el OCR fallaba, rechazaba la Suprema.
+    # Ahora miramos si la URL contiene palabras clave.
     es_producto = href_lower.endswith("/p") or "/p?" in href_lower
-    if es_producto: return True if tiene_senal else False
     
-    super_vips = ["vino", "bodega", "tv", "aire", "celular", "leche", "carne", "asado", "pollo", "atun"]
-    if any(v in t_norm for v in super_vips): return True
+    if es_producto:
+        # Palabras clave VIP que activan la oferta aunque no diga "Oferta"
+        super_vips = ["vino", "bodega", "tv", "aire", "celular", "leche", "carne", "asado", "pollo", "suprema", "atun", "milanesa", "jamon", "queso"]
+        
+        # Chequeamos URL y Texto
+        if any(v in href_lower for v in super_vips): return True
+        if any(v in t_norm for v in super_vips): return True
+        
+        return True if tiene_senal else False
     
     if tiene_senal: return True
     return False
@@ -158,16 +175,22 @@ def limpiar_texto_ocr(texto_sanitizado, texto_alt, categorias_detectadas, href_r
     match_cuotas = re.search(r'\b(3|6|9|12|18|24)\s*(?:CUO|CTA|PAGOS)', t_clean, re.IGNORECASE)
     match_pct = re.search(r'(\d+)%', t_clean)
     match_nxn = re.search(r'(\d+\s*[xX]\s*\d+)', t_clean) 
-    
+    match_precio = re.search(r'(\$\d[\d\.]*)', t_clean)
+
     if match_nxn: prefijo = match_nxn.group(1).lower().replace(" ", "")
     elif match_cuotas: prefijo = f"{match_cuotas.group(1)} Cuotas S/Int"
     elif match_pct: 
         if "2do" in t_norm: prefijo = f"2do al {match_pct.group(1)}%"
         else: prefijo = f"{match_pct.group(1)}% Off"
+    elif match_precio:
+        prefijo = f"A solo {match_precio.group(1)}"
     
     prods = []
+    # Buscamos productos en texto Y en URL
+    texto_busqueda = t_norm + " " + normalizar_texto(href_real)
+    
     for k, v in DB_MAESTRA.items():
-        if re.search(r'\b' + re.escape(k) + r'\b', t_norm):
+        if re.search(r'\b' + re.escape(k) + r'\b', texto_busqueda):
             if v[0] != "Promoción Bancaria": prods.append(v[0])
             
     if prods:
@@ -184,23 +207,32 @@ def limpiar_texto_ocr(texto_sanitizado, texto_alt, categorias_detectadas, href_r
 
 def procesar_oferta(src, href_real, texto_alt, titulos_procesados, ofertas_encontradas):
     try:
-        headers = {'User-Agent': 'Mozilla/5.0'}
+        # Headers mejorados para evitar bloqueos de CDN
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Referer': 'https://www.carrefour.com.ar/'
+        }
+        
         try: resp = requests.get(src, headers=headers, timeout=5)
-        except: return
-        if resp.status_code != 200: return
+        except: 
+            print(f"      [X] Error descarga: {src[:30]}...")
+            return
+            
+        if resp.status_code != 200: 
+            print(f"      [X] Status {resp.status_code}: {src[:30]}...")
+            return
 
         res_ocr = reader.readtext(resp.content, detail=0, paragraph=True)
         texto_ocr = " ".join(res_ocr)
         texto_limpio = sanitizar_texto_exclusiones(f"{texto_ocr} {texto_alt}")
         
-        es_cluster = "productclusterids" in (href_real or "").lower() or "collection" in (href_real or "").lower()
-
+        # Pasamos href_real a las funciones de validación y detección
         if es_oferta_valida(texto_limpio, href_real):
-            cats = detectar_categorias_inteligente(texto_limpio, es_cluster)
+            cats = detectar_categorias_inteligente(texto_limpio, href_real)
             titulo_final = limpiar_texto_ocr(texto_limpio, "", cats, href_real)
 
             if titulo_final not in titulos_procesados:
-                print(f"      👀 RAW: {texto_limpio[:40]}... -> CAT: {cats}")
+                # print(f"      👀 RAW: {texto_limpio[:40]}... -> CAT: {cats}")
                 oferta = {
                     "supermercado": NOMBRE_SUPER,
                     "titulo": titulo_final,
@@ -212,42 +244,29 @@ def procesar_oferta(src, href_real, texto_alt, titulos_procesados, ofertas_encon
                 }
                 ofertas_encontradas.append(oferta)
                 titulos_procesados.add(titulo_final)
-                print(f"      ✅ GUARDADO: {cats} {titulo_final}")
+                print(f"      ✅ GUARDADO: {titulo_final}")
+        else:
+            # DEBUG: Para ver por qué rechaza
+            # if "suprema" in href_real or "vino" in href_real:
+            #    print(f"      [X] RECHAZADO: {texto_limpio[:30]} | URL: {href_real[:30]}")
+            pass
+
     except Exception as e: pass
 
-# --- NAVEGACIÓN ---
+# --- NAVEGACIÓN Y EXTRACCIÓN ---
 
 def intentar_cerrar_popups(driver):
     print("   🛡️ Neutralizando pop-ups...")
     try: webdriver.ActionChains(driver).send_keys(Keys.ESCAPE).perform()
     except: pass
     try:
-        wait = WebDriverWait(driver, 5)
-        xpath_busqueda = "//button[contains(., 'Aceptar') or contains(., 'Cerrar') or contains(., 'Entendido') or contains(@class, 'close') or contains(@class, 'vtex-modal')]"
-        botones = driver.find_elements(By.XPATH, xpath_busqueda)
-        for btn in botones:
-            if btn.is_displayed():
-                btn.click()
-                time.sleep(0.5)
+        driver.find_element(By.TAG_NAME, "body").click()
     except: pass
 
-def scroll_progresivo(driver):
-    print("   📜 Scroll Progresivo (Carga Profunda)...")
-    # Scroll lento hasta el fondo para activar Lazy Loading de TODA la página
-    altura_total = driver.execute_script("return document.body.scrollHeight")
-    paso = 400
-    for i in range(0, altura_total, paso):
-        driver.execute_script(f"window.scrollTo(0, {i});")
-        time.sleep(0.3) 
-    
-    time.sleep(1)
-    driver.execute_script("window.scrollTo(0, 0);")
-    time.sleep(1)
-
-def extraccion_masiva_js(driver, titulos_procesados, ofertas_encontradas):
-    print(f"   ☢️ Extracción JS (V51: Hybrid Vision - Slider + Grid)...")
-    
-    # Este script busca CUALQUIER imagen dentro de un link que parezca banner
+def ejecutar_script_extraccion(driver):
+    """
+    JS V53: Específico para clases VTEX de Carrefour.
+    """
     script_js = """
     var items = [];
     
@@ -255,59 +274,68 @@ def extraccion_masiva_js(driver, titulos_procesados, ofertas_encontradas):
         if (!src) return false;
         var s = src.toLowerCase();
         if (s.includes('logo') || s.includes('icon') || s.includes('facebook') || s.includes('instagram')) return false;
-        if (s.length < 20) return false;
+        if (s.length < 15) return false;
         return true;
     }
 
-    // 1. IMAGENES DIRECTAS (<a href><img></a>)
+    var bannersVtex = document.querySelectorAll('.vtex-store-components-3-x-imageElement');
+    bannersVtex.forEach(img => {
+        var src = img.currentSrc || img.src || img.dataset.src;
+        var parentLink = img.closest('a');
+        var href = parentLink ? parentLink.href : '';
+
+        if (esBannerValido(src)) {
+            items.push({src: src, href: href});
+        }
+    });
+
     var anchors = document.querySelectorAll('a');
     anchors.forEach(a => {
         var img = a.querySelector('img');
         if (img) {
-            var src = img.src || img.dataset.src || img.srcset;
+            var src = img.currentSrc || img.src || img.dataset.src;
             if (src && src.includes(' ')) src = src.split(' ')[0];
 
             if (esBannerValido(src)) {
-                // ESTRATEGIA HÍBRIDA:
-                // Aceptamos si es grande (>150px) O si es LazyLoading (width=0) pero es de VTEX/Carrefour
                 var width = img.naturalWidth || img.width || 0;
-                var esGrande = width > 150;
-                var esLazy = (width == 0) && (src.includes('carrefourar') || src.includes('vtex'));
-
-                if (esGrande || esLazy) {
+                if (width > 150) {
                     items.push({src: src, href: a.href});
                 }
-            }
-        }
-        
-        // 2. BACKGROUND IMAGES (divs con fondo)
-        var div = a.querySelector('div');
-        if (div) {
-            var bg = window.getComputedStyle(div).backgroundImage;
-            if (bg && bg.includes('url') && esBannerValido(bg)) {
-                 var srcBg = bg.replace('url("', '').replace('")', '').replace('url(', '').replace(')', '').replace(/"/g, "");
-                 if (div.offsetWidth > 150) {
-                    items.push({src: srcBg, href: a.href});
-                 }
             }
         }
     });
 
     return items;
     """
+    return driver.execute_script(script_js)
+
+def barrido_iterativo(driver, titulos_procesados, ofertas_encontradas):
+    print(f"   ☢️ Iniciando Barrido Iterativo (Scroll + Scan)...")
     
-    try:
-        items_crudos = driver.execute_script(script_js)
-        # Limpieza de duplicados por URL de imagen
-        uniqs = {i['src']: i for i in items_crudos}.values()
+    urls_procesadas_temp = set()
+    altura_total = driver.execute_script("return document.body.scrollHeight")
+    posicion_actual = 0
+    paso_scroll = 600 
+    
+    while posicion_actual < altura_total:
+        # 1. Extraer
+        items_crudos = ejecutar_script_extraccion(driver)
         
-        print(f"      -> {len(uniqs)} Candidatos encontrados (Barriendo todo).")
+        nuevos_items = 0
+        for item in items_crudos:
+            if item['src'] not in urls_procesadas_temp:
+                urls_procesadas_temp.add(item['src'])
+                procesar_oferta(item['src'], item['href'], "JS-Vtex", titulos_procesados, ofertas_encontradas)
+                nuevos_items += 1
         
-        for item in uniqs:
-            if item['src'] not in [o['imagen'] for o in ofertas_encontradas]:
-                procesar_oferta(item['src'], item['href'], "JS-Massive", titulos_procesados, ofertas_encontradas)
-                
-    except Exception as e: print(f"Error JS: {e}")
+        if nuevos_items > 0:
+            print(f"      -> Encontrados {nuevos_items} nuevos elementos.")
+
+        # 2. Scroll
+        posicion_actual += paso_scroll
+        driver.execute_script(f"window.scrollTo(0, {posicion_actual});")
+        time.sleep(2) 
+        altura_total = driver.execute_script("return document.body.scrollHeight")
 
 def obtener_ofertas_carrefour():
     opts = Options()
@@ -319,10 +347,10 @@ def obtener_ofertas_carrefour():
 
     try:
         driver.get(URL_SUPER)
+        print("   ⏳ Esperando carga inicial...")
         time.sleep(5) 
         intentar_cerrar_popups(driver)
-        scroll_progresivo(driver)
-        extraccion_masiva_js(driver, titulos, ofertas)
+        barrido_iterativo(driver, titulos, ofertas)
 
     except Exception as e: print(f"❌ Error: {e}")
     finally: driver.quit()
