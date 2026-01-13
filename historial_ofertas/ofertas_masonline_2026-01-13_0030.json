@@ -1,0 +1,69 @@
+[
+    {
+        "supermercado": "MasOnline",
+        "titulo": "3x2 en Varios Productos",
+        "descripcion": "Del 09al12 de enero ChangoMâs MâsOniine comnar OFERTAS FLASH Lácteos IASERENISIMA Actimel 823 3x2 seleccionados Danette Nd Cápsulas NesLAFe Rbu LLEVÁS 3, PAGÁS 2 decafé NESPRESSO 80s{8 QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM.AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar/335?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/33c111a6-4164-4ee1-9370-133b2abc90c4/image/attachments/01_Banner_Home%20(07%20al%2013)_BHC_DKP%20copia%202.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "15% Off en Varios Productos",
+        "descripcion": "ChangoMâs MâsOnline comar SIN TOPE Beneficio Lunes y Jueves Mâs club' 15% 7 Exclusivo MâsOnline Descuento comar entu compra No acumulable con otras promociones. Consultas detalles y legales en WWW.masonline com.ar/promociones-bancarias Martes y Miércoles Exclusivo Sucursal QUIERO VERMÁs ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar/masclub",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/a8b24713-a07f-4c83-bb54-d6d2c86a8071/image/attachments/11_masclub_dkp.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "70% Off en Galletitas",
+        "descripcion": "Del09al12 de enero ChangoMâs MâsOnline comar Todas OFERTAS FLASH las galletitas 70% Descuento Segunda dulces y saladas Unidad Bagley @realitas OREO Pepitos! Terrabus Traviata PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM.AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.AB.A QUIERO VER MÁs ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar/397?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/feb19b70-632a-4b02-a15a-b28d24896803/image/attachments/Home_Galletas_dkt2.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Gaseosas",
+        "descripcion": "Del 09al12 de enero changoMâs MâsOnline comar OFERTAS FLASH Gaseosas % (2,25 / 2,5L) seleccionadas 50 Descuento @cagl @ccGl Segunda zero Schmeppes Unidad Sprite FANTH QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.AB.A ",
+        "categoria": [
+            "🍷 Bebidas"
+        ],
+        "link": "https://www.masonline.com.ar/2618?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/e237d990-cb6e-4815-9814-ff9757c22804/image/attachments/01_Banner_Home%20(07%20al%2013)_BHC_DKP%20copia%206.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Promoción Bancaria",
+        "descripcion": "Del07al13 de enero ChangoMâs MâsOnline com ar En muebles 30 % dejardín Descuento 12 suotgs Unitario SIN (no incluye plásticos) VISA CABAL] NaranjaX de todos los Bancos QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM.AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.AB.A ",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.masonline.com.ar/aire-libre",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/64acbcc9-722c-11f0-b37f-f6baeb9af05c/image/attachments/Home_Jardin_dkt.webp",
+        "fecha": "2026-01-12"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "12 Cuotas S/Int en Lavarropas",
+        "descripcion": "Del07al13 de enero ChangoMâs MâsOnline (comar Mas Ofertas Verano ToDOS BELECCIONADOE 12 cuotas SIN INTERÉS VISA CABAL de todos los Bancos Mlês Smart tv Aires acond Heladeras Freezer Lavarropas QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM.AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
+        "categoria": [
+            "💳 Bancarias",
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.masonline.com.ar/masofertas-electroyhogar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/65befd4a-371e-4605-91c1-f1b59d34b0b0/image/attachments/Home_GM_dkt.webp",
+        "fecha": "2026-01-12"
+    }
+]

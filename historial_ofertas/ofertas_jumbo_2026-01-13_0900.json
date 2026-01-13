@@ -12,7 +12,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Almacén, Jabón Ropa",
+        "titulo": "40% Off en Perfumería, Art. Limpieza",
         "descripcion": "OFERTAS de la SEMANA siere fim e de [ui Prcmnien Lagr HASTA ALMACÉN, BEBIDAS, FRESCOS, PERFUMERIA 40% Y LIMPIEZA PRODUCTOS SELECCIONADOS . HASTA  20% DE AHORRO* Ve Fecmshzción KERATINA' ShaMpoo Anno 136 skip šFE8IS BIO-ENZIMAS  COMPLETA Belqium LIMPIEZA Cuidado profundo Mas FieraS JABON LIquido CONCENTE EXCLUSIVO ONLINE VÁLIDODEL 12/01AL 15/01. BEBER CONMODERACIÓN Dove AzucaREs ExCESO 1 š ; Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
             "💳 Bancarias",
@@ -139,13 +139,25 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Perfumería, Shampoo",
+        "titulo": "40% Off en Perfumería, Pasta Dental",
         "descripcion": "HASTA 40% olgate [Colgate Dove Fecnshción SENSITIVE KERATIAA PRO Aliyio 1 f Shampoo Cudo 8 VERLEGALES. Perfumería ",
         "categoria": [
+            "🧀 Lácteos y Frescos",
             "🧴 Perfumería y Bebé"
         ],
         "link": "https://www.jumbo.com.ar/56214?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/fd6c6c0d-066b-446a-ae19-6580c370ba31___01961c31853cdf764a87507bc25df4b3.webp",
+        "fecha": "2026-01-13"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Hasta 50% Off en Hasta 50% En Pequeños Electros Hasta 50% En Pequeñ",
+        "descripcion": "llega EN24HS Pequeños electros 150% cCnco c9co š 55% CRÉDITO SNERÉS (ster 22 22 VERLEGALES 'R-une Hasta 50% en Pequeños Electros Hasta 50% en Pequeños Electros",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/56153?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/89f8645e-97e2-4525-84b2-d313b33f7cbd___56bcc7aa0283ca6347dfe2662e4ad4bc.webp",
         "fecha": "2026-01-13"
     },
     {
@@ -159,17 +171,6 @@
         ],
         "link": "https://www.jumbo.com.ar/56265?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/9c172741-b825-4862-9bae-202bc07a1835___67bfc7546a3b6cf09372942621f7747f.webp",
-        "fecha": "2026-01-13"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Hasta 50% En Pequeños Electros Hasta 50% En Pequeñ",
-        "descripcion": "llega EN24HS Pequeños electros 150% cCnco c9co š 55% CRÉDITO SNERÉS (ster 22 22 VERLEGALES 'R-une Hasta 50% en Pequeños Electros Hasta 50% en Pequeños Electros",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.jumbo.com.ar/56153?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/89f8645e-97e2-4525-84b2-d313b33f7cbd___56bcc7aa0283ca6347dfe2662e4ad4bc.webp",
         "fecha": "2026-01-13"
     },
     {

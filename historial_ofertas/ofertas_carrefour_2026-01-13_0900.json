@@ -23,47 +23,13 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "3x2 en Leche",
+        "titulo": "3x2 en Quesos",
         "descripcion": "En seleccionados de: Disfrutá ei verano \"@pnedióCalidad , CON Leches, Aguas, Jugos, Salsas y más ilolay Queso Rallado {Jerentsima @r REGHFDA Guisuol LargA LARGA VidA ARCor Sausta Pizza Hasta el 19/01 3x2 LLEVANDO 3 PAGÁS 2 IwSur illa (Cx VER MÁS BC (iwd solo consummo famllllalr vallldo porusuarloldocumento",
         "categoria": [
             "🧀 Lácteos y Frescos"
         ],
         "link": "https://www.carrefour.com.ar/23729?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/b108d128-a6d7-41f5-aa4e-d748f472f678___0c4583de711f7521320aaafd4ae7c5fa.webp",
-        "fecha": "2026-01-13"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "12 Cuotas S/Int en Aires Acondicionados",
-        "descripcion": "PRECK NORMAL 51.099.000 Hasta el 19/01 Aire Acondicionado Split Alaska 32OoW Sôlo consumo familiar; valido por usuarioldocumento OFERTA 8799.000 12 CUOTAS SIN INTERÉS DE 866.583 VER MÁs",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/aire-acondicionado-alaska-3500w-as35wcew/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/86d7eb2a-f759-4823-9091-9189c8bdac26___eda2d9b307234b9f86feaf3ccbdf2434.webp",
-        "fecha": "2026-01-13"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Jabón",
-        "descripcion": "Jabón Llquído; Shampoo y más 35P 404/ 1 DESCUENTO DESCUENTO esquik 9 Qy ala VER PROMO",
-        "categoria": [
-            "🧴 Perfumería y Bebé",
-            "🧹 Limpieza"
-        ],
-        "link": "https://www.carrefour.com.ar/23728?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/07876ff7-d38b-4f67-b0f8-f4491347f0c0___2fd4695f720738534779214cbb3bbb99.webp",
-        "fecha": "2026-01-13"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Lavarropas",
-        "descripcion": "Alres, Smart Tvs, Heladeras, Lavarropas 12suorAs SIN INTERÉS HASTa 308 DESCUENTO VER PROMO",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23732?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2a27f66f-11e2-4fba-a225-37d7a932040d___5c9eeef696f8227ffb8699c7ce319bbb.webp",
         "fecha": "2026-01-13"
     },
     {
@@ -104,8 +70,8 @@
         "titulo": "Oferta en Varios Productos",
         "descripcion": "En seleccionados de: Disfrutá Arroz, Galletitas, Gaseosas y Yogures PAcK eiverano Gallo   orite @ DESCUENTO Nesqui TARAGUI Oro CON 50P5 \"(pnesióCalidad : EN LA 2DA UNIDAD Opera HOGARENAS Salvado q remón Yogurisimno er Ta Hasta el 19/01 VER MÁS solo consumo famllllale Vallldo porusuarloldocumento",
         "categoria": [
-            "🧀 Lácteos y Frescos",
-            "🍝 Almacén"
+            "🍝 Almacén",
+            "🧀 Lácteos y Frescos"
         ],
         "link": "https://www.carrefour.com.ar/23730?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c5df366b-bc9d-4a5a-89ca-279f08b15eb7___7a0af8570a75e3299a960cf711760746.webp",
