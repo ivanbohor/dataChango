@@ -12,7 +12,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Jabón Ropa, Cuidado Personal",
+        "titulo": "40% Off en Almacén, Shampoo",
         "descripcion": "OFERTAS de la SEMANA siere fim e de [ui Prcmnien Lagr HASTA ALMACÉN, BEBIDAS, FRESCOS, PERFUMERIA 40% Y LIMPIEZA PRODUCTOS SELECCIONADOS . HASTA  20% DE AHORRO* Ve Fecmshzción KERATINA' ShaMpoo Anno 136 skip šFE8IS BIO-ENZIMAS  COMPLETA Belqium LIMPIEZA Cuidado profundo Mas FieraS JABON LIquido CONCENTE EXCLUSIVO ONLINE VÁLIDODEL 12/01AL 15/01. BEBER CONMODERACIÓN Dove AzucaREs ExCESO 1 š ; Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
             "💳 Bancarias",
@@ -60,7 +60,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Hogar, Decoración",
+        "titulo": "Hasta 50% Off en Decoración, Hogar",
         "descripcion": "Casa y Deco CROSS-CHECV 4HYDRUM { 3seRÉs 150% kreo Ymás! VÁLIDO DEL 09/01 AL 15/01. PRODUCTOS SELECCIONADOS . Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
         "categoria": [
             "🏠 Hogar y Bazar"
@@ -93,7 +93,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Jabón Ropa, Cocinas",
+        "titulo": "40% Off en Art. Limpieza, Cocinas",
         "descripcion": "HASTA 40% HastA 209 De AHoRRo* Ver HOve care De COCINA skip ROLLO BIO ENZIMAS 0S miun VERLEGALES- Limpieza ",
         "categoria": [
             "💳 Bancarias",
@@ -139,13 +139,27 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Cuidado Personal, Shampoo",
+        "titulo": "40% Off en Shampoo, Pasta Dental",
         "descripcion": "HASTA 40% olgate [Colgate Dove Fecnshción SENSITIVE KERATIAA PRO Aliyio 1 f Shampoo Cudo 8 VERLEGALES. Perfumería ",
         "categoria": [
+            "🧀 Lácteos y Frescos",
             "🧴 Perfumería y Bebé"
         ],
         "link": "https://www.jumbo.com.ar/56214?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/fd6c6c0d-066b-446a-ae19-6580c370ba31___01961c31853cdf764a87507bc25df4b3.webp",
+        "fecha": "2026-01-14"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "40% Off en Cuidado Personal, Jabón Ropa",
+        "descripcion": "HASTA 40% INFALTABLES DEL SUPER PRODUCTOS SELECCIONADOS. EXCLUSIVO ONLINE eierefine Del uke Hasta  207 DE AHoRRO 4~ skip STELLA ARTOIS BIO-ENZIMAS Anpiel Con PleTA Betqiunm VERLEGALES BEBERCONMODERACIÓN Dove Fecensharaen eaaila anPoo Infaltables de super Infaltables de super",
+        "categoria": [
+            "💳 Bancarias",
+            "🧹 Limpieza",
+            "🧴 Perfumería y Bebé"
+        ],
+        "link": "https://www.jumbo.com.ar/56265?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/9c172741-b825-4862-9bae-202bc07a1835___67bfc7546a3b6cf09372942621f7747f.webp",
         "fecha": "2026-01-14"
     },
     {
@@ -157,17 +171,6 @@
         ],
         "link": "https://www.jumbo.com.ar/56153?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/89f8645e-97e2-4525-84b2-d313b33f7cbd___56bcc7aa0283ca6347dfe2662e4ad4bc.webp",
-        "fecha": "2026-01-14"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "6x12 en Electro",
-        "descripcion": "Todos los días 3,6x12qu0625 CONCRABIFTA sin interés\" EN ELECTRODOMÉSTICOS SELECCIONADOS FROMCCIONVALIDA DEL 01/o1/2026 AL 31/01/2026 Iuioocterooy WeRV5Galesy Excugiones EncengorayAR CFTNA: 0,0% Electro Electro",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.jumbo.com.ar/electro",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/68ed13fe-f9ee-4257-8a05-b1a6be51ed7f___1615c495762c04f314f954da5c32faf6.jpg",
         "fecha": "2026-01-14"
     }
 ]
