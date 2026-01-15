@@ -1,0 +1,35 @@
+[
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Leche",
+        "descripcion": "1 9 1L",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/leche-la-serenisima-uat-entera-clasica-3-pet-1-lt-653792/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/636111-170-170?v=638780809274900000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Quesos",
+        "descripcion": "[lclay",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/queso-rallado-ilolay-120-g/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/724453-170-170?v=638943397809000000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "7% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "34110 Ñ 7% Pizza 340",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/salsa-pizza-arcor-doy-pack-340-g/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/381219-170-170?v=638315050151400000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-15"
+    }
+]

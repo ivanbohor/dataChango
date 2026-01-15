@@ -1,7 +1,18 @@
 [
     {
         "supermercado": "MasOnline",
-        "titulo": "70% Off en Galletitas",
+        "titulo": "Promoción Bancaria",
+        "descripcion": "ChangoMâs MâsOnline comai Miércoles 14 de enero BNA+ MODO +5% adicional jubilados 30% Tarjetas de Crédito con haberes acreditados Mês pago con VISA Tope: $12000 semanal $5.000 jubilados Descuento en QUIERO VER MÁS PARAMÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/PROMOCIONES-BANCARIAS. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.masonline.com.ar/promociones-bancarias",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/759820ad-9ad8-4bd2-92f6-6bc29a7b39dc/image/attachments/Home_BNA_14enero_dkt.webp",
+        "fecha": "2026-01-14"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "70% Off en Jugos",
         "descripcion": "Dell4al 20 de enero ChangoMâs MâsOnline com@r Galletitas @redlitas CLuB Sociãb Meeh Drqos@ seleccionadas Galletitas saladas Leches Las Tres 70% JASERENISIMA larga vida Niñas a ordad |actoa Descuento Clasico Segunda Unidad Jugos aRCOR BC en polvo Gqunú QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
         "categoria": [
             "🍷 Bebidas",
@@ -9,7 +20,7 @@
         ],
         "link": "https://www.masonline.com.ar/439?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/31a9bb01-7a1e-4a9d-aef3-ee307cc81780/image/attachments/Home_Galletitas_leche_dkt.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
@@ -20,22 +31,22 @@
         ],
         "link": "https://www.masonline.com.ar/548?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/b2f7a9fd-f753-41cd-8e13-7421e6a79767/image/attachments/Home_Aguas_Helados_Dkt.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "35% Off en Detergente",
+        "titulo": "35% Off en Art. Limpieza",
         "descripcion": "Delldal 20 de enero ChangoMâs MâsOnline comar Productos de limpieza 35% Unitario Descuento Ariel Detergente para ropa MAGISTRAL QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.AB.A ",
         "categoria": [
             "🧹 Limpieza"
         ],
         "link": "https://www.masonline.com.ar/1108?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/84264f8a-a663-4fcb-ac62-1d2e8a15c10c/image/attachments/Home_limpieza_dkt.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Celulares",
+        "titulo": "12 Cuotas S/Int en Smart TV",
         "descripcion": "DellAal 20 de enero ChangoMâs MâsOnline coMar Mas Ofertas Verano SELECCIONADOS 12 cuotas SIN INTERÉS VISA CABAL de todos los Bancos Mês 553 } smart tv Aires acond. Heladeras Freezer Lavarropas Celulares QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
         "categoria": [
             "💳 Bancarias",
@@ -43,7 +54,7 @@
         ],
         "link": "https://www.masonline.com.ar/masofertas-electroyhogar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/60d7b3d3-aa56-41be-8d31-254196243f6d/image/attachments/Home_GM_dkt2.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
@@ -55,7 +66,7 @@
         ],
         "link": "https://www.masonline.com.ar/1977?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/6c44b212-d6b0-4e3a-89c5-6399e896a676/image/attachments/Home_Masautocenter_dkt.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
@@ -66,7 +77,7 @@
         ],
         "link": "https://www.masonline.com.ar/3127?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/efb55cc8-b02f-4e59-8ac9-8146a2ee86fd/image/attachments/Home_Camaselasticas_2_dkt.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
@@ -77,18 +88,7 @@
         ],
         "link": "https://www.masonline.com.ar/masclub",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/a8b24713-a07f-4c83-bb54-d6d2c86a8071/image/attachments/11_masclub_dkp.webp",
-        "fecha": "2026-01-15"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Promoción Bancaria",
-        "descripcion": "BANCO Hipotecario MODO VISA Martes 25% Tope de reintegro: Mensual $30.000 Descuento Búho One, Búho sueldo, Búho Emprendedor y Búho Jubilado Pagando Online 0 en sucursal con QR (H)  ",
-        "categoria": [
-            "💳 Bancarias"
-        ],
-        "link": "https://www.masonline.com.ar/promociones-bancarias",
-        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/0bd3b80e-4826-4951-99da-2026b5397aef___f84c5bb90274e61abc9aa1ebd38edaf9.png",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
@@ -99,7 +99,7 @@
         ],
         "link": "https://www.masonline.com.ar/411?map=productClusterIds",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/4817208d-c052-4c82-999a-b0e64eddbbdb___710326c7834d4e423bd2a5dbb732c9de.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
@@ -111,18 +111,29 @@
         ],
         "link": "https://www.masonline.com.ar/3353?map=productClusterIds",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/ec70936b-ccb7-4c42-b6d3-894d2943bd0b___cf8a216e9500968a13ad170fddb7666a.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "Oferta en Aires Acondicionados",
+        "titulo": "Oferta en Electro Philco",
         "descripcion": "PHILCO) Geahea [co]TTs Aire Acondicionado Split Inverter Philco 8750 Watt Frio Calor Phin90hc3awfpi ",
         "categoria": [
             "📺 Electro y Tecno"
         ],
         "link": "https://www.masonline.com.ar/aire-acondicionado-philco-inverter-frio-calor-8750w/p",
         "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/354136-230-230?v=638827482345770000&width=230&height=230&aspect=true",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Aires Acondicionados",
+        "descripcion": " Aire Acondicionado Split Inverter Hyundai 5000 Watt Frio Calor Hy11inv 5000fc ",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.masonline.com.ar/aire-acondicionado-hyundai-split-inverter-frio-calor-5000-frigorias-hy11inv-5000fcw/p",
+        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/359901-230-230?v=638913780394600000&width=230&height=230&aspect=true",
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
@@ -133,7 +144,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/ada583c0-bcb5-4cd7-8b1d-473d408363be/multimedia/attachments/01_Regionales_Verano_14al20_Regional_2-%20Bebidas.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
@@ -144,7 +155,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/b5a1f2b0-3a78-4256-b439-23b3dfffe6f0/multimedia/attachments/01_Regionales_Verano_14al20_Regional_1-%20Almacen.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
@@ -155,19 +166,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/5cb600e4-38b8-4858-a75c-c2911cd9d86a/multimedia/attachments/01_Regionales_Verano_14al20_Regional_3-%20Lacteos.webp",
-        "fecha": "2026-01-15"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "35% Off en Art. Limpieza",
-        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdr Perfumería Y limpieza Hasta 35% Unitario Descuento PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
-        "categoria": [
-            "🧹 Limpieza",
-            "🧴 Perfumería y Bebé"
-        ],
-        "link": "https://www.masonline.com.ar",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/ceb84f13-beaa-4d59-9908-9e9efc0eecc0/multimedia/attachments/01_Regionales_Verano_14al20_Regional_4-%20Perfumeria.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     },
     {
         "supermercado": "MasOnline",
@@ -178,6 +177,6 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/d466e607-f320-41c5-9ee0-f394b98777ad/multimedia/attachments/01_Regionales_Verano_14al20-07.webp",
-        "fecha": "2026-01-15"
+        "fecha": "2026-01-14"
     }
 ]
