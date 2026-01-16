@@ -24,7 +24,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "35% Off en Art. Limpieza",
+        "titulo": "35% Off en Detergente",
         "descripcion": "Delldal 20 de enero ChangoMâs MâsOnline comar Productos de limpieza 35% Unitario Descuento Ariel Detergente para ropa MAGISTRAL QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.AB.A ",
         "categoria": [
             "🧹 Limpieza"
@@ -35,7 +35,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Aires Acondicionados",
+        "titulo": "12 Cuotas S/Int en Celulares",
         "descripcion": "DellAal 20 de enero ChangoMâs MâsOnline coMar Mas Ofertas Verano SELECCIONADOS 12 cuotas SIN INTERÉS VISA CABAL de todos los Bancos Mês 553 } smart tv Aires acond. Heladeras Freezer Lavarropas Celulares QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
         "categoria": [
             "💳 Bancarias",
@@ -81,36 +81,13 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "Precio Especial en Varios Productos",
-        "descripcion": "Del14al 20de enero ChangoMâs MâsOnline scomar s1.999 Aprovecha pepsi Pepsi black 21. Stock: 10.000 un: (**= P.sin imp. Nac: $3.383 QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM.AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.AB.A ",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.masonline.com.ar/2149?map=productClusterIds",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/e237d990-cb6e-4815-9814-ff9757c22804/image/attachments/Home_Pepsi_dkt.webp",
-        "fecha": "2026-01-15"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Smart TV",
-        "descripcion": "Dell4al 20 de enero EXcLusIvO MâsOnline comar PHILIPS PPs primnro Los Anillos de Poder Crlnqun Eooo TaraGaVst 4unl ccua toscqunooecoddoloTico Mcdla Ialedo crd Anilas ia 7 AiTaoch s 799.999 $ 527.999 en 12 cuotas sin interés en 1pago Smart Tv Led 55\" 4K Titan Philips 55PUD7309/77 Yer Ohoro AruY Fung Max Psin imp Nac: $661.156,20 Stock: 10.000 un: QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
-        "categoria": [
-            "💳 Bancarias",
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.masonline.com.ar/tv-philips-led-55-4k-titan-55pud7309-77/p",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/378f0f7e-5d70-4830-8e6f-ee12d28cdcc7/image/attachments/Home_TV_dkt2.webp",
-        "fecha": "2026-01-15"
-    },
-    {
-        "supermercado": "MasOnline",
         "titulo": "Promoción Bancaria",
-        "descripcion": "mercado Todos los días con Tarjeta pago de credito de Mercado pago EN COMPRAS 3cuotas AParTR DE Ox SIN INTERÉS 30.000 PGGNODO Exclusvvo gucurso  ",
+        "descripcion": "BANCO Hipotecario MODO VISA Martes 25% Tope de reintegro: Mensual $30.000 Descuento Búho One, Búho sueldo, Búho Emprendedor y Búho Jubilado Pagando Online 0 en sucursal con QR (H)  ",
         "categoria": [
             "💳 Bancarias"
         ],
         "link": "https://www.masonline.com.ar/promociones-bancarias",
-        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/96572edd-a103-4019-94f5-be99002292bb___d35786bd78cdee5f67d1a3af28821c4a.png",
+        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/0bd3b80e-4826-4951-99da-2026b5397aef___f84c5bb90274e61abc9aa1ebd38edaf9.png",
         "fecha": "2026-01-15"
     },
     {
@@ -182,7 +159,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "35% Off en Perfumería",
+        "titulo": "35% Off en Art. Limpieza",
         "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdr Perfumería Y limpieza Hasta 35% Unitario Descuento PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
         "categoria": [
             "🧹 Limpieza",

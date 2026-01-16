@@ -12,7 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 # --- CONFIGURACIÓN GLOBAL ---
-NOMBRE_ARCHIVO = "promos_bancarias.json"
+NOMBRE_ARCHIVO = "promos_bancarias_carrefour.json"
 
 def detectar_banco_estricto(titulo_oferta):
     """

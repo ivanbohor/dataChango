@@ -23,40 +23,6 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "9 Cuotas S/Int en Heladeras",
-        "descripcion": "TIENDAS OFICIALES EXCLUSNVO ONLINE PRECIO NORMAL 905777 PRECIO OFERTA $699.999 Hasta el 15/01 Heladera Gafa Con Freezer 326L 22% EN 9 CUOTAS SIN INTERÉS $77.777",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/heladera-con-freezer-gafa-hgf378afb-blanca-326lts-1646803/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d1cc726c-5e45-4ee2-bcb4-480bdc6632e9___c04e94dc579ebbf17e50c73fce7794ad.webp",
-        "fecha": "2026-01-15"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Jabón",
-        "descripcion": "Jabón Llquído; Shampoo y más 35P 404/ 1 DESCUENTO DESCUENTO esquik 9 Qy ala VER PROMO",
-        "categoria": [
-            "🧴 Perfumería y Bebé",
-            "🧹 Limpieza"
-        ],
-        "link": "https://www.carrefour.com.ar/23728?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/07876ff7-d38b-4f67-b0f8-f4491347f0c0___2fd4695f720738534779214cbb3bbb99.webp",
-        "fecha": "2026-01-15"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Lavarropas",
-        "descripcion": "Alres, Smart Tvs, Heladeras, Lavarropas 12suorAs SIN INTERÉS HASTa 308 DESCUENTO VER PROMO",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23732?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2a27f66f-11e2-4fba-a225-37d7a932040d___5c9eeef696f8227ffb8699c7ce319bbb.webp",
-        "fecha": "2026-01-15"
-    },
-    {
-        "supermercado": "Carrefour",
         "titulo": "12 Cuotas S/Int en Lavarropas",
         "descripcion": "En seleccionados de: Aires Acondicionados, Smart Tvs, Heladeras y Lavarropas Disfrutá eiverano ~opnecio Calidad , CON HASTA 12 CUOTAS SIN INTERÉS HASTA 30 DESCUENTO Hasta el 19/01 OLED 13\" on VER MÁs S6lo consumo tamllar;Vallldo por usualoldocumento",
         "categoria": [
@@ -68,24 +34,13 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "3x2 en Quesos",
+        "titulo": "3x2 en Leche",
         "descripcion": "En seleccionados de: Disfrutá ei verano \"@pnedióCalidad , CON Leches, Aguas, Jugos, Salsas y más ilolay Queso Rallado {Jerentsima @r REGHFDA Guisuol LargA LARGA VidA ARCor Sausta Pizza Hasta el 19/01 3x2 LLEVANDO 3 PAGÁS 2 IwSur illa (Cx VER MÁS BC (iwd solo consummo famllllalr vallldo porusuarloldocumento",
         "categoria": [
             "🧀 Lácteos y Frescos"
         ],
         "link": "https://www.carrefour.com.ar/23729?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1e0bc9e7-cbd9-4e8d-8d25-7855d97c0b01___0c4583de711f7521320aaafd4ae7c5fa.webp",
-        "fecha": "2026-01-15"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Aires Acondicionados",
-        "descripcion": "Philco) 'ssow bun Mtcoru S0xuq",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/aire-acondicionado-split-frio-calor-inverter-philco-3550w-phin35ha3bn/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/423947-170-170?v=638814431162430000&width=170&height=170&aspect=true",
         "fecha": "2026-01-15"
     },
     {
@@ -125,13 +80,47 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "3x2 en Leche",
-        "descripcion": "Hasta el 19/01 Ilolay Reiias ansr LECHE Larecheda Jadrene LLEVANDO 3 3x2 PAGÁS 2 Pizza BC En seleccionados de: Leches, Aguas, Jugos, Salsas y más VER MÁs MlawSur",
+        "titulo": "9 Cuotas S/Int en Heladeras",
+        "descripcion": "TIENDAS OFICIALES EXCLUSNVO ONLINE PRECIO NORMAL 905777 PRECIO OFERTA $699.999 Hasta el 15/01 Heladera Gafa Con Freezer 326L 22% EN 9 CUOTAS SIN INTERÉS $77.777",
         "categoria": [
-            "🧀 Lácteos y Frescos"
+            "📺 Electro y Tecno"
         ],
-        "link": "https://www.carrefour.com.ar/23729?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/de1c8817-e265-4f76-8f70-116985754f52___2dc57819809bc0d4c1b9971181f9f4d4.webp",
+        "link": "https://www.carrefour.com.ar/heladera-con-freezer-gafa-hgf378afb-blanca-326lts-1646803/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/69cc4bd7-9736-4116-8d54-1fc0d42a9dbe___c04e94dc579ebbf17e50c73fce7794ad.webp",
+        "fecha": "2026-01-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Jabón",
+        "descripcion": "Jabón Llquído; Shampoo y más 35P 404/ 1 DESCUENTO DESCUENTO esquik 9 Qy ala VER PROMO",
+        "categoria": [
+            "🧹 Limpieza",
+            "🧴 Perfumería y Bebé"
+        ],
+        "link": "https://www.carrefour.com.ar/23728?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/07876ff7-d38b-4f67-b0f8-f4491347f0c0___2fd4695f720738534779214cbb3bbb99.webp",
+        "fecha": "2026-01-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Lavarropas",
+        "descripcion": "Alres, Smart Tvs, Heladeras, Lavarropas 12suorAs SIN INTERÉS HASTa 308 DESCUENTO VER PROMO",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23732?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2a27f66f-11e2-4fba-a225-37d7a932040d___5c9eeef696f8227ffb8699c7ce319bbb.webp",
+        "fecha": "2026-01-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Aires Acondicionados",
+        "descripcion": "Philco) 'ssow bun Mtcoru S0xuq",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/aire-acondicionado-split-frio-calor-inverter-philco-3550w-phin35ha3bn/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/423947-170-170?v=638814431162430000&width=170&height=170&aspect=true",
         "fecha": "2026-01-15"
     },
     {

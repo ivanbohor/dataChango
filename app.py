@@ -28,7 +28,7 @@ def cargar_y_transformar_promos():
     """
     # Lista completa de archivos
     archivos_json = [
-        "promos_bancarias.json",       # Carrefour
+        "promos_bancarias_carrefour.json",       # Carrefour
         "promos_bancarias_coto.json",  # Coto
         "promos_bancarias_jumbo.json", # Jumbo
         "promos_bancarias_masonline.json" # MasOnline
