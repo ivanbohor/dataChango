@@ -34,36 +34,13 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "18 Cuotas S/Int en Aires Acondicionados",
-        "descripcion": "iSolo por este fInde! PRECIO NORMAL 84449-+000 Aire Split Philco 340oW OFERTA 8849.000 18 CUOTAS SIN INTERES DE 847167 VER MÁS Sôlo consumo familiar; valido por usuarioldocumento",
+        "titulo": "15% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "EXCLUSIVO ONLINE Los días Pagando Con Tarjeta Mi Carrefour Credito Carrefour oanco M VgD Enor= RECIBILO EN MAX INMEOINTn IH 24 Si estas en CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL recibí tu pedido en menos de IHORA DESCUENTO EN EL ACTO SIN TOPE @rrefour APROVECHAR 15% No Incluye electrodoméstlcos, electrónlca _ telefonía celular; carnlcería nl leches Infantlles y maternlzadas. No acumulable con otras promoclones. Ver legales en carrefour com arldescuentos-bancarlos",
         "categoria": [
-            "📺 Electro y Tecno"
+            "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/aire-acondicionado-split-philco-frio-calor-3400w-phs32ha4cn-blanco-/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/03497249-1e65-4624-8e12-30a5743e1aa0___91176bd24b3b9b6e63167e6751c71bdd.webp",
-        "fecha": "2026-01-16"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Jabón",
-        "descripcion": "Jabón Llquído; Shampoo y más 35P 404/ 1 DESCUENTO DESCUENTO esquik 9 Qy ala VER PROMO",
-        "categoria": [
-            "🧴 Perfumería y Bebé",
-            "🧹 Limpieza"
-        ],
-        "link": "https://www.carrefour.com.ar/23728?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/07876ff7-d38b-4f67-b0f8-f4491347f0c0___2fd4695f720738534779214cbb3bbb99.webp",
-        "fecha": "2026-01-16"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Lavarropas",
-        "descripcion": "Alres, Smart Tvs, Heladeras, Lavarropas 12suorAs SIN INTERÉS HASTa 308 DESCUENTO VER PROMO",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23732?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2a27f66f-11e2-4fba-a225-37d7a932040d___5c9eeef696f8227ffb8699c7ce319bbb.webp",
+        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/081ff404-5c8b-41d1-b1c5-9615921b7f95___ee759c7a45d1247b0cf92d922343cfe2.webp",
         "fecha": "2026-01-16"
     },
     {
@@ -71,9 +48,9 @@
         "titulo": "Oferta en Varios Productos",
         "descripcion": "Realizando tu compra los Jueves, Viernes, Sábados y Domingos de Enero CUOTAS Para tarjetas de crédito VISA y Mastercard 3 SIN INTERÉS VISA En alimentos secos, congelados, lácteos, fiambres, bebidas, limpieza y perfumería No Incluye electrodomestlcos nl productos vendldos entregados por el fabrlcante _ Ver legales en carrefour com arldescuentos-bancarlos Galicia",
         "categoria": [
-            "🧀 Lácteos y Frescos",
+            "🍝 Almacén",
             "🍷 Bebidas",
-            "🍝 Almacén"
+            "🧀 Lácteos y Frescos"
         ],
         "link": "https://www.carrefour.com.ar/almacen",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/0e13c773-762a-481e-953e-0872cee9640c___19ce196b32864d208d5d05de608c91db.png",
@@ -81,24 +58,13 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "3x2 en Leche",
+        "titulo": "3x2 en Quesos",
         "descripcion": "En seleccionados de: Disfrutá ei verano \"@pnedióCalidad , CON Leches, Aguas, Jugos, Salsas y más ilolay Queso Rallado {Jerentsima @r REGHFDA Guisuol LargA LARGA VidA ARCor Sausta Pizza Hasta el 19/01 3x2 LLEVANDO 3 PAGÁS 2 IwSur illa (Cx VER MÁS BC (iwd solo consummo famllllalr vallldo porusuarloldocumento",
         "categoria": [
             "🧀 Lácteos y Frescos"
         ],
         "link": "https://www.carrefour.com.ar/23729?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/b108d128-a6d7-41f5-aa4e-d748f472f678___0c4583de711f7521320aaafd4ae7c5fa.webp",
-        "fecha": "2026-01-16"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Aires Acondicionados",
-        "descripcion": "Philco) 'ssow bun Mtcoru S0xuq",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/aire-acondicionado-split-frio-calor-inverter-philco-3550w-phin35ha3bn/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/423947-170-170?v=638814431162430000&width=170&height=170&aspect=true",
         "fecha": "2026-01-16"
     },
     {
@@ -117,8 +83,8 @@
         "titulo": "Oferta en Bebidas",
         "descripcion": "COMPRANDO HOY EXCLUSIVO ONLINE Reallzando tu compra los Jueves; Vlernes, Sábados y Domingos de Enero Galicia ENuRe=b RECIBILO EN MAX INMEOINTA IH 24 Si estas en CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL recibí tu pedido en menos de IHORA CUOTAS COMPRAR 3 VISA SIN INTERÉS Para tarjetas de crédito VISA y Mastercard En alimentos secos, congelados, lácteos, fiambres, bebidas, limpieza y perfumería No Incluye electrodomestlcos proquctos vendidos entregados por fabrlcante. Ver legales en carrefour comarldescuentos-bancarlos",
         "categoria": [
-            "🧀 Lácteos y Frescos",
-            "🍷 Bebidas"
+            "🍷 Bebidas",
+            "🧀 Lácteos y Frescos"
         ],
         "link": "https://www.carrefour.com.ar/entrega-inmediata?",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/fcba4137-ac56-4f9b-8ac7-2289db783b5f___045809c925cdc956483532b6e0102f97.webp",
@@ -144,52 +110,6 @@
         ],
         "link": "https://www.carrefour.com.ar/23727?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/65b39345-d295-4e16-9278-57d7cc086ebd___1bb7515254969dbeec86a2b8f2c1d86a.webp",
-        "fecha": "2026-01-16"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "15% Off en Seleccionados (🍝 Almacén)",
-        "descripcion": "EXCLUSIVO ONLINE Los días Pagando Con Tarjeta Mi Carrefour Credito Carrefour oanco M VgD Enor= RECIBILO EN MAX INMEOINTn IH 24 Si estas en CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL recibí tu pedido en menos de IHORA DESCUENTO EN EL ACTO SIN TOPE @rrefour APROVECHAR 15% No Incluye electrodoméstlcos, electrónlca _ telefonía celular; carnlcería nl leches Infantlles y maternlzadas. No acumulable con otras promoclones. Ver legales en carrefour com arldescuentos-bancarlos",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/081ff404-5c8b-41d1-b1c5-9615921b7f95___ee759c7a45d1247b0cf92d922343cfe2.webp",
-        "fecha": "2026-01-16"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "A solo $6.490 en Pollo",
-        "descripcion": "Hasta el 19/01 Suprema de $6.490 Pollo Congelada XKG OFERTA VER MÁs",
-        "categoria": [
-            "🥩 Carnicería"
-        ],
-        "link": "https://www.carrefour.com.ar/suprema-congelada-x-kg-704563/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1cfc8815-2990-4bd0-ab1a-9febdba4abe6___e9ce4fe10b0b241920f05ed3ba9c0017.webp",
-        "fecha": "2026-01-16"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "18 Cuotas S/Int en Seleccionados (Electro)",
-        "descripcion": "HASTA 18 CUOTAS SIN INTERES HASTA 50% DE DESCUENTO HaSTA EL 20/01 EXCLUSIVO ONLINE",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/34f45bfc-1db2-44be-b19e-9b66bd5a12a3___9092b4413900d99a21351a48ed8a7a6e.webp",
-        "fecha": "2026-01-16"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "70% Off en Varios Productos",
-        "descripcion": "Hasta el 19/01 70% DESCUENTO EN LA 2D4 UNIDAD En selecclonados de: Fideos, Postres Lácteos y Cervezas VER MÁs",
-        "categoria": [
-            "🧀 Lácteos y Frescos",
-            "🍷 Bebidas",
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/23731?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/803fca28-5129-4bde-a1a5-f41836d2506c___d8e4b89c937916601585daed72ab4a92.webp",
         "fecha": "2026-01-16"
     }
 ]

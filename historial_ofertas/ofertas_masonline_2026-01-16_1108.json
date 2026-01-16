@@ -56,7 +56,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "Precio Especial en Detergente",
+        "titulo": "Precio Especial en Cocinas",
         "descripcion": "Del16 al 19 de enero ChangoMâs MâsOnline comar Rollo de Cocina s1.799 Rollo de cocina Elegante x 200 paños. P.sin imp Nac: $1.486,77 P hoja: $8,99 Stock: 1000 un (** Nuevo Goganlo 'Gigante Doble 'Hoja 82\" 200 (200 Reagoniento Paros $ 2.549 clu Detergente Cif Cit C1t x 500 MI. Bioactivg Bioactive Nsengalsants PodeR P.sin imp Nac: $2106,61 B8DER VTP;r Gsaongaesant Px kg: $5.098 Stock: 5.000 un: (** QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINE.COMAR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
         "categoria": [
             "🧹 Limpieza",
@@ -148,13 +148,24 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "Oferta en Aires Acondicionados",
+        "titulo": "Oferta en Electro Philco",
         "descripcion": "PHILCO) Geahea [co]TTs Aire Acondicionado Split Inverter Philco 8750 Watt Frio Calor Phin90hc3awfpi ",
         "categoria": [
             "📺 Electro y Tecno"
         ],
         "link": "https://www.masonline.com.ar/aire-acondicionado-philco-inverter-frio-calor-8750w/p",
         "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/354136-230-230?v=638827482345770000&width=230&height=230&aspect=true",
+        "fecha": "2026-01-16"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Aires Acondicionados",
+        "descripcion": " Aire Acondicionado Split Inverter Hyundai 5000 Watt Frio Calor Hy11inv 5000fc ",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.masonline.com.ar/aire-acondicionado-hyundai-split-inverter-frio-calor-5000-frigorias-hy11inv-5000fcw/p",
+        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/359901-230-230?v=638913780394600000&width=230&height=230&aspect=true",
         "fecha": "2026-01-16"
     },
     {
