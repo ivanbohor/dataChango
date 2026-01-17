@@ -12,7 +12,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Ropa de Cama, Hogar",
+        "titulo": "Hasta 50% Off en Hogar, Ropa de Cama",
         "descripcion": "Casa € Deco CROSS-CHECV Ropa de cama, Organización, Bazar y más { ZseRÉs š 50% kreo Ymás! VÁLIDO DEL 16/01 AL 22/01. PRODUCTOS SELECCIONADOS. Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
         "categoria": [
             "🏠 Hogar y Bazar"
@@ -122,28 +122,6 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Hasta 2Do Al 50% En Gaseosas Hasta 2Do Al 50% En G",
-        "descripcion": "HASTA 2DO AL 50% GASEOSAS Soauxomau @2a @a44ins (o768l ZERO up Hasta 2do al 50% en Gaseosas Hasta 2do al 50% en Gaseosas",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56362?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/55d5e4c9-e5af-41ea-8e90-6839277d9059___0f0095a766607511df590c4753131065.webp",
-        "fecha": "2026-01-17"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "Oferta en Varios Productos",
-        "descripcion": "Sussex; Freyzo Pack Ahorro Sussex) 30 Clasicc GRATIS 180 19 Sussex 11255 PT8  ",
-        "categoria": [
-            "💳 Bancarias"
-        ],
-        "link": "https://www.jumbo.com.ar/sussex?_q=SUSSEX&map=ft",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/b760a864-5669-472d-a1fa-ac8b224d0d74___25d553d3e9149ded485003e53df0ef3e.jpg",
-        "fecha": "2026-01-17"
-    },
-    {
-        "supermercado": "Jumbo",
         "titulo": "30% Off en Hasta 30% En Seleccionados De Pequeños Electrodomé",
         "descripcion": "llega EN24HS HASTA 30% cenco š 35% CrediTO SNERÉS Pequeños electros (ster 22 22 VERLEGALES (PAnE Hasta 30% en Seleccionados de Pequeños Electrodomésticos\t Hasta 30% en Seleccionados de Pequeños Electrodomésticos\t",
         "categoria": [
@@ -185,6 +163,28 @@
         ],
         "link": "https://www.jumbo.com.ar/56365?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/2f47f88e-b9fb-48e4-abfe-80c304eec265___56c09cb13a257097a468c3b43eaa0864.webp",
+        "fecha": "2026-01-17"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Hasta 50% Off en Hasta 2Do Al 50% En Gaseosas Hasta 2Do Al 50% En G",
+        "descripcion": "HASTA 2DO AL 50% GASEOSAS Soauxomau @2a @a44ins (o768l ZERO up Hasta 2do al 50% en Gaseosas Hasta 2do al 50% en Gaseosas",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar/56362?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/55d5e4c9-e5af-41ea-8e90-6839277d9059___0f0095a766607511df590c4753131065.webp",
+        "fecha": "2026-01-17"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Oferta en Varios Productos",
+        "descripcion": "Sussex; Freyzo Pack Ahorro Sussex) 30 Clasicc GRATIS 180 19 Sussex 11255 PT8  ",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.jumbo.com.ar/sussex?_q=SUSSEX&map=ft",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/b760a864-5669-472d-a1fa-ac8b224d0d74___25d553d3e9149ded485003e53df0ef3e.jpg",
         "fecha": "2026-01-17"
     },
     {
