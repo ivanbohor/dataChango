@@ -45,11 +45,33 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Shampoo",
+        "titulo": "12 Cuotas S/Int en Smart TV",
+        "descripcion": "En seleccionados de: Aires Acondicionados, Smart Tvs, Heladeras y Lavarropas Disfrutá eiverano ~opnecio Calidad , CON HASTA 12 CUOTAS SIN INTERÉS HASTA 30 DESCUENTO Hasta el 19/01 OLED 13\" on VER MÁs S6lo consumo tamllar;Vallldo por usualoldocumento",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23732?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9ce4afa0-0569-4cda-9aeb-b08e4dd66325___867678f60d4f0f2b414d3ef2c1b611cb.webp",
+        "fecha": "2026-01-18"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Cupón de Descuento en Seleccionados (🍝 Almacén)",
+        "descripcion": "HASTA EL DOMINGO 18/01 enoresa 1NME?ITA UTILIZANDO EL CUPÓN: 15%OFF DESCUENTO SIN TOPE en tu compra del super Si estas en CÓRDOBA CAPITAL CABA MENDOZA CAPITAL TANDIL COMPRAR REGALO recibí tu pedido en menos de IHORA Cupón válldo desde el VIernes 16/01 a las 19hs hasta el Domlngo 18/01a las 23.59hs No acumulable con otras promoclones 5! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERD Cupón válldo únlcamente para Allmentos bebldas; perfumería y Ilmpleza",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2a03aed4-d458-4327-959a-28a2f9bc9891___90ad47c3b0bc8b4647430ca5d43d7efb.webp",
+        "fecha": "2026-01-18"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Jabón",
         "descripcion": "Jabón Llquído; Shampoo y más 35P 404/ 1 DESCUENTO DESCUENTO esquik 9 Qy ala VER PROMO",
         "categoria": [
-            "🧹 Limpieza",
-            "🧴 Perfumería y Bebé"
+            "🧴 Perfumería y Bebé",
+            "🧹 Limpieza"
         ],
         "link": "https://www.carrefour.com.ar/23728?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/07876ff7-d38b-4f67-b0f8-f4491347f0c0___2fd4695f720738534779214cbb3bbb99.webp",
@@ -75,28 +97,6 @@
         ],
         "link": "https://www.carrefour.com.ar/23767?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/284907d3-d0fd-4b50-b4d2-451bb9bde350___d4cf6195d00ef61f98d227b3a8b37ef7.webp",
-        "fecha": "2026-01-18"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "12 Cuotas S/Int en Smart TV",
-        "descripcion": "En seleccionados de: Aires Acondicionados, Smart Tvs, Heladeras y Lavarropas Disfrutá eiverano ~opnecio Calidad , CON HASTA 12 CUOTAS SIN INTERÉS HASTA 30 DESCUENTO Hasta el 19/01 OLED 13\" on VER MÁs S6lo consumo tamllar;Vallldo por usualoldocumento",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23732?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9ce4afa0-0569-4cda-9aeb-b08e4dd66325___867678f60d4f0f2b414d3ef2c1b611cb.webp",
-        "fecha": "2026-01-18"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Cupón de Descuento en Seleccionados (🍝 Almacén)",
-        "descripcion": "HASTA EL DOMINGO 18/01 enoresa 1NME?ITA UTILIZANDO EL CUPÓN: 15%OFF DESCUENTO SIN TOPE en tu compra del super Si estas en CÓRDOBA CAPITAL CABA MENDOZA CAPITAL TANDIL COMPRAR REGALO recibí tu pedido en menos de IHORA Cupón válldo desde el VIernes 16/01 a las 19hs hasta el Domlngo 18/01a las 23.59hs No acumulable con otras promoclones 5! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERD Cupón válldo únlcamente para Allmentos bebldas; perfumería y Ilmpleza",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2a03aed4-d458-4327-959a-28a2f9bc9891___90ad47c3b0bc8b4647430ca5d43d7efb.webp",
         "fecha": "2026-01-18"
     },
     {

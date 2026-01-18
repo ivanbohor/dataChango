@@ -1,6 +1,17 @@
 [
     {
         "supermercado": "MasOnline",
+        "titulo": "Precio Especial en Corte Nalga",
+        "descripcion": "ESPECIAL MILANESAS ChangoMâs MâsOnline comai Nuestra NUTSTRA $ 12.999 EXCEPTO CARNICERIA Bola de lomo 0 cuadrada x kg. P sin imp Nac: $11.763 Stock: 5.000 kg: (**) $ 13.999 EXCEPTO CARNICERIA Nalga al vacío x kg. Aprovechá - V SOLO VIERNES 16 Y SÁBADO 17 DE ENERO P sin imp Nac: $12.668 Stock 5.000 kg: QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
+        "categoria": [
+            "🥩 Carnicería"
+        ],
+        "link": "https://www.masonline.com.ar/773?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/50b72d51-f2e2-4809-a099-d7bac8b4e2eb/image/attachments/02_Home_EspecialMilanesas_dkt.webp",
+        "fecha": "2026-01-17"
+    },
+    {
+        "supermercado": "MasOnline",
         "titulo": "Oferta en Yogur",
         "descripcion": "Del 16al 19 de enero ChangoMâs MâsOnline comar OFERTAS FLASH Yogures en pote % 02 2 Milkaut- 58E8ES 70 95807 702 NL EXUGGRE ilolay ESESQEM ilolay Descuento Milkaut Yogur Yogui ilolay Segunda oaccu 72 cre Oescr emado Tno5n Milkaut 45s2oor Cremoso Firme Yoqur Unidad vainilla QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.AB.A ",
         "categoria": [
@@ -8,7 +19,7 @@
         ],
         "link": "https://www.masonline.com.ar/1672?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/1fb4adfe-186d-498d-8a76-2d11d8a2d66d/image/attachments/04_Yogures_dkt.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -19,7 +30,7 @@
         ],
         "link": "https://www.masonline.com.ar/379?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/2b7a72d5-37ea-4303-b6e0-20a70dd82947/image/attachments/05_cerveza_gaseosa_dkt.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -31,11 +42,11 @@
         ],
         "link": "https://www.masonline.com.ar/3659?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/feb19b70-632a-4b02-a15a-b28d24896803/image/attachments/07_rollococina_detergente_dkt.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "70% Off en Galletitas",
+        "titulo": "70% Off en Jugos",
         "descripcion": "Dell4al 20 de enero ChangoMâs MâsOnline com@r Galletitas @redlitas CLuB Sociãb Meeh Drqos@ seleccionadas Galletitas saladas Leches Las Tres 70% JASERENISIMA larga vida Niñas a ordad |actoa Descuento Clasico Segunda Unidad Jugos aRCOR BC en polvo Gqunú QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
         "categoria": [
             "🍷 Bebidas",
@@ -43,7 +54,7 @@
         ],
         "link": "https://www.masonline.com.ar/439?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/31a9bb01-7a1e-4a9d-aef3-ee307cc81780/image/attachments/Home_Galletitas_leche_dkt.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -54,7 +65,7 @@
         ],
         "link": "https://www.masonline.com.ar/2149?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/e237d990-cb6e-4815-9814-ff9757c22804/image/attachments/Home_Pepsi_dkt.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -66,7 +77,7 @@
         ],
         "link": "https://www.masonline.com.ar/tv-philips-led-55-4k-titan-55pud7309-77/p",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/378f0f7e-5d70-4830-8e6f-ee12d28cdcc7/image/attachments/Home_TV_dkt2.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -77,18 +88,7 @@
         ],
         "link": "https://www.masonline.com.ar/promociones-bancarias?dia=viernes",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/61e673f2-10ed-4f34-8015-e6c5caf6c02b___2ca2f47b880c1a9de9c099232da137ce.webp",
-        "fecha": "2026-01-18"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Promoción Bancaria",
-        "descripcion": "mercado Todos los días con Tarjeta pago de credito de Mercado pago EN COMPRAS 3cuotas AParTR DE Ox SIN INTERÉS 30.000 PGGNODO Exclusvvo gucurso  ",
-        "categoria": [
-            "💳 Bancarias"
-        ],
-        "link": "https://www.masonline.com.ar/promociones-bancarias",
-        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/96572edd-a103-4019-94f5-be99002292bb___d35786bd78cdee5f67d1a3af28821c4a.png",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -99,7 +99,7 @@
         ],
         "link": "https://www.masonline.com.ar/411?map=productClusterIds",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/4817208d-c052-4c82-999a-b0e64eddbbdb___710326c7834d4e423bd2a5dbb732c9de.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -111,7 +111,7 @@
         ],
         "link": "https://www.masonline.com.ar/3353?map=productClusterIds",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/ec70936b-ccb7-4c42-b6d3-894d2943bd0b___cf8a216e9500968a13ad170fddb7666a.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -122,7 +122,7 @@
         ],
         "link": "https://www.masonline.com.ar/aire-acondicionado-philco-inverter-frio-calor-8750w/p",
         "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/354136-230-230?v=638827482345770000&width=230&height=230&aspect=true",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -133,7 +133,7 @@
         ],
         "link": "https://www.masonline.com.ar/aire-acondicionado-hyundai-split-inverter-frio-calor-5000-frigorias-hy11inv-5000fcw/p",
         "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/359901-230-230?v=638913780394600000&width=230&height=230&aspect=true",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -144,7 +144,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/ada583c0-bcb5-4cd7-8b1d-473d408363be/multimedia/attachments/01_Regionales_Verano_14al20_Regional_2-%20Bebidas.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -155,11 +155,11 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/b5a1f2b0-3a78-4256-b439-23b3dfffe6f0/multimedia/attachments/01_Regionales_Verano_14al20_Regional_1-%20Almacen.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "35% Off en Art. Limpieza",
+        "titulo": "35% Off en Perfumería",
         "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdr Perfumería Y limpieza Hasta 35% Unitario Descuento PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
         "categoria": [
             "🧹 Limpieza",
@@ -167,7 +167,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/ceb84f13-beaa-4d59-9908-9e9efc0eecc0/multimedia/attachments/01_Regionales_Verano_14al20_Regional_4-%20Perfumeria.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "MasOnline",
@@ -178,6 +178,6 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/d466e607-f320-41c5-9ee0-f394b98777ad/multimedia/attachments/01_Regionales_Verano_14al20-07.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     }
 ]

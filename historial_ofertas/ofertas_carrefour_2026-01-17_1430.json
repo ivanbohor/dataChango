@@ -8,7 +8,7 @@
         ],
         "link": "https://www.carrefour.com.ar/20666?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/61187cb6-3c7c-4fea-ae83-444a0ade661a___ab830f59ded4b04cd5ec9a79d866c61c.png",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -19,7 +19,7 @@
         ],
         "link": "https://www.carrefour.com.ar/almacen",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/a02645d7-06e4-4c6b-86e4-eca3b9f1f13b___4071215166d36042d4dd56f623ebc3e5.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -30,7 +30,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23729?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1e0bc9e7-cbd9-4e8d-8d25-7855d97c0b01___0c4583de711f7521320aaafd4ae7c5fa.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -41,7 +41,7 @@
         ],
         "link": "https://www.carrefour.com.ar/aire-acondicionado-split-philco-frio-calor-3400w-phs32ha4cn-blanco-/p",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/03497249-1e65-4624-8e12-30a5743e1aa0___91176bd24b3b9b6e63167e6751c71bdd.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -53,18 +53,18 @@
         ],
         "link": "https://www.carrefour.com.ar/23728?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/07876ff7-d38b-4f67-b0f8-f4491347f0c0___2fd4695f720738534779214cbb3bbb99.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Smart TV",
+        "titulo": "Oferta en Lavarropas",
         "descripcion": "Alres, Smart Tvs, Heladeras, Lavarropas 12suorAs SIN INTERÉS HASTa 308 DESCUENTO VER PROMO",
         "categoria": [
             "📺 Electro y Tecno"
         ],
         "link": "https://www.carrefour.com.ar/23732?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2a27f66f-11e2-4fba-a225-37d7a932040d___5c9eeef696f8227ffb8699c7ce319bbb.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -75,18 +75,18 @@
         ],
         "link": "https://www.carrefour.com.ar/23767?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/284907d3-d0fd-4b50-b4d2-451bb9bde350___d4cf6195d00ef61f98d227b3a8b37ef7.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "12 Cuotas S/Int en Smart TV",
+        "titulo": "12 Cuotas S/Int en Lavarropas",
         "descripcion": "En seleccionados de: Aires Acondicionados, Smart Tvs, Heladeras y Lavarropas Disfrutá eiverano ~opnecio Calidad , CON HASTA 12 CUOTAS SIN INTERÉS HASTA 30 DESCUENTO Hasta el 19/01 OLED 13\" on VER MÁs S6lo consumo tamllar;Vallldo por usualoldocumento",
         "categoria": [
             "📺 Electro y Tecno"
         ],
         "link": "https://www.carrefour.com.ar/23732?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9ce4afa0-0569-4cda-9aeb-b08e4dd66325___867678f60d4f0f2b414d3ef2c1b611cb.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -97,7 +97,7 @@
         ],
         "link": "https://www.carrefour.com.ar/entrega-inmediata?",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2a03aed4-d458-4327-959a-28a2f9bc9891___90ad47c3b0bc8b4647430ca5d43d7efb.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -108,7 +108,18 @@
         ],
         "link": "https://www.carrefour.com.ar/aire-acondicionado-split-philco-frio-calor-3400w-phs32ha4cn-blanco-/p",
         "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/245689-170-170?v=638814425050000000&width=170&height=170&aspect=true",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Smart TV",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/smart-tv-43-philips-titan-fhd-43pfd6910-77-/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/652475-170-170?v=638820525269470000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -119,7 +130,7 @@
         ],
         "link": "https://www.carrefour.com.ar/almacen",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/004c03db-3f51-4e29-b2f1-c56c15afacd9___48b04e5efcacec1c944776bb6f2192cb.png",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -130,7 +141,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23734?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/80b0b4bc-6b8e-4568-b2ff-acc5e394a72b___0f447bb874d7869c99b4ddf99dd33752.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -141,7 +152,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23731?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/392a4721-6864-493f-a954-08d60fdf41a3___a10e0917267de37932c8bb80da6c4c11.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -152,7 +163,7 @@
         ],
         "link": "https://www.carrefour.com.ar/entrega-inmediata?",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3d3f9139-0b10-4480-b9e5-77708af2b287___b6c3f1d544740bf4804e65211ab96dd9.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -163,7 +174,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23730?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/787a926f-19f5-43f4-954c-53166dfff7cf___7a0af8570a75e3299a960cf711760746.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -174,7 +185,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23729?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/de1c8817-e265-4f76-8f70-116985754f52___2dc57819809bc0d4c1b9971181f9f4d4.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -185,7 +196,7 @@
         ],
         "link": "https://www.carrefour.com.ar/suprema-congelada-x-kg-704563/p",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1cfc8815-2990-4bd0-ab1a-9febdba4abe6___e9ce4fe10b0b241920f05ed3ba9c0017.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -196,7 +207,7 @@
         ],
         "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/34f45bfc-1db2-44be-b19e-9b66bd5a12a3___9092b4413900d99a21351a48ed8a7a6e.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     },
     {
         "supermercado": "Carrefour",
@@ -207,6 +218,6 @@
         ],
         "link": "https://www.carrefour.com.ar/23731?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/803fca28-5129-4bde-a1a5-f41836d2506c___d8e4b89c937916601585daed72ab4a92.webp",
-        "fecha": "2026-01-18"
+        "fecha": "2026-01-17"
     }
 ]
