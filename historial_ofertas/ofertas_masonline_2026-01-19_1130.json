@@ -23,19 +23,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "30% Off en Aceite",
-        "descripcion": "Del16al 19 de enero ChangoMâs MâsOnline comar $ 1.999 Traviata pentapack x 505 g. Psin imp Nac: $1800,83 Pkg: $4.314,85 Stock: 10.000 un (**) $ 4.899- clu Aceite girasol Natura x 1.5 L P sin imp Nac: $4.048,76 Natura PxLt $3.266 Stock: 10.000 un (**) Matarazzo 30% Unitario Descuento Pastas secasx 500g. QUIERO VERMÁs \"89*  8225 Taiata5 Ouca PACK x8 PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTE EN MASONLINE COM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
-        "categoria": [
-            "🧀 Lácteos y Frescos",
-            "🍝 Almacén"
-        ],
-        "link": "https://www.masonline.com.ar/216?map=productClusterIds",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/d23f9ead-e1d1-4db9-8b49-db4e411095cd/image/attachments/06_traviata_aceite_matarazo_dkt.webp",
-        "fecha": "2026-01-19"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Precio Especial en Detergente",
+        "titulo": "Precio Especial en Cocinas",
         "descripcion": "Del16 al 19 de enero ChangoMâs MâsOnline comar Rollo de Cocina s1.799 Rollo de cocina Elegante x 200 paños. P.sin imp Nac: $1.486,77 P hoja: $8,99 Stock: 1000 un (** Nuevo Goganlo 'Gigante Doble 'Hoja 82\" 200 (200 Reagoniento Paros $ 2.549 clu Detergente Cif Cit C1t x 500 MI. Bioactivg Bioactive Nsengalsants PodeR P.sin imp Nac: $2106,61 B8DER VTP;r Gsaongaesant Px kg: $5.098 Stock: 5.000 un: (** QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINE.COMAR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
         "categoria": [
             "🧹 Limpieza",
@@ -47,7 +35,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "70% Off en Galletitas",
+        "titulo": "70% Off en Jugos",
         "descripcion": "Dell4al 20 de enero ChangoMâs MâsOnline com@r Galletitas @redlitas CLuB Sociãb Meeh Drqos@ seleccionadas Galletitas saladas Leches Las Tres 70% JASERENISIMA larga vida Niñas a ordad |actoa Descuento Clasico Segunda Unidad Jugos aRCOR BC en polvo Gqunú QUIERO VER MÁs PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
         "categoria": [
             "🍷 Bebidas",
@@ -100,6 +88,96 @@
         ],
         "link": "https://www.masonline.com.ar/promociones-bancarias",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/96572edd-a103-4019-94f5-be99002292bb___d35786bd78cdee5f67d1a3af28821c4a.png",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Celulares",
+        "descripcion": "Anr Hasta 402 Descuento Hasta 12 SNOtRES SIN tvs y celulares tvs y celulares",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.masonline.com.ar/411?map=productClusterIds",
+        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/4817208d-c052-4c82-999a-b0e64eddbbdb___710326c7834d4e423bd2a5dbb732c9de.webp",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "12 Cuotas S/Int en Climatización",
+        "descripcion": "Hasta 30% Ucscucnto Hasta 12 cuotas SIN INTERÉS climatizacion ",
+        "categoria": [
+            "💳 Bancarias",
+            "🚗 Auto y Aire Libre"
+        ],
+        "link": "https://www.masonline.com.ar/3353?map=productClusterIds",
+        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/ec70936b-ccb7-4c42-b6d3-894d2943bd0b___cf8a216e9500968a13ad170fddb7666a.webp",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Electro Philco",
+        "descripcion": "PHILCO) Geahea [co]TTs Aire Acondicionado Split Inverter Philco 8750 Watt Frio Calor Phin90hc3awfpi ",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.masonline.com.ar/aire-acondicionado-philco-inverter-frio-calor-8750w/p",
+        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/354136-230-230?v=638827482345770000&width=230&height=230&aspect=true",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Aires Acondicionados",
+        "descripcion": " Aire Acondicionado Split Inverter Hyundai 5000 Watt Frio Calor Hy11inv 5000fc ",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.masonline.com.ar/aire-acondicionado-hyundai-split-inverter-frio-calor-5000-frigorias-hy11inv-5000fcw/p",
+        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/359901-230-230?v=638913780394600000&width=230&height=230&aspect=true",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "3x2 en Bebidas",
+        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comgr Bebidas Hasta 3x2 LLEVÁS 3,PAGÁS 2 BEBER CON MODERACIÓN.PROHIBIDA SU VENTA A MENORES DE 18 AÑOS PARA MÁS INFORMACIÓNOLMITACIONES APLICABLES, CONSULTEEN MASONLNE:COMAR/LEGALES. DORINKA SRL 30-67813830-0 BOLVIA 5831,CABA Novedad image ",
+        "categoria": [
+            "🍷 Bebidas"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/ada583c0-bcb5-4cd7-8b1d-473d408363be/multimedia/attachments/01_Regionales_Verano_14al20_Regional_2-%20Bebidas.webp",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "35% Off en Almacén",
+        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdr Almacén Hasta 35% Unitario Descuento PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 C.ABA Novedad image ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/b5a1f2b0-3a78-4256-b439-23b3dfffe6f0/multimedia/attachments/01_Regionales_Verano_14al20_Regional_1-%20Almacen.webp",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "35% Off en Perfumería",
+        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdr Perfumería Y limpieza Hasta 35% Unitario Descuento PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
+        "categoria": [
+            "🧹 Limpieza",
+            "🧴 Perfumería y Bebé"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/ceb84f13-beaa-4d59-9908-9e9efc0eecc0/multimedia/attachments/01_Regionales_Verano_14al20_Regional_4-%20Perfumeria.webp",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Camping",
+        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdr Camping Y verano Hasta 2xI LLEVÁS 2, PAGÁS1 Hasta &suotes SIN INTERÉS PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
+        "categoria": [
+            "🚗 Auto y Aire Libre"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/d466e607-f320-41c5-9ee0-f394b98777ad/multimedia/attachments/01_Regionales_Verano_14al20-07.webp",
         "fecha": "2026-01-19"
     }
 ]

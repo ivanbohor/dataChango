@@ -23,29 +23,7 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Lácteos",
-        "descripcion": "En seleccionados de: Disfrutá ei verano \" pnesio Calidad ; CON Fideos, Postres Lácteos y Cervezas MES COVVENIENTE Fvcoss Patagonia Yogurisimo Matarazz Prorioticos FRUTILLA Ser PRO+ nnan 154 GREGC Froil Pack Ahorro 1VASO MÁs' Hasta el 19/01 70PE DESCUENTO EN LA 2DA UNIDAD {AGER Mag rpIG 7J0ro VER MÁS Rumba solo consummo famllllalr vallldo porusuarloldocumento",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.carrefour.com.ar/23731?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/be6629f6-8a46-4a4b-833c-da518eeee1bb___a10e0917267de37932c8bb80da6c4c11.webp",
-        "fecha": "2026-01-19"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "12 Cuotas S/Int en Lavarropas",
-        "descripcion": "En seleccionados de: Aires Acondicionados, Smart Tvs, Heladeras y Lavarropas Disfrutá eiverano ~opnecio Calidad , CON HASTA 12 CUOTAS SIN INTERÉS HASTA 30 DESCUENTO Hasta el 19/01 OLED 13\" on VER MÁs S6lo consumo tamllar;Vallldo por usualoldocumento",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23732?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d34c336a-af4b-4c09-9fd7-fa278841f4ed___867678f60d4f0f2b414d3ef2c1b611cb.webp",
-        "fecha": "2026-01-19"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Jabón",
+        "titulo": "Oferta en Shampoo",
         "descripcion": "Jabón Llquído; Shampoo y más 35P 404/ 1 DESCUENTO DESCUENTO esquik 9 Qy ala VER PROMO",
         "categoria": [
             "🧹 Limpieza",
@@ -57,7 +35,7 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Lavarropas",
+        "titulo": "Oferta en Smart TV",
         "descripcion": "Alres, Smart Tvs, Heladeras, Lavarropas 12suorAs SIN INTERÉS HASTa 308 DESCUENTO VER PROMO",
         "categoria": [
             "📺 Electro y Tecno"
@@ -79,13 +57,68 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Smart TV",
-        "descripcion": "Oferta Detectada",
+        "titulo": "Oferta en Lácteos",
+        "descripcion": "En seleccionados de: Disfrutá ei verano \" pnesio Calidad ; CON Fideos, Postres Lácteos y Cervezas MES COVVENIENTE Fvcoss Patagonia Yogurisimo Matarazz Prorioticos FRUTILLA Ser PRO+ nnan 154 GREGC Froil Pack Ahorro 1VASO MÁs' Hasta el 19/01 70PE DESCUENTO EN LA 2DA UNIDAD {AGER Mag rpIG 7J0ro VER MÁS Rumba solo consummo famllllalr vallldo porusuarloldocumento",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/23731?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/be6629f6-8a46-4a4b-833c-da518eeee1bb___a10e0917267de37932c8bb80da6c4c11.webp",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Smart TV",
+        "descripcion": "En seleccionados de: Aires Acondicionados, Smart Tvs, Heladeras y Lavarropas Disfrutá eiverano ~opnecio Calidad , CON HASTA 12 CUOTAS SIN INTERÉS HASTA 30 DESCUENTO Hasta el 19/01 OLED 13\" on VER MÁs S6lo consumo tamllar;Vallldo por usualoldocumento",
         "categoria": [
             "📺 Electro y Tecno"
         ],
-        "link": "https://www.carrefour.com.ar/smart-tv-43-philips-titan-fhd-43pfd6910-77-/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/652475-170-170?v=638820525269470000&width=170&height=170&aspect=true",
+        "link": "https://www.carrefour.com.ar/23732?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d34c336a-af4b-4c09-9fd7-fa278841f4ed___867678f60d4f0f2b414d3ef2c1b611cb.webp",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Leche",
+        "descripcion": "Hasta el 19/01 Ilolay Reiias ansr LECHE Larecheda Jadrene LLEVANDO 3 3x2 PAGÁS 2 Pizza BC En seleccionados de: Leches, Aguas, Jugos, Salsas y más VER MÁs MlawSur",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/23729?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/de1c8817-e265-4f76-8f70-116985754f52___2dc57819809bc0d4c1b9971181f9f4d4.webp",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "A solo $6490 en Pollo",
+        "descripcion": "Hasta el 19/01 Suprema de $6.490 Pollo Congelada XKG OFERTA VER MÁs",
+        "categoria": [
+            "🥩 Carnicería"
+        ],
+        "link": "https://www.carrefour.com.ar/suprema-congelada-x-kg-704563/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1cfc8815-2990-4bd0-ab1a-9febdba4abe6___e9ce4fe10b0b241920f05ed3ba9c0017.webp",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "18 Cuotas S/Int en Seleccionados (Electro)",
+        "descripcion": "HASTA 18 CUOTAS SIN INTERES HASTA 50% DE DESCUENTO HaSTA EL 20/01 EXCLUSIVO ONLINE",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/34f45bfc-1db2-44be-b19e-9b66bd5a12a3___9092b4413900d99a21351a48ed8a7a6e.webp",
+        "fecha": "2026-01-19"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "70% Off en Lácteos",
+        "descripcion": "Hasta el 19/01 70% DESCUENTO EN LA 2D4 UNIDAD En selecclonados de: Fideos, Postres Lácteos y Cervezas VER MÁs",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/23731?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/803fca28-5129-4bde-a1a5-f41836d2506c___d8e4b89c937916601585daed72ab4a92.webp",
         "fecha": "2026-01-19"
     },
     {
@@ -108,17 +141,6 @@
         ],
         "link": "https://www.carrefour.com.ar/almacen",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/fb3c41d0-be91-4639-bd12-3b6477146003___ce3edabcc4216c0ede11eaa749c6034a.webp",
-        "fecha": "2026-01-19"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "3x2 en Leche",
-        "descripcion": "En seleccionados de: Disfrutá ei verano \"@pnedióCalidad , CON Leches, Aguas, Jugos, Salsas y más ilolay Queso Rallado {Jerentsima @r REGHFDA Guisuol LargA LARGA VidA ARCor Sausta Pizza Hasta el 19/01 3x2 LLEVANDO 3 PAGÁS 2 IwSur illa (Cx VER MÁS BC (iwd solo consummo famllllalr vallldo porusuarloldocumento",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.carrefour.com.ar/23729?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/dd99d107-0acc-4934-aa15-4a135637125d___0c4583de711f7521320aaafd4ae7c5fa.webp",
         "fecha": "2026-01-19"
     },
     {
@@ -163,39 +185,6 @@
         ],
         "link": "https://www.carrefour.com.ar/entreega-inmediata??",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/a4851078-dd65-4596-81d4-8c7fbb278ac2___ee759c7a45d1247b0cf92d922343cfe2.webp",
-        "fecha": "2026-01-19"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "A solo $6490 en Pollo",
-        "descripcion": "Hasta el 19/01 Suprema de $6.490 Pollo Congelada XKG OFERTA VER MÁs",
-        "categoria": [
-            "🥩 Carnicería"
-        ],
-        "link": "https://www.carrefour.com.ar/suprema-congelada-x-kg-704563/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1cfc8815-2990-4bd0-ab1a-9febdba4abe6___e9ce4fe10b0b241920f05ed3ba9c0017.webp",
-        "fecha": "2026-01-19"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "18 Cuotas S/Int en Seleccionados (Electro)",
-        "descripcion": "HASTA 18 CUOTAS SIN INTERES HASTA 50% DE DESCUENTO HaSTA EL 20/01 EXCLUSIVO ONLINE",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/34f45bfc-1db2-44be-b19e-9b66bd5a12a3___9092b4413900d99a21351a48ed8a7a6e.webp",
-        "fecha": "2026-01-19"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "70% Off en Lácteos",
-        "descripcion": "Hasta el 19/01 70% DESCUENTO EN LA 2D4 UNIDAD En selecclonados de: Fideos, Postres Lácteos y Cervezas VER MÁs",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.carrefour.com.ar/23731?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/803fca28-5129-4bde-a1a5-f41836d2506c___d8e4b89c937916601585daed72ab4a92.webp",
         "fecha": "2026-01-19"
     }
 ]
