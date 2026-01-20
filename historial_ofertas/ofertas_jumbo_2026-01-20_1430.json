@@ -1,7 +1,7 @@
 [
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Limpiadores, Papel Higiénico",
+        "titulo": "40% Off en Art. Limpieza, Almacén",
         "descripcion": "OFERTAS de la SEMANA PAfAGONIA HASTA ALMACÉN, BEBIDAS, FRESCOS, PERFUMERIA 40% LIMPIEZA PRODUCTOS SELECCIONADOS . 'PATAGONIA  Cif Elite cehi desoreadk ICTINEGI 24.7 Suave X1o Ultra ESPUMA\" MÁS Suave  delicado con piel Ieoke Ufe Y2} Re(HUFtMe teuana EXCLUSIVO ONLINE VÁLIDO DEL 19/01AL22/01. BEBER CONMODERACIÓN WihW ( nuevo) Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
             "🍝 Almacén",
@@ -14,7 +14,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2do al 80% en Papel Higiénico, Jabón Ropa",
+        "titulo": "2do al 80% en Art. Limpieza, Papel Higiénico",
         "descripcion": "OFERTAS de la SEMANA HASTA 2DOAL SEMANA de la 80% LIMPIEZA HASTA _ Neazo*0e AHORRO* blem Elite skip Ultra Suave BIO. ENZIMAS Suave y delicado con la piel Cuioado LIMPIEZA 'Paofumdode COMPLETA Ushaeas CONG JABON Llquid EXCLUSIVO ONLINE lustramuebles PROTECCIGNY 'BRILLG INSTANTANEO VÁLIDO DEL 19/01AL22/01. Semana de la Limpieza - Hasta 2do al 80% Semana de la Limpieza - Hasta 2do al 80%",
         "categoria": [
             "💳 Bancarias",
@@ -49,7 +49,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Bazar, Decoración",
+        "titulo": "Hasta 50% Off en Hogar, Ropa de Cama",
         "descripcion": "Casa € Deco CROSS-CHECV Ropa de cama, Organización, Bazar y más { ZseRÉs š 50% kreo Ymás! VÁLIDO DEL 16/01 AL 22/01. PRODUCTOS SELECCIONADOS. Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
         "categoria": [
             "🏠 Hogar y Bazar"
@@ -148,6 +148,28 @@
     },
     {
         "supermercado": "Jumbo",
+        "titulo": "40% Off en Papel Higiénico",
+        "descripcion": "HASTA 40% INFALTABLES DEL SUPER PRODUCTOS SELECCIONADOS. EXCLUSIVO ONLINE Patagonia Wsie ( Elite 'PATAGONIA 24.7 deroroud  Ultro Suave 2 VERLEGALES BEBERCONMODERACIÓN Infaltables de super Infaltables de super",
+        "categoria": [
+            "🧹 Limpieza"
+        ],
+        "link": "https://www.jumbo.com.ar/56502?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/52764eac-833c-484e-9815-225c3e5bfb94___523ce53b16fd7b85716bd98fc6c00612.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "2x1 en Varios Productos",
+        "descripcion": "PATAGONIA 1 2x1 Ntugori patagonIn] {A8Er BEber Ck VooeraCJk: Phohibioasu VeVTA a Vevores de1a M0s PHoVOCMk VLQA 0L 19/1AL 251.  ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar/56328?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/62d852b6-7f7c-46dc-be86-49eed6510462___f25d81b0e24d83c74a4664e37361eec8.png",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Jumbo",
         "titulo": "30% Off en Hasta 30% En Seleccionados De Pequeños Electrodomé",
         "descripcion": "llega EN24HS HASTA 30% cenco š 35% CrediTO SNERÉS Pequeños electros (ster 22 22 VERLEGALES (PAnE Hasta 30% en Seleccionados de Pequeños Electrodomésticos\t Hasta 30% en Seleccionados de Pequeños Electrodomésticos\t",
         "categoria": [
@@ -189,28 +211,6 @@
         ],
         "link": "https://www.jumbo.com.ar/56365?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/2f47f88e-b9fb-48e4-abfe-80c304eec265___56c09cb13a257097a468c3b43eaa0864.webp",
-        "fecha": "2026-01-20"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "40% Off en Papel Higiénico",
-        "descripcion": "HASTA 40% INFALTABLES DEL SUPER PRODUCTOS SELECCIONADOS. EXCLUSIVO ONLINE Patagonia Wsie ( Elite 'PATAGONIA 24.7 deroroud  Ultro Suave 2 VERLEGALES BEBERCONMODERACIÓN Infaltables de super Infaltables de super",
-        "categoria": [
-            "🧹 Limpieza"
-        ],
-        "link": "https://www.jumbo.com.ar/56502?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/52764eac-833c-484e-9815-225c3e5bfb94___523ce53b16fd7b85716bd98fc6c00612.webp",
-        "fecha": "2026-01-20"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "2x1 en Varios Productos",
-        "descripcion": "PATAGONIA 1 2x1 Ntugori patagonIn] {A8Er BEber Ck VooeraCJk: Phohibioasu VeVTA a Vevores de1a M0s PHoVOCMk VLQA 0L 19/1AL 251.  ",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56328?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/62d852b6-7f7c-46dc-be86-49eed6510462___f25d81b0e24d83c74a4664e37361eec8.png",
         "fecha": "2026-01-20"
     },
     {

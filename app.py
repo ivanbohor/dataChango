@@ -15,38 +15,29 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# --- 🧪 MODO PRUEBA (Desactivar en producción si ya tienes los JSON) ---
+# --- 🧪 MODO PRUEBA ---
 MODO_PRUEBA = False 
 
 # --- FUNCIONES DE CARGA CON CACHÉ ---
-
 @st.cache_data(ttl=3600, show_spinner=False)
 def cargar_y_transformar_promos():
-    """
-    Carga los JSON de promociones bancarias y los estructura para la tabla.
-    Se cachea por 1 hora (3600s) para mejorar performance.
-    """
-    # Lista completa de archivos
     archivos_json = [
-        "promos_bancarias_carrefour.json",       # Carrefour
-        "promos_bancarias_coto.json",  # Coto
-        "promos_bancarias_jumbo.json", # Jumbo
-        "promos_bancarias_masonline.json" # MasOnline
+        "promos_bancarias_carrefour.json", 
+        "promos_bancarias_coto.json", 
+        "promos_bancarias_jumbo.json", 
+        "promos_bancarias_masonline.json"
     ]
-    
     estructura = {
         "Carrefour": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]},
         "Coto": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]},
         "Jumbo": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]},
         "MasOnline": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]}
     }
-
     for archivo in archivos_json:
         if os.path.exists(archivo):
             try:
                 with open(archivo, "r", encoding="utf-8") as f:
                     datos_planos = json.load(f)
-                
                 for p in datos_planos:
                     super_nm = p.get("supermercado")
                     dia = p.get("dia")
@@ -55,32 +46,17 @@ def cargar_y_transformar_promos():
                     tope = p.get("tope", "Sin tope")
                     ver_legales = "SI" if p.get("ver_legales") else "NO"
                     link = p.get("link", "#")
-
                     if super_nm in estructura and dia in estructura[super_nm]:
-                        # Formato interno: BANCO|DESCUENTO|TOPE|VER_LEGALES|LINK
                         valor_formateado = f"{banco}|{desc}|{tope}|{ver_legales}|{link}"
                         estructura[super_nm][dia].append(valor_formateado)
-                        
-            except Exception as e:
-                print(f"Error cargando {archivo}: {e}")
-            
+            except Exception as e: print(f"Error cargando {archivo}: {e}")
     return estructura
 
 @st.cache_data(ttl=3600, show_spinner=False)
 def cargar_datos_ofertas():
-    """
-    Carga los JSON de ofertas de productos (Carne, Leche, etc).
-    Se cachea por 1 hora.
-    """
-    archivos = {
-        "Carrefour": "ofertas_carrefour.json", 
-        "Jumbo": "ofertas_jumbo.json", 
-        "Coto": "ofertas_coto.json", 
-        "MasOnline": "ofertas_masonline.json"
-    }
+    archivos = {"Carrefour": "ofertas_carrefour.json", "Jumbo": "ofertas_jumbo.json", "Coto": "ofertas_coto.json", "MasOnline": "ofertas_masonline.json"}
     todas_ofertas = []
     conteo_ofertas = {k: 0 for k in archivos.keys()} 
-    
     for nombre, archivo in archivos.items():
         if os.path.exists(archivo):
             try:
@@ -89,22 +65,12 @@ def cargar_datos_ofertas():
                     if isinstance(datos, list):
                         for d in datos: 
                             d["origen_filtro"] = nombre
-                            # Aplicamos sanitización aquí para cachearla ya limpia
                             d = sanitizar_oferta(d)
                         todas_ofertas.extend(datos)
                         conteo_ofertas[nombre] = len(datos)
             except: pass
-        elif MODO_PRUEBA:
-            # Datos fake solo si no existen los archivos y estamos en modo prueba
-            fake = []
-            if nombre == "Coto": fake = [{"titulo": "Asado (Fake)", "categoria": ["🥩 Carnes"], "supermercado": "Coto", "imagen": "https://via.placeholder.com/300", "link": "#", "origen_filtro": "Coto", "fecha": "2026-01-01"}]
-            if fake:
-                todas_ofertas.extend(fake)
-                conteo_ofertas[nombre] = len(fake)
-                
     return todas_ofertas, conteo_ofertas
 
-# --- UTILIDADES ---
 def normalizar_texto(texto):
     if not isinstance(texto, str): return ""
     return ''.join(c for c in unicodedata.normalize('NFD', texto.lower().strip()) if unicodedata.category(c) != 'Mn')
@@ -135,42 +101,92 @@ def get_img_as_base64(file):
         with open(file, "rb") as f: return base64.b64encode(f.read()).decode()
     except: return ""
 
-# --- CARGA DE DATOS (INVOCACIÓN CACHEADA) ---
 PROMOS_DATA = cargar_y_transformar_promos()
 ofertas_raw, conteos = cargar_datos_ofertas()
 
-# --- INYECCIÓN DE SCRIPTS GLOBALES ---
+# --- INYECCIÓN DE SCRIPTS GLOBALES (JS MODAL LUPITA & COPY) ---
 def inyectar_recursos_globales():
     GTM_ID = "GTM-PFPW7P44"
     js_global = f"""
     <script>
         (function() {{
-            var parentHead = window.parent.document.head;
-            var parentBody = window.parent.document.body;
             var parentDoc = window.parent.document;
+            var parentHead = parentDoc.head;
+            var parentBody = parentDoc.body;
+
+            // 1. Inyectar Estilos Críticos (Ocultar Header Streamlit)
             if (!parentDoc.getElementById('custom-styles')) {{
                 var style = parentDoc.createElement('style');
                 style.id = 'custom-styles';
                 style.innerHTML = `
-                    header[data-testid="stHeader"] {{ display: none !important; }}
-                    footer {{ display: none !important; }}
-                    #MainMenu {{ display: none !important; }}
+                    header[data-testid="stHeader"], footer, #MainMenu {{ display: none !important; }}
                     .block-container {{ padding-top: 1rem !important; padding-bottom: 3rem !important; }}
-                    .stApp {{ margin-top: 0px !important; }} 
+                    .stApp {{ margin-top: 0px !important; }}
                 `;
                 parentHead.appendChild(style);
             }}
+
+            // 2. Inyectar GTM
             if (!parentDoc.getElementById('gtm-injected')) {{
                 var script = parentDoc.createElement('script');
                 script.id = 'gtm-injected';
                 script.text = "(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','{GTM_ID}');";
                 parentHead.insertBefore(script, parentHead.firstChild);
             }}
-            if (!window.parent.copyListenerAttached) {{
+
+            // 3. Crear el MODAL (Si no existe en el DOM)
+            if (!parentDoc.getElementById('imgModal')) {{
+                var modal = parentDoc.createElement('div');
+                modal.id = 'imgModal';
+                modal.style.cssText = "display:none; position:fixed; z-index:999999; padding-top:50px; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgba(0,0,0,0.9); backdrop-filter:blur(5px);";
+                
+                var close = parentDoc.createElement('span');
+                close.innerHTML = "&times;";
+                close.style.cssText = "position:absolute; top:15px; right:35px; color:#f1f1f1; font-size:40px; font-weight:bold; cursor:pointer; z-index:1000000;";
+                close.onclick = function() {{ modal.style.display = "none"; }};
+                
+                var modalImg = parentDoc.createElement('img');
+                modalImg.id = 'imgModalContent';
+                modalImg.style.cssText = "margin:auto; display:block; max-width:90%; max-height:85vh; border-radius:8px; box-shadow:0 0 20px rgba(255,255,255,0.1); object-fit:contain;";
+                
+                modal.appendChild(close);
+                modal.appendChild(modalImg);
+                
+                modal.onclick = function(e) {{
+                    if (e.target === modal) modal.style.display = "none";
+                }}
+                parentBody.appendChild(modal);
+            }}
+
+            // Función Helper para abrir el modal (llamada internamente)
+            window.parent.openImageModal = function(src) {{
+                var modal = parentDoc.getElementById('imgModal');
+                var modalImg = parentDoc.getElementById('imgModalContent');
+                modalImg.src = src;
+                modal.style.display = "flex";
+                modal.style.alignItems = "center";
+                modal.style.justifyContent = "center";
+            }};
+
+            // 4. EVENT DELEGATION (La Solución para el Error de React)
+            // Escuchamos clics en TODO el documento y filtramos por clase
+            if (!window.parent.globalListenersAttached) {{
                 parentDoc.addEventListener('click', function(e) {{
-                    var target = e.target.closest('.js-copy-btn');
-                    if (target) {{
-                        var textToCopy = target.getAttribute('data-clipboard-text');
+                    
+                    // A. Detectar Clic en Lupa/Imagen (Clase .js-zoomable)
+                    var zoomTarget = e.target.closest('.js-zoomable');
+                    if (zoomTarget) {{
+                        var imgSrc = zoomTarget.getAttribute('data-src');
+                        if (imgSrc) {{
+                            window.parent.openImageModal(imgSrc);
+                            e.stopPropagation(); // Evita conflictos
+                        }}
+                    }}
+
+                    // B. Detectar Clic en Botón Copiar (Clase .js-copy-btn)
+                    var copyTarget = e.target.closest('.js-copy-btn');
+                    if (copyTarget) {{
+                        var textToCopy = copyTarget.getAttribute('data-clipboard-text');
                         if (textToCopy) {{
                             var textArea = parentDoc.createElement("textarea");
                             textArea.value = textToCopy;
@@ -180,22 +196,20 @@ def inyectar_recursos_globales():
                             textArea.focus();
                             textArea.select();
                             try {{
-                                var successful = parentDoc.execCommand('copy');
-                                if(successful) {{
-                                    var originalHtml = target.innerHTML;
-                                    target.innerHTML = "Copy";
-                                    target.classList.add('copied');
-                                    setTimeout(function() {{
-                                        target.innerHTML = originalHtml;
-                                        target.classList.remove('copied');
-                                    }}, 2000);
-                                }}
+                                parentDoc.execCommand('copy');
+                                var originalHtml = copyTarget.innerHTML;
+                                copyTarget.innerHTML = "Copy";
+                                copyTarget.classList.add('copied');
+                                setTimeout(function() {{
+                                    copyTarget.innerHTML = originalHtml;
+                                    copyTarget.classList.remove('copied');
+                                }}, 2000);
                             }} catch (err) {{ console.error('Error copy', err); }}
                             parentBody.removeChild(textArea);
                         }}
                     }}
                 }});
-                window.parent.copyListenerAttached = true;
+                window.parent.globalListenersAttached = true;
             }}
         }})();
     </script>
@@ -204,15 +218,14 @@ def inyectar_recursos_globales():
 
 inyectar_recursos_globales()
 
-# --- CONSTANTES Y ESTADO ---
+# --- CONSTANTES ---
 HIPERS = ["Carrefour", "Jumbo", "Coto", "MasOnline"]
-
 if 'categoria_activa' not in st.session_state: st.session_state.categoria_activa = None
 if 'filtro_ver_todo' not in st.session_state: st.session_state.filtro_ver_todo = True
 for h in HIPERS:
     if f"chk_{h}" not in st.session_state: st.session_state[f"chk_{h}"] = False
 
-# --- 3. ESTILOS GLOBALES (CSS) ---
+# --- ESTILOS CSS (INCLUYE HOVER DE LUPA) ---
 st.markdown("""
     <style>
         .stApp { background-color: #0e3450; }
@@ -242,14 +255,21 @@ st.markdown("""
         .grid-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; padding-bottom: 5px; width: 100%; }
         @media (min-width: 600px) { .grid-container { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; } }
         
+        /* CARD OFERTA */
         .oferta-card { background-color: #16425b; border-radius: 10px; padding: 8px; border: 1px solid #cfa539; display: flex; flex-direction: column; height: 310px; box-sizing: border-box; transition: transform 0.2s, border-color 0.2s; overflow: hidden; position: relative; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
         @media (min-width: 600px) { .oferta-card { padding: 10px; height: 340px; } }
         .oferta-card:hover { transform: translateY(-4px); border-color: #c7501e; box-shadow: 0 8px 12px rgba(199, 80, 30, 0.2); }
         
-        .img-container { height: 120px; background: white; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; width: 100%; }
+        /* IMAGEN Y EFECTO LUPA */
+        .img-container { height: 120px; background: white; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; width: 100%; position: relative; cursor: zoom-in; overflow: hidden; }
         @media (min-width: 600px) { .img-container { height: 140px; margin-bottom: 10px; } }
-        .img-container img { max-height: 95%; max-width: 95%; object-fit: contain; }
+        .img-container img { max-height: 95%; max-width: 95%; object-fit: contain; transition: transform 0.3s ease; }
         
+        /* Capa oscura al pasar mouse (Pseudo-elemento Lupa) */
+        .img-container::after { content: "🔎"; font-size: 24px; color: white; display: flex; align-items: center; justify-content: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+        .img-container:hover::after { opacity: 1; }
+        .img-container:hover img { transform: scale(1.05); }
+
         .card-title { color: white; font-size: 0.85rem; font-weight: 600; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-bottom: 6px; height: 34px; word-wrap: break-word; line-height: 1.2; }
         @media (min-width: 600px) { .card-title { font-size: 0.95rem; margin-bottom: 8px; height: 38px; } }
         
@@ -263,7 +283,6 @@ st.markdown("""
         .js-copy-btn:hover { background-color: rgba(255,255,255,0.1); }
         .js-copy-btn.copied { background-color: #2e7d32 !important; border-color: #2e7d32 !important; color: white !important; }
 
-        /* --- ESTILOS TABLA PROMOS BANCARIAS --- */
         .promo-table-container { overflow-x: auto; margin-bottom: 20px; border-radius: 8px; border: 1px solid #cfa539; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
         .promo-table { width: 100%; border-collapse: collapse; min-width: 600px; font-size: 0.85rem; }
         .promo-table th { background-color: #0b2a40; color: #cfa539; padding: 12px 8px; text-transform: uppercase; border-bottom: 2px solid #cfa539; text-align: center; font-weight: 800; letter-spacing: 0.5px; }
@@ -277,16 +296,13 @@ st.markdown("""
         .promo-badge { display: block; background-color: #1e3a5f; padding: 6px; border-radius: 4px; margin-bottom: 6px; border: 1px solid rgba(255,255,255,0.1); font-size: 0.75rem; text-align: left; position: relative; }
         .promo-badge strong { color: #fff; display: block; font-size: 0.9rem; margin-bottom: 2px; }
         .promo-badge .banco-nm { color: #aaa; font-weight: normal; font-size: 0.8rem; margin-bottom: 2px; display: block;}
-        
-        /* Estilos nuevos para Tope y Legales */
         .tope-txt { font-size: 0.7rem; color: #a4d4ae; margin-top: 2px; display: block; font-style: italic;}
         .link-legales { font-size: 0.7rem; color: #4fc3f7 !important; text-decoration: none; border-bottom: 1px dotted #4fc3f7; margin-top: 2px; display: inline-block; }
         .link-legales:hover { color: white !important; border-bottom-style: solid; }
-
     </style>
 """, unsafe_allow_html=True)
 
-# --- 4. HEADER ---
+# --- HEADER ---
 logo_file = "logo.jpg" 
 img_src = f"data:image/jpeg;base64,{get_img_as_base64(logo_file)}" if os.path.exists(logo_file) else ""
 
@@ -319,7 +335,7 @@ def on_change_hiper(nombre):
     if st.session_state[f"chk_{nombre}"]: st.session_state.filtro_ver_todo = False
     if not any(st.session_state[f"chk_{h}"] for h in HIPERS): st.session_state.filtro_ver_todo = True
 
-# --- CAJA DE FILTROS ---
+# --- FILTROS ---
 with st.expander("🔎 Filtrar Ofertas", expanded=False):
     c_todo, c_h1, c_h2, c_h3, c_h4 = st.columns(5)
     with c_todo: st.checkbox("Todo", key='filtro_ver_todo', on_change=on_change_ver_todo)
@@ -341,65 +357,40 @@ with st.expander("🔎 Filtrar Ofertas", expanded=False):
                 toggle_categoria(key)
                 st.rerun()
 
-# --- MODULO DE PROMOS BANCARIAS ---
+# --- PROMOS BANCARIAS ---
 with st.expander("💳 Calendario de Descuentos Bancarios (Online)", expanded=False):
     dia_semana_hoy = datetime.datetime.today().weekday()
     dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
     headers = ["LUN", "MAR", "MIÉ", "JUE", "VIE", "SÁB", "DOM"]
-    
     html_table = '<div class="promo-table-container"><table class="promo-table"><thead><tr><th style="text-align:left; padding-left:15px;">Supermercado</th>'
-    
     for i, h in enumerate(headers):
         clase_hoy = "today-header" if i == dia_semana_hoy else ""
         html_table += f'<th class="{clase_hoy}">{h}</th>'
     html_table += '</tr></thead><tbody>'
-    
     for hiper, dias_data in PROMOS_DATA.items():
         estilo = ESTILOS_SUPER.get(hiper, ESTILOS_SUPER["default"])
         icono = estilo["icono"]
-        
         html_table += f'<tr><td style="font-weight:bold; color:white; border-right:1px solid #cfa539; padding-left:10px;">{icono} {hiper}</td>'
-        
         for i, dia_key in enumerate(dias):
             clase_celda = "today-col" if i == dia_semana_hoy else ""
             promos = dias_data.get(dia_key, [])
-            
             content = ""
             if promos:
                 for p in promos:
-                    # Formato recibido: BANCO|DESCUENTO|TOPE|VER_LEGALES|LINK
                     partes = p.split("|")
                     if len(partes) >= 5:
-                        banco = partes[0]
-                        desc = partes[1]
-                        tope = partes[2]
-                        ver_legales = partes[3] # "SI" o "NO"
-                        link = partes[4]
-
-                        # Bloque Base
-                        html_promo = f'<div class="promo-badge">'
-                        html_promo += f'<strong>{desc}</strong>'
-                        html_promo += f'<span class="banco-nm">{banco}</span>'
-                        
-                        # Lógica Condicional: Link o Tope
-                        if ver_legales == "SI":
-                            html_promo += f'<a href="{link}" target="_blank" class="link-legales">Ver legales 🔗</a>'
+                        banco, desc, tope, ver_legales, link = partes[0], partes[1], partes[2], partes[3], partes[4]
+                        html_promo = f'<div class="promo-badge"><strong>{desc}</strong><span class="banco-nm">{banco}</span>'
+                        if ver_legales == "SI": html_promo += f'<a href="{link}" target="_blank" class="link-legales">Ver legales 🔗</a>'
                         else:
-                            # Solo mostramos el tope si no es "Sin tope" y no es nulo
-                            if tope and "sin tope" not in tope.lower() and tope != "None":
-                                html_promo += f'<span class="tope-txt">Tope: {tope}</span>'
-                        
+                            if tope and "sin tope" not in tope.lower() and tope != "None": html_promo += f'<span class="tope-txt">Tope: {tope}</span>'
                         html_promo += '</div>'
                         content += html_promo
-            else:
-                content = "-"
-            
+            else: content = "-"
             html_table += f'<td class="{clase_celda}">{content}</td>'
         html_table += '</tr>'
-        
     html_table += '</tbody></table></div>'
     st.markdown(html_table, unsafe_allow_html=True)
-
 
 # --- RENDERIZADO GRID ---
 hipers_activos = HIPERS if st.session_state.filtro_ver_todo else [h for h in HIPERS if st.session_state[f"chk_{h}"]]
@@ -461,12 +452,16 @@ else:
             tag = cats_vis[0] if cats_vis else "Oferta"
             txt_copy = f"Mira esta oferta que encontre en DataChango: {link}".replace("'", "")
             
+            # --- CARD CORREGIDA (SIN ONCLICK INLINE) ---
+            # Usamos event delegation: data-src tiene la url, y la clase js-zoomable activa el script global
             card = f"""
             <div class="oferta-card">
                 <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
                     <span style="color:#aaa; font-size:0.7rem;">📅 {fecha}</span>
                 </div>
-                <div class="img-container"><img src="{img}" alt="Producto" onerror="this.style.display='none'"></div>
+                <div class="img-container js-zoomable" data-src="{img}">
+                    <img src="{img}" alt="Producto" onerror="this.style.display='none'">
+                </div>
                 <div class="card-title">{titulo}</div>
                 <div style="margin-bottom: auto;">
                     <span class="tag-pill" style="background-color: {color_tema};">{tag}</span>
@@ -482,9 +477,8 @@ else:
         full_grid_html = "".join(cards_html_list).replace("\n", "")
         st.markdown(f'<div class="grid-container">{full_grid_html}</div>', unsafe_allow_html=True)
 
-# --- 7. FOOTER ---
+# --- FOOTER ---
 st.markdown("<br><hr style='border-color: #cfa539; opacity: 0.3;'>", unsafe_allow_html=True)
-
 with st.expander("⚖️ Aviso Legal y Exención de Responsabilidad", expanded=False):
     st.markdown("""
     <div style='color:#ccc;font-size:0.8rem;line-height:1.6;text-align:justify;background-color:rgba(0,0,0,0.2);padding:15px;border-radius:8px;'>
@@ -494,5 +488,4 @@ with st.expander("⚖️ Aviso Legal y Exención de Responsabilidad", expanded=F
         <p><strong>Propiedad Intelectual:</strong> Todas las marcas comerciales, logotipos, nombres de productos y fotografías mostradas en este sitio son propiedad de sus respectivos titulares y se utilizan aquí únicamente con fines identificatorios y de referencia informativa para el usuario (uso nominativo), sin implicar asociación, patrocinio o endoso alguno por parte de dichas marcas hacia este sitio.</p>
     </div>
     """, unsafe_allow_html=True)
-
 st.markdown("<div style='text-align: center; color: #666; font-size: 0.75rem; margin-top: 10px;'>© 2026 DataChango | <a href='mailto:datachangoweb@gmail.com' style='color:#888;'>Contacto</a></div>", unsafe_allow_html=True)
