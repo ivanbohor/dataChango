@@ -1,0 +1,168 @@
+[
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Seleccionados (🍝 Almacén)",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/20666?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/61187cb6-3c7c-4fea-ae83-444a0ade661a___ab830f59ded4b04cd5ec9a79d866c61c.png",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Lavarropas",
+        "descripcion": "En seleccionados de: Aires Acondicionados, Smart TVs, Heladeras y Lavarropas AHORRO FINDEMES Carrefour iDescuentos en la unldad y mucho más! Hasta el 26/01 HASTA HASTA 12 CUOTAS 3085 DESCUENTO SIN INTERÉS VER MÁS 43\" Sólo consumo familiar; válido por usuarioldocumento:",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23807?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/745d4417-9583-4806-b8c7-252498dbcc5d___e053e188558ecb282b1ab5dc0e1185e5.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Smart TV",
+        "descripcion": "PRECIO NORMAL 4898-000 BFERTA 8749.000 12 Cuotas SIN INTERES DE 862.416 Ciu Smart TV LED 4k Philíps 55\" Hasta el 26/01 VER MÁS",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/smart-tv-55-philips-titan-4k-55pud7309-77-/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/59fa178d-1ae9-44fa-8941-75417cb494c3___a8bf12fb934ab76a597af3f85bcdb7cf.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Varios Productos",
+        "descripcion": "En seleccionados de: Galletitas, Yogures, Queso Crema, Café, Quesos, Arroz y más Aasia 204 de ahcrr) AHORRO FINDEMES Carrefour iDescuentos enla unldad y mucho más! NESCAFE {olca oaiginal Huanle Hasta el 26/01 Molinos Ala HASTA 4O DESCUENTO ala LARIEUM DiLUR ,ersrr Colgate VER MÁS (3n Casane Cun RR( Duanca Sólo consumo familiar; válido por usuarioldocumento. OrEO",
+        "categoria": [
+            "🧀 Lácteos y Frescos",
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23802?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/779bd1e6-02e9-44fb-a859-abe84e22c37f___7a342ab0f98f7dd2224cd1793d28ef03.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "A solo $6000 en Almacén",
+        "descripcion": "Comprando los días Martes de Enero Con tarjetas de Débito Visa 15P 25 DESCUENTO DESCUENTO Tope de descuento $6.000 Para clientes adheridos a planes de suscripción- Tope de descuento $12.000 Para clientes no adheridos a planes de suscripción por semana. por semana _ No Incluye electrodoméstlcos, electrónlca, telefonla celular; carnlcerla y leches Infantlles Ver legales en carrefour com arldescuentos-bancarlos. maternlzadas (etapa 1y 2) Apllca TarJetas de Déblto VIsa. NaranjaX",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/ALMACEN",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/49bb4cec-f1b8-4631-87a2-5d516c9cd296___e99862eac3f910dcaeda48bdd31c45ec.png",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Lavarropas",
+        "descripcion": "heste 12 Suotas elae 30 DESCUENTO 0 Alres, Smart Tv; Heladeras Lavarropas",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23807?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/afe66f0d-f516-428e-a455-4d808a10830c___4890989dec1af845d7bdff3d0e9f387b.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Leche",
+        "descripcion": "3x2 LLEVÁS 3) PAGÁS 2 4alS Lapeinid Guinves DESCUENTO 40 Leches, Jugos, Galletitas, Aquas Mef",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/23804?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d49f90be-5bb2-40a1-9f05-27f9c26c3cd8___31770cb9ea15bbd8d5f36891e86e0321.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "6 Cuotas S/Int en Seleccionados (🍝 Almacén)",
+        "descripcion": "heste 6 CUOTAS SIN INTERÉS elae 35 DESCUENTO 8 Notebooks, Mlcroondas ercpters",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23809?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/6772c578-7019-4bca-9e85-a97a03e6060c___3cb8114f14fe6966faf3497d4d7c3fb0.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "30% Off en Lavarropas",
+        "descripcion": "Hasta el 26/01 HASTA 12 SUOEAS hasta 30 %oEscuENTO En seleccionados de: Alres Acondlclonados Smart Tvs, Heladeras Lavarropas VER MÁs",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23807?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/987ad637-e3cf-44a7-b695-04db6bc48b67___e844cdb06b3323a73453a5ae68396ec9.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "9 Cuotas S/Int en Seleccionados (🍝 Almacén)",
+        "descripcion": "En seleccionados de: Celulares, Parlantes y Torres de Sonido AHORRO FINDEMES Carrefour iDescuentos enla unldad y mucho más! HASTA 9 CUOTAS SIN INTERÉS Hasta el 26/01 VER MÁS ~ 9BL aog Sólo consumo familiar; válido por usuarioldocumento.",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23810?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/563178bf-42a1-4618-bff0-37b648261143___fd45a9e691225c867f04b06b259bd71e.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Cupón de Descuento en Seleccionados (🍝 Almacén)",
+        "descripcion": "NUEVO EXCLUSIVO ONLINE Enore=b RECIBILO EN MAX INMEDINt IH 24 Si estas en CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL recibí tu pedido en menos de IHORA 106 Club LA NACION COMPRAR Haclendo tu compra del super onllne de Martes Domingos de Enero DESCUENTO SIN TOPE Utilizando cupón obtenldo en Club LA NACIÓN https   Isuscripciones lanaclon com arlsuscripcion No Incluye aetadomegiio s electonica telefonle celularcamlcra Ieches Infaniler metemradas Meymo 24 unldade (etapa 1y 2) No acumulable Con otas premoclones productos con descuento por pedldo Ver legales en carrefour comarldescuentos-bancarlos",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/7993902b-9a09-41b3-8b9c-626128d09e71___5645f06f1454ea94afdd74d7282fa3d4.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Seleccionados (Electro)",
+        "descripcion": "En seleccionados de: Ventilación y Pequeños Electrodomésticos AHORRO HASTA FINDEMES 4OP6 DESCUENTO Carrefour iDescuentos en la unldad y mucho más! Hasta el 26/01 VER MÁS Sólo consumo familiar; válido por usuarioldocumento:",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23808?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/81944d5e-eafd-4db0-8c37-877fbc81ae24___554b4e72ccac1ea3c0dc0514e94e22d6.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Mayonesa",
+        "descripcion": "En seleccionados de: Detergentes, Congelados, Aceites Salsas y más AHORRO FINDEMES Carrefour iDescuentos enla unldad y mucho más! Lucchetti Hasta el 26/01 scade Grania Iitas Swift CASERA jamón Enovi SavoRa Original_ PizzA fiesía Mayonesa 'Gif Or97 Natura VER MÁS 258 359 DESCUENTO DESCUENTO Sólo consumo familiar; válido por usuarioldocumento. El descuento no aplica abonando con dos medios de pago",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23801?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/26404bb2-c994-45c0-aaf9-54cecc59760a___bf2d7fcf585ec4ec9f02cba9b6ac7733.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "18 Cuotas S/Int en Seleccionados (Electro)",
+        "descripcion": "HASTA 18 CUOTAS SIN INTERES HASTA 50% DE DESCUENTO HaSTA EL 20/01 EXCLUSIVO ONLINE",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/34f45bfc-1db2-44be-b19e-9b66bd5a12a3___9092b4413900d99a21351a48ed8a7a6e.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "50% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "Hasta el 26/01 LLEVANDO Productos 50% DESCUENTO EN LA 2D^ UNIDAD En seleccionados de: Galletltas; Gaseosas Cervezas más VER MÁs",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23803?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/08d833e7-4fc2-4fca-9b56-8ca5b2361a4c___74c2a96016718f3cc2dcda9aed6835d0.webp",
+        "fecha": "2026-01-20"
+    }
+]

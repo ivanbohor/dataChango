@@ -1,7 +1,7 @@
 [
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Limpiadores, Perfumería",
+        "titulo": "40% Off en Perfumería, Art. Limpieza",
         "descripcion": "OFERTAS de la SEMANA PAfAGONIA HASTA ALMACÉN, BEBIDAS, FRESCOS, PERFUMERIA 40% LIMPIEZA PRODUCTOS SELECCIONADOS . 'PATAGONIA  Cif Elite cehi desoreadk ICTINEGI 24.7 Suave X1o Ultra ESPUMA\" MÁS Suave  delicado con piel Ieoke Ufe Y2} Re(HUFtMe teuana EXCLUSIVO ONLINE VÁLIDO DEL 19/01AL22/01. BEBER CONMODERACIÓN WihW ( nuevo) Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
             "🍝 Almacén",
@@ -14,7 +14,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2do al 80% en Papel Higiénico, Art. Limpieza",
+        "titulo": "2do al 80% en Jabón Ropa, Art. Limpieza",
         "descripcion": "OFERTAS de la SEMANA HASTA 2DOAL SEMANA de la 80% LIMPIEZA HASTA _ Neazo*0e AHORRO* blem Elite skip Ultra Suave BIO. ENZIMAS Suave y delicado con la piel Cuioado LIMPIEZA 'Paofumdode COMPLETA Ushaeas CONG JABON Llquid EXCLUSIVO ONLINE lustramuebles PROTECCIGNY 'BRILLG INSTANTANEO VÁLIDO DEL 19/01AL22/01. Semana de la Limpieza - Hasta 2do al 80% Semana de la Limpieza - Hasta 2do al 80%",
         "categoria": [
             "💳 Bancarias",
@@ -45,17 +45,6 @@
         ],
         "link": "https://www.jumbo.com.ar/56514?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/2bf3cebc-85fd-44f1-9e8f-f481b157d850___29cbc187731b6116218efada0ac22629.webp",
-        "fecha": "2026-01-21"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "Oferta en Corte Nalga, Milanesas",
-        "descripcion": "más fresco más rico MILANESA DE NALGA $16999 DE NOVILLITO VÁLIDO DEL 19/01 AL 22/01. PRECIO SIN IMPUESTOS: $15,383.71 Milanesa de lomo de novillito Milanesa de lomo de novillito",
-        "categoria": [
-            "🥩 Carnicería"
-        ],
-        "link": "https://www.jumbo.com.ar/56503?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/c6df6317-7813-49ce-9dfe-ab8ba4406cc3___66f7c282197edf35ed2b254960d5bad2.webp",
         "fecha": "2026-01-21"
     },
     {
@@ -94,12 +83,12 @@
     {
         "supermercado": "Jumbo",
         "titulo": "2do al 70% en Desayuno ",
-        "descripcion": "HASTA 2DOAL 70% ; NESCAFE 2 1 @oc f  SUAVE VERLEGALES . Desayuno ",
+        "descripcion": "HASTA 2DOAL 70% p NESCAFE 2 1 (dolco 1 { SUAVE VERLEGALES . BEBER CONMODERACIÓN. Desayuno ",
         "categoria": [
             "🍝 Almacén"
         ],
         "link": "https://www.jumbo.com.ar/56477?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/ce6e328c-e34a-4b28-a6ae-1af8b2d62bb7___0685a16957d5caa2b086ba223a2b334e.webp",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/dfb537e8-6e93-4a0b-821b-a096220783c3___74430b116ae2a72e31007fad885c3d97.webp",
         "fecha": "2026-01-21"
     },
     {

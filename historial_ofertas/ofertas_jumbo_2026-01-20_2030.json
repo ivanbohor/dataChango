@@ -1,7 +1,7 @@
 [
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Limpiadores, Perfumería",
+        "titulo": "40% Off en Limpiadores, Papel Higiénico",
         "descripcion": "OFERTAS de la SEMANA PAfAGONIA HASTA ALMACÉN, BEBIDAS, FRESCOS, PERFUMERIA 40% LIMPIEZA PRODUCTOS SELECCIONADOS . 'PATAGONIA  Cif Elite cehi desoreadk ICTINEGI 24.7 Suave X1o Ultra ESPUMA\" MÁS Suave  delicado con piel Ieoke Ufe Y2} Re(HUFtMe teuana EXCLUSIVO ONLINE VÁLIDO DEL 19/01AL22/01. BEBER CONMODERACIÓN WihW ( nuevo) Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
             "🍝 Almacén",
@@ -10,11 +10,11 @@
         ],
         "link": "https://www.jumbo.com.ar/56502?map=productClusterIds&evento=eds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/2b84f75d-5ce7-4a8b-8e44-dc1d1bb6668f___817224fe87393f6760593b3058b66c44.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2do al 80% en Papel Higiénico, Art. Limpieza",
+        "titulo": "2do al 80% en Papel Higiénico, Jabón Ropa",
         "descripcion": "OFERTAS de la SEMANA HASTA 2DOAL SEMANA de la 80% LIMPIEZA HASTA _ Neazo*0e AHORRO* blem Elite skip Ultra Suave BIO. ENZIMAS Suave y delicado con la piel Cuioado LIMPIEZA 'Paofumdode COMPLETA Ushaeas CONG JABON Llquid EXCLUSIVO ONLINE lustramuebles PROTECCIGNY 'BRILLG INSTANTANEO VÁLIDO DEL 19/01AL22/01. Semana de la Limpieza - Hasta 2do al 80% Semana de la Limpieza - Hasta 2do al 80%",
         "categoria": [
             "💳 Bancarias",
@@ -22,7 +22,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56475?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6ce51263-a91d-493c-8d27-caa231965def___fe7c3815f7be2f643818a9ada49e278d.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -34,7 +34,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56358?map=productClusterIds&evento=fdselectro",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/22569447-2c3a-4e9c-a2bb-28cbe335618c___5024145702d161cf8d8e2c85638179ea.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -45,29 +45,40 @@
         ],
         "link": "https://www.jumbo.com.ar/56514?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/2bf3cebc-85fd-44f1-9e8f-f481b157d850___29cbc187731b6116218efada0ac22629.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Oferta en Corte Nalga, Milanesas",
-        "descripcion": "más fresco más rico MILANESA DE NALGA $16999 DE NOVILLITO VÁLIDO DEL 19/01 AL 22/01. PRECIO SIN IMPUESTOS: $15,383.71 Milanesa de lomo de novillito Milanesa de lomo de novillito",
-        "categoria": [
-            "🥩 Carnicería"
-        ],
-        "link": "https://www.jumbo.com.ar/56503?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/c6df6317-7813-49ce-9dfe-ab8ba4406cc3___66f7c282197edf35ed2b254960d5bad2.webp",
-        "fecha": "2026-01-21"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Hogar, Ropa de Cama",
+        "titulo": "Hasta 50% Off en Bazar, Decoración",
         "descripcion": "Casa € Deco CROSS-CHECV Ropa de cama, Organización, Bazar y más { ZseRÉs š 50% kreo Ymás! VÁLIDO DEL 16/01 AL 22/01. PRODUCTOS SELECCIONADOS. Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
         "categoria": [
             "🏠 Hogar y Bazar"
         ],
         "link": "https://www.jumbo.com.ar/56366?map=productClusterIds&evento=fdshogar",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/06b58475-b059-42d9-9346-6275025f725c___09ded6b98a267fbde21f56fbbe755de0.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "2do al 70% en Almacén",
+        "descripcion": "Del 14al 20 de enero DESCUENTOS EXCLUSIVOS PARASOCIOS prime Es momento de ser HASTA 2DO AL Ishe 708 R82028g Rina Nesquik aau DTO chiank; Pr|me [eeuienn Us JUMMO EN INFALTABLES Canoyra AUMHO Pesto Ka8bi hotor  DE ALMACÉN delveroe Jumbo Prime|Hasta 2do al 70% Jumbo Prime|Hasta 2do al 70%",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar/eventos/descuentos-jumbo-prime",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/556543ea-43f3-45b5-9922-b8e46d3f0ffe___b6267c5f4330420f773630f3de7eacd2.png",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Hasta 50% Off en Hogar",
+        "descripcion": "iRENOVÁ TODO! OPORTUNIDADES domo ESPECIAL HOGAR 75 ChAMex Crooo 1 150% VÁLIDO DEL 07/01 AL 20/01. PRODUCTOS SELECCIONADOS. 1 1 1 1 1 Hasta 50% | Especial Hogar Hasta 50% | Especial Hogar",
+        "categoria": [
+            "🏠 Hogar y Bazar"
+        ],
+        "link": "https://www.jumbo.com.ar/54930?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/a404fc8a-929d-4f37-928d-01d8bc7e7e5f___c2e9acb3f9aa4a47d00420abe8da6d35.webp",
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -78,7 +89,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56293?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/37257a75-9bf8-40a5-9df2-fe3cd783b9bb___a7f16ab3597e9c0368de49ed28a5bca3.jpg",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -89,18 +100,18 @@
         ],
         "link": "https://www.jumbo.com.ar/56476?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/79fb40a4-6f44-4b3d-b55f-75d49ea5343d___35866c3049d095fd00376b100234d71c.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
         "titulo": "2do al 70% en Desayuno ",
-        "descripcion": "HASTA 2DOAL 70% ; NESCAFE 2 1 @oc f  SUAVE VERLEGALES . Desayuno ",
+        "descripcion": "HASTA 2DOAL 70% p NESCAFE 2 1 (dolco 1 { SUAVE VERLEGALES . BEBER CONMODERACIÓN. Desayuno ",
         "categoria": [
             "🍝 Almacén"
         ],
         "link": "https://www.jumbo.com.ar/56477?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/ce6e328c-e34a-4b28-a6ae-1af8b2d62bb7___0685a16957d5caa2b086ba223a2b334e.webp",
-        "fecha": "2026-01-21"
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/dfb537e8-6e93-4a0b-821b-a096220783c3___74430b116ae2a72e31007fad885c3d97.webp",
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -111,7 +122,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56480?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/c57908bd-c6d2-48a7-a866-f96b87f7acdf___5330bca2cba2c38e326ce679e9fe863c.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -122,7 +133,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56482?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/d4fae018-0d28-4f72-9ae0-3ee521c5aed9___831cc474ec4bff4a696eb0eccfa5d2a5.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -133,29 +144,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56359?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6150be17-6f1b-46ad-b9be-26f7c154de64___4caf22d997ce8affd11e4ec3ee572c40.webp",
-        "fecha": "2026-01-21"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "40% Off en Papel Higiénico",
-        "descripcion": "HASTA 40% INFALTABLES DEL SUPER PRODUCTOS SELECCIONADOS. EXCLUSIVO ONLINE Patagonia Wsie ( Elite 'PATAGONIA 24.7 deroroud  Ultro Suave 2 VERLEGALES BEBERCONMODERACIÓN Infaltables de super Infaltables de super",
-        "categoria": [
-            "🧹 Limpieza"
-        ],
-        "link": "https://www.jumbo.com.ar/56502?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/52764eac-833c-484e-9815-225c3e5bfb94___523ce53b16fd7b85716bd98fc6c00612.webp",
-        "fecha": "2026-01-21"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "2x1 en Varios Productos",
-        "descripcion": "PATAGONIA 1 2x1 Ntugori patagonIn] {A8Er BEber Ck VooeraCJk: Phohibioasu VeVTA a Vevores de1a M0s PHoVOCMk VLQA 0L 19/1AL 251.  ",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56328?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/62d852b6-7f7c-46dc-be86-49eed6510462___f25d81b0e24d83c74a4664e37361eec8.png",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -166,7 +155,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56360?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/2141c454-b47f-47ca-ad70-26d9fab885ce___df5b33a137652e165fdaa1e0546274ab.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -177,7 +166,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56361?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/30d4d5a7-5fc1-455a-a02c-906b733629b9___0d82a6b35425969a265971605e6b0843.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -189,7 +178,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56364?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/e08609f9-a164-4933-bbd2-c48b8c19eb5a___56dde5802f5358e56e82656586d3d705.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -200,7 +189,29 @@
         ],
         "link": "https://www.jumbo.com.ar/56365?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/2f47f88e-b9fb-48e4-abfe-80c304eec265___56c09cb13a257097a468c3b43eaa0864.webp",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "40% Off en Papel Higiénico",
+        "descripcion": "HASTA 40% INFALTABLES DEL SUPER PRODUCTOS SELECCIONADOS. EXCLUSIVO ONLINE Patagonia Wsie ( Elite 'PATAGONIA 24.7 deroroud  Ultro Suave 2 VERLEGALES BEBERCONMODERACIÓN Infaltables de super Infaltables de super",
+        "categoria": [
+            "🧹 Limpieza"
+        ],
+        "link": "https://www.jumbo.com.ar/56502?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/52764eac-833c-484e-9815-225c3e5bfb94___523ce53b16fd7b85716bd98fc6c00612.webp",
+        "fecha": "2026-01-20"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "2x1 en Varios Productos",
+        "descripcion": "PATAGONIA 1 2x1 Ntugori patagonIn] {A8Er BEber Ck VooeraCJk: Phohibioasu VeVTA a Vevores de1a M0s PHoVOCMk VLQA 0L 19/1AL 251.  ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar/56328?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/62d852b6-7f7c-46dc-be86-49eed6510462___f25d81b0e24d83c74a4664e37361eec8.png",
+        "fecha": "2026-01-20"
     },
     {
         "supermercado": "Jumbo",
@@ -211,6 +222,6 @@
         ],
         "link": "https://www.jumbo.com.ar/electro",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/68ed13fe-f9ee-4257-8a05-b1a6be51ed7f___1615c495762c04f314f954da5c32faf6.jpg",
-        "fecha": "2026-01-21"
+        "fecha": "2026-01-20"
     }
 ]
