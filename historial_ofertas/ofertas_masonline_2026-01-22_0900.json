@@ -23,7 +23,18 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Aires Acondicionados",
+        "titulo": "Promoción Bancaria",
+        "descripcion": "Del 2lal 27 de enero Todos los colchones 50 I2su0t Unitario Descuento SIN INTERÉS ymuebles de interior VISA CABAL NaranjaX los Bancos de todos PARA MÁS INFORMACIÓNO LIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.ABA ",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.masonline.com.ar/704?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/1fb4adfe-186d-498d-8a76-2d11d8a2d66d/image/attachments/Home_Colchonymueble_dkt.webp",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "12 Cuotas S/Int en Smart TV",
         "descripcion": "Del 2lal 27 de enero ChangoMâs MâsOnline Acomar Mas Ofertas Verano SELECCIONADOS 12 cuotas SIN INTERÉS VISA CABAL de todos los Bancos Mês Aires acond. Heladeras Freezer Smart tv Celulares QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM.AR/LEGALES:. DORINKA SRL 30-67813830-0 BOLIVIA 5831,C.AB.A ",
         "categoria": [
             "💳 Bancarias",
@@ -65,17 +76,6 @@
         ],
         "link": "https://www.masonline.com.ar/masclub",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/a8b24713-a07f-4c83-bb54-d6d2c86a8071/image/attachments/11_masclub_dkp.webp",
-        "fecha": "2026-01-22"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Promoción Bancaria",
-        "descripcion": "mercado Todos los días con Tarjeta pago de credito de Mercado pago EN COMPRAS 3cuotas AParTR DE Ox SIN INTERÉS 30.000 PGGNODO Exclusvvo gucurso  ",
-        "categoria": [
-            "💳 Bancarias"
-        ],
-        "link": "https://www.masonline.com.ar/promociones-bancarias",
-        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/96572edd-a103-4019-94f5-be99002292bb___d35786bd78cdee5f67d1a3af28821c4a.png",
         "fecha": "2026-01-22"
     },
     {
@@ -136,7 +136,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "35% Off en Art. Limpieza",
+        "titulo": "35% Off en Perfumería",
         "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comdr Perfumería Y limpieza Hasta 35% Unitario Descuento PARA MÁS INFORMACIÓN OUMITACIONES APLCABLES, CONSULTEENMASONLNECOM ARJLEGALES. DORINKA SRL 30-67813830-0 BOUVIA 5831 CABA Novedad image ",
         "categoria": [
             "🧹 Limpieza",

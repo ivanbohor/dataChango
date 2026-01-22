@@ -13,7 +13,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Limpiadores, Perfumería",
+        "titulo": "40% Off en Limpiadores, Art. Limpieza",
         "descripcion": "OFERTAS de la SEMANA PAfAGONIA HASTA ALMACÉN, BEBIDAS, FRESCOS, PERFUMERIA 40% LIMPIEZA PRODUCTOS SELECCIONADOS . 'PATAGONIA  Cif Elite cehi desoreadk ICTINEGI 24.7 Suave X1o Ultra ESPUMA\" MÁS Suave  delicado con piel Ieoke Ufe Y2} Re(HUFtMe teuana EXCLUSIVO ONLINE VÁLIDO DEL 19/01AL22/01. BEBER CONMODERACIÓN WihW ( nuevo) Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
             "🍝 Almacén",
@@ -49,7 +49,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Oferta en Milanesas, Corte Nalga",
+        "titulo": "Oferta en Corte Nalga, Milanesas",
         "descripcion": "más fresco más rico MILANESA DE NALGA $16999 DE NOVILLITO VÁLIDO DEL 19/01 AL 22/01. PRECIO SIN IMPUESTOS: $15,383.71 Milanesa de lomo de novillito Milanesa de lomo de novillito",
         "categoria": [
             "🥩 Carnicería"
@@ -60,7 +60,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Bazar, Hogar",
+        "titulo": "Hasta 50% Off en Bazar, Ropa de Cama",
         "descripcion": "Casa € Deco CROSS-CHECV Ropa de cama, Organización, Bazar y más { ZseRÉs š 50% kreo Ymás! VÁLIDO DEL 16/01 AL 22/01. PRODUCTOS SELECCIONADOS. Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
         "categoria": [
             "🏠 Hogar y Bazar"
@@ -155,39 +155,6 @@
         ],
         "link": "https://www.jumbo.com.ar/56328?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/62d852b6-7f7c-46dc-be86-49eed6510462___f25d81b0e24d83c74a4664e37361eec8.png",
-        "fecha": "2026-01-22"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "35% Off en Hasta 35% En Vinos Hasta 35% En Vinos",
-        "descripcion": "descuentosercluavos Presoaos Prime Bodegas del mes HASTA EL 31 DE ENERO HASTA 3580 EN BODEGAS SELECCIONADAS Eberconnod raccnprchedasuventaanavaesceteos Hasta 35% en Vinos Hasta 35% en Vinos",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56530?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/702cd041-ebe4-48ab-88c3-208f2ed5f905___f468e02e7a9e95432f79882177442629.png",
-        "fecha": "2026-01-22"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "4% Off en Cervezas",
-        "descripcion": "descuentosercluavos Presoaos Prime Cerveza del mes HASTA EL 31 DE ENERO Alone 3580 \"s4%i STELLA 42 artois EN CERVEZAS ELL RTOL STELLA ARTOIS Eberconnod raccnprchedasuventaanavaesceteos Hasta 35% en Cervezas Hasta 35% en Cervezas",
-        "categoria": [
-            "🍷 Bebidas"
-        ],
-        "link": "https://www.jumbo.com.ar/56531?initialMap=productClusterIds&initialQuery=56531&map=category-2,productclusterids&query=/cervezas/56531&searchState",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/df2b7b9d-79ad-49eb-ac32-a6b663920eb9___dee80cac74d50b914570756106a242a8.png",
-        "fecha": "2026-01-22"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "35% Off en Hasta 35% En Quesos Hasta 35% En Quesos",
-        "descripcion": "descuentosercluavos Presoaos Prime Quesos del mes HASTA EL 31 DE ENERO 98e2 35840 [427082 1 Tiiaé EN QUESOS Sucrte LA SUERTE uettc AmeR7B Hasta 35% en Quesos Hasta 35% en Quesos",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56531?initialMap=productClusterIds&initialQuery=56531&map=category-2,productclusterids&query=/quesos/56531&searchState",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/ae0cb668-6c2e-4b5a-8770-1a4f839a7b4d___e04e635a4f8ba968d5c4fbfe82b61550.png",
         "fecha": "2026-01-22"
     },
     {

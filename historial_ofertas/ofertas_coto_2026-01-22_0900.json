@@ -1,7 +1,18 @@
 [
     {
         "supermercado": "Coto",
-        "titulo": "50% Off en Pasta Dental, Postres Lácteos",
+        "titulo": "20% Off en Varios",
+        "descripcion": "EN UN PAGO Solo por el Jueves 22/1 20% DESCUENTO SIN TOPE DE REINTEGRO MIBABROS [0Mi DE NUESTRA comunidad",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/",
+        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/comuoneshot220126.jpg",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Coto",
+        "titulo": "50% Off en Fideos Secos, Arroz",
         "descripcion": "EN PRODUCTOS 4O% DE LAS SIGUIENTES DESCUENTO MARCAS EN PRODUCTOS 50% DE LAS SIGUIENTES MARCAS DESCUENTO BFNFDICTTYO @ccocla Sprite AQUSA  BOT.X l,5 LI. @8os BOI. X 2,25/2,5 Li. BOT. X 2,25 LI. BOT. X 1,5 LI. Simplot ARROZ Dooo (DLER Lucchetti CILINDROS latarazzo MUZZARELLA queSrS FeTesDos' POLVO PARA POSTRES ARROZ PUREZA Rina efidias VillaDagrt Manaos) FIDEOS SECOS FIDEOS SECOS lradas PASTAS TAPAS vileda Babysec Cascade TOALLAS HÚMEDAS (prono [ero FVLL SPTrT Wastle Colgate Nezo {opanmesana TRIPLE ACCIÓHI Cacao EN PoLVo SENsITIVE ESPECIAS",
         "categoria": [
             "🧀 Lácteos y Frescos",
@@ -14,7 +25,7 @@
     },
     {
         "supermercado": "Coto",
-        "titulo": "2x1 en Golosinas, Jugos",
+        "titulo": "2x1 en Golosinas, Budines",
         "descripcion": "2x] IGUAARIEARCA Las Tres Pozo entrenuts Nestlê Niñas YOGURESI BUDINES MANI ChoCoLATADAS Chocolatada FMb [nsgcg Tlas TODDLER. EN JUGOS EN POLVO 3x2 IGUARIEDRCA Plusbelle Crowie JABÓN DE TOCADOR BARRA DE CEREAL EN DESODORANTES CORPORALES YEN GOLOSINAS' COMBINALOS COMO QUIeRAS POR Clase Te ReGALAMOS LA UHIDAD DE MENOR VALOR",
         "categoria": [
             "🍷 Bebidas",
@@ -26,7 +37,53 @@
     },
     {
         "supermercado": "Coto",
-        "titulo": "35% Off en Postres Lácteos, Pollo",
+        "titulo": "Oferta en Asado",
+        "descripcion": "INGRESAR s10899 XKG prECIO Sik IpuESTOS NACIOHALES: $9.863,35 AsADo DE HovilLiTO, Cod,47979 s15399 X KG. PPER8 SHUPHEssH HACIONALES: $13.935,75 CoD. 47980",
+        "categoria": [
+            "🥩 Carnicería"
+        ],
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=bannerasado9126",
+        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/asasovacio060126.jpg",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Coto",
+        "titulo": "70% Off en Ketchup, Shampoo",
+        "descripcion": "[JERENISIMA Tregar Conaprole NERENSL Rumba isabela Dorir2s ParNor Tio Muruca LECHES LARGA VIDA LECHES LARGA VIDAI LECHES LARGA VIDA quESO uNtaBLe} bizcochos BOTELLA RICOTTA Balletiiag AusCEs Galletitas DULCES YOGURESIPOSTRES (aaucas KYROS Las` Tres Mazzei 612reng2428 GLACIAR @@s Ciudad Dooo Niñas CRACKERS @dfler Opera Lago CREMAS P8484{97 € LISTA Milkaut GALLETITAS PALMITOS EN LAtA Morix FAn Gtudgian GaaniX < YOGURES 885 4a2838a?? KUNSdS Døle PURHFEASPAS GALLETITAS CEREALES IcAdos! Avenu bizcochos saiansi Dove ADEREZOS SHAMPOO/ACON DICIOKADORI Mosolras Natura Nutrilon 3,4 Paànda (Chuker Dulkre RISKY DIT [SIBARITA ( TrataMIl AmehtoscuPO ILARESI KETCHUP/MOSTAZA LECHES FLUIDAS TOSTADAS EN VINAGRES Y ACETOS 70% DE DESCUENTO EN LA SEGUNDA UNIDAD LLEVANDO 2 PRODUCTOS IGUALES",
+        "categoria": [
+            "🧀 Lácteos y Frescos",
+            "🍝 Almacén",
+            "🧴 Perfumería y Bebé"
+        ],
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=70marcas220126",
+        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/70marcas220126.jpg",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Coto",
+        "titulo": "Oferta en Quesos, Jamón",
+        "descripcion": "65999 X KG PRECIO AHTERIOR: $ 7599 PRECIO SIH IMPUESTOS WACIOHALES: 6876,92 HUGGETS JAMON QUESO / SUPREMAS JAMow QUESO Cod. 12263-12264 610499 KG PrECIO AWTERIOR: $ 11699 RrEGI  SIN IMPUESTOS WACIOHALES: $ 10587,33 BEEF DE VoVILLITO , COo. 41384-47985 68999 X KG PRECIO ANTERIOR: 9899 Eregr  SiauRteSto9} HACIOHALES: DE Hoviiiito,cod. 6988958,37",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=CarnesSemanal190126",
+        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/CarnesSemanal190126.jpg",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Coto",
+        "titulo": "3x2 en Vinos Seleccionados",
+        "descripcion": "COMBINALOS COMO QUIERAS 3x2 EN VINOS FINOS, CHAMPANAS Y ESPUMANTES TE REGALAMOS LA UNIDAD DE MENOR VALOR",
+        "categoria": [
+            "🍷 Bebidas"
+        ],
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=3x2vinos01",
+        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/3x2vinos01.jpg",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Coto",
+        "titulo": "35% Off en Jugos, Postres Lácteos",
         "descripcion": "Nesoe CONGELADOS NGOAF TRDOR Cabrales levile; ARTICO UX 88558 , CÁPSULAS DE CAFÉ PREFRITOS DE POLLO CAFÉ choCoLATADAS JABOK Liquido CÁPSULAS DE CAFÉ Nestle citric 4 Lucchetti (lina TEMPLE Gzccheda JUGOS REFRIGERADOS FINLANDIA Jãó PREFRITOS POLLO/ MILANESAS VEGETALES Nade Tfo SALTA SUAVE ELVIVE Villa  'Sur SALCHICHAS NACHC Cautiva JABÓK Liquido Rexona JABÓK Liquido 7A9IIO Vivere zala Ace ZONO GRANEY LAVAVAJILLAS LavavajilLas DOYPACK EN HELADOS Y POSTRES CONGELADOS\"2 35% DE DESCUENTO EN PRODUCTOS DE LAS SIGUIENTES MARCAS",
         "categoria": [
             "🥩 Carnicería",
@@ -39,7 +96,19 @@
     },
     {
         "supermercado": "Coto",
-        "titulo": "25% Off en Mate Cocido, Postres Lácteos",
+        "titulo": "Oferta en Gin, Manteca",
+        "descripcion": "Santa Rosa Sautla Claxe QUESOS AL CORTE dulce de LECHE Bavari Termas Tonadita GOICOECHEA ECALN Woolile Red Bull TENA QUESOS AL CoRTE BOT.X 1,75 LI. MANTECASI DULCE DELECHEI   CAMPARI DULCE DE LECHE MaNTECA APEROL Cicatricure up paso GoRDON's CINZANO CuURitaS PEPSE BOTELLAS (NAR Fiorentina toros GATORADE llh BC @ullmnef Moo PATAGONI BEEFEATER bialcohol BLue 7892 (orono HSadwciscr Herhhar GIN LOHDOK DRY Campanita BOT. X7ooML Felpita 1gnon Fuyi Cristal Schneidez WARSTEINER Heineken PAPEL Elite Lago Zply LataS APeR HRiEhco BOLSAS Pajo EN ESPONJAS\"ESCOBAS , ESCOBILLONES, PAÑOS, TRAPOS; SIDRAS Y BEBIDAS FIZZ 252 DE DESCUENTO EN PRODUCTOS DE LAS SIGUIENTES MARCAS",
+        "categoria": [
+            "🧀 Lácteos y Frescos",
+            "🍷 Bebidas"
+        ],
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=25marcas220126",
+        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/25marcas220126.jpg",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Coto",
+        "titulo": "25% Off en Yogur, Aceite",
         "descripcion": "ilolay Ser GHpen Sivi Vrns Sadia dolcg YATASTO Cematto (Rehel POSTRES QUESO UNTABLE YOGUR POTEI YOGURES VEGETALESI CONSERVA VEGETAL LASAGHA \"aoL_Befritos BOTELLAICREMAS VEGGIES CAFE INSTANTANEO TTB. Y 340 G. CasanCrem 1 Gampagncla Pa Paulina Yogurisimo CAGNOLI calsa* GANDARA MERMELADAS QUESO UNTABLEI YOGUR POTE YOGURES MIHIPIEZAS LEVADURAS [Nesquik / POSTRESIYOGUR CREMAS 4ar/ POTE PATY TRANOUFRA Taragui CACAO EN POLVO {manda Cachamate YERBAI YERBAJTÉI Poore   cosmico EXPRESS YERBA YERBA Mate Cocido mate Cocido YERBA YERBA Morixe SanCor Knou ENCURTIDOSI Dos De [Ecco\" BC Emeth Sooses ACEITE DE OLIVAI @ncuas ARCOR SALSA LISTA MANTECAS HARINA 0o00 POUCH ESPECIAS ACEITE DE OLIVA MERMELADAS MERMELADAS ATÚN EX Lata MERMELADAS 25% DE DESCUENTO EN PRODUCTOS DE LAS SIGUIENTES MARCAS",
         "categoria": [
             "🧀 Lácteos y Frescos",
@@ -47,6 +116,17 @@
         ],
         "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=25marcas220126b",
         "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/25marcas220126b.jpg",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Coto",
+        "titulo": "3x2 en Pollo, Hamburguesas",
+        "descripcion": "MuSLitos Prodactos marca Goud Bocaditos De Pollo 2Xl Dooo Congelados COTO Cod: 231381. Pltio EXCLUSIVO ONLINE {AMDURCNESAS Dlter Hamburguesas 1a coid vacuna CoTo 4a Cod: 231388 Mlanesas 3x2 cailanesas ne  congeladas COTO Goug Cod: 231382 359) DESCUENTO",
+        "categoria": [
+            "🥩 Carnicería"
+        ],
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=zona160126b",
+        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/zona160126.jpg",
         "fecha": "2026-01-22"
     },
     {
@@ -73,24 +153,46 @@
     },
     {
         "supermercado": "Coto",
-        "titulo": "3x2 en Vinos Seleccionados",
-        "descripcion": "ELCONSUMO EXCESIVO DE ALCOHOL ES PERJUDICIAL PARA LA SALUD; BEBER CON MODERACIÓN PROHBIDA SUVENTA A MENORES DE 18 AÑOS Dooo EN VINOS FINOS , TE REGALAMOS LA UNIdad ESPUMANTES DE MENOR VALOR Y CHAMPAÑAS 3x2 COMBINALOS COMO OUIERAS",
+        "titulo": "Oferta en Varios",
+        "descripcion": "@02d 709 DE DESCUENTO EN LA SEGUNDA UNIDAD EN EL ACTO LLEVANDO 2 PRODUCTOS IGUALES JaSERENISIMA  vordad Iscec) LECHES LARGA VIDA BOTELLA Tregar) Conaprole LECHES LARGA VIDA LECHES LARGA VIDA",
         "categoria": [
-            "🍷 Bebidas"
+            "🍝 Almacén"
         ],
-        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=c3x2vinos22126",
-        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/c3x2vinos22126.jpg",
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=c70leches22126",
+        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/c70leches22126.jpg",
         "fecha": "2026-01-22"
     },
     {
         "supermercado": "Coto",
-        "titulo": "Oferta en Mate Cocido, Yerba",
+        "titulo": "3x2 en Golosinas",
+        "descripcion": "@020 3x2 COMBINALOS COMO QUIERAS EN GOLOSINAS TE REGALAMOS LA UNIDAD DE MENOR VALOR",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=c3x2golosinas22126",
+        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/c3x2golosinas22126.jpg",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Coto",
+        "titulo": "Oferta en Yerba, Mate Cocido",
         "descripcion": "ISIEAST ir <INI LA @020 259 DE DESCUENTO TRANQUERA YERBAI MATE Cocido Taragui YERBATÉI MATE Cocido amanda YERBA",
         "categoria": [
             "🍝 Almacén"
         ],
         "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=c25yerbas22126",
         "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/c25yerbas22126.jpg",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Coto",
+        "titulo": "Oferta en Postres Lácteos",
+        "descripcion": "@020 359 DE DESCUENTO EV HELADOS Y POSTRES CONGELADOS",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=c35helados22126",
+        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/c35helados22126.jpg",
         "fecha": "2026-01-22"
     },
     {
@@ -106,6 +208,18 @@
     },
     {
         "supermercado": "Coto",
+        "titulo": "Oferta en Electrodomésticos",
+        "descripcion": "ELEGH LA PROMO QUE MAS TE GUSTE EXCLUSIVO ONLINE HASTA 2515 EN PRODUCTOS SELECCIONADOS DE 12 4O%@ cuotas sIN iNTERES DE DESCUENTO EN UM pago CON TARJETAS SELECCIONADAS EXCLUSIVO comuNIAD coto ELECTRODOMÉSTICOS",
+        "categoria": [
+            "💳 Bancarias",
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria%3FDy%3D1&Nf%3Dproduct.startDate%257CLTEQ%2B1.7676576E12%257C%257Cproduct.endDate%257CGTEQ%2B1.7676576E12&Nr%3DAND%2528product.language%253Aespa%25C3%25B1ol%252Cproduct.sDisp_200%253A1004%252COR%2528product.siteId%253ACotoDigital%2529%2529&Ns%3Dproduct.TOTALDEVENTAS%257C1&Ntt%3Delectro030126c&format%3Djson",
+        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/electro221124.jpg",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Coto",
         "titulo": "18 Cuotas S/Int en Varios",
         "descripcion": "18 CUOTAS SIN INTERÉS Macro",
         "categoria": [
@@ -117,18 +231,7 @@
     },
     {
         "supermercado": "Coto",
-        "titulo": "Oferta en Varios",
-        "descripcion": "409 EN UN PAGO DESCUENTO En trajes de baño, musculosas y remeras. hasta eL 22/01/2026. para MaS FoRMACIOH Y CohdictoHeS apLiCAbLes busCaR eHex Coto coM aRylegales seCCI_y \"rehova Tu ChSA\".",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=rtc01160126",
-        "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/cartridge/nuevahome/2025-01/images/rtc01160126.jpg",
-        "fecha": "2026-01-22"
-    },
-    {
-        "supermercado": "Coto",
-        "titulo": "50% Off en Lonas, Art. Playa",
+        "titulo": "50% Off en Art. Playa, Lonas",
         "descripcion": "50% EN UN PAGO DESCUENTO En playeros y lonas. hasta eL 22/01*2026. para Mas FoRMACIOH Y CohoictoHES apLiCAbLes busCaR eHeH Coto coM aRylegales seCCI_y \"rehova Tu ChSA\".",
         "categoria": [
             "🏠 Hogar y Bazar"
