@@ -1,0 +1,113 @@
+[
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Seleccionados (🍝 Almacén)",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23844?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/78d501ea-b555-4b8a-8c23-878a48038cb4___cbda0c64b188338c74be88f7ce815aa9.png",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "10% Off en Almacén",
+        "descripcion": "CON TODOS LOS MEDIOS DE PAGO Exclusivo pagando con Cuenta Digital Mi Carrefour Crédito iAprovechá! Mi Carrefour Con tu compra los JUEVES DE ENERO EN EL ACTO EN EL ACTO 10% EN UN PAGO 20 EN UN PAGO Exclusivo online Tope de descuento $8.000 por semana por usuario BENEFICIO ACUMULABLE CON TODAS LAS PROMOCIONES Tope de descuento $10.000 por semana por usuario Beneficio del 10%  del 209 de aesgueni Acumulables con otras promociones combinables entre descuento aplicará en checkout: No incluye electrodomesticos electronicz telefonie ceular camicene nilechesinfaniles maternizadas (etapa 21 No incluye productos vendidos ni entregados por 2l fabricarte distribuidor: Ver legales en carrefour comarldescuentos bancarlos.",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/ALMACEN",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3c737b92-fcba-454c-9b12-d9a652094d17___3fef3dc58074ce6e671fcfebe1e9627f.webp",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Smart TV",
+        "descripcion": "En seleccionados de: Aires Acondicionados, Smart TVs, Heladeras y Lavarropas AHORRO FINDEMES Carrefour iDescuentos en la unldad y mucho más! Hasta el 26/01 HASTA HASTA 12 CUOTAS 3085 DESCUENTO SIN INTERÉS VER MÁS 43\" Sólo consumo familiar; válido por usuarioldocumento:",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23807?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/745d4417-9583-4806-b8c7-252498dbcc5d___e053e188558ecb282b1ab5dc0e1185e5.webp",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Varios Productos",
+        "descripcion": "En seleccionados de: Galletitas, Yogures, Queso Crema, Café, Quesos, Arroz y más Aasia 204 de ahcrr) AHORRO FINDEMES Carrefour iDescuentos enla unldad y mucho más! NESCAFE {olca oaiginal Huanle Hasta el 26/01 Molinos Ala HASTA 4O DESCUENTO ala LARIEUM DiLUR ,ersrr Colgate VER MÁS (3n Casane Cun RR( Duanca Sólo consumo familiar; válido por usuarioldocumento. OrEO",
+        "categoria": [
+            "🧀 Lácteos y Frescos",
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23802?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/779bd1e6-02e9-44fb-a859-abe84e22c37f___7a342ab0f98f7dd2224cd1793d28ef03.webp",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Cupón de Descuento en Seleccionados (🍝 Almacén)",
+        "descripcion": "NUEVO EXCLUSIVO ONLINE Enore=b RECIBILO EN MAX INMEDINt IH 24 Si estas en CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL recibí tu pedido en menos de IHORA 106 Club LA NACION COMPRAR Haclendo tu compra del super onllne de Martes Domingos de Enero DESCUENTO SIN TOPE Utilizando cupón obtenldo en Club LA NACIÓN https   Isuscripciones lanaclon com arlsuscripcion No Incluye aetadomegiio s electonica telefonle celularcamlcra Ieches Infaniler metemradas Meymo 24 unldade (etapa 1y 2) No acumulable Con otas premoclones productos con descuento por pedldo Ver legales en carrefour comarldescuentos-bancarlos",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/7993902b-9a09-41b3-8b9c-626128d09e71___5645f06f1454ea94afdd74d7282fa3d4.webp",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "9 Cuotas S/Int en Seleccionados (🍝 Almacén)",
+        "descripcion": "En seleccionados de: Celulares, Parlantes y Torres de Sonido AHORRO FINDEMES Carrefour iDescuentos enla unldad y mucho más! HASTA 9 CUOTAS SIN INTERÉS Hasta el 26/01 VER MÁS ~ 9BL aog Sólo consumo familiar; válido por usuarioldocumento.",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23810?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/563178bf-42a1-4618-bff0-37b648261143___fd45a9e691225c867f04b06b259bd71e.webp",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Leche",
+        "descripcion": "En seleccionados de: Leches, Jugos, Galletitas, Aguas y más AHORRO FINDEMES Carrefour iDescuentos en la unldad y mucho más! Yilla avsyr 029 LECHE LaRGA ViIoa GUINNESS {Clight ' MAnZANA[ ilclay SEB Nobna Gng 88  Hasta el 26/01 s VER MÁS 3x2/40 LLEVÁS 3 PAGÁS 2 DESCUENTO Sólo consumo familiar; válido por usuarioldocumento. El descuento no aplica abonando con dos medios de pago",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/23804?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/13cc9501-054e-43b6-bffb-9a43ffbd1075___aa25146876e510bfa6a0a5e1ca75218c.webp",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Seleccionados (Electro)",
+        "descripcion": "En seleccionados de: Ventilación y Pequeños Electrodomésticos AHORRO HASTA FINDEMES 4OP6 DESCUENTO Carrefour iDescuentos en la unldad y mucho más! Hasta el 26/01 VER MÁS Sólo consumo familiar; válido por usuarioldocumento:",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23808?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/81944d5e-eafd-4db0-8c37-877fbc81ae24___554b4e72ccac1ea3c0dc0514e94e22d6.webp",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Mayonesa",
+        "descripcion": "En seleccionados de: Detergentes, Congelados, Aceites Salsas y más AHORRO FINDEMES Carrefour iDescuentos enla unldad y mucho más! Lucchetti Hasta el 26/01 scade Grania Iitas Swift CASERA jamón Enovi SavoRa Original_ PizzA fiesía Mayonesa 'Gif Or97 Natura VER MÁS 258 359 DESCUENTO DESCUENTO Sólo consumo familiar; válido por usuarioldocumento. El descuento no aplica abonando con dos medios de pago",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23801?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/26404bb2-c994-45c0-aaf9-54cecc59760a___bf2d7fcf585ec4ec9f02cba9b6ac7733.webp",
+        "fecha": "2026-01-22"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "6 Cuotas S/Int en Seleccionados (🍝 Almacén)",
+        "descripcion": "En seleccionados de: Notebooks, Microondas y Freezers AHORRO FINDEMES Carrefour iDescuentos en la unldad y mucho más! Hasta el 26/01 HASTA HASTA 6 CUOTAS 359 DESCUENTO SIN INTERÉS VER MÁS Sólo consumo familiar; válido por usuarioldocumento.",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23809?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/34eba644-7ec2-49c6-be88-6141d5911b7c___985a74c50a439eeca30131e5614d5fef.webp",
+        "fecha": "2026-01-22"
+    }
+]
