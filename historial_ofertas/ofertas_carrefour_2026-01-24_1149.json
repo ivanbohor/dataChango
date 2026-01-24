@@ -133,17 +133,6 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Seleccionados (Electro)",
-        "descripcion": "HASTA 406 DESCUENTO En seleccionados de: Ventilación y Hasta 26/01 VER MAS Pequeños Electrodomésticos",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23808?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/e4416e2e-27fb-4aae-9b7b-6c787fec6996___4d18a476016100fad0cc784b7790859d.webp",
-        "fecha": "2026-01-24"
-    },
-    {
-        "supermercado": "Carrefour",
         "titulo": "Oferta en Aires Acondicionados",
         "descripcion": "PhnCo Aloo",
         "categoria": [
@@ -151,6 +140,17 @@
         ],
         "link": "https://www.carrefour.com.ar/aire-acondicionado-split-philco-frio-calor-3400w-phs32ha4cn-blanco-/p",
         "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/245689-170-170?v=638814425050000000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-24"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Seleccionados (Electro)",
+        "descripcion": "HASTA 406 DESCUENTO En seleccionados de: Ventilación y Hasta 26/01 VER MAS Pequeños Electrodomésticos",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23808?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/e4416e2e-27fb-4aae-9b7b-6c787fec6996___4d18a476016100fad0cc784b7790859d.webp",
         "fecha": "2026-01-24"
     },
     {
