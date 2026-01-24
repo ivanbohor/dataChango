@@ -11,23 +11,20 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 # --- CONFIGURACIÓN ---
 NOMBRE_SUPER = "Carrefour"
 URL_SUPER = "https://www.carrefour.com.ar"
 ARCHIVO_SALIDA = "ofertas_carrefour.json"
 
-print(f">>> 🇫🇷 Iniciando Scraper {NOMBRE_SUPER} (V57: Precision Filter)...")
+print(f">>> 🇫🇷 Iniciando Scraper {NOMBRE_SUPER} (V60: Safety Net & Debug)...")
 
 if os.path.exists(ARCHIVO_SALIDA): os.remove(ARCHIVO_SALIDA)
 
 reader = easyocr.Reader(['es'], gpu=False) 
 
-# --- 1. DICCIONARIO MAESTRO (EXPANDIDO PARA ELECTRO) ---
+# --- 1. DICCIONARIO MAESTRO ---
 DB_MAESTRA = {
-    # 🧀 LÁCTEOS Y FRESCOS
     "lacteo": ("Lácteos", "🧀 Lácteos y Frescos"),
     "lacteos": ("Lácteos", "🧀 Lácteos y Frescos"),
     "leche": ("Leche", "🧀 Lácteos y Frescos"),
@@ -36,22 +33,31 @@ DB_MAESTRA = {
     "queso": ("Quesos", "🧀 Lácteos y Frescos"),
     "manteca": ("Manteca", "🧀 Lácteos y Frescos"),
     "crema": ("Crema", "🧀 Lácteos y Frescos"),
-
-    # 🍷 BEBIDAS
     "vino": ("Vinos", "🍷 Bebidas"),
     "bodega": ("Vinos", "🍷 Bebidas"),
     "cerveza": ("Cervezas", "🍷 Bebidas"),
     "gaseosa": ("Gaseosas", "🍷 Bebidas"),
     "bebida": ("Bebidas", "🍷 Bebidas"),
-    
-    # 🥩 CARNICERÍA
+    "fernet": ("Fernet", "🍷 Bebidas"),
+    "aperitivo": ("Aperitivos", "🍷 Bebidas"),
     "carne": ("Carne Vacuna", "🥩 Carnicería"),
     "asado": ("Asado", "🥩 Carnicería"),
+    "vacio": ("Vacío", "🥩 Carnicería"),
+    "matambre": ("Matambre", "🥩 Carnicería"),
+    "tapa": ("Carne Vacuna", "🥩 Carnicería"),
+    "bife": ("Bife", "🥩 Carnicería"),
+    "bola": ("Carne Vacuna", "🥩 Carnicería"),
+    "nalga": ("Carne Vacuna", "🥩 Carnicería"),
+    "peceto": ("Carne Vacuna", "🥩 Carnicería"),
+    "cuadril": ("Carne Vacuna", "🥩 Carnicería"),
+    "paleta": ("Carne Vacuna", "🥩 Carnicería"),
+    "roast": ("Carne Vacuna", "🥩 Carnicería"),
+    "carne picada": ("Carne Picada", "🥩 Carnicería"),
     "pollo": ("Pollo", "🥩 Carnicería"),
     "suprema": ("Pollo", "🥩 Carnicería"), 
     "cerdo": ("Cerdo", "🥩 Carnicería"),
-
-    # 🍝 ALMACÉN
+    "bondiola": ("Cerdo", "🥩 Carnicería"),
+    "pechito": ("Cerdo", "🥩 Carnicería"),
     "fideo": ("Fideos", "🍝 Almacén"),
     "arroz": ("Arroz", "🍝 Almacén"),
     "galletita": ("Galletitas", "🍝 Almacén"),
@@ -62,14 +68,10 @@ DB_MAESTRA = {
     "mayonesa": ("Mayonesa", "🍝 Almacén"),
     "desayuno": ("Desayuno", "🍝 Almacén"),
     "almacen": ("Almacén", "🍝 Almacén"),
-    
-    # 🧴 PERFUMERÍA
     "jabon": ("Jabón", "🧹 Limpieza"),
     "huggies": ("Pañales", "🧴 Perfumería y Bebé"),
     "pampers": ("Pañales", "🧴 Perfumería y Bebé"),
     "shampoo": ("Shampoo", "🧴 Perfumería y Bebé"),
-
-    # 📺 ELECTRO (EXPANDIDO)
     "tv": ("Smart TV", "📺 Electro y Tecno"),
     "smart": ("Smart TV", "📺 Electro y Tecno"),
     "aire": ("Aires Acondicionados", "📺 Electro y Tecno"),
@@ -77,11 +79,11 @@ DB_MAESTRA = {
     "heladera": ("Heladeras", "📺 Electro y Tecno"),
     "lavarropas": ("Lavarropas", "📺 Electro y Tecno"),
     "notebook": ("Notebooks", "📺 Electro y Tecno"),
-    "electro": ("Electrodomésticos", "📺 Electro y Tecno"), # NUEVO
-    "pequeno": ("Electrodomésticos", "📺 Electro y Tecno"), # NUEVO
-    "cocina": ("Electrodomésticos", "📺 Electro y Tecno"), # NUEVO
-    "batidora": ("Electrodomésticos", "📺 Electro y Tecno"), # NUEVO
-    "pava": ("Electrodomésticos", "📺 Electro y Tecno"), # NUEVO
+    "electro": ("Electrodomésticos", "📺 Electro y Tecno"),
+    "pequeno": ("Electrodomésticos", "📺 Electro y Tecno"),
+    "cocina": ("Electrodomésticos", "📺 Electro y Tecno"),
+    "batidora": ("Electrodomésticos", "📺 Electro y Tecno"),
+    "pava": ("Electrodomésticos", "📺 Electro y Tecno"),
 }
 
 # --- FUNCIONES DE LIMPIEZA ---
@@ -123,13 +125,12 @@ def detectar_categorias_inteligente(texto_sanitizado, href_real=""):
     cats_prod = [c for c in etiquetas if c != "💳 Bancarias"]
     if cats_prod: return list(set(cats_prod))
     
-    # Si no detectó nada pero es un cluster, miramos keywords genéricas
     if "productclusterids" in href_real.lower(): 
         if "electro" in t_limpio: return ["📺 Electro y Tecno"]
-        return ["🍝 Almacén"] # Default
+        return ["🍝 Almacén"] 
     return ["🍝 Almacén"] 
 
-# --- VALIDACIÓN ---
+# --- VALIDACIÓN (V60: RED DE SEGURIDAD) ---
 def es_oferta_valida(texto_sanitizado, href_real):
     t_norm = normalizar_texto(texto_sanitizado)
     href_lower = (href_real or "").lower()
@@ -137,17 +138,15 @@ def es_oferta_valida(texto_sanitizado, href_real):
     if "productclusterids" in href_lower or "collection" in href_lower: return True
     if any(x in t_norm for x in ["horarios", "sucursales", "copyright", "seguinos", "whatsapp", "app"]): return False
 
+    # --- REGLA DE ORO V60: SI ES PRODUCTO, PASA SIEMPRE ---
+    # Si la URL indica que es un producto (/p), asumimos que es una oferta válida.
+    # Esto salva casos donde el OCR falla (Carne) o no hay texto de oferta explícito.
+    if href_lower.endswith("/p") or "/p?" in href_lower:
+        return True
+    # -----------------------------------------------------
+
     senales = ["%", "off", "2x1", "3x2", "4x2", "2da", "cuotas", "ahorro", "descuento", "precio", "$", "oferta", "llevando", "cupo"]
     tiene_senal = any(s in t_norm for s in senales)
-
-    es_producto = href_lower.endswith("/p") or "/p?" in href_lower
-    
-    if es_producto:
-        # Lista VIP expandida
-        super_vips = ["vino", "bodega", "tv", "aire", "celular", "leche", "carne", "asado", "pollo", "suprema", "atun", "milanesa", "jamon", "queso", "electro", "pequeno"]
-        if any(v in href_lower for v in super_vips): return True
-        if any(v in t_norm for v in super_vips): return True
-        return True if tiene_senal else False
     
     if tiene_senal: return True
     return False
@@ -171,25 +170,20 @@ def limpiar_texto_ocr(texto_sanitizado, texto_alt, categorias_detectadas, href_r
              if val.isdigit() and int(val) > 100: prefijo = f"Cupón de ${val}"
              else: prefijo = "Cupón de Descuento"
         else: prefijo = "Cupón de Descuento"
-
     elif match_nxn: 
         prefijo = match_nxn.group(1).lower().replace(" ", "")
-    
     elif match_cuotas: 
         prefijo = f"{match_cuotas.group(1)} Cuotas S/Int"
-    
     elif match_pct: 
         if "2do" in t_norm: prefijo = f"2do al {match_pct.group(1)}%"
         else: prefijo = f"{match_pct.group(1)}% Off"
-    
     elif match_precio:
         val = match_precio.group(1).replace(".", "").replace(" ", "").replace(",", "")
-        if val.isdigit() and int(val) > 100: prefijo = f"A solo ${val}"
+        if val.isdigit() and int(val) > 100: prefijo = f"Oportunidad a ${val}" 
         else: prefijo = "Oferta"
     
     prods = []
     texto_busqueda = t_norm + " " + normalizar_texto(href_real)
-    
     for k, v in DB_MAESTRA.items():
         if re.search(r'\b' + re.escape(k) + r'\b', texto_busqueda):
             if v[0] != "Promoción Bancaria": prods.append(v[0])
@@ -204,14 +198,22 @@ def limpiar_texto_ocr(texto_sanitizado, texto_alt, categorias_detectadas, href_r
         if "Electro" in cat: cat = "Electro"
         return f"{prefijo} en Seleccionados ({cat})"
 
+    # Si es producto (/p) y llegamos aca sin titulo, forzamos uno
+    if "/p" in href_real: return f"{prefijo} de Producto"
+
     return f"{prefijo} en Varios Productos"
 
 def procesar_oferta(src, href_real, texto_alt, titulos_procesados, ofertas_encontradas):
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'Referer': 'https://www.carrefour.com.ar/'}
         try: resp = requests.get(src, headers=headers, timeout=5)
-        except: return
-        if resp.status_code != 200: return
+        except: 
+            print(f"      [x] Error descarga imagen: {src[:30]}...")
+            return
+        
+        if resp.status_code != 200: 
+            print(f"      [x] Error status {resp.status_code} imagen")
+            return
 
         res_ocr = reader.readtext(resp.content, detail=0, paragraph=True)
         texto_ocr = " ".join(res_ocr)
@@ -221,20 +223,19 @@ def procesar_oferta(src, href_real, texto_alt, titulos_procesados, ofertas_encon
             cats = detectar_categorias_inteligente(texto_limpio, href_real)
             titulo_final = limpiar_texto_ocr(texto_limpio, "", cats, href_real)
 
-            # --- FILTRO ANTI-RUIDO FINANCIERO (V57) ---
-            # Si NO encontramos descuento explícito (empezamos con "Oferta en...")
-            # Y detectamos palabras de logística o banca
-            # Y la categoría es genérica (Almacén/Lácteos)... ELIMINAMOS.
-            if titulo_final.startswith("Oferta en"):
+            # --- FILTRO ANTI-RUIDO V60 ---
+            if titulo_final.startswith("Oferta en") or titulo_final.startswith("Oferta de Producto"):
                 texto_low = texto_limpio.lower()
-                es_ruido = any(x in texto_low for x in ["galicia", "santander", "banco", "tarjeta", "entrega", "envio", "inmediata", "retiro"])
+                tiene_banco = any(x in texto_low for x in ["galicia", "santander", "banco", "tarjeta", "frances", "bbva", "macro"])
+                tiene_cuotas = "cuotas" in texto_low or "pagos" in texto_low
                 
-                # Lista de categorías donde suelen aparecer estos banners basura
-                cats_genericas = ["🧀 Lácteos y Frescos", "🍝 Almacén", "🧹 Limpieza", "Varios Productos"]
-                es_cat_generica = any(c in cats for c in cats_genericas) or not cats
-
-                if es_ruido and es_cat_generica:
-                    return # DESCARTAR BANNER DE ENVIO/BANCO SIN DESCUENTO
+                # Solo borramos si es BANCO + CUOTAS puro y el titulo es generico
+                # Si el titulo dice "Oferta en Leche", SE QUEDA, aunque tenga banco.
+                es_titulo_generico = "Varios Productos" in titulo_final or "Almacén" in titulo_final or "Lácteos" in titulo_final or "Producto" in titulo_final
+                
+                if tiene_banco and tiene_cuotas and es_titulo_generico:
+                    print(f"      [i] Filtrado (Ruido Bancario Genérico): {titulo_final}")
+                    return 
             # ----------------------------------------
 
             if titulo_final not in titulos_procesados:
@@ -250,7 +251,13 @@ def procesar_oferta(src, href_real, texto_alt, titulos_procesados, ofertas_encon
                 ofertas_encontradas.append(oferta)
                 titulos_procesados.add(titulo_final)
                 print(f"      ✅ GUARDADO: {titulo_final}")
-    except Exception as e: pass
+        else:
+            pass 
+            # Si quieres ver qué rechaza el validador, descomenta esto:
+            # print(f"      [!] Rechazado por validador: {href_real} | Txt: {texto_limpio[:20]}")
+
+    except Exception as e: 
+        print(f"      [!] Excepción procesando: {e}")
 
 # --- NAVEGACIÓN Y EXTRACCIÓN ---
 
@@ -271,22 +278,27 @@ def ejecutar_script_extraccion(driver):
         if (s.length < 15) return false;
         return true;
     }
+    
+    // V60: Selectores más agresivos para Lazy Load
     var bannersVtex = document.querySelectorAll('.vtex-store-components-3-x-imageElement');
     bannersVtex.forEach(img => {
-        var src = img.currentSrc || img.src || img.dataset.src;
+        // Probamos dataset.src primero, que suele ser la real en lazy load
+        var src = img.dataset.src || img.src || img.currentSrc;
         var parentLink = img.closest('a');
         var href = parentLink ? parentLink.href : '';
         if (esBannerValido(src)) items.push({src: src, href: href});
     });
+
     var anchors = document.querySelectorAll('a');
     anchors.forEach(a => {
         var img = a.querySelector('img');
         if (img) {
-            var src = img.currentSrc || img.src || img.dataset.src;
+            var src = img.dataset.src || img.currentSrc || img.src;
             if (src && src.includes(' ')) src = src.split(' ')[0];
             if (esBannerValido(src)) {
                 var width = img.naturalWidth || img.width || 0;
-                if (width > 150) items.push({src: src, href: a.href});
+                // Bajamos el umbral de width por si acaso
+                if (width > 100) items.push({src: src, href: a.href});
             }
         }
     });
@@ -299,7 +311,7 @@ def barrido_iterativo(driver, titulos_procesados, ofertas_encontradas):
     urls_procesadas_temp = set()
     altura_total = driver.execute_script("return document.body.scrollHeight")
     posicion_actual = 0
-    paso_scroll = 600 
+    paso_scroll = 500 # Scroll un poco más corto para asegurar carga
     
     while posicion_actual < altura_total:
         items_crudos = ejecutar_script_extraccion(driver)
@@ -313,7 +325,7 @@ def barrido_iterativo(driver, titulos_procesados, ofertas_encontradas):
         if nuevos_items > 0: print(f"      -> Encontrados {nuevos_items} nuevos elementos.")
         posicion_actual += paso_scroll
         driver.execute_script(f"window.scrollTo(0, {posicion_actual});")
-        time.sleep(2) 
+        time.sleep(2.5) 
         altura_total = driver.execute_script("return document.body.scrollHeight")
 
 def obtener_ofertas_carrefour():
