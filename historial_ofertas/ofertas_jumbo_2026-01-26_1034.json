@@ -1,26 +1,14 @@
 [
     {
         "supermercado": "Jumbo",
-        "titulo": "Oferta en Varios Productos",
-        "descripcion": "NUEVOS RELLENOS PARA FAJITAS Lucchetti. NUEVO FAJITAS 1140 % DTO Granja del Sol Grasua NUEVO ihoY_FA)TTAS Vegetales Granja deSol iHoY_FaJTTAS! ooveweeoo Dravou UEESCaH iNUEL Lucchetti TU COMIDA LISTA EN 2 PASOS Salteá y Rellená iHOYFAJITAS! 5=s Incuor osEarng Vigencia: del 26/01/2026 al 01/02/2026. Ver legales- Fajitas  ",
+        "titulo": "40% Off en Pasta Dental",
+        "descripcion": "Colgate Total PrevencOr Acaa EXCLUSIVO ONLINE Yo confío en la ciencia de Colgate Totalo I140% DTO COMPRAR eran Dra. Giuliana Quattrocchi Matricula 42790 Leaatentamente Ias Instrucclones antela menor duda consulte a SU odontólogo ylo farmacéutlco DR @Colgate-Palmollve Latln Amerlca Inc. 2026 Colgate Jotal) Colgate Otiginal  Minf Jotal 05i06al26n9  ",
         "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56735?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/3073f767-ccb5-4a5f-ab49-6c69d91cb699___282a4d1395d5c40cc6cbad2c6c1cce2a.jpeg",
-        "fecha": "2026-01-26"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "40% Off en Art. Limpieza, Almacén",
-        "descripcion": "OFERTAS de la SEMANA HASTA ALMACÉN, BEBIDAS , FRESCOS, 40% PERFUMERIA Y LIMPIEZA PRODUCTOS SELECCIONADOS. POLVO Y CHAU MANCHAS! RECOA ConTiene Eoulcoran) endaalfen ORE{ ELVIVE n Clight sIN { AZÚCARES LiMONADA RINDE 78s8  IliTRO onls VITAMINF CEC Tre 'npt POWER! \" PRECISION ` CONICET 12, con probióticos | proteinas  (nNsLa) Yogurisimo GRIEGO sabor NATURAL EXCLUSIVO ONLINE Quitamanchas 5846 ;190 VÁLIDO DEL 26/01AL.29/01. Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
-        "categoria": [
-            "🍝 Almacén",
-            "🧹 Limpieza",
+            "🧀 Lácteos y Frescos",
             "🧴 Perfumería y Bebé"
         ],
-        "link": "https://www.jumbo.com.ar/56730?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/09e2be62-b31d-4832-8f9f-d6033127ce96___022d4249aa3c866eb361ab4ef31b1d00.webp",
+        "link": "https://www.jumbo.com.ar/colgate-total",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/18620ae8-1157-4c22-9bcc-1ec72b5e6242___3d72ec97c67eb9f36e29dd18b0f8d620.jpg",
         "fecha": "2026-01-26"
     },
     {
@@ -48,17 +36,6 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Oferta en Corte Nalga, Milanesas",
-        "descripcion": "más fresco más rico MILANESA DE NALGA $16999 DE NOVILLITO VÁLIDO DEL 26/01 AL 29/01 PRECIO SIN IMPUESTOS NACIONALES: $15,383.71 Milanesa de lomo de novillito Milanesa de lomo de novillito",
-        "categoria": [
-            "🥩 Carnicería"
-        ],
-        "link": "https://www.jumbo.com.ar/56731?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/29ba1981-4570-4240-9126-de0f443b24d4___aa975a3afb4cc391007f3a9c4dab4efe.webp",
-        "fecha": "2026-01-26"
-    },
-    {
-        "supermercado": "Jumbo",
         "titulo": "6 Cuotas S/Int en Hasta 35% + Hasta 6 Csi En Vuelta A Clases Hasta 3",
         "descripcion": "útiles, mochilas, libros y más VUELTA CLASES OFERTAS PARA PREPARAR TODO Ppic 16 SNERÉS 135% VÁLIDO DEL 23/01 AL 29/01. SELECCIONADOS : He) Hasta 35% + Hasta 6 CSI en Vuelta a Clases Hasta 35% + Hasta 6 CSI en Vuelta a Clases",
         "categoria": [
@@ -70,7 +47,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Bazar, Hogar",
+        "titulo": "Hasta 50% Off en Bazar, Ropa de Cama",
         "descripcion": "Casa € Deco CROSS-CHECV Ropa de cama, Organización; Bazar y más {3seRés š 50% krea Ymás! VÁLIDO DEL 23/01 AL 29/01. PRODUCTOS SELECCIONADOS . Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
         "categoria": [
             "🏠 Hogar y Bazar"
@@ -93,7 +70,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Papel Higiénico, Art. Limpieza",
+        "titulo": "40% Off en Art. Limpieza, Papel Higiénico",
         "descripcion": "HASTA 40% OREA Elite ELVIVE VERLEGALES. Perfumería y Limpieza ",
         "categoria": [
             "🧹 Limpieza",
@@ -105,8 +82,8 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2do al 80% en Lácteos Y Más ",
-        "descripcion": "HASTA 2DOAL 80% Wshme ( O Icnor (qtas0 ConiCET 13, oroveiash WERENSL prclbioticos Yogurisimo GRIEGO Gdaor NATURAL VERLEGALES _ SChi psironn Lácteos y más ",
+        "titulo": "2do al 80% en Lácteos ",
+        "descripcion": "HASTA 2DOAL 80% Wshme ( O Icnor (qtas0 ConiCET 13, oroveiash WERENSL prclbioticos Yogurisimo GRIEGO Gdaor NATURAL VERLEGALES _ SChi psironn Lácteos ",
         "categoria": [
             "🍝 Almacén"
         ],
@@ -123,39 +100,6 @@
         ],
         "link": "https://www.jumbo.com.ar/56725?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/f3754cc8-26c8-41b8-8edf-a40fe0a67948___79eb333ae90faceb2991abc626df48c8.webp",
-        "fecha": "2026-01-26"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "2do al 80% en Yerba",
-        "descripcion": "HASTA 2DOAL 80% ak 4G47g YERBA MATE Cachamate deierbasal Uc'crals CedRoN CieraoaA oo 8 | ; 8 , 888 10096 ^1 88 VERLEGALES. Desayuno ",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56726?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/69ea9b93-1467-43c5-a727-46a4a92b3636___621d26b757e4b4b0736f42523ba7c408.webp",
-        "fecha": "2026-01-26"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "40% Off en Cremas",
-        "descripcion": "HASTA 40% Nuev 72h DERMA (72h ACTIVE Prorection Nuevo 72h NIVEA NIVEA MEN NIVEA SUN Crema Corporal Milk Nutritiva protect & hydrate \"> BLACKQ VERLEGALES- Cuidado Corporal ",
-        "categoria": [
-            "🧴 Perfumería y Bebé"
-        ],
-        "link": "https://www.jumbo.com.ar/56727?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/69bc823d-fee3-4eee-89fb-c027274fb6a7___59e6ab7993da4e381e64b75a8c495735.webp",
-        "fecha": "2026-01-26"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "40% Off en Hasta 40% En Infaltables Del Super Hasta 40% En In",
-        "descripcion": "HASTA 40% INFALTABLES DEL SUPER PRODUCTOS SELECCIONADOS EXCLUSIVO ONLINE POLVO CHAU MANCHAS! Tre npt Aoreae TTTTT POWER PRECIS Clight Jk NMOYOS Quitamanchas LIMONADA VER LEGALES Hasta 40% en Infaltables del super Hasta 40% en Infaltables del super",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56730?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6656f2b7-b083-409f-9850-998f0abd8b61___ed832c95f39eabc5fb4f155572b6c214.webp",
         "fecha": "2026-01-26"
     },
     {
@@ -212,17 +156,6 @@
         ],
         "link": "https://www.jumbo.com.ar/56601?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/773d08f3-7c10-4d6c-b88f-1dd02f4a3367___359047794c0e66428036beebfd4b0ded.webp",
-        "fecha": "2026-01-26"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "2do al 50% en 2Do Al 50% En Escritura 2Do Al 50% En Escritura",
-        "descripcion": "4 í 50% cencosay CRÉDITO í: 70% STERÉS Para escribir y pintar MJ tocd 1yjiqs} EzCO Ink mvlo VÁLIDO DEL 23/01 AL 29/01. SELECCIONADOS. 2do al 50% en Escritura 2do al 50% en Escritura",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56611?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/35152d19-8ffe-417f-aa3a-09b69f5cc4bc___acd4ad3a4c1546386c32d82eec4ba9e2.webp",
         "fecha": "2026-01-26"
     },
     {
