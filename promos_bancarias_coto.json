@@ -2,8 +2,8 @@
     {
         "supermercado": "Coto",
         "dia": "domingo",
-        "banco": "Banco Credicoop",
-        "descuento": "30% al 40%",
+        "banco": "Banco Ciudad",
+        "descuento": "20%",
         "tope": null,
         "ver_legales": true,
         "link": "https://www.cotodigital.com.ar/sitios/cdigi/descuentos",
@@ -35,16 +35,6 @@
         "banco": "Banco Patagonia",
         "descuento": "20%",
         "tope": "$20000.",
-        "ver_legales": false,
-        "link": "https://www.cotodigital.com.ar/sitios/cdigi/descuentos",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "Coto",
-        "dia": "jueves",
-        "banco": "Comunidad Coto",
-        "descuento": "20%",
-        "tope": "Sin tope",
         "ver_legales": false,
         "link": "https://www.cotodigital.com.ar/sitios/cdigi/descuentos",
         "categoria": "General"
@@ -172,8 +162,8 @@
     {
         "supermercado": "Coto",
         "dia": "sabado",
-        "banco": "Banco Credicoop",
-        "descuento": "30% al 40%",
+        "banco": "Banco Ciudad",
+        "descuento": "20%",
         "tope": null,
         "ver_legales": true,
         "link": "https://www.cotodigital.com.ar/sitios/cdigi/descuentos",

@@ -4,8 +4,8 @@
         "dia": "jueves",
         "banco": "American Express",
         "descuento": "25%",
-        "tope": "$20.000",
-        "ver_legales": false,
+        "tope": null,
+        "ver_legales": true,
         "link": "https://www.jumbo.com.ar/descuentos-del-dia?type=por-dia&day=4",
         "categoria": "General"
     },
@@ -54,6 +54,16 @@
         "dia": "lunes",
         "banco": "Clarín 365",
         "descuento": "15%",
+        "tope": "Sin tope",
+        "ver_legales": false,
+        "link": "https://www.jumbo.com.ar/descuentos-del-dia?type=por-dia&day=1",
+        "categoria": "General"
+    },
+    {
+        "supermercado": "Jumbo",
+        "dia": "lunes",
+        "banco": "Tarjeta Cencosud",
+        "descuento": "30%",
         "tope": "Sin tope",
         "ver_legales": false,
         "link": "https://www.jumbo.com.ar/descuentos-del-dia?type=por-dia&day=1",
