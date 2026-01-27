@@ -12,244 +12,101 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Electrodomésticos",
-        "descripcion": "En seleccionados de: Electro AHORRO FNDEMES Carrefour iDescuentos en la unidad y mucho más! 100 Hasta el 26/01 HASTA Hasta 184u95s 408 DESCUENTO SIN INTERÉS E VER MÁS Gorng Sólo consumo familiar; válido por usuarioldocumento.",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23850?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/e46bfdd2-a5f5-4a49-b1cc-a61bf2aa9f04___6ef8367c146de55a2e852329e7ec9f30.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
         "titulo": "Oferta en Almacén",
-        "descripcion": "Los días (M M VS D Pagando Con DESCUENTO EN EL ACTO SIN TOPE 15P Tarjeta Mi Carrefour Crédito Válldo los das vernes; sabado; domlngo; lunes mlercoles de Enero No Incluye electrodomestlcos; electrónlca telefonla celular; carnlcerla nlleches Infantles maternbzadas. No acumulable con ouras promoclones. Exclusivo online er legales carrefourcomtarldescuantos-bancarlos APROVECHAR Cwrofour",
+        "descripcion": "Carrefour banco DESCUENTO EN EL ACTO SIN TOPE HOY MARTES Tarjeta Mi Carrefour Pagando Con Crédito 20P No Incluye electrodomestcos; electronlca; telefonfa celular; carnlcerfa nl leches Infantles  Valldo los dfas martes de Enero No acumulable con ouras promoclones. maternbzadas. Exclusivo online Ver legales en carrefourcomtarldescuentos-bancerlos APROVECHAR Caofour",
         "categoria": [
             "🍝 Almacén"
         ],
         "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/af076579-3c54-465f-99e3-69ed4e5db54e___39c4d53cdc09967a58ee354bbdabac7d.webp",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/0259fee7-6a3f-4b92-b484-fbf8b246f1af___be94c764cd33ba32c4a5c4a87613a982.webp",
         "fecha": "2026-01-27"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oportunidad a $85444 en Aires Acondicionados",
-        "descripcion": "PRECIO NORMAL 51-088-000 8FERTA 8769.000 CuotaS SIN INteReS DE $85.444 Ciu Aire Split Philco 34O0W Hasta el 26/01 VER MÁS",
+        "titulo": "30% Off en Smart TV",
+        "descripcion": "HASTA HASTA 12 SUOEAES 30%  DESCUENTO AHORRO GIGANTE Hasta el 02/02 NOBLE 75\" SMaRT TV 4K VER MÁS En seleccionados dez Google TV Aires Acondicionados; Smart TVs, Heladeras y Lavarropas UHD Hddoioy sOr Sólo consumo familiar; válido por usuarioldocumento.",
         "categoria": [
             "📺 Electro y Tecno"
         ],
-        "link": "https://www.carrefour.com.ar/aire-acondicionado-split-philco-frio-calor-3400w-phs32ha4cn-blanco-/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/0f1e0446-c64a-4af9-a7ae-837356d91303___4ba68e41b28fc4f4cbe53423cd8de92b.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Lavarropas",
-        "descripcion": "heste 12 Suotas elae 30 DESCUENTO 0 Alres, Smart Tv; Heladeras Lavarropas",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23807?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/afe66f0d-f516-428e-a455-4d808a10830c___4890989dec1af845d7bdff3d0e9f387b.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "3x2 en Leche",
-        "descripcion": "3x2 LLEVÁS 3) PAGÁS 2 4alS Lapeinid Guinves DESCUENTO 40 Leches, Jugos, Galletitas, Aquas Mef",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.carrefour.com.ar/23804?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d49f90be-5bb2-40a1-9f05-27f9c26c3cd8___31770cb9ea15bbd8d5f36891e86e0321.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "6 Cuotas S/Int en Seleccionados (🍝 Almacén)",
-        "descripcion": "heste 6 CUOTAS SIN INTERÉS elae 35 DESCUENTO 8 Notebooks, Mlcroondas ercpters",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/23809?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/6772c578-7019-4bca-9e85-a97a03e6060c___3cb8114f14fe6966faf3497d4d7c3fb0.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Mayonesa",
-        "descripcion": "En seleccionados de: Detergentes, Congelados, Aceites Salsas y más AHORRO FINDEMES Carrefour iDescuentos enla unldad y mucho más! Lucchetti Hasta el 26/01 scade Grania Iitas Swift CASERA jamón Enovi SavoRa Original_ PizzA fiesía Mayonesa 'Gif Or97 Natura VER MÁS 258 359 DESCUENTO DESCUENTO Sólo consumo familiar; válido por usuarioldocumento. El descuento no aplica abonando con dos medios de pago",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/23801?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/da202fd8-d06d-4ba8-8606-147bdcb45220___bf2d7fcf585ec4ec9f02cba9b6ac7733.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Cupón de Descuento en Almacén",
-        "descripcion": "Para clientes de Club LA NACIÓN NUEVO 153 DESCUOPTO No Incluy electrodomestlco, electrónlca; telefonla celularcarnlcera Utlllzando el cupón obtenldo en Club LA NACIÓN Ver legales en carrefour com arldescuentos-bancarlos. leches Infantlles maternlzadas (etapa 1y 2) Haciendo tu compra del super online los Lunes de Enero Club LA NACION",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d5beea79-12c0-43ab-994f-98e3d4c4e0f6___fe22874dd1665d951ba654cc8d9cf3d2.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "30% Off en Lavarropas",
-        "descripcion": "Hasta el 26/01 HASTA 12 SUOEAS hasta 30 %oEscuENTO En seleccionados de: Alres Acondlclonados Smart Tvs, Heladeras Lavarropas VER MÁs",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23807?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/987ad637-e3cf-44a7-b695-04db6bc48b67___e844cdb06b3323a73453a5ae68396ec9.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Heladeras",
-        "descripcion": "Twin",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/heladera-no-frost-drean-342lts-inv-rzn320pcarx0-inox/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/772498-170-170?v=638996924301500000&width=170&height=170&aspect=true",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Aires Acondicionados",
-        "descripcion": "PhnCo Aloo",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/aire-acondicionado-split-philco-frio-calor-3400w-phs32ha4cn-blanco-/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/245689-170-170?v=638814425050000000&width=170&height=170&aspect=true",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "12 Cuotas S/Int en Lavarropas",
-        "descripcion": "En seleccionados de: Aires Acondicionados, Smart TVs, Heladeras y Lavarropas AHORRO FINDEMES Carrefour iDescuentos en la unldad y mucho más! Hasta el 26/01 HASTA HASTA 12 CUOTAS 3085 DESCUENTO SIN INTERÉS VER MÁS 43\" Sólo consumo familiar; válido por usuarioldocumento:",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23807?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/f2b49979-a832-4383-8700-20e336bd8578___e053e188558ecb282b1ab5dc0e1185e5.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "3 Cuotas S/Int en Almacén",
-        "descripcion": "mercado pa9o Comprando online los Lunes y Miércoles de Enero HASTA 3 Cuotas sin interés Pagando con Cuotas sin Tarjeta Sujeta revisión credlticla de Mercado Pago COMPRAR Ver legales en www.carrefour com.arldescuentos-bancarios",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/cc39d0fb-19c2-45e4-8a7f-f795a78b38a0___ce3edabcc4216c0ede11eaa749c6034a.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "9 Cuotas S/Int en Seleccionados (🍝 Almacén)",
-        "descripcion": "En seleccionados de: Celulares, Parlantes y Torres de Sonido AHORRO FINDEMES Carrefour iDescuentos enla unldad y mucho más! HASTA 9 CUOTAS SIN INTERÉS Hasta el 26/01 VER MÁS ~ 9BL aog Sólo consumo familiar; válido por usuarioldocumento.",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/23810?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d74e8c97-35b0-4e4c-8006-0ce7cf38f12d___fd45a9e691225c867f04b06b259bd71e.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "15% Off en Seleccionados (🍝 Almacén)",
-        "descripcion": "EXCLUSIVO ONLINE Los días Pagando Con Tarjeta Mi Carrefour Credlto Carrefour oanco MMUVGD vlernes, sábado, domlngo Iunes mlércoles de Enero de 2026 EnorE RECIBILO EN MAX INMEOINTn IH 24 Si estas en CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL recibí tu pedido en menos de IHORA DESCUENTO EN EL ACTO SIN TOPE @rrefour APROVECHAR 15% No Incluye electrodoméstlcos, electrónlca _ telefonía celular; carnlcería nl leches Infantlles y maternlzadas. No acumulable con otras promoclones. Ver legales en carrefour com arldescuentos-bancarlos",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/5f0279ae-cff6-4f4e-b915-f9c75b0fc75a___688b23fa67ea8e7dd5215b6b0c8e29cf.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Seleccionados (Electro)",
-        "descripcion": "HASTA 406 DESCUENTO En seleccionados de: Ventilación y Hasta 26/01 VER MAS Pequeños Electrodomésticos",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23808?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/e4416e2e-27fb-4aae-9b7b-6c787fec6996___4d18a476016100fad0cc784b7790859d.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Carne Vacuna",
-        "descripcion": "Paleta 812.490 de Novillo XKG OFERTA Hasta el 26/01 VER MÁS",
-        "categoria": [
-            "🥩 Carnicería"
-        ],
-        "link": "https://www.carrefour.com.ar/paleta-x-kg-662849/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9b86abc0-0c7e-484c-9fc4-70f7dbe00382___44ed2209a81478a761903706132661de.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "18 Cuotas S/Int en Seleccionados (Electro)",
-        "descripcion": "HASTA 18 CUOTAS SIN INTERES HASTA 50 DESCUENTO Hasta el 27/01 EXCLUSIVO ONLINE",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/60fc36b9-dcf9-4c70-852a-47c25c719452___c9e6ddf027bb8860855b88e538d53b6e.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "50% Off en Seleccionados (🍝 Almacén)",
-        "descripcion": "Hasta el 26/01 LLEVANDO Productos 50% DESCUENTO EN LA 2D^ UNIDAD En seleccionados de: Galletltas; Gaseosas Cervezas más VER MÁs",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/23803?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/08d833e7-4fc2-4fca-9b56-8ca5b2361a4c___74c2a96016718f3cc2dcda9aed6835d0.webp",
-        "fecha": "2026-01-27"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Gaseosas",
-        "descripcion": "81 1; 225 litros",
-        "categoria": [
-            "🍷 Bebidas"
-        ],
-        "link": "https://www.carrefour.com.ar/gaseosa-cola-coca-cola-sabor-original-225-lts-30138/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/332148-170-170?v=638211437412370000&width=170&height=170&aspect=true",
+        "link": "https://www.carrefour.com.ar/23854?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/a5ac93c1-f9d1-4b6e-adf4-0b40ff500518___03b600959a825c059c946a10ed4aa93c.webp",
         "fecha": "2026-01-27"
     },
     {
         "supermercado": "Carrefour",
         "titulo": "Oferta en Jabón",
-        "descripcion": "3 Dove Vhioaces original sabonete",
+        "descripcion": "HASTA 358 DESCUENTO En seleccionados de Detergentes, Jabón Líquido, Harinas, Mayonesas y más AHORRO GIGANTE Hstazoadeaoroo' Hasta el 02/02 Morixe na Tro 0000 Salsati VER MÁS HELLMANNS skip CLAsICA [Felpita MAGISTRIL Maxirollo ! TSioderantigrase 200 ~iaF RINDE S 2e2eel 588 5Sodi Sólo consumo familiar; válido por usuarioldocumento",
         "categoria": [
             "🧹 Limpieza"
         ],
-        "link": "https://www.carrefour.com.ar/jabon-de-tocador-dove-original-multipack-x3-90-grs-615379/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/719328-170-170?v=638941636150170000&width=170&height=170&aspect=true",
+        "link": "https://www.carrefour.com.ar/23865?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/87e31eaf-d33a-4d9d-9e47-a87923d6bc88___9ee5d3c530f4f9e617eef0b4f277a522.webp",
         "fecha": "2026-01-27"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Manteca",
-        "descripcion": "6",
+        "titulo": "Cupón de $30000 en Seleccionados (🍝 Almacén)",
+        "descripcion": "VÁLIDO SÓLO POR EL 27/01 EXCLUSIVO ONLINE TE REGALAMOS CUPÓN: @NoRe=b INMEOINTA 00 6K-OFF-ENE S6OO0 Si estás en CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL DESCUENTO RECIBILO EN MÁX recibí tu pedido en menos de HORA IH 24 mínimo de compra: $30.000 Válido solo por 27/1 de 2026. Exclusivo parz carretour com Dare modalidad de entrega inmediata Valido para CABA, TANDIL, CORDOBA CAPITAL MENDOZA CAPITAL No acumula con otras promocioncs. No aplica compras programadas Aplica en compras mayores $30.000. Ver legales en carrefour com arllegales.",
         "categoria": [
-            "🧀 Lácteos y Frescos"
+            "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/manteca-tonadita-calidad-extra-200-g/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/629854-170-170?v=638769474371170000&width=170&height=170&aspect=true",
+        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/b5e0b7a6-8707-4fee-bcf9-c980a7821396___f7107393d33346af2b3799c6c1f41613.png",
+        "fecha": "2026-01-27"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Electrodomésticos",
+        "descripcion": "Meare Loda 70 80 DESCUENTO DESCUENTO EN LA 2D4 UNIDAD EN LA 2DA UNIDAD 85 AHORRO GIGANTE Rollos de Cocina Hasta el 02/02 Ia prorg3gen Ser Celestial ' Yogurisimo PRO+ Natural 1 159 =9 83OOd PROIEINA 8 reilos {Buicdlitas 49 VER MÁs En seleccionados de: Yogures; Galletitas, Cervezas; Rollo de Cocina y más Sólo consumo familiar; válido por usuarioldocumento",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23869?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/cb05d4ef-3c3f-4e63-9bed-d66a870bdb71___ec22c3b2bab9ce8ced87525497dec40a.webp",
+        "fecha": "2026-01-27"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "6 Cuotas S/Int en Seleccionados (🍝 Almacén)",
+        "descripcion": "HASTA 6 CUOTAS SIN INTERÉS AHORRO GIGANTE 11:35 Hasta el 02/02 VER MÁS En seleccionados de: 22 0 Celulares; Microondas, Sólo consumo familiar; válido por usuarioldocumento. Parlantes y Torres de Sonido",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23855?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1d1a3185-9342-47f4-acd3-559e6333aa6e___39cf9df0a9a7940cc44f9e9da3101123.webp",
+        "fecha": "2026-01-27"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oportunidad a $6000 en Almacén",
+        "descripcion": "Comprando los días Martes de Enero Con tarjetas de Débito Visa NaranjaX 153 253 DESCUENTO DESCUENTO Tope de descuento $6.000 Para clientes adheridos a planes de suscripción- Tope de descuento $12.000 Para clientes no adheridos a planes de suscripción por semana. por semana _ No Incluye electrodomestlcos, electrónlca, telefonla celular; carnlcería y leches Infantlles Ver legales en carrefour comarldescuentos-bancarlos. maternlzadas (etapa 1y 2) Apllca TarJetas de Déblto VIsa.",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/almacen",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c36a6aca-0044-41b2-9c75-4c30e54120a1___5d0cc8c28eb76093b419e9cd36c43897.webp",
+        "fecha": "2026-01-27"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Seleccionados (🍝 Almacén)",
+        "descripcion": "LLEVANDO 3 3x2 PAGÁS 2 AHORRO GIGANTE Hasta el 02/02 TARDIA FusT elFRENTOS VER MÁS e7 En todos los: Sckic Vinos y Espumantes Sólo consumo familiar; válido por usuarioldocumento",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3247a9fc-5ca1-43c5-9d91-ee03e0da67d6___793db9725c6c5803e42515ae21537eb8.webp",
+        "fecha": "2026-01-27"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Seleccionados (Electro)",
+        "descripcion": "HASTA 4O% DESCUENTO AHORRO GIGANTE Hasta el 02/02 VER MÁS En seleccionados de: Pequeños Electrodomésticos, Sólo consumo familiar; válido por usuarioldocumento Ventilación y Accesorios de Informática",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23856?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9cafc67b-a41a-4584-8eeb-e79eb6fa7770___e3655e3a621f46e5e7b9f3d7055a9200.webp",
         "fecha": "2026-01-27"
     }
 ]
