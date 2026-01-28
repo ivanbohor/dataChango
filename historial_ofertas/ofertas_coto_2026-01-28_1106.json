@@ -12,7 +12,7 @@
     },
     {
         "supermercado": "Coto",
-        "titulo": "Oferta en Pollo, Cerdo",
+        "titulo": "Oferta en Cerdo, Pollo",
         "descripcion": "64499 X KG. PRECIO AWTERIOR: $ 5599 PREcID SIN IMPUESTOS HACIOHALES: $ 5066,97 CHULETAS DE cjg.17696 Ehoetat DE JaMow DE CerDo CON HUESO, 85499 X KG. PRECIO ANTERIOR: $ 6399 PRECIO SIM IMPUESTOS WACIONALES: $ 5790,95 HUGGETSIMEDALLOHISUPREMA DE POLLO COHcELADOS , CoD. 47459-47460-47461 69499 X KG. PRECIO AHTERIOR: $ 10699 PRECIO SIN IMPUESTOS WACIOHALES: $ 9682,35 PARRILLADA REGIONAL, COD. 37720",
         "categoria": [
             "🥩 Carnicería"
@@ -23,7 +23,7 @@
     },
     {
         "supermercado": "Coto",
-        "titulo": "3x2 en Hamburguesas, Milanesas",
+        "titulo": "3x2 en Carne Vacuna, Hamburguesas",
         "descripcion": "Productos marca 359 oood DESCUENTO EXCLUSIVO ONLINE tangURCHESAS Hamburguesas OLto Vva 7 de carne codo vacuna CoTO. Cod: 231388 Suprema Supremas 3x2 Rebozada Congelada COTO, codd Cod: 231383 359 Milanesas de MLanes4s carne vacuna DESCUENTO congeladas COTO 5oig Cod: 231582",
         "categoria": [
             "🥩 Carnicería"
@@ -62,13 +62,13 @@
         "categoria": [
             "💳 Bancarias"
         ],
-        "link": "https://www.cotodigital.com.ar/sitios/cdigi/productos/aire-acondicionado-split-bgh-inverter-3000-fg-3550-w-frio-calor-bsi35wcgt/_/R-00534603-00534603-200%3F",
+        "link": "https://www.cotodigital.com.ar/sitios/cdigi/",
         "imagen": "https://static.cotodigital3.com.ar/sitios/cdigi/static/content/images/cdigi/ofertas/18CSImacro.png",
         "fecha": "2026-01-28"
     },
     {
         "supermercado": "Coto",
-        "titulo": "50% Off en Lonas, Art. Playa",
+        "titulo": "50% Off en Art. Playa, Lonas",
         "descripcion": "50% EN UN PAGO DESCUENTO En playeros y lonas. hASTA EL 29/01/2026, para MÁs HforMaCtOH Y cohdicIOHES apLICAbLES buscar ex ex cotocomarflegales seCCIOY \" ~rehovA TucasA\"",
         "categoria": [
             "🏠 Hogar y Bazar"
@@ -90,7 +90,7 @@
     },
     {
         "supermercado": "Coto",
-        "titulo": "50% Off en Bazar Vidrio, Vasos y Copas",
+        "titulo": "50% Off en Vasos y Copas, Bazar Vidrio",
         "descripcion": "50% EN UN PAGO DESCUENTO En vasos y copas de cristal y vidrio. hasta eL 29/01/2026, para MAs HFoRMACtOH Y CohdicioHes apLiCAbLeS busCaR ex ex Coto CoM arflegales seCCION \"rehova TU CaSa\"",
         "categoria": [
             "🏠 Hogar y Bazar"
