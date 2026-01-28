@@ -78,7 +78,7 @@ def main():
     print("🤖 SISTEMA DE INTELIGENCIA DE MERCADO - MODO CRONOGRAMA")
     print("🕒 Horarios de Ejecución:")
     print("   - 09:00 HS (Apertura)")
-    print("   - 14:30 HS (Tarde)")
+    print("   - 17:30 HS (Tarde)")
     print("   - 20:30 HS (Noche)")
     print("   - 00:30 HS (Cierre)")
     print("---------------------------------------------------------------")
@@ -89,7 +89,7 @@ def main():
 
     # 2. Programación de Horarios Exactos
     schedule.every().day.at("09:00").do(ejecutar_ciclo_completo)
-    schedule.every().day.at("14:30").do(ejecutar_ciclo_completo)
+    schedule.every().day.at("17:30").do(ejecutar_ciclo_completo)
     schedule.every().day.at("20:30").do(ejecutar_ciclo_completo)
     schedule.every().day.at("00:30").do(ejecutar_ciclo_completo)
 

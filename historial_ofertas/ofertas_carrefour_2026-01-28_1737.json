@@ -1,0 +1,101 @@
+[
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Seleccionados (🍝 Almacén)",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/20666?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/61187cb6-3c7c-4fea-ae83-444a0ade661a___ab830f59ded4b04cd5ec9a79d866c61c.png",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "30% Off en Lavarropas",
+        "descripcion": "HASTA HASTA 12 SUOEAES 30%  DESCUENTO AHORRO GIGANTE Hasta el 02/02 NOBLE 75\" SMaRT TV 4K VER MÁS En seleccionados dez Google TV Aires Acondicionados; Smart TVs, Heladeras y Lavarropas UHD Hddoioy sOr Sólo consumo familiar; válido por usuarioldocumento.",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23854?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/a5ac93c1-f9d1-4b6e-adf4-0b40ff500518___03b600959a825c059c946a10ed4aa93c.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Almacén",
+        "descripcion": "Los días (M M VS D Pagando Con DESCUENTO EN EL ACTO SIN TOPE 15P Tarjeta Mi Carrefour Crédito Válldo los das vernes; sabado; domlngo; lunes mlercoles de Enero No Incluye electrodomestlcos; electrónlca telefonla celular; carnlcerla nlleches Infantles maternbzadas. No acumulable con ouras promoclones. Exclusivo online er legales carrefourcomtarldescuantos-bancarlos APROVECHAR Cwrofour",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/almacen",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/af076579-3c54-465f-99e3-69ed4e5db54e___39c4d53cdc09967a58ee354bbdabac7d.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Seleccionados (🍝 Almacén)",
+        "descripcion": "3x2 C4gas? Vinos Espumantes",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23859?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/84cb980e-0542-4661-8d28-25e4e4522676___8ead02516a6f01a9715ac3241c3557b2.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Lavarropas",
+        "descripcion": "HASTA 12 CUOIAS SIN INTERES HASTA 30 DESCUENTO En seleccionados de; Aires, Smart TVs Heladeras Lavarropas Hasta el 02/02",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23854?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d2c0eef8-9c32-4a38-bcfd-c58f47d10434___85c66918b4bf1b5a75eb65aa9713d28b.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Aires Acondicionados",
+        "descripcion": "Philco) 'ssow bun Mtcoru S0xuq",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/aire-acondicionado-split-frio-calor-inverter-philco-3550w-phin35ha3bn/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/423947-170-170?v=638814431162430000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Lavarropas",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/lavarropas-carga-frontal-inverter-bgh-8kg-1400-rpm-pih034067/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/687747-170-170?v=638900896949770000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Smart TV",
+        "descripcion": "NNoBLE} 75\" ak\" uhd",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/smart-tv-75--noblex-uhd-4k-google-tv-dv75x8580/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/772547-170-170?v=638996925350700000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Heladeras",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/heladera-gafa-257l-hgf252b-blanca/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/787817-170-170?v=639034038826500000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-28"
+    }
+]

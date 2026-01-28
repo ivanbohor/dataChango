@@ -12,7 +12,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Art. Limpieza, Almacén",
+        "titulo": "40% Off en Perfumería, Art. Limpieza",
         "descripcion": "OFERTAS de la SEMANA HASTA ALMACÉN, BEBIDAS , FRESCOS, 40% PERFUMERIA Y LIMPIEZA PRODUCTOS SELECCIONADOS. Patagonia Las\" Tres Niñas clásica LEChECoN {orgoi 8 IMpACTO ,  positivo ZERo Elite PATAGONIA] AMBER LAGER Ultra Suave Suave con 'Ideicado piel 9 4 30 EXCLUSIVO ONLINE VÁLIDODEL 26/01AL.29/01. BEBER CONMODERACIÓN. Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
             "🍝 Almacén",
@@ -48,7 +48,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Oferta en Corte Nalga, Milanesas",
+        "titulo": "Oferta en Milanesas, Corte Nalga",
         "descripcion": "más fresco más rico MILANESA DE NALGA $16999 DE NOVILLITO VÁLIDO DEL 26/01 AL 29/01 PRECIO SIN IMPUESTOS NACIONALES: $15,383.71 Milanesa de lomo de novillito Milanesa de lomo de novillito",
         "categoria": [
             "🥩 Carnicería"
@@ -70,7 +70,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Bazar, Ropa de Cama",
+        "titulo": "Hasta 50% Off en Hogar, Decoración",
         "descripcion": "Casa € Deco CROSS-CHECV Ropa de cama, Organización; Bazar y más {3seRés š 50% krea Ymás! VÁLIDO DEL 23/01 AL 29/01. PRODUCTOS SELECCIONADOS . Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
         "categoria": [
             "🏠 Hogar y Bazar"
@@ -100,18 +100,6 @@
         ],
         "link": "https://www.jumbo.com.ar/56645?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/e77e4f92-f7ab-430a-8edf-458adff9f5ff___6cba83a9dab205195927da2fb4ee81c3.jpg",
-        "fecha": "2026-01-28"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "40% Off en Art. Limpieza, Perfumería",
-        "descripcion": "HASTA 40% OREA Elite ELVIVE VERLEGALES. Perfumería y Limpieza ",
-        "categoria": [
-            "🧹 Limpieza",
-            "🧴 Perfumería y Bebé"
-        ],
-        "link": "https://www.jumbo.com.ar/56721?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/61fee2ec-ce91-43b4-84ec-20c32efa23c0___5d41aa3a33aa111db1e9c4a4823551e0.webp",
         "fecha": "2026-01-28"
     },
     {
@@ -189,6 +177,73 @@
         ],
         "link": "https://www.jumbo.com.ar/56725?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/fdf39934-6b79-4d95-9319-9fadccb69fb7___fe2aa73c63f295a5d94d18fa738ffb4d.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "30% Off en Hasta 30% En Seleccionados De Pequeños Electrodomé",
+        "descripcion": "llega EN24HS HASTA 30% cenco 9 š 35% credito fTERÉS Pequeños electros (ster 22 22 VERLEGALES _ (R-ine Hasta 30% en Seleccionados de Pequeños Electrodomésticos\t Hasta 30% en Seleccionados de Pequeños Electrodomésticos\t",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/56599?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/d7d3a208-bde3-49bf-93ce-79ccabd53b06___103f40d40a9affbdbd58dd73c7929780.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "10% Off en Smart TV",
+        "descripcion": "llega EN24HS HASTA 10% cenco pa 175% 12 CRÉDITO SNERÉS TVy Celulares VERLEGALES Tv y Celulares Tv y Celulares",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/56600?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/b2731d27-2468-4535-9b5c-363af7bc5fcc___fc040d24d730c891c88c15fd884c90b3.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "12 Cuotas S/Int en Hasta 30% + Hasta 12Csi En Aires Acondicionado Y V",
+        "descripcion": "llega EN24HS HASTA 30% cenco 00 š 40% 12. credito fTERÉS Aires y ventiladores VERLEGALES _ Hasta 30% + Hasta 12Csi en Aires Acondicionado y Ventilación Hasta 30% + Hasta 12Csi en Aires Acondicionado y Ventilación",
+        "categoria": [
+            "💳 Bancarias",
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/56597?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/e60d23df-23ef-4afd-a91c-3585419f0884___03d09a46beffb3a003b1210d6a3f5312.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "35% Off en Hasta 35% En Notebooks, Tablets Y Más Hasta 35% En",
+        "descripcion": "llega ENZ4HS HASTA HASTA 35% 12 SINERÉS cenco 0 š 40% 12 Crecito fTERÉS Notebooks, tablets y más VERLEGALES Hasta 35% en Notebooks, Tablets y más Hasta 35% en Notebooks, Tablets y más",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar/56601?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/87d56d51-6792-4ab7-b494-0b9133cb88d3___071d9d940540e67d4e1300a1d572c8eb.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "2do al 50% en 2Do Al 50% En Escritura 2Do Al 50% En Escritura",
+        "descripcion": "4 í 50% cencosay CRÉDITO í: 70% STERÉS Para escribir y pintar MJ tocd 1yjiqs} EzCO Ink mvlo VÁLIDO DEL 23/01 AL 29/01. SELECCIONADOS. 2do al 50% en Escritura 2do al 50% en Escritura",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar/56611?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/35152d19-8ffe-417f-aa3a-09b69f5cc4bc___acd4ad3a4c1546386c32d82eec4ba9e2.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "6x12 en Electro",
+        "descripcion": "Todos los días 3,6x12qu0625 CONCRABIFTA sin interés\" EN ELECTRODOMÉSTICOS SELECCIONADOS FROMCCIONVALIDA DEL 01/o1/2026 AL 31/01/2026 Iuioocterooy WeRV5Galesy Excugiones EncengorayAR CFTNA: 0,0% Electro Electro",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/electro",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/68ed13fe-f9ee-4257-8a05-b1a6be51ed7f___1615c495762c04f314f954da5c32faf6.jpg",
         "fecha": "2026-01-28"
     }
 ]

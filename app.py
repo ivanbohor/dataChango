@@ -3,7 +3,6 @@ import json
 import os
 import unicodedata
 import streamlit.components.v1 as components
-import math
 import base64
 import datetime 
 
@@ -15,18 +14,15 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# --- 🧪 MODO PRUEBA ---
-MODO_PRUEBA = False 
+# --- VARIABLES DE ICONOS (COMPACTADOS) ---
+# Telegram (Celeste) y X (Azul - Pajarito)
+ICONO_TELEGRAM = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#229ED9" width="24" height="24"><path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l-.302 4.318c.443 0 .634-.203.882-.448l2.109-2.052 4.37 3.224c.805.442 1.396.216 1.612-.742l2.914-13.725c.297-1.188-.429-1.727-1.188-1.542z"/></svg>'
+ICONO_TWITTER = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DA1F2" width="22" height="22"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>'
 
 # --- FUNCIONES DE CARGA CON CACHÉ ---
 @st.cache_data(ttl=3600, show_spinner=False)
 def cargar_y_transformar_promos():
-    archivos_json = [
-        "promos_bancarias_carrefour.json", 
-        "promos_bancarias_coto.json", 
-        "promos_bancarias_jumbo.json", 
-        "promos_bancarias_masonline.json"
-    ]
+    archivos_json = ["promos_bancarias_carrefour.json", "promos_bancarias_coto.json", "promos_bancarias_jumbo.json", "promos_bancarias_masonline.json"]
     estructura = {
         "Carrefour": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]},
         "Coto": {d: [] for d in ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]},
@@ -41,15 +37,10 @@ def cargar_y_transformar_promos():
                 for p in datos_planos:
                     super_nm = p.get("supermercado")
                     dia = p.get("dia")
-                    banco = p.get("banco")
-                    desc = p.get("descuento")
-                    tope = p.get("tope", "Sin tope")
-                    ver_legales = "SI" if p.get("ver_legales") else "NO"
-                    link = p.get("link", "#")
                     if super_nm in estructura and dia in estructura[super_nm]:
-                        valor_formateado = f"{banco}|{desc}|{tope}|{ver_legales}|{link}"
+                        valor_formateado = f"{p.get('banco')}|{p.get('descuento')}|{p.get('tope', 'Sin tope')}|{'SI' if p.get('ver_legales') else 'NO'}|{p.get('link', '#')}"
                         estructura[super_nm][dia].append(valor_formateado)
-            except Exception as e: print(f"Error cargando {archivo}: {e}")
+            except: pass
     return estructura
 
 @st.cache_data(ttl=3600, show_spinner=False)
@@ -104,7 +95,7 @@ def get_img_as_base64(file):
 PROMOS_DATA = cargar_y_transformar_promos()
 ofertas_raw, conteos = cargar_datos_ofertas()
 
-# --- INYECCIÓN DE SCRIPTS GLOBALES (JS MODAL LUPITA & COPY) ---
+# --- INYECCIÓN DE SCRIPTS GLOBALES ---
 def inyectar_recursos_globales():
     GTM_ID = "GTM-PFPW7P44"
     js_global = f"""
@@ -114,7 +105,6 @@ def inyectar_recursos_globales():
             var parentHead = parentDoc.head;
             var parentBody = parentDoc.body;
 
-            // 1. Inyectar Estilos Críticos (Ocultar Header Streamlit)
             if (!parentDoc.getElementById('custom-styles')) {{
                 var style = parentDoc.createElement('style');
                 style.id = 'custom-styles';
@@ -126,7 +116,6 @@ def inyectar_recursos_globales():
                 parentHead.appendChild(style);
             }}
 
-            // 2. Inyectar GTM
             if (!parentDoc.getElementById('gtm-injected')) {{
                 var script = parentDoc.createElement('script');
                 script.id = 'gtm-injected';
@@ -134,31 +123,25 @@ def inyectar_recursos_globales():
                 parentHead.insertBefore(script, parentHead.firstChild);
             }}
 
-            // 3. Crear el MODAL (Si no existe en el DOM)
             if (!parentDoc.getElementById('imgModal')) {{
                 var modal = parentDoc.createElement('div');
                 modal.id = 'imgModal';
                 modal.style.cssText = "display:none; position:fixed; z-index:999999; padding-top:50px; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgba(0,0,0,0.9); backdrop-filter:blur(5px);";
-                
                 var close = parentDoc.createElement('span');
                 close.innerHTML = "&times;";
                 close.style.cssText = "position:absolute; top:15px; right:35px; color:#f1f1f1; font-size:40px; font-weight:bold; cursor:pointer; z-index:1000000;";
                 close.onclick = function() {{ modal.style.display = "none"; }};
-                
                 var modalImg = parentDoc.createElement('img');
                 modalImg.id = 'imgModalContent';
                 modalImg.style.cssText = "margin:auto; display:block; max-width:90%; max-height:85vh; border-radius:8px; box-shadow:0 0 20px rgba(255,255,255,0.1); object-fit:contain;";
-                
                 modal.appendChild(close);
                 modal.appendChild(modalImg);
-                
                 modal.onclick = function(e) {{
                     if (e.target === modal) modal.style.display = "none";
                 }}
                 parentBody.appendChild(modal);
             }}
 
-            // Función Helper para abrir el modal (llamada internamente)
             window.parent.openImageModal = function(src) {{
                 var modal = parentDoc.getElementById('imgModal');
                 var modalImg = parentDoc.getElementById('imgModalContent');
@@ -168,22 +151,16 @@ def inyectar_recursos_globales():
                 modal.style.justifyContent = "center";
             }};
 
-            // 4. EVENT DELEGATION (La Solución para el Error de React)
-            // Escuchamos clics en TODO el documento y filtramos por clase
             if (!window.parent.globalListenersAttached) {{
                 parentDoc.addEventListener('click', function(e) {{
-                    
-                    // A. Detectar Clic en Lupa/Imagen (Clase .js-zoomable)
                     var zoomTarget = e.target.closest('.js-zoomable');
                     if (zoomTarget) {{
                         var imgSrc = zoomTarget.getAttribute('data-src');
                         if (imgSrc) {{
                             window.parent.openImageModal(imgSrc);
-                            e.stopPropagation(); // Evita conflictos
+                            e.stopPropagation(); 
                         }}
                     }}
-
-                    // B. Detectar Clic en Botón Copiar (Clase .js-copy-btn)
                     var copyTarget = e.target.closest('.js-copy-btn');
                     if (copyTarget) {{
                         var textToCopy = copyTarget.getAttribute('data-clipboard-text');
@@ -198,7 +175,7 @@ def inyectar_recursos_globales():
                             try {{
                                 parentDoc.execCommand('copy');
                                 var originalHtml = copyTarget.innerHTML;
-                                copyTarget.innerHTML = "Copy";
+                                copyTarget.innerHTML = "👍";
                                 copyTarget.classList.add('copied');
                                 setTimeout(function() {{
                                     copyTarget.innerHTML = originalHtml;
@@ -225,12 +202,11 @@ if 'filtro_ver_todo' not in st.session_state: st.session_state.filtro_ver_todo =
 for h in HIPERS:
     if f"chk_{h}" not in st.session_state: st.session_state[f"chk_{h}"] = False
 
-# --- ESTILOS CSS (INCLUYE HOVER DE LUPA) ---
+# --- ESTILOS CSS ---
 st.markdown("""
     <style>
         .stApp { background-color: #0e3450; }
         h1, h2, h3, h4, h5, h6, p, div, label, span { color: #ffffff !important; }
-        
         div[data-testid="stCheckbox"] label span[data-checked="true"] svg { fill: white !important; stroke: white !important; stroke-width: 3px !important; }
         div[data-testid="stButton"] button[kind="primary"] { background-color: #c7501e !important; color: white !important; border: 1px solid #c7501e !important; box-shadow: 0 0 5px rgba(199, 80, 30, 0.5); }
         div[data-testid="stButton"] button[kind="secondary"] { background-color: transparent; color: white; border: 1px solid #cfa539; }
@@ -240,13 +216,20 @@ st.markdown("""
         .logo-img { width: 100px; height: 100px; object-fit: contain; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.3); flex-shrink: 0; }
         .header-text-col { display: flex; flex-direction: column; justify-content: center; flex: 1; }
         .app-subtitle { font-size: 0.85rem; color: #e0e0e0 !important; font-weight: 300; line-height: 1.3; } 
-        .contact-container { width: 100%; display: flex; justify-content: flex-end; padding-right: 15px; margin-bottom: 5px; }
-        .contact-link-text { font-size: 0.85rem; color: #cfa539 !important; text-decoration: underline; cursor: pointer; font-weight: bold; }
+        
+        .contact-container { width: 100%; display: flex; justify-content: flex-end; align-items: center; padding-right: 15px; margin-bottom: 5px; gap: 12px; }
+        .contact-label { font-size: 0.85rem; color: #ccc !important; font-weight: bold; }
+        
+        .social-link { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s ease-in-out; }
+        .social-link:hover { transform: scale(1.15); }
+        .social-link:hover svg path { fill: #ffffff !important; }
+        .social-link svg { filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3)); transition: all 0.2s; }
 
         @media (min-width: 768px) {
             .header-container { flex-direction: column; align-items: center; text-align: center; border-bottom: none; margin-bottom: 20px; }
             .logo-img { width: 180px; height: auto; border-radius: 20px; }
             .app-subtitle { font-size: 1.1rem; text-align: center; }
+            .contact-container { justify-content: center; margin-top: 10px; }
         }
 
         div[data-testid="stExpander"] { border: 1px solid #cfa539 !important; border-radius: 8px; background-color: rgba(11, 42, 64, 0.5); }
@@ -255,30 +238,23 @@ st.markdown("""
         .grid-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; padding-bottom: 5px; width: 100%; }
         @media (min-width: 600px) { .grid-container { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; } }
         
-        /* CARD OFERTA */
         .oferta-card { background-color: #16425b; border-radius: 10px; padding: 8px; border: 1px solid #cfa539; display: flex; flex-direction: column; height: 310px; box-sizing: border-box; transition: transform 0.2s, border-color 0.2s; overflow: hidden; position: relative; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
         @media (min-width: 600px) { .oferta-card { padding: 10px; height: 340px; } }
         .oferta-card:hover { transform: translateY(-4px); border-color: #c7501e; box-shadow: 0 8px 12px rgba(199, 80, 30, 0.2); }
         
-        /* IMAGEN Y EFECTO LUPA */
         .img-container { height: 120px; background: white; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; width: 100%; position: relative; cursor: zoom-in; overflow: hidden; }
         @media (min-width: 600px) { .img-container { height: 140px; margin-bottom: 10px; } }
         .img-container img { max-height: 95%; max-width: 95%; object-fit: contain; transition: transform 0.3s ease; }
-        
-        /* Capa oscura al pasar mouse (Pseudo-elemento Lupa) */
         .img-container::after { content: "🔎"; font-size: 24px; color: white; display: flex; align-items: center; justify-content: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); opacity: 0; transition: opacity 0.3s; pointer-events: none; }
         .img-container:hover::after { opacity: 1; }
         .img-container:hover img { transform: scale(1.05); }
 
         .card-title { color: white; font-size: 0.85rem; font-weight: 600; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-bottom: 6px; height: 34px; word-wrap: break-word; line-height: 1.2; }
         @media (min-width: 600px) { .card-title { font-size: 0.95rem; margin-bottom: 8px; height: 38px; } }
-        
         .tag-pill { font-size: 0.65rem; padding: 3px 8px; border-radius: 10px; font-weight: bold; color: white !important; border: none; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
-        
         .btn-ver-link { background: #c7501e; color: white !important; text-align: center; padding: 6px; border-radius: 5px; text-decoration: none; font-size: 0.8rem; font-weight: bold; display: block; width: 100%; }
         @media (min-width: 600px) { .btn-ver-link { padding: 8px; font-size: 0.9rem; } }
         .btn-ver-link:hover { background-color: #a84015; text-decoration: none; opacity: 0.9; }
-
         .js-copy-btn { background: transparent; border: 1px solid; border-radius: 5px; cursor: pointer; display: flex; align-items: center; justify-content: center; width: 35px; min-width: 35px; transition: all 0.2s; color: inherit; }
         .js-copy-btn:hover { background-color: rgba(255,255,255,0.1); }
         .js-copy-btn.copied { background-color: #2e7d32 !important; border-color: #2e7d32 !important; color: white !important; }
@@ -289,10 +265,8 @@ st.markdown("""
         .promo-table td { padding: 8px; text-align: center; border-bottom: 1px solid rgba(207, 165, 57, 0.2); color: #ddd; vertical-align: top; }
         .promo-table tr:last-child td { border-bottom: none; }
         .promo-table tr:nth-child(even) { background-color: rgba(255,255,255,0.03); }
-        
         .today-col { background-color: rgba(207, 165, 57, 0.15) !important; border-left: 1px solid rgba(207, 165, 57, 0.3); border-right: 1px solid rgba(207, 165, 57, 0.3); }
         .today-header { background-color: #c7501e !important; color: white !important; border-bottom: 2px solid white !important; }
-
         .promo-badge { display: block; background-color: #1e3a5f; padding: 6px; border-radius: 4px; margin-bottom: 6px; border: 1px solid rgba(255,255,255,0.1); font-size: 0.75rem; text-align: left; position: relative; }
         .promo-badge strong { color: #fff; display: block; font-size: 0.9rem; margin-bottom: 2px; }
         .promo-badge .banco-nm { color: #aaa; font-weight: normal; font-size: 0.8rem; margin-bottom: 2px; display: block;}
@@ -316,7 +290,13 @@ st.markdown(f"""
     </div>
 </div>
 <div class="contact-container">
-    <div>¿Ideas? <a href="mailto:datachangoweb@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-link-text">Hablemos</a></div>
+    <span class="contact-label"> 🚨 Alertas de precios y actualizaciones en:</span>
+    <a href="https://t.me/datachango_ofertas" target="_blank" class="social-link" title="Canal de Telegram">
+        {ICONO_TELEGRAM}
+    </a>
+    <a href="https://x.com/DataChangoAr" target="_blank" class="social-link" title="Seguinos en X">
+        {ICONO_TWITTER}
+    </a>
 </div>
 """, unsafe_allow_html=True)
 
@@ -452,8 +432,10 @@ else:
             tag = cats_vis[0] if cats_vis else "Oferta"
             txt_copy = f"Mira esta oferta que encontre en DataChango: {link}".replace("'", "")
             
-            # --- CARD CORREGIDA (SIN ONCLICK INLINE) ---
-            # Usamos event delegation: data-src tiene la url, y la clase js-zoomable activa el script global
+            # --- CARD BLINDADA ---
+            # Separamos el estilo para que la línea no sea tan larga y se copie bien
+            btn_style = f"color: {color_tema}; border-color: {color_tema};"
+            
             card = f"""
             <div class="oferta-card">
                 <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
@@ -468,7 +450,7 @@ else:
                 </div>
                 <div style="display: flex; gap: 8px; margin-top: 10px;">
                     <a href="{link}" target="_blank" class="btn-ver-link" style="background-color: {color_tema}; flex: 1;">Ver Oferta</a>
-                    <button class="js-copy-btn" data-clipboard-text="{txt_copy}" style="color: {color_tema}; border-color: {color_tema};">🔗</button>
+                    <button class="js-copy-btn" data-clipboard-text="{txt_copy}" style="{btn_style}">🔗</button>
                 </div>
             </div>
             """

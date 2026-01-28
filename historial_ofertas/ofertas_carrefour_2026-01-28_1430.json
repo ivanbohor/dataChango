@@ -35,12 +35,12 @@
     {
         "supermercado": "Carrefour",
         "titulo": "3x2 en Seleccionados (🍝 Almacén)",
-        "descripcion": "LLEVANDO 3 3x2 PAGÁS 2 AHORRO GIGANTE Hasta el 02/02 TARDIA FusT elFRENTOS VER MÁS e7 En todos los: Sckic Vinos y Espumantes Sólo consumo familiar; válido por usuarioldocumento",
+        "descripcion": "3x2 C4gas? Vinos Espumantes",
         "categoria": [
             "🍝 Almacén"
         ],
         "link": "https://www.carrefour.com.ar/23859?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3247a9fc-5ca1-43c5-9d91-ee03e0da67d6___793db9725c6c5803e42515ae21537eb8.webp",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/84cb980e-0542-4661-8d28-25e4e4522676___8ead02516a6f01a9715ac3241c3557b2.webp",
         "fecha": "2026-01-28"
     },
     {
@@ -63,6 +63,39 @@
         ],
         "link": "https://www.carrefour.com.ar/almacen",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/cc39d0fb-19c2-45e4-8a7f-f795a78b38a0___ce3edabcc4216c0ede11eaa749c6034a.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Smart TV",
+        "descripcion": "HASTA 12 CUOIAS SIN INTERES HASTA 30 DESCUENTO En seleccionados de; Aires, Smart TVs Heladeras Lavarropas Hasta el 02/02",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23854?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d2c0eef8-9c32-4a38-bcfd-c58f47d10434___85c66918b4bf1b5a75eb65aa9713d28b.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Aires Acondicionados",
+        "descripcion": "Philco) 'ssow bun Mtcoru S0xuq",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/aire-acondicionado-split-frio-calor-inverter-philco-3550w-phin35ha3bn/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/423947-170-170?v=638814431162430000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Lavarropas",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/lavarropas-carga-frontal-inverter-bgh-8kg-1400-rpm-pih034067/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/687747-170-170?v=638900896949770000&width=170&height=170&aspect=true",
         "fecha": "2026-01-28"
     },
     {
@@ -122,17 +155,6 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "12 Cuotas S/Int en Smart TV",
-        "descripcion": "HASTA 12 CUOIAS SIN INTERES HASTA 30 DESCUENTO En seleccionados de; Aires, Smart TVs Heladeras Lavarropas Hasta el 02/02",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23854?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d2c0eef8-9c32-4a38-bcfd-c58f47d10434___85c66918b4bf1b5a75eb65aa9713d28b.webp",
-        "fecha": "2026-01-28"
-    },
-    {
-        "supermercado": "Carrefour",
         "titulo": "Oferta en Carne Vacuna",
         "descripcion": "LLEVANDO 2 PRODUCTOS 5OP/1 DESCUENTO EN LA 2da UnIDAD {58888 En seleccionados de: Alimentos para Mascota Carrclour Tfernitos FO 2P Carne SaecaciaMr VER MÁS Hasta el 02/02",
         "categoria": [
@@ -173,6 +195,50 @@
         ],
         "link": "https://www.carrefour.com.ar/23860?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/f26a08e0-740b-4096-bbf9-cc860d23d15d___43b1b83457ab761a24a93796e414ee9c.webp",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Heladeras",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/heladera-con-freezer-gafa-hgf378afb-blanca-326lts-1646803/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/307811-170-170?v=638826194702030000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Yogur",
+        "descripcion": "8 BoOg]",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/yogur-griego-natural-sin-endulzar-yogurisimo-300-grs-765556/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/710096-170-170?v=638936270122200000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Crema",
+        "descripcion": "[Colgate Adder Crema Dental Familhar",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/pasta-dental-colgate-triple-beneficio-90-g-718627/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/542860-170-170?v=638569960543130000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-28"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Quesos",
+        "descripcion": "CasanCrem 1 [500g ",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/queso-crema-casancrem-clasico-500-grs-748003/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/570690-170-170?v=638628664169670000&width=170&height=170&aspect=true",
         "fecha": "2026-01-28"
     }
 ]
