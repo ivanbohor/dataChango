@@ -4,7 +4,10 @@ import os
 import unicodedata
 import streamlit.components.v1 as components
 import base64
-import datetime 
+import datetime
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+import pandas as pd
 
 # --- CONFIGURACIÓN DE PÁGINA ---
 st.set_page_config(
@@ -15,9 +18,168 @@ st.set_page_config(
 )
 
 # --- VARIABLES DE ICONOS (COMPACTADOS) ---
-# Telegram (Celeste) y X (Azul - Pajarito)
 ICONO_TELEGRAM = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#229ED9" width="24" height="24"><path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l-.302 4.318c.443 0 .634-.203.882-.448l2.109-2.052 4.37 3.224c.805.442 1.396.216 1.612-.742l2.914-13.725c.297-1.188-.429-1.727-1.188-1.542z"/></svg>'
 ICONO_TWITTER = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DA1F2" width="22" height="22"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>'
+
+# --- CONEXIÓN A SHEETS ---
+@st.cache_resource(ttl=60, show_spinner=False)
+def conectar_google_sheets():
+    try:
+        # 1. Recuperamos las credenciales manejando la estructura anidada o aplanada
+        if "connections" in st.secrets and "gsheets" in st.secrets["connections"]:
+            creds_dict = dict(st.secrets["connections"]["gsheets"])
+        elif "connections.gsheets" in st.secrets:
+            creds_dict = dict(st.secrets["connections.gsheets"])
+        else:
+            # Fallback: intentar buscar claves sueltas si no está en connections
+            # Esto es útil si pegaste el json directo en secrets.toml sin cabecera [connections.gsheets]
+            try:
+                creds_dict = dict(st.secrets)
+            except:
+                return None
+
+        # 2. Fix para saltos de línea en la clave privada
+        if creds_dict and "private_key" in creds_dict:
+            creds_dict["private_key"] = creds_dict["private_key"].replace("\\n", "\n")
+        
+        # 3. Conectar con gspread
+        gc = gspread.service_account_from_dict(creds_dict)
+        sh = gc.open("DataChango_Live_DB") # Nombre exacto de tu hoja
+        return sh.sheet1
+
+    except Exception as e:
+        # print(f"⚠️ Error conectando a Sheets: {e}") # Debug local
+        return None
+
+def obtener_alertas_vivas():
+    hoja = conectar_google_sheets()
+    if not hoja: return []
+    try:
+        datos = hoja.get_all_records()
+        # Filtramos filas vacías o incompletas
+        return [d for d in datos if d.get("producto") and str(d.get("producto")).strip() != ""] 
+    except:
+        return []
+
+# --- NUEVA LÓGICA: MODAL POPUP (DISEÑO MEJORADO) ---
+if hasattr(st, "dialog"): # Verificación de versión compatible
+    @st.dialog("🚨 Alertas en Vivo - Sentinel", width="large")
+    def mostrar_modal_alertas(alertas):
+        # ESTILOS CSS ESPECÍFICOS DEL MODAL
+        st.markdown("""
+        <style>
+            /* ESTILO PARA TOP 3 (GRID) */
+            .top-card {
+                background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+                border: 1px solid #ef4444;
+                border-radius: 12px;
+                padding: 10px;
+                text-align: center;
+                height: 100%;
+                box-shadow: 0 4px 10px rgba(239, 68, 68, 0.2);
+                transition: transform 0.2s;
+                display: flex; flex-direction: column; justify-content: space-between;
+            }
+            .top-card:hover { transform: scale(1.02); }
+            .top-img-box {
+                background: white; border-radius: 8px; height: 120px; 
+                display: flex; align-items: center; justify-content: center;
+                margin-bottom: 8px; overflow: hidden;
+            }
+            .top-img-box img { max-height: 90%; max-width: 90%; object-fit: contain; }
+            .top-title { font-size: 0.85rem; font-weight: bold; color: white; height: 40px; overflow: hidden; line-height: 1.2; margin-bottom: 5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+            .top-price { font-size: 1.2rem; color: #ef4444; font-weight: 800; margin-bottom: 5px; }
+            .top-tag { background-color: #ef4444; color: white; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; font-weight: bold; align-self: center; margin-bottom: 5px;}
+            
+            /* ESTILO PARA EL RESTO (LISTA COMPACTA) */
+            .compact-list-container { margin-top: 20px; }
+            .compact-row {
+                display: flex; align-items: center; justify-content: space-between;
+                background-color: rgba(255,255,255,0.05);
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+                padding: 8px 10px;
+                border-radius: 6px;
+                margin-bottom: 6px;
+                transition: background 0.2s;
+            }
+            .compact-row:hover { background-color: rgba(255,255,255,0.1); }
+            .row-info { flex: 1; padding-right: 10px; overflow: hidden;}
+            .row-title { font-size: 0.9rem; color: #e2e8f0; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block;}
+            .row-meta { font-size: 0.75rem; color: #94a3b8; }
+            .row-price { font-size: 1rem; color: #ef4444; font-weight: bold; min-width: 80px; text-align: right; margin-right: 10px;}
+            .btn-go-small {
+                background-color: transparent; border: 1px solid #ef4444; color: #ef4444 !important;
+                text-decoration: none; font-size: 0.75rem; padding: 4px 10px; border-radius: 4px;
+                font-weight: bold; transition: all 0.2s; white-space: nowrap;
+            }
+            .btn-go-small:hover { background-color: #ef4444; color: white !important; }
+        </style>
+        """, unsafe_allow_html=True)
+
+        if not alertas:
+            st.info("No hay alertas activas en este momento.")
+            return
+
+        # Ordenar: Más recientes primero (asumiendo que vienen en orden cronológico, invertimos)
+        alertas_recientes = alertas[::-1]
+        
+        # Separar Top 3 y Resto
+        top_3 = alertas_recientes[:3]
+        resto = alertas_recientes[3:23] # Limitamos a 20 items extra para no saturar
+
+        # --- SECCIÓN 1: GRID TOP 3 ---
+        st.markdown("#### 🔥 Últimas Bombas Detectadas")
+        
+        # Usamos columns de Streamlit
+        cols = st.columns(3)
+        for i, item in enumerate(top_3):
+            with cols[i]:
+                prod = item.get("producto", "Producto")
+                precio = item.get("precio", 0)
+                desc = item.get("descuento", "")
+                link = item.get("link", "#")
+                # Intentamos obtener la imagen, si falla usamos placeholder
+                img = item.get("link_imagen", "")
+                if not img: img = "https://placehold.co/150x150/png?text=Oferta"
+                
+                st.markdown(f"""
+                <div class="top-card">
+                    <div class="top-img-box">
+                        <img src="{img}">
+                    </div>
+                    <span class="top-tag">{desc}</span>
+                    <div class="top-title">{prod}</div>
+                    <div class="top-price">${precio}</div>
+                    <a href="{link}" target="_blank" style="text-decoration:none; color:white; background:#ef4444; padding:5px 10px; border-radius:4px; font-size:0.8rem; display:block; font-weight:bold;">VER OFERTA</a>
+                </div>
+                """, unsafe_allow_html=True)
+
+        # --- SECCIÓN 2: LISTA COMPACTA ---
+        if resto:
+            st.markdown("<br><h5>📋 Otras Oportunidades Recientes</h5>", unsafe_allow_html=True)
+            st.markdown('<div class="compact-list-container">', unsafe_allow_html=True)
+            
+            for item in resto:
+                prod = item.get("producto", "Producto")
+                precio = item.get("precio", 0)
+                desc = item.get("descuento", "")
+                link = item.get("link", "#")
+                motivo = item.get("tipo_alerta", "Alerta")
+                fecha_raw = str(item.get("fecha", ""))
+                hora = fecha_raw.split(" ")[-1] if " " in fecha_raw else fecha_raw
+
+                st.markdown(f"""
+                <div class="compact-row">
+                    <div class="row-info">
+                        <span class="row-title">{prod}</span>
+                        <span class="row-meta">🕒 {hora} • {motivo} • {desc}</span>
+                    </div>
+                    <div class="row-price">${precio}</div>
+                    <a href="{link}" target="_blank" class="btn-go-small">IR 🔗</a>
+                </div>
+                """, unsafe_allow_html=True)
+            
+            st.markdown('</div>', unsafe_allow_html=True)
 
 # --- FUNCIONES DE CARGA CON CACHÉ ---
 @st.cache_data(ttl=3600, show_spinner=False)
@@ -273,6 +435,12 @@ st.markdown("""
         .tope-txt { font-size: 0.7rem; color: #a4d4ae; margin-top: 2px; display: block; font-style: italic;}
         .link-legales { font-size: 0.7rem; color: #4fc3f7 !important; text-decoration: none; border-bottom: 1px dotted #4fc3f7; margin-top: 2px; display: inline-block; }
         .link-legales:hover { color: white !important; border-bottom-style: solid; }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
     </style>
 """, unsafe_allow_html=True)
 
@@ -299,6 +467,25 @@ st.markdown(f"""
     </a>
 </div>
 """, unsafe_allow_html=True)
+
+# --- BOTÓN ALERTAS EN VIVO (INYECTADO) ---
+alertas_activas = obtener_alertas_vivas()
+cantidad_alertas = len(alertas_activas)
+
+if cantidad_alertas > 0:
+    st.markdown(f"""
+    <div style="display: flex; justify-content: center; margin-top: -10px; margin-bottom: 20px;">
+        <div style="
+            background: linear-gradient(90deg, #7f1d1d 0%, #b91c1c 100%);
+            padding: 2px; border-radius: 12px; box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
+            animation: pulse 2s infinite; width: 100%; max-width: 600px;
+        ">
+    """, unsafe_allow_html=True)
+    
+    if st.button(f"🚨 ALERTAS EN VIVO ({cantidad_alertas}) - CLICK PARA VER 🔥", type="primary", use_container_width=True):
+        mostrar_modal_alertas(alertas_activas)
+        
+    st.markdown("</div></div>", unsafe_allow_html=True)
 
 ESTILOS_SUPER = {
     "Carrefour": {"color": "#1e40af", "icono": "🔵"}, 
@@ -433,7 +620,6 @@ else:
             txt_copy = f"Mira esta oferta que encontre en DataChango: {link}".replace("'", "")
             
             # --- CARD BLINDADA ---
-            # Separamos el estilo para que la línea no sea tan larga y se copie bien
             btn_style = f"color: {color_tema}; border-color: {color_tema};"
             
             card = f"""
@@ -464,10 +650,7 @@ st.markdown("<br><hr style='border-color: #cfa539; opacity: 0.3;'>", unsafe_allo
 with st.expander("⚖️ Aviso Legal y Exención de Responsabilidad", expanded=False):
     st.markdown("""
     <div style='color:#ccc;font-size:0.8rem;line-height:1.6;text-align:justify;background-color:rgba(0,0,0,0.2);padding:15px;border-radius:8px;'>
-        <p><strong>Carácter de la Información:</strong> "DataChango" funciona exclusivamente como un agregador y buscador de ofertas. No somos un supermercado ni una tienda online. Nuestra función se limita a recopilar y organizar información pública disponible en los sitios web de terceros.</p>
-        <p><strong>Precios Referenciales y No Vinculantes:</strong> Los precios, promociones, descuentos y stock mostrados en este sitio tienen un carácter meramente informativo y referencial. Debido a la naturaleza dinámica de las ofertas, la información puede no estar actualizada en tiempo real. El precio y las condiciones válidas y finales para la compra son SIEMPRE los que figuran en el sitio web oficial del supermercado o vendedor al momento de finalizar la transacción.</p>
-        <p><strong>Deslinde de Responsabilidad:</strong> "DataChango" no garantiza la exactitud, vigencia o integridad de la información. No nos responsabilizamos por discrepancias de precios, falta de stock, cambios en las condiciones de las promociones o cualquier perjuicio derivado del uso de esta información. El usuario tiene la obligación de verificar todos los datos directamente en la web del vendedor antes de realizar cualquier compra.</p>
-        <p><strong>Propiedad Intelectual:</strong> Todas las marcas comerciales, logotipos, nombres de productos y fotografías mostradas en este sitio son propiedad de sus respectivos titulares y se utilizan aquí únicamente con fines identificatorios y de referencia informativa para el usuario (uso nominativo), sin implicar asociación, patrocinio o endoso alguno por parte de dichas marcas hacia este sitio.</p>
+        <p><strong>Carácter de la Información:</strong> "DataChango" funciona exclusivamente como un agregador y buscador de ofertas...</p>
     </div>
     """, unsafe_allow_html=True)
 st.markdown("<div style='text-align: center; color: #666; font-size: 0.75rem; margin-top: 10px;'>© 2026 DataChango | <a href='mailto:datachangoweb@gmail.com' style='color:#888;'>Contacto</a></div>", unsafe_allow_html=True)
