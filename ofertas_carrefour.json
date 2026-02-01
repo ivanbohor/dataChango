@@ -8,18 +8,7 @@
         ],
         "link": "https://www.carrefour.com.ar/20666?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/61187cb6-3c7c-4fea-ae83-444a0ade661a___ab830f59ded4b04cd5ec9a79d866c61c.png",
-        "fecha": "2026-01-31"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Cupón de Descuento en Almacén",
-        "descripcion": "TE LO PIERDAS:iNO T553 iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO iNO TELO PIERDAS! iNO TELO PIERDAS! NO TE LO PIERDAS! iNO TE LO PIERDAS! 15%OFF UTILIZANDO EL CUPÓN: DESCUENTO COMPRAR EXCLUSIVO ONLINE REGALO SIN TOPE HASTA EL SÁBADO 31/01 en tu compra Cupón válido desde el Viernes 30/01 hasta el Sábado 3101. del super No acumulable con otras promociones. Cupón válldo únlcamente para Allmentos Bebldas; Perfumería LImpleza iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIEF",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/19e97823-c776-447d-af46-18efb36a3027___11dd49e99b41ea321704e9ee5f1851e2.webp",
-        "fecha": "2026-01-31"
+        "fecha": "2026-02-01"
     },
     {
         "supermercado": "Carrefour",
@@ -30,7 +19,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23854?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/a5ac93c1-f9d1-4b6e-adf4-0b40ff500518___03b600959a825c059c946a10ed4aa93c.webp",
-        "fecha": "2026-01-31"
+        "fecha": "2026-02-01"
     },
     {
         "supermercado": "Carrefour",
@@ -40,8 +29,107 @@
             "🍝 Almacén"
         ],
         "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3c6fb2df-b57d-4d71-ac21-b65c0845b3e7___39c4d53cdc09967a58ee354bbdabac7d.webp",
-        "fecha": "2026-01-31"
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/af076579-3c54-465f-99e3-69ed4e5db54e___39c4d53cdc09967a58ee354bbdabac7d.webp",
+        "fecha": "2026-02-01"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Electrodomésticos",
+        "descripcion": "eicou AHORRO GIGANTE 70 80 DESCUENIO EN LA 2D4 UNIDAD DESCUENTO Rollos de Cocina Hasta el 02/02 Ia pronsiiser Ser Celestial Yogurisioo PRO+ Natural 1 154 Eco POIEINA 8 Ynos {GuictGitas 49 VER MÁS En seleccionados de\" Yogures; Galletitas, Cervezas, Rollo de Cocina y más Sólo consumo familiar; válido por usuarioldocumento",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23869?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2e95b962-3c85-48d6-b95a-894c22f5fc4f___3ecd638f8ebdd967eec616dbd8bc2505.webp",
+        "fecha": "2026-02-01"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "6 Cuotas S/Int en Seleccionados (🍝 Almacén)",
+        "descripcion": "HASTA 6 CUOTAS SIN INTERÉS AHORRO GIGANTE 11:35 Hasta el 02/02 VER MÁS En seleccionados de: 22 0 Celulares; Microondas, Sólo consumo familiar; válido por usuarioldocumento. Parlantes y Torres de Sonido",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23855?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1d1a3185-9342-47f4-acd3-559e6333aa6e___39cf9df0a9a7940cc44f9e9da3101123.webp",
+        "fecha": "2026-02-01"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "15% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "EXCLUSIVO ONLINE Los días Pagando Con Tarjeta Mi Carrefour Credlto Carrefour oanco MMUVGD vlernes, sábado, domlngo Iunes mlércoles de Enero de 2026 EnorE RECIBILO EN MAX INMEOINTn IH 24 Si estas en CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL recibí tu pedido en menos de IHORA DESCUENTO EN EL ACTO SIN TOPE @rrefour APROVECHAR 15% No Incluye electrodoméstlcos, electrónlca _ telefonía celular; carnlcería nl leches Infantlles y maternlzadas. No acumulable con otras promoclones. Ver legales en carrefour com arldescuentos-bancarlos",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/5f0279ae-cff6-4f4e-b915-f9c75b0fc75a___688b23fa67ea8e7dd5215b6b0c8e29cf.webp",
+        "fecha": "2026-02-01"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Aires Acondicionados",
+        "descripcion": "iSolo por este fInde! PRECIO NORMAL 8999-000 Hasta el 02/02 Aire Acondicionado Noblex 2750W OFERTA 8699.000 12 CUOTAS SIN INTERÉS DE 858.250 VER MÁS Solo consumo familiar; valido por usuarioldocumento:",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/aire-acondicionado-noblex-2750w-nxs25ha4cn/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c2750fde-8f4e-4b21-a0ed-8dac67e6682f___920ce43e6363703af93f44644b3c5a8b.webp",
+        "fecha": "2026-02-01"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Seleccionados (🍝 Almacén)",
+        "descripcion": "3x2 C4gas? Vinos Espumantes",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23859?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/84cb980e-0542-4661-8d28-25e4e4522676___8ead02516a6f01a9715ac3241c3557b2.webp",
+        "fecha": "2026-02-01"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Lavarropas",
+        "descripcion": "HASTA 12 CUOIAS SIN INTERES HASTA 30 DESCUENTO En seleccionados de; Aires, Smart TVs Heladeras Lavarropas Hasta el 02/02",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23854?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d2c0eef8-9c32-4a38-bcfd-c58f47d10434___85c66918b4bf1b5a75eb65aa9713d28b.webp",
+        "fecha": "2026-02-01"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Aires Acondicionados",
+        "descripcion": "PhnCo Aloo",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/aire-acondicionado-split-philco-frio-calor-3400w-phs32ha4cn-blanco-/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/245689-170-170?v=638814425050000000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-01"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Lavarropas",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/lavarropas-carga-frontal-inverter-bgh-8kg-1400-rpm-pih034067/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/687747-170-170?v=638900896949770000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-01"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Smart TV",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/smart-tv-android-58-noblex-4k-91db58x7550/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/537868-170-170?v=638815570709730000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-01"
     },
     {
         "supermercado": "Carrefour",
@@ -52,7 +140,7 @@
         ],
         "link": "https://www.carrefour.com.ar/lomitos-de-atun-carrefour-al-natural-170-g/p",
         "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/386717-170-170?v=638800900950700000&width=170&height=170&aspect=true",
-        "fecha": "2026-01-31"
+        "fecha": "2026-02-01"
     },
     {
         "supermercado": "Carrefour",
@@ -63,18 +151,18 @@
         ],
         "link": "https://www.carrefour.com.ar/arroz-largo-fino-molinos-ala-1-kg/p",
         "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/509503-170-170?v=638491482197730000&width=170&height=170&aspect=true",
-        "fecha": "2026-01-31"
+        "fecha": "2026-02-01"
     },
     {
         "supermercado": "Carrefour",
         "titulo": "Oferta en Aceite",
-        "descripcion": "8 š sn",
+        "descripcion": "Tosularu 170 0 1",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/aceite-de-girasol-alto-omega-carrefour-classic-pet-1-5-lts-680457/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/740813-170-170?v=638961473896530000&width=170&height=170&aspect=true",
-        "fecha": "2026-01-31"
+        "link": "https://www.carrefour.com.ar/lomitos-de-atun-carrefour-en-aceite-170-g/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/386790-170-170?v=638800901365000000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-01"
     },
     {
         "supermercado": "Carrefour",
@@ -85,6 +173,6 @@
         ],
         "link": "https://www.carrefour.com.ar/mayonesa-clasica-hellmanns-sin-tacc-doypack-475-g-694755/p",
         "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/595935-170-170?v=638669254648200000&width=170&height=170&aspect=true",
-        "fecha": "2026-01-31"
+        "fecha": "2026-02-01"
     }
 ]
