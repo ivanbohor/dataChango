@@ -5,8 +5,14 @@ __pycache__/
 
 # Si generas archivos temporales o logs
 *.log
+# Ignorar archivos de Streamlit
+.streamlit/secrets.toml
+secrets.toml
+creds.json
 
-# Opcional: Si NO quieres que los datos json se guarden en el historial de versiones
-# (Aunque para que tu app funcione en la nube, probablemente necesites subirlos
-# a menos que corras los scrapers en la nube también)
-# *.json
+
+# Ignorar archivos temporales de Python
+__pycache__/
+*.pyc
+venv/
+historial_ofertas/

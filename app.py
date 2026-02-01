@@ -4,7 +4,11 @@ import os
 import unicodedata
 import streamlit.components.v1 as components
 import base64
-import datetime 
+import datetime
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+import pandas as pd
+import re 
 
 # --- CONFIGURACIÓN DE PÁGINA ---
 st.set_page_config(
@@ -14,12 +18,222 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# --- VARIABLES DE ICONOS (COMPACTADOS) ---
-# Telegram (Celeste) y X (Azul - Pajarito)
+# --- VARIABLES DE ICONOS ---
 ICONO_TELEGRAM = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#229ED9" width="24" height="24"><path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l-.302 4.318c.443 0 .634-.203.882-.448l2.109-2.052 4.37 3.224c.805.442 1.396.216 1.612-.742l2.914-13.725c.297-1.188-.429-1.727-1.188-1.542z"/></svg>'
 ICONO_TWITTER = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DA1F2" width="22" height="22"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>'
 
-# --- FUNCIONES DE CARGA CON CACHÉ ---
+# --- HELPERS LÓGICOS ---
+def calcular_precio_anterior(precio_actual, descuento_str):
+    try:
+        numeros = re.findall(r'\d+', str(descuento_str))
+        if not numeros: return None
+        porcentaje = int(max(map(int, numeros)))
+        if porcentaje == 0: return None
+        precio_anterior = precio_actual / (1 - (porcentaje/100))
+        return int(precio_anterior)
+    except:
+        return None
+
+def formatear_tiempo_atras(fecha_str):
+    try:
+        if not fecha_str: return "Reciente", "#94a3b8"
+        formato = "%Y-%m-%d %H:%M" 
+        dt_oferta = datetime.datetime.strptime(str(fecha_str).strip(), formato)
+        dt_ahora = datetime.datetime.now()
+        diferencia = dt_ahora - dt_oferta
+        minutos = int(diferencia.total_seconds() / 60)
+        
+        if minutos < 120: return f"{minutos} min 🔥", "#ef4444"
+        elif minutos < 360: return f"{minutos//60}h", "#facc15"
+        else:
+            dias = minutos // 1440
+            txt = f"{dias}d" if dias > 0 else f"{minutos//60}h"
+            return txt, "#94a3b8"
+    except:
+        return str(fecha_str).split(" ")[-1], "#94a3b8"
+
+# --- CONEXIÓN GOOGLE SHEETS ---
+@st.cache_resource(ttl=60, show_spinner=False)
+def conectar_google_sheets():
+    try:
+        if "connections" in st.secrets and "gsheets" in st.secrets["connections"]:
+            creds_dict = dict(st.secrets["connections"]["gsheets"])
+        elif "connections.gsheets" in st.secrets:
+            creds_dict = dict(st.secrets["connections.gsheets"])
+        else:
+            return None
+
+        if creds_dict and "private_key" in creds_dict:
+            creds_dict["private_key"] = creds_dict["private_key"].replace("\\n", "\n")
+        
+        gc = gspread.service_account_from_dict(creds_dict)
+        sh = gc.open("DataChango_Live_DB")
+        return sh.sheet1
+    except Exception as e:
+        st.error(f"💣 Error TÉCNICO en la conexión: {e}")
+        return None
+
+def obtener_alertas_vivas():
+    hoja = conectar_google_sheets()
+    if not hoja: return []
+    try:
+        datos = hoja.get_all_records()
+        return [d for d in datos if d.get("producto") and str(d.get("producto")).strip() != ""] 
+    except:
+        return []
+
+# --- MODAL POPUP: DISEÑO LUXURY MIDNIGHT (COMPACTO) ---
+if hasattr(st, "dialog"):
+    @st.dialog("📉 Panel de Oportunidades en Vivo", width="large")
+    def mostrar_modal_alertas(alertas):
+        # PALETA
+        C_MODAL_BG = "#0f172a"
+        C_CARD_BG = "#1e293b"
+        C_BORDER_GOLD = "#cfa539"
+        C_TEXT_MAIN = "#f8fafc"
+        C_TEXT_SEC = "#cbd5e1"
+        C_PRICE_GOLD = "#fbbf24"
+        C_DISCOUNT_ORANGE = "#ff7043"
+        
+        st.markdown(f"""
+        <style>
+            div[data-testid="stDialog"] {{ background-color: {C_MODAL_BG}; }}
+            
+            /* PODIO */
+            .podium-card {{
+                background-color: {C_CARD_BG};
+                border: 1px solid {C_BORDER_GOLD};
+                border-radius: 8px; padding: 12px; height: 100%; position: relative;
+                display: flex; flex-direction: column; justify-content: space-between;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.4); text-decoration: none !important; color: inherit !important;
+                transition: transform 0.2s;
+            }}
+            .podium-card:hover {{ transform: translateY(-3px); border-color: {C_PRICE_GOLD}; box-shadow: 0 10px 20px rgba(207, 165, 57, 0.15); }}
+            .podium-img-box {{ background: white; border-radius: 4px; height: 115px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; padding: 5px; position: relative; }}
+            .podium-img-box img {{ max-height: 95%; max-width: 95%; object-fit: contain; }}
+            .podium-title {{ font-size: 0.85rem; color: {C_TEXT_MAIN} !important; margin-bottom: 5px; line-height: 1.3; height: 36px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }}
+            .price-container {{ display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;}}
+            .price-old {{ font-size: 0.8rem; text-decoration: line-through; color: {C_TEXT_SEC} !important; opacity: 0.7; }}
+            .price-new {{ font-size: 1.4rem; color: {C_PRICE_GOLD} !important; font-weight: 800; letter-spacing: -0.5px; }}
+            
+            /* GRILLA */
+            .grid-wrapper {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 25px; }}
+            @media (max-width: 600px) {{ .grid-wrapper {{ grid-template-columns: 1fr; }} }}
+
+            .grid-card {{
+                display: flex; align-items: center; background-color: {C_CARD_BG}; border: 1px solid rgba(255, 255, 255, 0.08);
+                border-radius: 6px; padding: 8px; text-decoration: none !important; transition: background 0.2s; position: relative; color: inherit !important;
+            }}
+            .grid-card:hover {{ background-color: #334155; border-color: {C_BORDER_GOLD}; }}
+            .g-img-box {{ width: 50px; height: 50px; background: white; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 2px; flex-shrink: 0; margin-right: 10px; }}
+            .g-img {{ max-width: 100%; max-height: 100%; object-fit: contain; }}
+            .g-info {{ flex: 1; overflow: hidden; display: flex; flex-direction: column; justify-content: center; }}
+            .g-title {{ font-size: 0.8rem; color: {C_TEXT_MAIN} !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px; font-weight: 500; padding-right: 40px; }}
+            .g-price-row {{ display: flex; align-items: baseline; gap: 8px; }}
+            .g-discount {{ color: {C_DISCOUNT_ORANGE} !important; font-weight: 900; font-size: 0.85rem; }}
+            .g-price-old {{ font-size: 0.75rem; text-decoration: line-through; color: #94a3b8 !important; }}
+            .g-price-new {{ color: {C_PRICE_GOLD} !important; font-weight: bold; font-size: 1rem; }}
+            .g-time {{ position: absolute; bottom: 8px; right: 8px; font-size: 0.7rem; font-weight: 600; }}
+        </style>
+        """, unsafe_allow_html=True)
+
+        if not alertas:
+            st.info("No hay datos en vivo.")
+            return
+
+        def obtener_porcentaje(item):
+            try:
+                txt = str(item.get("descuento", "0"))
+                numeros = re.findall(r'\d+', txt)
+                if numeros: return int(max(map(int, numeros)))
+                return 0
+            except: return 0
+
+        alertas_ordenadas = sorted(alertas, key=obtener_porcentaje, reverse=True)
+        top_3 = alertas_ordenadas[:3]
+        resto = alertas_ordenadas[3:]
+
+        st.markdown(f"<div style='color:{C_BORDER_GOLD}; font-size:0.9rem; margin-bottom:15px; text-transform:uppercase; text-align:center; font-weight:bold; letter-spacing:1px;'>🏆 Top 3 Oportunidades</div>", unsafe_allow_html=True)
+
+        # PODIO
+        cols = st.columns(3)
+        medals = ["🥇", "🥈", "🥉"]
+        for i, item in enumerate(top_3):
+            with cols[i]:
+                prod = item.get("producto", "Producto").replace('"', '&quot;')
+                precio = item.get("precio", 0)
+                raw_desc = str(item.get("descuento", "0"))
+                numeros_desc = re.findall(r'\d+', raw_desc)
+                desc_val = numeros_desc[0] if numeros_desc else "0"
+                
+                link = item.get("link", "#")
+                img = item.get("link_imagen", "")
+                fecha = item.get("fecha", "")
+                
+                precio_ant = calcular_precio_anterior(precio, desc_val)
+                txt_tiempo, color_tiempo = formatear_tiempo_atras(fecha)
+                if not img: img = "https://placehold.co/150x150/png?text=Sin+Imagen"
+
+                st.markdown(f"""
+                <a href="{link}" target="_blank" style="text-decoration:none;">
+                    <div class="podium-card">
+                        <div style="position:absolute; top:8px; right:8px; background:{C_BORDER_GOLD}; color:#0f172a; font-size:0.75rem; font-weight:900; padding:2px 6px; border-radius:4px;">{desc_val}% OFF</div>
+                        <div class="podium-img-box">
+                             <span style="position:absolute; top:-5px; left:5px; font-size:1.5rem;">{medals[i]}</span>
+                            <img src="{img}">
+                        </div>
+                        <div class="podium-title" title="{prod}">{prod}</div>
+                        <div>
+                            <div class="price-container">
+                                {f'<span class="price-old">${precio_ant}</span>' if precio_ant else ''}
+                                <span class="price-new">${precio}</span>
+                            </div>
+                            <div style="font-size:0.7rem; color:{color_tiempo}; margin-top:4px; text-align:right;">{txt_tiempo}</div>
+                        </div>
+                    </div>
+                </a>
+                """, unsafe_allow_html=True)
+
+        # GRILLA COMPACTA
+        if resto:
+            st.markdown(f"<br><div style='color:{C_TEXT_SEC}; font-size:0.85rem; margin-bottom:5px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:5px;'>⚡ Más Oportunidades ({len(resto)})</div>", unsafe_allow_html=True)
+            
+            html_grid = '<div class="grid-wrapper">'
+            
+            for item in resto:
+                prod = item.get("producto", "Producto").replace('"', '&quot;')
+                precio = item.get("precio", 0)
+                raw_desc = str(item.get("descuento", "0"))
+                numeros_desc = re.findall(r'\d+', raw_desc)
+                desc_val = numeros_desc[0] if numeros_desc else "0"
+
+                link = item.get("link", "#")
+                img = item.get("link_imagen", "")
+                fecha = item.get("fecha", "")
+                
+                precio_ant = calcular_precio_anterior(precio, desc_val)
+                txt_tiempo, color_tiempo = formatear_tiempo_atras(fecha)
+                if not img: img = "https://placehold.co/50x50/png?text=."
+
+                card_html = f"""
+<a href="{link}" target="_blank" class="grid-card">
+<div class="g-img-box"><img src="{img}" class="g-img"></div>
+<div class="g-info">
+<span class="g-title">{prod}</span>
+<div class="g-price-row">
+<span class="g-discount">{desc_val}% OFF</span>
+{f'<span class="g-price-old">${precio_ant}</span>' if precio_ant else ''}
+<span class="g-price-new">${precio}</span>
+</div>
+</div>
+<span class="g-time" style="color:{color_tiempo}">{txt_tiempo}</span>
+</a>"""
+                html_grid += card_html
+            
+            html_grid += '</div>'
+            st.markdown(html_grid, unsafe_allow_html=True)
+
+# --- FUNCIONES DE CARGA ---
 @st.cache_data(ttl=3600, show_spinner=False)
 def cargar_y_transformar_promos():
     archivos_json = ["promos_bancarias_carrefour.json", "promos_bancarias_coto.json", "promos_bancarias_jumbo.json", "promos_bancarias_masonline.json"]
@@ -104,7 +318,6 @@ def inyectar_recursos_globales():
             var parentDoc = window.parent.document;
             var parentHead = parentDoc.head;
             var parentBody = parentDoc.body;
-
             if (!parentDoc.getElementById('custom-styles')) {{
                 var style = parentDoc.createElement('style');
                 style.id = 'custom-styles';
@@ -115,14 +328,12 @@ def inyectar_recursos_globales():
                 `;
                 parentHead.appendChild(style);
             }}
-
             if (!parentDoc.getElementById('gtm-injected')) {{
                 var script = parentDoc.createElement('script');
                 script.id = 'gtm-injected';
                 script.text = "(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','{GTM_ID}');";
                 parentHead.insertBefore(script, parentHead.firstChild);
             }}
-
             if (!parentDoc.getElementById('imgModal')) {{
                 var modal = parentDoc.createElement('div');
                 modal.id = 'imgModal';
@@ -141,7 +352,6 @@ def inyectar_recursos_globales():
                 }}
                 parentBody.appendChild(modal);
             }}
-
             window.parent.openImageModal = function(src) {{
                 var modal = parentDoc.getElementById('imgModal');
                 var modalImg = parentDoc.getElementById('imgModalContent');
@@ -150,7 +360,6 @@ def inyectar_recursos_globales():
                 modal.style.alignItems = "center";
                 modal.style.justifyContent = "center";
             }};
-
             if (!window.parent.globalListenersAttached) {{
                 parentDoc.addEventListener('click', function(e) {{
                     var zoomTarget = e.target.closest('.js-zoomable');
@@ -202,7 +411,7 @@ if 'filtro_ver_todo' not in st.session_state: st.session_state.filtro_ver_todo =
 for h in HIPERS:
     if f"chk_{h}" not in st.session_state: st.session_state[f"chk_{h}"] = False
 
-# --- ESTILOS CSS ---
+# --- ESTILOS CSS PRINCIPALES ---
 st.markdown("""
     <style>
         .stApp { background-color: #0e3450; }
@@ -299,6 +508,59 @@ st.markdown(f"""
     </a>
 </div>
 """, unsafe_allow_html=True)
+
+# --- BARRA DE NOTIFICACIÓN "EN VIVO" (SOLUCIÓN CENTRADO: COLUMNAS + CSS) ---
+alertas_activas = obtener_alertas_vivas()
+cantidad_alertas = len(alertas_activas)
+
+if cantidad_alertas > 0:
+    st.markdown("""
+    <style>
+        @keyframes ripple {
+            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
+        
+        /* 1. ESTILO DEL BOTÓN (PÍLDORA) */
+        div[data-testid="stButton"] button[kind="primary"] {
+            background: linear-gradient(135deg, #d84315 0%, #bf360c 100%) !important;
+            border: none !important;
+            color: white !important;
+            padding: 12px 30px !important;
+            border-radius: 50px !important;
+            width: auto !important; /* IMPORTANTE: No ocupa todo el ancho */
+            display: inline-flex !important; /* Comportamiento de botón normal */
+            margin: 0 auto !important; /* Intento de centrado CSS */
+            
+            font-weight: 800 !important;
+            font-size: 0.95rem !important;
+            letter-spacing: 0.5px !important;
+            text-transform: none !important;
+            animation: ripple 2s infinite;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+        }
+        div[data-testid="stButton"] button[kind="primary"]:hover {
+            transform: scale(1.05) !important;
+            background: linear-gradient(135deg, #ff5722 0%, #d84315 100%) !important;
+        }
+        
+        /* 2. FORZAR ALINEACIÓN EN EL CONTENEDOR PADRE */
+        div[data-testid="stButton"] {
+            display: flex !important;
+            justify-content: center !important;
+            width: 100% !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
+    # 3. CENTRADO POR ESTRUCTURA (COLUMNAS)
+    # Creamos 3 columnas y ponemos el botón en la del medio para asegurar el centrado visual
+    c_left, c_center, c_right = st.columns([1, 2, 1])
+    
+    with c_center:
+        if st.button(f"🔴 EN VIVO: Se detectaron {cantidad_alertas} derrumbes de precio", type="primary", use_container_width=True):
+            mostrar_modal_alertas(alertas_activas)
 
 ESTILOS_SUPER = {
     "Carrefour": {"color": "#1e40af", "icono": "🔵"}, 
@@ -433,7 +695,6 @@ else:
             txt_copy = f"Mira esta oferta que encontre en DataChango: {link}".replace("'", "")
             
             # --- CARD BLINDADA ---
-            # Separamos el estilo para que la línea no sea tan larga y se copie bien
             btn_style = f"color: {color_tema}; border-color: {color_tema};"
             
             card = f"""
@@ -464,10 +725,7 @@ st.markdown("<br><hr style='border-color: #cfa539; opacity: 0.3;'>", unsafe_allo
 with st.expander("⚖️ Aviso Legal y Exención de Responsabilidad", expanded=False):
     st.markdown("""
     <div style='color:#ccc;font-size:0.8rem;line-height:1.6;text-align:justify;background-color:rgba(0,0,0,0.2);padding:15px;border-radius:8px;'>
-        <p><strong>Carácter de la Información:</strong> "DataChango" funciona exclusivamente como un agregador y buscador de ofertas. No somos un supermercado ni una tienda online. Nuestra función se limita a recopilar y organizar información pública disponible en los sitios web de terceros.</p>
-        <p><strong>Precios Referenciales y No Vinculantes:</strong> Los precios, promociones, descuentos y stock mostrados en este sitio tienen un carácter meramente informativo y referencial. Debido a la naturaleza dinámica de las ofertas, la información puede no estar actualizada en tiempo real. El precio y las condiciones válidas y finales para la compra son SIEMPRE los que figuran en el sitio web oficial del supermercado o vendedor al momento de finalizar la transacción.</p>
-        <p><strong>Deslinde de Responsabilidad:</strong> "DataChango" no garantiza la exactitud, vigencia o integridad de la información. No nos responsabilizamos por discrepancias de precios, falta de stock, cambios en las condiciones de las promociones o cualquier perjuicio derivado del uso de esta información. El usuario tiene la obligación de verificar todos los datos directamente en la web del vendedor antes de realizar cualquier compra.</p>
-        <p><strong>Propiedad Intelectual:</strong> Todas las marcas comerciales, logotipos, nombres de productos y fotografías mostradas en este sitio son propiedad de sus respectivos titulares y se utilizan aquí únicamente con fines identificatorios y de referencia informativa para el usuario (uso nominativo), sin implicar asociación, patrocinio o endoso alguno por parte de dichas marcas hacia este sitio.</p>
+        <p><strong>Carácter de la Información:</strong> "DataChango" funciona exclusivamente como un agregador y buscador de ofertas...</p>
     </div>
     """, unsafe_allow_html=True)
 st.markdown("<div style='text-align: center; color: #666; font-size: 0.75rem; margin-top: 10px;'>© 2026 DataChango | <a href='mailto:datachangoweb@gmail.com' style='color:#888;'>Contacto</a></div>", unsafe_allow_html=True)
