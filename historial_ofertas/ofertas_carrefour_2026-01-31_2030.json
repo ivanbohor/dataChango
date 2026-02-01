@@ -1,17 +1,6 @@
 [
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Seleccionados (🍝 Almacén)",
-        "descripcion": "Oferta Detectada",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/20666?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/61187cb6-3c7c-4fea-ae83-444a0ade661a___ab830f59ded4b04cd5ec9a79d866c61c.png",
-        "fecha": "2026-01-31"
-    },
-    {
-        "supermercado": "Carrefour",
         "titulo": "Cupón de Descuento en Almacén",
         "descripcion": "TE LO PIERDAS:iNO T553 iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO iNO TELO PIERDAS! iNO TELO PIERDAS! NO TE LO PIERDAS! iNO TE LO PIERDAS! 15%OFF UTILIZANDO EL CUPÓN: DESCUENTO COMPRAR EXCLUSIVO ONLINE REGALO SIN TOPE HASTA EL SÁBADO 31/01 en tu compra Cupón válido desde el Viernes 30/01 hasta el Sábado 3101. del super No acumulable con otras promociones. Cupón válldo únlcamente para Allmentos Bebldas; Perfumería LImpleza iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIERDAS! iNO TE LO PIEF",
         "categoria": [
@@ -19,28 +8,6 @@
         ],
         "link": "https://www.carrefour.com.ar/almacen",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/19e97823-c776-447d-af46-18efb36a3027___11dd49e99b41ea321704e9ee5f1851e2.webp",
-        "fecha": "2026-01-31"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "30% Off en Lavarropas",
-        "descripcion": "HASTA HASTA 12 SUOEAES 30%  DESCUENTO AHORRO GIGANTE Hasta el 02/02 NOBLE 75\" SMaRT TV 4K VER MÁS En seleccionados dez Google TV Aires Acondicionados; Smart TVs, Heladeras y Lavarropas UHD Hddoioy sOr Sólo consumo familiar; válido por usuarioldocumento.",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23854?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/a5ac93c1-f9d1-4b6e-adf4-0b40ff500518___03b600959a825c059c946a10ed4aa93c.webp",
-        "fecha": "2026-01-31"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Almacén",
-        "descripcion": "Los días (M M VS D Pagando Con DESCUENTO EN EL ACTO SIN TOPE 15P Tarjeta Mi Carrefour Crédito Válldo los das vernes; sabado; domlngo; lunes mlercoles de Enero No Incluye electrodomestlcos; electrónlca telefonla celular; carnlcerla nlleches Infantles maternbzadas. No acumulable con ouras promoclones. Exclusivo online er legales carrefourcomtarldescuantos-bancarlos APROVECHAR Cwrofour",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3c6fb2df-b57d-4d71-ac21-b65c0845b3e7___39c4d53cdc09967a58ee354bbdabac7d.webp",
         "fecha": "2026-01-31"
     },
     {
@@ -63,6 +30,17 @@
         ],
         "link": "https://www.carrefour.com.ar/arroz-largo-fino-molinos-ala-1-kg/p",
         "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/509503-170-170?v=638491482197730000&width=170&height=170&aspect=true",
+        "fecha": "2026-01-31"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Seleccionados (🍝 Almacén)",
+        "descripcion": "7 Guleoeomae | 520 9",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/pure-de-tomate-carrefour-classic-520-g/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/386694-170-170?v=638318705570400000&width=170&height=170&aspect=true",
         "fecha": "2026-01-31"
     },
     {
