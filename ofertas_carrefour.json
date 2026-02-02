@@ -8,7 +8,7 @@
         ],
         "link": "https://www.carrefour.com.ar/20666?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/61187cb6-3c7c-4fea-ae83-444a0ade661a___ab830f59ded4b04cd5ec9a79d866c61c.png",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -19,7 +19,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23854?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/a5ac93c1-f9d1-4b6e-adf4-0b40ff500518___03b600959a825c059c946a10ed4aa93c.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -30,7 +30,7 @@
         ],
         "link": "https://www.carrefour.com.ar/almacen",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/af076579-3c54-465f-99e3-69ed4e5db54e___39c4d53cdc09967a58ee354bbdabac7d.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -41,18 +41,7 @@
         ],
         "link": "https://www.carrefour.com.ar/aire-acondicionado-noblex-2750w-nxs25ha4cn/p",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c2750fde-8f4e-4b21-a0ed-8dac67e6682f___920ce43e6363703af93f44644b3c5a8b.webp",
-        "fecha": "2026-02-01"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Electrodomésticos",
-        "descripcion": "eicou AHORRO GIGANTE 70 80 DESCUENIO EN LA 2D4 UNIDAD DESCUENTO Rollos de Cocina Hasta el 02/02 Ia pronsiiser Ser Celestial Yogurisioo PRO+ Natural 1 154 Eco POIEINA 8 Ynos {GuictGitas 49 VER MÁS En seleccionados de\" Yogures; Galletitas, Cervezas, Rollo de Cocina y más Sólo consumo familiar; válido por usuarioldocumento",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23869?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2e95b962-3c85-48d6-b95a-894c22f5fc4f___3ecd638f8ebdd967eec616dbd8bc2505.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -63,7 +52,18 @@
         ],
         "link": "https://www.carrefour.com.ar/23859?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/84cb980e-0542-4661-8d28-25e4e4522676___8ead02516a6f01a9715ac3241c3557b2.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Electrodomésticos",
+        "descripcion": "eicou AHORRO GIGANTE 70 80 DESCUENIO EN LA 2D4 UNIDAD DESCUENTO Rollos de Cocina Hasta el 02/02 Ia pronsiiser Ser Celestial Yogurisioo PRO+ Natural 1 154 Eco POIEINA 8 Ynos {GuictGitas 49 VER MÁS En seleccionados de\" Yogures; Galletitas, Cervezas, Rollo de Cocina y más Sólo consumo familiar; válido por usuarioldocumento",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23869?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/2e95b962-3c85-48d6-b95a-894c22f5fc4f___3ecd638f8ebdd967eec616dbd8bc2505.webp",
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -74,7 +74,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23854?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d2c0eef8-9c32-4a38-bcfd-c58f47d10434___85c66918b4bf1b5a75eb65aa9713d28b.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -85,7 +85,7 @@
         ],
         "link": "https://www.carrefour.com.ar/aire-acondicionado-split-philco-frio-calor-3400w-phs32ha4cn-blanco-/p",
         "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/245689-170-170?v=638814425050000000&width=170&height=170&aspect=true",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -96,7 +96,7 @@
         ],
         "link": "https://www.carrefour.com.ar/lavarropas-carga-frontal-inverter-bgh-8kg-1400-rpm-pih034067/p",
         "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/687747-170-170?v=638900896949770000&width=170&height=170&aspect=true",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -107,7 +107,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23855?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1d1a3185-9342-47f4-acd3-559e6333aa6e___39cf9df0a9a7940cc44f9e9da3101123.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -118,7 +118,7 @@
         ],
         "link": "https://www.carrefour.com.ar/entrega-inmediata?",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/5f0279ae-cff6-4f4e-b915-f9c75b0fc75a___688b23fa67ea8e7dd5215b6b0c8e29cf.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -129,7 +129,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23865?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/87e31eaf-d33a-4d9d-9e47-a87923d6bc88___9ee5d3c530f4f9e617eef0b4f277a522.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -140,7 +140,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23856?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9cafc67b-a41a-4584-8eeb-e79eb6fa7770___e3655e3a621f46e5e7b9f3d7055a9200.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -151,7 +151,7 @@
         ],
         "link": "https://www.carrefour.com.ar/entrega-inmediata?",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/6923ebde-a853-430d-aa09-9218eb0b5ce3___5645f06f1454ea94afdd74d7282fa3d4.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -162,7 +162,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23858?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/22b76bb7-a202-41f1-b311-1bd2d57f00f8___b58c6496f6c3785d42c6167d2e3ee5fc.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -173,7 +173,7 @@
         ],
         "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/b595e6c3-d979-444f-932b-d7d5ce4bf99e___99f7f2441b2bec236afca6a272290b53.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -184,40 +184,7 @@
         ],
         "link": "https://www.carrefour.com.ar/23869?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/838d3564-7504-4c00-8129-c5673a2176e1___6fef3415d0c8f8e23b4b0cb0d66263f8.webp",
-        "fecha": "2026-02-01"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Yogur",
-        "descripcion": "8 BoOg]",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.carrefour.com.ar/yogur-griego-natural-sin-endulzar-yogurisimo-300-grs-765556/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/710096-170-170?v=638936270122200000&width=170&height=170&aspect=true",
-        "fecha": "2026-02-01"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Crema",
-        "descripcion": "[Colgate Adder Crema Dental Familhar",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.carrefour.com.ar/pasta-dental-colgate-triple-beneficio-90-g-718627/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/542860-170-170?v=638569960543130000&width=170&height=170&aspect=true",
-        "fecha": "2026-02-01"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Quesos",
-        "descripcion": "CasanCrem 1 [500g ",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.carrefour.com.ar/queso-crema-casancrem-clasico-500-grs-748003/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/570690-170-170?v=638628664169670000&width=170&height=170&aspect=true",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
     },
     {
         "supermercado": "Carrefour",
@@ -228,6 +195,28 @@
         ],
         "link": "https://www.carrefour.com.ar/23860?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/f26a08e0-740b-4096-bbf9-cc860d23d15d___43b1b83457ab761a24a93796e414ee9c.webp",
-        "fecha": "2026-02-01"
+        "fecha": "2026-02-02"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Yogur",
+        "descripcion": "8 BoOg]",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/yogur-griego-natural-sin-endulzar-yogurisimo-300-grs-765556/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/710096-170-170?v=638936270122200000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-02"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Crema",
+        "descripcion": "[Colgate Adder Crema Dental Familhar",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/pasta-dental-colgate-triple-beneficio-90-g-718627/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/542860-170-170?v=638569960543130000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-02"
     }
 ]
