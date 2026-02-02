@@ -9,6 +9,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 import re 
+import time
 
 # --- CONFIGURACIÓN DE PÁGINA ---
 st.set_page_config(
@@ -17,6 +18,25 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
+# --- GESTIÓN DE ESTADO ---
+if 'alertas_data' not in st.session_state:
+    st.session_state.alertas_data = None
+if 'auto_open_modal' not in st.session_state:
+    st.session_state.auto_open_modal = False
+
+# --- DICCIONARIO DE CATEGORIZACIÓN INTELIGENTE ---
+KEYWORDS_CATEGORIA = {
+    "bebida": ["vino", "cerveza", "gaseosa", "cola", "sprite", "pepsi", "agua", "soda", "jugo", "fernet", "aperitivo", "gin", "vodka", "whisky", "champagne", "sidra", "malbec", "cabernet", "blanco", "tinto"],
+    "carne": ["carne", "vacuno", "cerdo", "pollo", "pescado", "bife", "nalga", "cuadril", "peceto", "asado", "vacio", "matambre", "chorizo", "hamburguesa", "milanesa", "paty"],
+    "lacteos": ["leche", "yogur", "queso", "manteca", "crema", "dulce de leche", "postre", "flan"],
+    "limpieza": ["jabon", "detergente", "lavandina", "desinfectante", "suavizante", "papel higienico", "rollo", "servilleta", "trapo", "esponja", "lustramuebles", "insecticida", "aerosol", "limpiador"],
+    "perfumeria": ["shampoo", "acondicionador", "desodorante", "crema", "corporal", "facial", "dentifrico", "pasta dental", "cepillo", "protector", "toallitas", "pañales", "bebe", "jabon tocador"],
+    "electro": ["tv", "led", "smart", "celular", "telefono", "tablet", "notebook", "auricular", "parlante", "heladera", "lavarropas", "cocina", "horno", "microondas", "cafetera", "pava", "licuadora", "procesadora", "plancha", "aspiradora", "aire", "ventilador", "calefactor"],
+    "hogar": ["sarten", "olla", "cacerola", "cubiertos", "plato", "vaso", "copa", "taper", "hermetico", "toalla", "sabana", "acolchado", "almohada", "colchon", "mueble", "silla", "mesa"],
+    "mascota": ["perro", "gato", "alimento", "pedigree", "whiskas", "dogui", "gati", "piedras", "sanitarias"],
+    "almacen": ["fideos", "arroz", "aceite", "harina", "azucar", "yerba", "cafe", "te", "mate", "galletitas", "pan", "tostadas", "mermelada", "conserva", "latas", "pure", "tomate", "mayonesa", "ketchup", "savora", "aderezo", "sal", "vinagre", "snack", "papas fritas"]
+}
 
 # --- VARIABLES DE ICONOS ---
 ICONO_TELEGRAM = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#229ED9" width="24" height="24"><path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l-.302 4.318c.443 0 .634-.203.882-.448l2.109-2.052 4.37 3.224c.805.442 1.396.216 1.612-.742l2.914-13.725c.297-1.188-.429-1.727-1.188-1.542z"/></svg>'
@@ -52,8 +72,53 @@ def formatear_tiempo_atras(fecha_str):
     except:
         return str(fecha_str).split(" ")[-1], "#94a3b8"
 
-# --- CONEXIÓN GOOGLE SHEETS ---
-@st.cache_resource(ttl=60, show_spinner=False)
+def normalizar_texto(texto):
+    if not isinstance(texto, str): return ""
+    return ''.join(c for c in unicodedata.normalize('NFD', texto.lower().strip()) if unicodedata.category(c) != 'Mn')
+
+# --- LOGICA DE SANITIZACIÓN RESTAURADA ---
+def sanitizar_oferta(oferta):
+    cats_originales = oferta.get("categoria", [])
+    if isinstance(cats_originales, str): cats_originales = [cats_originales]
+    
+    cats_limpias = set()
+    titulo_norm = normalizar_texto(oferta.get("titulo", ""))
+    
+    # 1. Búsqueda por Palabras Clave (Prioridad Alta)
+    encontro_keyword = False
+    for cat_key, keywords in KEYWORDS_CATEGORIA.items():
+        if any(k in titulo_norm for k in keywords):
+            # Mapeo de claves internas a nombres display
+            if cat_key == "bebida": cats_limpias.add("🍷 Bebidas")
+            elif cat_key == "carne": cats_limpias.add("🥩 Carnicería")
+            elif cat_key == "lacteos": cats_limpias.add("🧀 Lácteos")
+            elif cat_key == "limpieza": cats_limpias.add("🧹 Limpieza")
+            elif cat_key == "perfumeria": cats_limpias.add("🧴 Perfumería")
+            elif cat_key == "electro": cats_limpias.add("📺 Electro")
+            elif cat_key == "hogar": cats_limpias.add("🏠 Hogar")
+            elif cat_key == "mascota": cats_limpias.add("🐶 Mascotas")
+            elif cat_key == "almacen": cats_limpias.add("🍝 Almacén")
+            encontro_keyword = True
+    
+    # 2. Si no encontró keyword, usa la categoría del scrap (Fallback)
+    if not encontro_keyword:
+        for c in cats_originales:
+            c_lower = normalizar_texto(c)
+            if "fresco" in c_lower: cats_limpias.add("🧀 Lácteos")
+            elif "almacen" in c_lower: cats_limpias.add("🍝 Almacén")
+            elif "bebida" in c_lower: cats_limpias.add("🍷 Bebidas")
+            elif "limpieza" in c_lower: cats_limpias.add("🧹 Limpieza")
+            elif "perfumeria" in c_lower: cats_limpias.add("🧴 Perfumería")
+            elif "electro" in c_lower: cats_limpias.add("📺 Electro")
+            elif "hogar" in c_lower: cats_limpias.add("🏠 Hogar")
+            elif "banco" in c_lower or "tarjeta" in c_lower: cats_limpias.add("💳 Bancarias")
+            else: cats_limpias.add(c.capitalize()) # Categoría genérica
+
+    oferta["categoria"] = list(cats_limpias)
+    return oferta
+
+# --- CONEXIÓN GOOGLE SHEETS (TTL 25 MIN) ---
+@st.cache_resource(ttl=1500, show_spinner=False)
 def conectar_google_sheets():
     try:
         if "connections" in st.secrets and "gsheets" in st.secrets["connections"]:
@@ -73,7 +138,8 @@ def conectar_google_sheets():
         st.error(f"💣 Error TÉCNICO en la conexión: {e}")
         return None
 
-def obtener_alertas_vivas():
+@st.cache_data(ttl=1500, show_spinner=False)
+def obtener_alertas_vivas_cached():
     hoja = conectar_google_sheets()
     if not hoja: return []
     try:
@@ -82,7 +148,7 @@ def obtener_alertas_vivas():
     except:
         return []
 
-# --- MODAL POPUP: DISEÑO LUXURY MIDNIGHT (COMPACTO) ---
+# --- MODAL POPUP: DISEÑO BLINDADO V6 (3 COLS WEB / 2 COLS MOBILE) ---
 if hasattr(st, "dialog"):
     @st.dialog("📉 Panel de Oportunidades en Vivo", width="large")
     def mostrar_modal_alertas(alertas):
@@ -116,24 +182,108 @@ if hasattr(st, "dialog"):
             .price-old {{ font-size: 0.8rem; text-decoration: line-through; color: {C_TEXT_SEC} !important; opacity: 0.7; }}
             .price-new {{ font-size: 1.4rem; color: {C_PRICE_GOLD} !important; font-weight: 800; letter-spacing: -0.5px; }}
             
-            /* GRILLA */
-            .grid-wrapper {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 25px; }}
-            @media (max-width: 600px) {{ .grid-wrapper {{ grid-template-columns: 1fr; }} }}
-
+            /* --- GRILLA CONFIGURADA PARA 3 COLUMNAS EN WEB --- */
+            .grid-wrapper {{ 
+                display: grid; 
+                gap: 8px; 
+                margin-top: 25px; 
+                width: 100%;
+                box-sizing: border-box;
+                /* MOBILE FIRST: 2 columnas fijas */
+                grid-template-columns: 1fr 1fr; 
+            }}
+            
+            /* DESKTOP (min-width 768px): Forzamos tarjetas más anchas (350px) para que entren solo 3 */
+            @media (min-width: 768px) {{
+                .grid-wrapper {{
+                    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                    gap: 15px;
+                }}
+            }}
+            
+            /* --- CARD MÓVIL (Vertical) --- */
             .grid-card {{
-                display: flex; align-items: center; background-color: {C_CARD_BG}; border: 1px solid rgba(255, 255, 255, 0.08);
-                border-radius: 6px; padding: 8px; text-decoration: none !important; transition: background 0.2s; position: relative; color: inherit !important;
+                display: flex; 
+                flex-direction: column; 
+                align-items: center;    
+                text-align: center;     
+                background-color: {C_CARD_BG}; 
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                border-radius: 6px; 
+                padding: 8px; 
+                text-decoration: none !important; 
+                transition: background 0.2s; 
+                position: relative; 
+                color: inherit !important;
+                width: 100%;
+                box-sizing: border-box; 
+                overflow: hidden;
             }}
             .grid-card:hover {{ background-color: #334155; border-color: {C_BORDER_GOLD}; }}
-            .g-img-box {{ width: 50px; height: 50px; background: white; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 2px; flex-shrink: 0; margin-right: 10px; }}
-            .g-img {{ max-width: 100%; max-height: 100%; object-fit: contain; }}
-            .g-info {{ flex: 1; overflow: hidden; display: flex; flex-direction: column; justify-content: center; }}
-            .g-title {{ font-size: 0.8rem; color: {C_TEXT_MAIN} !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px; font-weight: 500; padding-right: 40px; }}
-            .g-price-row {{ display: flex; align-items: baseline; gap: 8px; }}
-            .g-discount {{ color: {C_DISCOUNT_ORANGE} !important; font-weight: 900; font-size: 0.85rem; }}
-            .g-price-old {{ font-size: 0.75rem; text-decoration: line-through; color: #94a3b8 !important; }}
+            
+            .g-img-box {{ 
+                width: 65px; height: 65px; 
+                background: white; border-radius: 4px; 
+                display: flex; align-items: center; justify-content: center; 
+                padding: 2px; flex-shrink: 0; 
+                margin-bottom: 6px; 
+            }}
+            
+            .g-info {{ width: 100%; overflow: hidden; display: flex; flex-direction: column; justify-content: center; }}
+            
+            .g-title {{ 
+                font-size: 0.75rem; color: {C_TEXT_MAIN} !important; 
+                white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
+                margin-bottom: 6px; font-weight: 500; width: 100%;
+            }}
+
+            /* PRECIOS EN MÓVIL (Apilados y Centrados) */
+            .g-price-block {{
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                width: 100%;
+                align-items: center; 
+            }}
+            .g-row-top {{ display: flex; align-items: center; justify-content: center; gap: 6px; }}
+            .g-row-bottom {{ display: flex; align-items: baseline; justify-content: center; gap: 4px; }}
+
+            /* --- CARD DESKTOP (Horizontal y Espaciosa) --- */
+            @media (min-width: 768px) {{
+                .grid-card {{
+                    flex-direction: row; 
+                    align-items: center;
+                    text-align: left;
+                    padding: 12px; /* Más padding */
+                    height: auto;
+                }}
+                
+                .g-img-box {{ 
+                    width: 60px; height: 60px; /* Imagen un poco más grande en web */
+                    margin-bottom: 0; 
+                    margin-right: 15px; 
+                }}
+                
+                .g-title {{ 
+                    font-size: 0.95rem; /* Fuente más grande */
+                    margin-bottom: 4px;
+                    padding-right: 0;
+                }}
+                
+                .g-info {{ align-items: flex-start; min-width: 0; }} 
+                
+                .g-price-block {{ align-items: flex-start; gap: 0; }} 
+                .g-row-top {{ justify-content: flex-start; }}
+                .g-row-bottom {{ justify-content: flex-start; }}
+            }}
+            
+            .g-discount {{ color: {C_DISCOUNT_ORANGE} !important; font-weight: 900; font-size: 0.75rem; }}
+            .g-price-old {{ font-size: 0.7rem; text-decoration: line-through; color: #94a3b8 !important; }}
             .g-price-new {{ color: {C_PRICE_GOLD} !important; font-weight: bold; font-size: 1rem; }}
-            .g-time {{ position: absolute; bottom: 8px; right: 8px; font-size: 0.7rem; font-weight: 600; }}
+            .g-time {{ font-size: 0.65rem; font-weight: 600; opacity: 0.8; }}
+            
+            .g-img {{ max-width: 100%; max-height: 100%; object-fit: contain; }}
+
         </style>
         """, unsafe_allow_html=True)
 
@@ -194,7 +344,7 @@ if hasattr(st, "dialog"):
                 </a>
                 """, unsafe_allow_html=True)
 
-        # GRILLA COMPACTA
+        # GRILLA RESTANTE
         if resto:
             st.markdown(f"<br><div style='color:{C_TEXT_SEC}; font-size:0.85rem; margin-bottom:5px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:5px;'>⚡ Más Oportunidades ({len(resto)})</div>", unsafe_allow_html=True)
             
@@ -215,19 +365,10 @@ if hasattr(st, "dialog"):
                 txt_tiempo, color_tiempo = formatear_tiempo_atras(fecha)
                 if not img: img = "https://placehold.co/50x50/png?text=."
 
-                card_html = f"""
-<a href="{link}" target="_blank" class="grid-card">
-<div class="g-img-box"><img src="{img}" class="g-img"></div>
-<div class="g-info">
-<span class="g-title">{prod}</span>
-<div class="g-price-row">
-<span class="g-discount">{desc_val}% OFF</span>
-{f'<span class="g-price-old">${precio_ant}</span>' if precio_ant else ''}
-<span class="g-price-new">${precio}</span>
-</div>
-</div>
-<span class="g-time" style="color:{color_tiempo}">{txt_tiempo}</span>
-</a>"""
+                precio_viejo_html = f'<span class="g-price-old">${precio_ant}</span>' if precio_ant else ''
+                
+                card_html = f"""<a href="{link}" target="_blank" class="grid-card"><div class="g-img-box"><img src="{img}" class="g-img"></div><div class="g-info"><span class="g-title" title="{prod}">{prod}</span><div class="g-price-block"><div class="g-row-top"><span class="g-discount">{desc_val}% OFF</span>{precio_viejo_html}</div><div class="g-row-bottom"><span class="g-price-new">${precio}</span><span class="g-time" style="color:{color_tiempo}">{txt_tiempo}</span></div></div></div></a>"""
+                
                 html_grid += card_html
             
             html_grid += '</div>'
@@ -275,31 +416,6 @@ def cargar_datos_ofertas():
                         conteo_ofertas[nombre] = len(datos)
             except: pass
     return todas_ofertas, conteo_ofertas
-
-def normalizar_texto(texto):
-    if not isinstance(texto, str): return ""
-    return ''.join(c for c in unicodedata.normalize('NFD', texto.lower().strip()) if unicodedata.category(c) != 'Mn')
-
-def sanitizar_oferta(oferta):
-    cats_sucias = oferta.get("categoria", [])
-    cats_limpias = []
-    if isinstance(cats_sucias, str): cats_sucias = [cats_sucias]
-    for c in cats_sucias:
-        c_lower = c.lower()
-        if "fresco" in c_lower: cats_limpias.append("🧀 Lácteos y Frescos")
-        elif "vario" in c_lower:
-            titulo = oferta.get("titulo", "").lower()
-            if "toalla" in titulo or "sabana" in titulo: cats_limpias.append("🏠 Hogar y Bazar")
-            elif "tv" in titulo or "celu" in titulo: cats_limpias.append("📺 Electro y Tecno")
-            elif "juguete" in titulo: cats_limpias.append("🧸 Juguetes")
-            else: cats_limpias.append("🍝 Almacén")
-        elif "banco" in c_lower or "tarjeta" in c_lower: cats_limpias.append("💳 Bancarias")
-        elif "hogar" in c_lower: cats_limpias.append("🏠 Hogar y Bazar")
-        elif "automotor" in c_lower: cats_limpias.append("🚗 Auto y Aire Libre")
-        elif "electro" in c_lower: cats_limpias.append("📺 Electro y Tecno")
-        else: cats_limpias.append(c)
-    oferta["categoria"] = list(set(cats_limpias))
-    return oferta
 
 def get_img_as_base64(file):
     try:
@@ -384,7 +500,7 @@ def inyectar_recursos_globales():
                             try {{
                                 parentDoc.execCommand('copy');
                                 var originalHtml = copyTarget.innerHTML;
-                                copyTarget.innerHTML = "👍";
+                                copyTarget.innerHTML = "Copy";
                                 copyTarget.classList.add('copied');
                                 setTimeout(function() {{
                                     copyTarget.innerHTML = originalHtml;
@@ -509,58 +625,75 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-# --- BARRA DE NOTIFICACIÓN "EN VIVO" (SOLUCIÓN CENTRADO: COLUMNAS + CSS) ---
-alertas_activas = obtener_alertas_vivas()
-cantidad_alertas = len(alertas_activas)
-
-if cantidad_alertas > 0:
-    st.markdown("""
-    <style>
-        @keyframes ripple {
-            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
-            70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
-        }
-        
-        /* 1. ESTILO DEL BOTÓN (PÍLDORA) */
-        div[data-testid="stButton"] button[kind="primary"] {
-            background: linear-gradient(135deg, #d84315 0%, #bf360c 100%) !important;
-            border: none !important;
-            color: white !important;
-            padding: 12px 30px !important;
-            border-radius: 50px !important;
-            width: auto !important; /* IMPORTANTE: No ocupa todo el ancho */
-            display: inline-flex !important; /* Comportamiento de botón normal */
-            margin: 0 auto !important; /* Intento de centrado CSS */
-            
-            font-weight: 800 !important;
-            font-size: 0.95rem !important;
-            letter-spacing: 0.5px !important;
-            text-transform: none !important;
-            animation: ripple 2s infinite;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
-        }
-        div[data-testid="stButton"] button[kind="primary"]:hover {
-            transform: scale(1.05) !important;
-            background: linear-gradient(135deg, #ff5722 0%, #d84315 100%) !important;
-        }
-        
-        /* 2. FORZAR ALINEACIÓN EN EL CONTENEDOR PADRE */
-        div[data-testid="stButton"] {
-            display: flex !important;
-            justify-content: center !important;
-            width: 100% !important;
-        }
-    </style>
-    """, unsafe_allow_html=True)
-
-    # 3. CENTRADO POR ESTRUCTURA (COLUMNAS)
-    # Creamos 3 columnas y ponemos el botón en la del medio para asegurar el centrado visual
-    c_left, c_center, c_right = st.columns([1, 2, 1])
+# --- BARRA DE NOTIFICACIÓN "EN VIVO" (LAZY LOADING + AUTO OPEN) ---
+st.markdown("""
+<style>
+    @keyframes ripple {
+        0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+        70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+    }
     
-    with c_center:
-        if st.button(f"🔴 EN VIVO: Se detectaron {cantidad_alertas} derrumbes de precio", type="primary", use_container_width=True):
-            mostrar_modal_alertas(alertas_activas)
+    div[data-testid="stButton"] button[kind="primary"] {
+        background: linear-gradient(135deg, #d84315 0%, #bf360c 100%) !important;
+        border: none !important;
+        color: white !important;
+        padding: 12px 30px !important;
+        border-radius: 50px !important;
+        width: auto !important; 
+        display: inline-flex !important;
+        margin: 0 auto !important;
+        font-weight: 800 !important;
+        font-size: 0.95rem !important;
+        letter-spacing: 0.5px !important;
+        text-transform: none !important;
+        animation: ripple 2s infinite;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+    }
+    div[data-testid="stButton"] button[kind="primary"]:hover {
+        transform: scale(1.05) !important;
+        background: linear-gradient(135deg, #ff5722 0%, #d84315 100%) !important;
+    }
+    div[data-testid="stButton"] {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+c_left, c_center, c_right = st.columns([1, 2, 1])
+
+with c_center:
+    # 1. SI HAY DATOS (Ya cargados)
+    if st.session_state.alertas_data is not None:
+        # A. Revisar si hay que abrir el modal automáticamente (Flag activada tras la carga)
+        if st.session_state.auto_open_modal:
+            st.session_state.auto_open_modal = False # Apagar flag
+            mostrar_modal_alertas(st.session_state.alertas_data)
+        
+        # B. Botón con contador (Estado normal si el usuario vuelve)
+        cantidad = len(st.session_state.alertas_data)
+        if st.button(f"🔴 EN VIVO: Se detectaron {cantidad} derrumbes", type="primary", use_container_width=True):
+            mostrar_modal_alertas(st.session_state.alertas_data)
+
+    # 2. SI NO HAY DATOS (Botón de Carga)
+    else:
+        if st.button("🔴 VER OPORTUNIDADES EN VIVO", type="primary", use_container_width=True):
+            # Feedback visual inmediato (Reemplaza el botón temporalmente)
+            placeholder = st.empty()
+            placeholder.markdown(
+                "<div style='text-align:center; color:#cfa539; font-weight:bold; font-size:1.1rem; padding:10px;'>"
+                "Escaneando el mercado..."
+                "</div>", 
+                unsafe_allow_html=True
+            )
+            
+            # Carga de datos
+            alertas_recientes = obtener_alertas_vivas_cached()
+            st.session_state.alertas_data = alertas_recientes
+            st.session_state.auto_open_modal = True # ¡Activar auto-apertura!
+            st.rerun()
 
 ESTILOS_SUPER = {
     "Carrefour": {"color": "#1e40af", "icono": "🔵"}, 
@@ -723,9 +856,10 @@ else:
 # --- FOOTER ---
 st.markdown("<br><hr style='border-color: #cfa539; opacity: 0.3;'>", unsafe_allow_html=True)
 with st.expander("⚖️ Aviso Legal y Exención de Responsabilidad", expanded=False):
-    st.markdown("""
-    <div style='color:#ccc;font-size:0.8rem;line-height:1.6;text-align:justify;background-color:rgba(0,0,0,0.2);padding:15px;border-radius:8px;'>
-        <p><strong>Carácter de la Información:</strong> "DataChango" funciona exclusivamente como un agregador y buscador de ofertas...</p>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("""<div style='color:#cbd5e1;font-size:0.85rem;line-height:1.6;text-align:justify;background-color:rgba(15, 23, 42, 0.6);padding:15px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);'>
+        <p style='margin-bottom:10px;'><strong>1. Carácter Informativo:</strong> "DataChango" funciona exclusivamente como un motor de búsqueda y agregador de ofertas. No vendemos productos, no procesamos pagos ni participamos en la logística de entrega.</p>
+        <p style='margin-bottom:10px;'><strong>2. Exactitud de los Datos:</strong> Los precios y la disponibilidad ("stock") se obtienen de forma automatizada (bot) y pueden diferir de la realidad en el momento de su visita a la tienda oficial debido a la latencia de actualización. <strong>El precio válido siempre será el que figure en la página web oficial del supermercado o en la línea de cajas.</strong></p>
+        <p style='margin-bottom:10px;'><strong>3. Independencia:</strong> Este proyecto es independiente y no tiene afiliación comercial, patrocinio ni vinculación oficial con las marcas mencionadas (Carrefour, Coto, Jumbo, MasOnline, etc.). Los logotipos y nombres comerciales pertenecen a sus respectivos dueños.</p>
+        <p style='margin-bottom:0;'><strong>4. Limitación de Responsabilidad:</strong> DataChango no se hace responsable por errores en la publicación de precios, falta de stock, o cambios en las condiciones de venta de los comercios.</p>
+    </div>""", unsafe_allow_html=True)
 st.markdown("<div style='text-align: center; color: #666; font-size: 0.75rem; margin-top: 10px;'>© 2026 DataChango | <a href='mailto:datachangoweb@gmail.com' style='color:#888;'>Contacto</a></div>", unsafe_allow_html=True)
