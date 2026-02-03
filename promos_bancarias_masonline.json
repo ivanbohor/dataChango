@@ -4,7 +4,7 @@
         "dia": "lunes",
         "banco": "Billetera MODO",
         "descuento": "20%",
-        "tope": "Tope: $20.000 por usuario. Mínimo de compra: $50.000.",
+        "tope": "Tope: $20.000 por usuario. Mínimo de compra: $75.000.",
         "ver_legales": false,
         "link": "https://www.masonline.com.ar/promociones-bancarias?dia=lunes",
         "categoria": "General"
@@ -25,6 +25,16 @@
         "banco": "Banco Columbia",
         "descuento": "20%",
         "tope": "Tope: $10.000 semanal (BC)*",
+        "ver_legales": false,
+        "link": "https://www.masonline.com.ar/promociones-bancarias?dia=martes",
+        "categoria": "General"
+    },
+    {
+        "supermercado": "MasOnline",
+        "dia": "martes",
+        "banco": "Banco Comafi + MODO",
+        "descuento": "20%",
+        "tope": "Tope: $12.000 semanal para Comafi Ahorro, Global y Classic, Premium y Platinum. (C)",
         "ver_legales": false,
         "link": "https://www.masonline.com.ar/promociones-bancarias?dia=martes",
         "categoria": "General"
@@ -54,16 +64,6 @@
         "dia": "martes",
         "banco": "Banco Supervielle + MODO",
         "descuento": "20%",
-        "tope": "Sin tope",
-        "ver_legales": false,
-        "link": "https://www.masonline.com.ar/promociones-bancarias?dia=martes",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "MasOnline",
-        "dia": "martes",
-        "banco": "Mercado Pago",
-        "descuento": "15%",
         "tope": "Sin tope",
         "ver_legales": false,
         "link": "https://www.masonline.com.ar/promociones-bancarias?dia=martes",
@@ -141,16 +141,6 @@
     },
     {
         "supermercado": "MasOnline",
-        "dia": "viernes",
-        "banco": "Todas las Tarjetas (Débito)",
-        "descuento": "15%",
-        "tope": "Sin tope",
-        "ver_legales": false,
-        "link": "https://www.masonline.com.ar/promociones-bancarias?dia=viernes",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "MasOnline",
         "dia": "sabado",
         "banco": "Banco Columbia",
         "descuento": "20%",
@@ -164,7 +154,7 @@
         "dia": "sabado",
         "banco": "Banco Credicoop + MODO",
         "descuento": "30%",
-        "tope": "Tope: $13.500 semanal. (C2)*",
+        "tope": "Tope: $13.500 semanal (C2)*",
         "ver_legales": false,
         "link": "https://www.masonline.com.ar/promociones-bancarias?dia=sabado",
         "categoria": "General"
@@ -175,26 +165,6 @@
         "banco": "ICBC + MODO",
         "descuento": "20%",
         "tope": "Tope: $15.000 semanal. (IC1)*",
-        "ver_legales": false,
-        "link": "https://www.masonline.com.ar/promociones-bancarias?dia=sabado",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "MasOnline",
-        "dia": "sabado",
-        "banco": "Mercado Pago",
-        "descuento": "15%",
-        "tope": "Sin tope",
-        "ver_legales": false,
-        "link": "https://www.masonline.com.ar/promociones-bancarias?dia=sabado",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "MasOnline",
-        "dia": "sabado",
-        "banco": "Tarjeta Prex",
-        "descuento": "25%",
-        "tope": "Tope: $10.000 semanal. (P)",
         "ver_legales": false,
         "link": "https://www.masonline.com.ar/promociones-bancarias?dia=sabado",
         "categoria": "General"
@@ -215,16 +185,6 @@
         "banco": "ICBC + MODO",
         "descuento": "20%",
         "tope": "Tope: $15.000 semanal. (IC1)*",
-        "ver_legales": false,
-        "link": "https://www.masonline.com.ar/promociones-bancarias?dia=domingo",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "MasOnline",
-        "dia": "domingo",
-        "banco": "Mercado Pago",
-        "descuento": "15%",
-        "tope": "Sin tope",
         "ver_legales": false,
         "link": "https://www.masonline.com.ar/promociones-bancarias?dia=domingo",
         "categoria": "General"

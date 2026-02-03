@@ -2,71 +2,11 @@
     {
         "supermercado": "Jumbo",
         "dia": "jueves",
-        "banco": "American Express",
-        "descuento": "25%",
-        "tope": null,
-        "ver_legales": true,
-        "link": "https://www.jumbo.com.ar/descuentos-del-dia?type=por-dia&day=4",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "Jumbo",
-        "dia": "jueves",
-        "banco": "Clarín 365",
-        "descuento": "15%",
-        "tope": "Sin tope",
-        "ver_legales": false,
-        "link": "https://www.jumbo.com.ar/descuentos-del-dia?type=por-dia&day=4",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "Jumbo",
-        "dia": "jueves",
         "banco": "Tarjeta Cencosud",
         "descuento": "15% al 25%",
         "tope": null,
         "ver_legales": true,
         "link": "https://www.jumbo.com.ar/descuentos-del-dia?type=por-dia&day=4",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "Jumbo",
-        "dia": "jueves",
-        "banco": "Tarjeta Sol",
-        "descuento": "10%",
-        "tope": "$10.000.",
-        "ver_legales": false,
-        "link": "https://www.jumbo.com.ar/descuentos-del-dia?type=por-dia&day=4",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "Jumbo",
-        "dia": "lunes",
-        "banco": "Banco Comafi",
-        "descuento": "25%",
-        "tope": "$8.000.",
-        "ver_legales": false,
-        "link": "https://www.jumbo.com.ar/descuentos-del-dia?type=por-dia&day=1",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "Jumbo",
-        "dia": "lunes",
-        "banco": "Clarín 365",
-        "descuento": "15%",
-        "tope": "Sin tope",
-        "ver_legales": false,
-        "link": "https://www.jumbo.com.ar/descuentos-del-dia?type=por-dia&day=1",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "Jumbo",
-        "dia": "lunes",
-        "banco": "Tarjeta Cencosud",
-        "descuento": "30%",
-        "tope": "Sin tope",
-        "ver_legales": false,
-        "link": "https://www.jumbo.com.ar/descuentos-del-dia?type=por-dia&day=1",
         "categoria": "General"
     },
     {

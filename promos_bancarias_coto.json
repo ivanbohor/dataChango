@@ -1,16 +1,6 @@
 [
     {
         "supermercado": "Coto",
-        "dia": "domingo",
-        "banco": "Banco Ciudad",
-        "descuento": "20%",
-        "tope": null,
-        "ver_legales": true,
-        "link": "https://www.cotodigital.com.ar/sitios/cdigi/descuentos",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "Coto",
         "dia": "jueves",
         "banco": "Banco Columbia",
         "descuento": "30%",
@@ -156,16 +146,6 @@
         "descuento": "15%",
         "tope": "Sin tope",
         "ver_legales": false,
-        "link": "https://www.cotodigital.com.ar/sitios/cdigi/descuentos",
-        "categoria": "General"
-    },
-    {
-        "supermercado": "Coto",
-        "dia": "sabado",
-        "banco": "Banco Ciudad",
-        "descuento": "20%",
-        "tope": null,
-        "ver_legales": true,
         "link": "https://www.cotodigital.com.ar/sitios/cdigi/descuentos",
         "categoria": "General"
     }
