@@ -23,7 +23,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "35% Off en Detergente",
+        "titulo": "35% Off en Art. Limpieza",
         "descripcion": "Del 4al10 de febrero Changol Marone Limpieza skip Ace n [HARPIC) 7AT9 @mfôrt 'anish seleccionados Detergente Detergente líquido Y diluible líquido para ropa Lavavajillas Detergente líquido para ropa 35% Protectores Descuento BANaNa #ruteliuk SULAh solares dermaglós BOAT ZONO Rayito VN Unitario VIV( INTENSAMENTE de Sol seleccionados VILLENEUVE QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM.AR/LEGALES_ ",
         "categoria": [
             "🧹 Limpieza"
@@ -34,7 +34,7 @@
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Celulares",
+        "titulo": "12 Cuotas S/Int en Aires Acondicionados",
         "descripcion": "Del 4al10 de febrero ChangoMâs MâsOnline comar Mas Ofertas Verano ToDoa SELECCIONADos 12 cuotas SIN INTERÉS VISA CABAL de todos los Bancos Mlês smart TV 50\" 0mas Aires acond. Heladeras Freezer Lavarropas Celulares QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM AR/LEGALES_ ",
         "categoria": [
             "💳 Bancarias",
@@ -98,6 +98,96 @@
         ],
         "link": "https://www.masonline.com.ar/promociones-bancarias?dia=miercoles",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/d9943f38-4b1f-4334-aeb7-16a69eb5358a___040320d25ecff8981573e7c3271f423f.png",
+        "fecha": "2026-02-04"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Precio Especial en Varios Productos",
+        "descripcion": "Patagonia365 Miércoles 20 % Crédito Patagonia 365 Descuento Tope: Hasta $10.000 mensual. (P365)  ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar/promociones-bancarias",
+        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/e7204a97-e800-4426-974e-a4197e81301e___5ed4f79f2ce787805e3844e1dbc8e5c5.png",
+        "fecha": "2026-02-04"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "12 Cuotas S/Int en Celulares",
+        "descripcion": "Hasta 12 Cuotas SIN INTERÉS tvs y celulares tvs y celulares",
+        "categoria": [
+            "💳 Bancarias",
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.masonline.com.ar/411?map=productClusterIds",
+        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/e6d3d85d-a63a-4c77-8c68-266e1a1639c3___5e1fd12d4736631e88010c16aac3566e.webp",
+        "fecha": "2026-02-04"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "30% Off en Varios Productos",
+        "descripcion": "Hasta 30% Descuento Hasta 12 SMotrís SIN Mlds  ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar/3353?map=productClusterIds",
+        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/04992011-45b3-4cb7-8e48-d8fe198bd0eb___c2cd3221234db6a641ef468ab08b1529.webp",
+        "fecha": "2026-02-04"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Aires Acondicionados",
+        "descripcion": "PHILCO BlooW 8 Aire Acondicionado Split Philco 3350 Watt Frio Calor Phs32ha4cn ",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.masonline.com.ar/aire-acondicionado-philco-3400w-frio-calor-phs32ha4cn-2/p",
+        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/275581-230-230?v=638143617776100000&width=230&height=230&aspect=true",
+        "fecha": "2026-02-04"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "35% Off en Snacks",
+        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline connkar BUNNINGTOK iMi Cinoi Bebidas Y snacks Rex ORIGINAL @Rí|ìR Hasta 35% Descuento Jeuu Unitario BEBER CON MODERACIÓN. PROHIBIDA SU VENTAAMENORES DE 18 AÑOS PARA MÁS INFORMACIÓN OLIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM AR/LEGALES.DORINKA SRL 30-67813830-0 BOLIVIA 5831, CABA Novedad image ",
+        "categoria": [
+            "🍷 Bebidas",
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/ea6edd64-d995-4058-8f7a-d7b51455639c/multimedia/attachments/01_Regionales_Verano_28al03_Regional_2-%20Bebidas%20copia.webp",
+        "fecha": "2026-02-04"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Almacén",
+        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comar Almacén Hasta 352 Descuento Unitario PARA MÁSINFORMACIÓN OLIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM.AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831, C.ABA Novedad image ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/fca3dd28-4844-4a2a-8ec1-b46ed50dd172/multimedia/attachments/01_Regionales_Verano_28al03.png",
+        "fecha": "2026-02-04"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "50% Off en Varios Productos",
+        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comar Muebles de interior Hasta 50% Descuento Unitario Hasta 12suotas SIN INTERÉS PARA MÁS INFORMACIÓN OLIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831, C ABA Novedad image ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/673ead76-79e3-4e63-9a1b-bfe1eb2ed4eb/multimedia/attachments/01_Regionales_Verano_04%20al%2010.webp",
+        "fecha": "2026-02-04"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "40% Off en Varios Productos",
+        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline coriar Muebles de exterior Hasta 40% Unitario Descuento Hasta 12suots SININTERÉS PARA MÁS INFORMACIÓN OLIMITACIONES APLICABLES, CONSULTE EN MASONLINE COM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831, C.ABA Novedad image ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/e430e4c0-99e9-4e53-b501-6319e02c39a0/multimedia/attachments/01_Regionales_Verano_04%20al%2010-07.webp",
         "fecha": "2026-02-04"
     }
 ]
