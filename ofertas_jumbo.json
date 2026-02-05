@@ -1,7 +1,7 @@
 [
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Art. Limpieza, Cuidado Personal",
+        "titulo": "40% Off en Perfumería, Cuidado Personal",
         "descripcion": "OFERTAS de la SEMANA Rollo de Cocina HASTA INFALTABLES 40% DEL SUPER PRODUCTOS SELECCIONADOS. Nuevo @guno 'Gigante Las Tres 1 Niñas Doblle 'Hoja Dove clásica Lechecon Nerición pOSIT EXCESO EN EXCESO EN FUSION DE OLEO IMPACTO , EXCESO EN GRASAS GRASAS EXCESO EN Shampoo MLLLA AZÚCARES TOTALES SATURADAS caLORiAS Saui 5t8v OREO STELLA ARTOIS Sin ALcohol 0.0  EXCLUSIVO ONLINE VÁLIDODEL O2/02AL05/02. BEBER CONMODERACIÓN. Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
             "🧹 Limpieza",
@@ -10,29 +10,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56969?map=productClusterIds&evento=eds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/d1dbec91-275a-4fe1-8732-1c5b35f9756d___1a0f3e889160c42f81b08440689a6b3b.webp",
-        "fecha": "2026-02-04"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Electro",
-        "descripcion": "llega ENZ4HS envíos A TUCASA = Electros para todo 140% cCnCO pay p 50% 1 12 SNERÉS CRÉDITO 30/01al 04/02. *Seleccionados Hasta 40% en Electro Hasta 40% en Electro",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.jumbo.com.ar/56806?map=productClusterIds&evento=fdselectro",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/fe6aeb09-c793-4046-83af-234675ddf1d7___2086f99f10dfeb2b11aa9913e56aea94.webp",
-        "fecha": "2026-02-04"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "Promoción Bancaria",
-        "descripcion": "Los miércoles cuotas EN TODA cencopay CRÉDITO -20%+3 LA COMPRA sin interés\"? ONLINE SIN TOPE DE DESCUENTO PROMOCIÓN VÁLIDA DEL 01/02/2026 AL 28/02/2026. VER LEGALES Y EXCLUSIONES EN CENCOPAY AR (2) TNA: 0,0% TEA: 0,0% CFTNA: 0,0% 20% en Toda la compra 20% en Toda la compra",
-        "categoria": [
-            "💳 Bancarias"
-        ],
-        "link": "https://www.jumbo.com.ar/55566?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/df17c829-69e5-4763-9332-4db71c6de362___e9f066a9fdec30fa729ac8f7de2971e0.png",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
@@ -43,18 +21,29 @@
         ],
         "link": "https://www.jumbo.com.ar/56973?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6ed0957f-2f87-4034-a713-391d849308c9___d5c4871c245a1ae3b498cf1d1cc671ed.webp",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Bazar, Hogar",
+        "titulo": "Promoción Bancaria",
+        "descripcion": "VUELTA CLASES OFERTAS PARA PREPARAR TODO 130% cencopay CRÉDITO p 40% SIN INTERÉS útiles, mochilas, libros y más VÁLIDO DEL 30/01 AL 05/02. SELECCIONADOS. Hasta 30% + Hasta 6 CSI en Vuelta a Clases Hasta 30% + Hasta 6 CSI en Vuelta a Clases",
+        "categoria": [
+            "💳 Bancarias"
+        ],
+        "link": "https://www.jumbo.com.ar/56837?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/452444a2-501e-481c-8191-10a945c24c98___63bbbd6620b581fc6b2843504f31dc66.webp",
+        "fecha": "2026-02-05"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Hasta 50% Off en Hogar, Bazar",
         "descripcion": "Casa € Deco CROSS-CHECV Ropa de cama, Organización, Bazar y más {3seRés 150% krea Ymás! VÁLIDO DEL 30/01 AL 05/02. PRODUCTOS SELECCIONADOS. Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
         "categoria": [
             "🏠 Hogar y Bazar"
         ],
         "link": "https://www.jumbo.com.ar/56824?map=productClusterIds&evento=fdshogar",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/5a82a8fc-1e79-463d-8adb-ab44547c138c___91f829324314f8597acb0a58bd45d5da.webp",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
@@ -65,7 +54,7 @@
         ],
         "link": "https://www.jumbo.com.ar/eventos/descuentos-jumbo-prime",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/83964e78-51fa-4196-8982-c2a6fa63cb4a___edaff8256615fd9011c8aed865bca5b2.png",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
@@ -76,11 +65,11 @@
         ],
         "link": "https://www.jumbo.com.ar/17321?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6d164ab2-9933-4948-959c-728dbebbbc1b___b7c8c35fe83093661e73ca56a2aa7fc1.webp",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Art. Limpieza, Perfumería",
+        "titulo": "40% Off en Perfumería, Art. Limpieza",
         "descripcion": "HASTA EXCLUSIVO ONLINE 40% Elite ELVIVE ORE Ultra Suave VERLEGALES . Perfumería y Limpieza ",
         "categoria": [
             "🧹 Limpieza",
@@ -88,7 +77,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56955?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/2f179a82-cc18-4b19-a481-5d068a878e99___b6c7c4a4587c9a72b4f4a88addc2c558.webp",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
@@ -99,7 +88,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56956?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/f5f91909-b897-47fd-a6d4-821a1871a6cf___76fb684682ef795921276b77355bfcbc.webp",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
@@ -110,7 +99,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56957?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/45632544-87a7-4d5a-9d7b-2d96810267ea___31e33563449bab53279bff7f3bea671b.webp",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
@@ -121,7 +110,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56958?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/80d7a525-af8b-4add-963c-48bbda06aea3___6d6a19d2241b613663f122f0e88b73a2.webp",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
@@ -132,7 +121,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56959?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/1630f363-ff02-46cd-9068-7fae34caf7d7___d436dd00fb405e91765aac452dd1398b.webp",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
@@ -143,7 +132,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56960?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/9be020a9-563a-420d-9702-b2983063d886___59f413c5ac18b9c09ca073122e9dac9d.webp",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
@@ -154,7 +143,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56957?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/01039e7b-bd9b-4164-9b74-53f23dd4e87a___a55c196833afe3db26eedd63aa3c9b78.webp",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
@@ -165,7 +154,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56765?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/3faca400-1005-4794-9f03-38455aa5b887___0dd500168305aea06977e951eb3657ad.jpg",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     },
     {
         "supermercado": "Jumbo",
@@ -176,61 +165,6 @@
         ],
         "link": "https://www.jumbo.com.ar/56982?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/cf2e2a20-81ea-42e8-badd-28dfec442096___6e702ca8360d1cecaae01414374d0bed.jpg",
-        "fecha": "2026-02-04"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "10% Off en Línea Blanca, Lavarropas",
-        "descripcion": "llega EN24HS HASTA 10% cenco 0 i15% 12 creoio nNERÉS Heladeras , lavarropas y más VERLEGALES Hasta 10% en Linea Blanca Hasta 10% en Linea Blanca",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.jumbo.com.ar/56811?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/f9254521-77c3-484a-89d5-b717cae917f4___c3962872769b0aeac3238ae66d97ab64.webp",
-        "fecha": "2026-02-04"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "30% Off en Hasta 30% En Pequeños Electros Hasta 30% En Pequeñ",
-        "descripcion": "llega EN24HS HASTA 30% cenco 9 š 35% creoito fTERÉS Pequeños electros (ster 22 22 VERLEGALES _ {RAnE Hasta 30% en Pequeños Electros Hasta 30% en Pequeños Electros",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.jumbo.com.ar/56812?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/4f874634-17c7-4f80-a4c8-b4a8a2fca370___681c3ae0fe7a780da51686e61c2c1dfc.webp",
-        "fecha": "2026-02-04"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Hasta 40% En Aires Acondicionados Y Ventilación Ha",
-        "descripcion": "llega EN24HS HASTA HASTA 40% 12 STERÉS cenco [Cayy CrÉDITO p 50% 12 SNERÉS Aires y ventiladores VERLEGALES Hasta 40% en Aires Acondicionados y Ventilación Hasta 40% en Aires Acondicionados y Ventilación",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.jumbo.com.ar/56810?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/48d05180-bc4a-4dff-a4d9-446a6e08df37___d14157feff9c12c31c30bb67c3f0f798.webp",
-        "fecha": "2026-02-04"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "10% Off en Hasta 35% En Barras De Sonido, Parlantes Y Más Has",
-        "descripcion": "llega ENZ4HS HASTA HASTA 10% 12 SNERÉS cenco o0 š CReDITO '15% 12 fNERÉS Notebooks, tabletsy más VERLEGALES _ Hasta 35% en barras de sonido, parlantes y más Hasta 35% en barras de sonido, parlantes y más",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56954?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/2b9d5fe8-7378-4f08-8a6a-58638ca242d4___cbde362d1f12b99ff45ec171e9f5fa1f.webp",
-        "fecha": "2026-02-04"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "40% Off en Deportes",
-        "descripcion": "llega EN24HS HASTA 40% cCnco credio 140% i12 SNERÉS Deportes yactividades g3 VERLEGALES Hasta 40% Rodados y Deporte Hasta 40% Rodados y Deporte",
-        "categoria": [
-            "🚗 Auto y Aire Libre"
-        ],
-        "link": "https://www.jumbo.com.ar/56820?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/d4c70da8-730e-4473-a476-002e0d494b94___6be904144829fab38748f42e2518ceef.webp",
-        "fecha": "2026-02-04"
+        "fecha": "2026-02-05"
     }
 ]
