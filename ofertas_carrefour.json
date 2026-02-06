@@ -34,6 +34,50 @@
     },
     {
         "supermercado": "Carrefour",
+        "titulo": "Oferta en Yerba",
+        "descripcion": "50 CrG [0i 30 DESCUENTO ra EN LA 24* UNIDAD 180 Yerba; Cervezas y Rollos de Coclna",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23910?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9c528057-1c1b-471a-a8fd-080289adb4c8___055a9ed722a54dd4242e84a7533415b2.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Seleccionados (Electro)",
+        "descripcion": "HASTA 40 DESCUENTO Pequenos Electrodomestcos, Ventlaclón y más",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/23957?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/e1580806-1537-42df-9722-22f5b274aade___d372ec086e33138dc2be1f2c1bc72f82.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "6 Cuotas S/Int en Seleccionados (🍝 Almacén)",
+        "descripcion": "HAaT 6 CUOTAS SIN INTERÉS Hlsi 25 DESCUENTO En seleccionados de: Celulares, Mlcroondas, Parantes Tores de Sonldo Hasta el 09/02",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23956?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/fbf5a2a2-11c1-42bf-8b25-56ff68b7b161___701b3b3c3d0da99c116332051cba1ad6.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Celulares",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/celular-libre-infinix-note-40-pro-8gb-256gb-negro--/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/637556-170-170?v=638787797025970000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Carrefour",
         "titulo": "70% Off en Lácteos",
         "descripcion": "Scandiou 70% 80 DESCUENTO DESCUENTO EN LA 2D4 UNIDAD EN LA 2DA UNIDAD AHORRG GIGANTE Zzugoey @ 99 [#595 ORREO TerrabuSi Matarazzo) VEGETALES TIRABUZÓN N?28 Hasta el 09/02 VER MÁS En seleccionados de Kee$ 2 Ser Yogurisimo PRO+ Griego 154 Zoni Fideos, Galletitas, Postres Lácteos y más i Rumba Sólo consumo familiar; válido por usuarioldocumento ",
         "categoria": [
@@ -67,18 +111,6 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Electrodomésticos",
-        "descripcion": "fgow AHORRG GIGANTE 50P2 DESCUENTO AEes BEENTEO' Pack Ahorro TARAG aTAGOR STELLA Sussex; 30 4xGE ARTOIS CLÁSICO GRATIS Pxo {qiam Sesaaai 180 3|60559 Hasta el 09/02 VER MÁS En seleccionados dez Yerba, Cervezas y Rollos de Cocina Sólo consumo familiar; válido por usuarioldocumento",
-        "categoria": [
-            "📺 Electro y Tecno",
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/23910?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/f0cc7347-408b-4e8a-9234-88042b925535___1919c9ee02414205a255f666366cd82c.webp",
-        "fecha": "2026-02-06"
-    },
-    {
-        "supermercado": "Carrefour",
         "titulo": "Cupón de Descuento en Leche",
         "descripcion": "Para clientes de Club LA NACION NUEVO EXCLUSIVO ONLINE Haciendo tu compra del super online de Martes a Domingos de Febrero DESCUENTO SIN TOPE 10l Club LA NACION Utillzando el cupón obtenido en Club LA NACION https: Isuscripclones lanacion com arlsuscripcion No Incluve electodomestlcos electronlca telefonia celularcarnicene Máxlmo 24 unldades por pedldo 'leches Infantles legales Matemizadas (etada |  21 en Catrefcupconandeachentos-Pancades No acumulable con Dromoclones nI Productos con descuento En2ed? HACÉ TU PEDIDO ONLINE Y RECIBILO EN IqoRD VÁLIDO PARA CABA, TANDIL, UNiddDES CÓRDOBA CAPITAL Y MENDOZA CAPITAL MAXIMAS 24 EN DiSPOnIBLE SOLo",
         "categoria": [
@@ -86,6 +118,17 @@
         ],
         "link": "https://www.carrefour.com.ar/entrega-inmediata?",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/cf26a86c-a470-4adb-acc2-656d68cf896f___1420f39b3f3eb7ac8fa7345ac04715a9.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "50% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "HASTA 50% DESCUENTO AHORRG GIGANTE Hasta el 09/02 SKYY abell Red carnro EXPERT ôLiv^ Nesquik g2 VER MÁS En seleccionados de Repelentes; Aceites De Oliva; Bebidas y más 2004  Sólo consumo familiar; válido por usuarioldocumento",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/23910?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1202ea1a-e43c-4b89-bd3d-177a8c4c1c2b___236fefb684f6f4b2872eafc81cce0b20.webp",
         "fecha": "2026-02-06"
     },
     {
@@ -101,13 +144,79 @@
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "50% Off en Seleccionados (🍝 Almacén)",
-        "descripcion": "HASTA 50% DESCUENTO AHORRG GIGANTE Hasta el 09/02 SKYY abell Red carnro EXPERT ôLiv^ Nesquik g2 VER MÁS En seleccionados de Repelentes; Aceites De Oliva; Bebidas y más 2004  Sólo consumo familiar; válido por usuarioldocumento",
+        "titulo": "Oferta en Pollo",
+        "descripcion": "Suprema de 86.990 Pollo Congelada x KG OFERTA Hasta el 09/02 VER MAS",
         "categoria": [
-            "🍝 Almacén"
+            "🥩 Carnicería"
         ],
-        "link": "https://www.carrefour.com.ar/23910?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1202ea1a-e43c-4b89-bd3d-177a8c4c1c2b___236fefb684f6f4b2872eafc81cce0b20.webp",
+        "link": "https://www.carrefour.com.ar/suprema-congelada-x-kg-704563/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/50171a6b-8a41-484c-a893-6e800be5347a___f6dc4227300aa8b027843cde8f570247.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "18 Cuotas S/Int en Seleccionados (Electro)",
+        "descripcion": "HASTA 18 CUOTAS SIN INTERES HASTA 50 DESCUENTO Hasta el 10/02 EXCLUSIVO ONLINE",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1500d075-ef93-4773-9e49-ddbef09cc443___928e509321b4b7ccd39a7a0fc481d162.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "2x1 en Shampoo",
+        "descripcion": "2x1 LLEVANDO 2 PAGÁS 1 En selecclonados Shampoo, Acondlonadores Pañales mas Hasta el 09/02",
+        "categoria": [
+            "🧴 Perfumería y Bebé"
+        ],
+        "link": "https://www.carrefour.com.ar/23914?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/762ee292-46da-4353-ba7a-decabbc03b36___af532dbd674bd828162d84f83afbbc78.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Lavarropas",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/lavarropas-carga-superior-gafa-digifit-65kg-plata-1658335/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/524658-170-170?v=638802314623030000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Aires Acondicionados",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/aire-acondicionado-split-frio-calor-bgh-inverter-bsi65wclw-1752693/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/678132-170-170?v=638868841718300000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Shampoo",
+        "descripcion": "Dove Reconstrioon 400 SHAMPOO",
+        "categoria": [
+            "🧴 Perfumería y Bebé"
+        ],
+        "link": "https://www.carrefour.com.ar/shampoo-dove-reconstruccion-completa-400-ml-718503/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/719302-170-170?v=638941630936100000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Jabón",
+        "descripcion": "1 š @ arieyi ; Diluic SOOmI",
+        "categoria": [
+            "🧹 Limpieza"
+        ],
+        "link": "https://www.carrefour.com.ar/jabon-concentrado-ariel-platinum-botella-500-ml-749496/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/776379-170-170?v=639005417611900000&width=170&height=170&aspect=true",
         "fecha": "2026-02-06"
     }
 ]

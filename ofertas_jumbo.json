@@ -23,6 +23,17 @@
     },
     {
         "supermercado": "Jumbo",
+        "titulo": "Hasta 50% Off en Decoración, Hogar",
+        "descripcion": "Casa & Deco Valijas, Hogar y Deco 13 SNRÉS š 50% cenco pay p6sININTERÉS CRÉDITO VÁLIDO DEL 06/02 AL 12/02. PRODUCTOS SELECCIONADOS . Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
+        "categoria": [
+            "🏠 Hogar y Bazar"
+        ],
+        "link": "https://www.jumbo.com.ar/57026?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/50b4bbb7-6168-49d2-9f29-017f78ee888c___e17fbae6b569e151774c0bfdf15aadc2.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Jumbo",
         "titulo": "50% Off en Ventiladores",
         "descripcion": "Ilega ENZ4HS envíos A TUCASA = LIQUIDACIÓN QUE VUELA Ventiladores y Aires AXEL Ventilador de Pie cenCO 150% pa 160% CRÉDITO TODOMEDIO DEPAGO $54.99950 cenco oaU $43.99960 credito cenco 12 SININTERÉS Zot 06/02al 11/02. *Seleccionados. PRECIO REGULAR: $109.999 PRECIO SIN IMPUESTOS: $90 908 26 Aires Acondicionados y Ventilación Aires Acondicionados y Ventilación",
         "categoria": [
@@ -89,7 +100,7 @@
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "35% Off en Jabón Ropa, Art. Limpieza",
+        "titulo": "35% Off en Art. Limpieza, Jabón Ropa",
         "descripcion": "HASTA 35% HASTA 209 De AHoRRO* 'RESIS U Higiena (skip) @2 AqUA LAVANDHNA COMÚN Bio-EnZiMAS 1 VERLEGALES. () @yudi) emorer indal Gus Limpieza ",
         "categoria": [
             "💳 Bancarias",
@@ -164,6 +175,51 @@
         ],
         "link": "https://www.jumbo.com.ar/56982?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/cf2e2a20-81ea-42e8-badd-28dfec442096___6e702ca8360d1cecaae01414374d0bed.jpg",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "30% Off en Hasta 30% En Seleccionados De Pequeños Electrodomé",
+        "descripcion": "llega EN24HS HASTA 30% cenco 9 š 35% credito fTERÉS Pequeños electros (ster 22 22 VERLEGALES _ (RAnE Hasta 30% en Seleccionados de Pequeños Electrodomésticos\t Hasta 30% en Seleccionados de Pequeños Electrodomésticos\t",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/57018?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/9a11da0f-030c-428b-982b-79a268ab64ab___30dfc30fb479759c04bd92023c5becd0.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "Hasta 50% Off en Hasta 50% En Aires Y Ventilación Hasta 50% En Aire",
+        "descripcion": "llega EN 24HS envios GRATIS 6 HASTA HASTA 50% 12 SNERÉS cenco 6ay p 60% 12 CRÉDITO SNERÉS Liquidación de verano Aires y ventiladores VERLEGALES Hasta 50% en Aires y Ventilación Hasta 50% en Aires y Ventilación",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/57016?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/714c0df9-8fba-4e21-86dd-7d3d29ec06a2___fcc23dcb2ba58b5fd8f2144a500735cb.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "35% Off en Audio, Smart TV",
+        "descripcion": "llega EN24HS HASTA 35% cenco 140%i12 creoio SNERÉS Soportes de TV, audio y auriculares VERLEGALES Hasta 35% en Barras de sonido, parlantes y más Hasta 35% en Barras de sonido, parlantes y más",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/57019?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/87d84fb5-8c1e-4bbe-ae62-28270774bc6f___6695d7e9e37e1d7175a7bdde1d6e9e4f.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "12 Cuotas S/Int en Smart TV",
+        "descripcion": "llega ENZ4HS HASTA HASTA 15% 12 SINERÉS cenco 0 š 20% 12 CReoito STERÉS TV, celulares , notebooks y más VERLEGALES _ Hasta 15% y Hasta 12 CSI en Tv, Celulares y más Hasta 15% y Hasta 12 CSI en Tv, Celulares y más",
+        "categoria": [
+            "💳 Bancarias",
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/57025?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/a8a08b39-f1b3-4769-abc3-27dee0b79a5c___2026c3b0d304457973aa66f48505636d.webp",
         "fecha": "2026-02-06"
     }
 ]
