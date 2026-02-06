@@ -1,49 +1,36 @@
 [
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Perfumería, Cuidado Personal",
-        "descripcion": "OFERTAS de la SEMANA Rollo de Cocina HASTA INFALTABLES 40% DEL SUPER PRODUCTOS SELECCIONADOS. Nuevo @guno 'Gigante Las Tres 1 Niñas Doblle 'Hoja Dove clásica Lechecon Nerición pOSIT EXCESO EN EXCESO EN FUSION DE OLEO IMPACTO , EXCESO EN GRASAS GRASAS EXCESO EN Shampoo MLLLA AZÚCARES TOTALES SATURADAS caLORiAS Saui 5t8v OREO STELLA ARTOIS Sin ALcohol 0.0  EXCLUSIVO ONLINE VÁLIDODEL O2/02AL05/02. BEBER CONMODERACIÓN. Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
-        "categoria": [
-            "🧹 Limpieza",
-            "🧴 Perfumería y Bebé",
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.jumbo.com.ar/56969?map=productClusterIds&evento=eds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/d1dbec91-275a-4fe1-8732-1c5b35f9756d___1a0f3e889160c42f81b08440689a6b3b.webp",
-        "fecha": "2026-02-05"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "Oferta en Roast Beef De Novillito Roast Beef De Novillito",
-        "descripcion": "más fresco más rico ROAST BEEF $11.999 DE NOVILLITO VÁLIDO DEL 02/02 AL 05/02 PRECIO SIN IMPUESTOS NACIONALES: $10,858.82 Roast beef de novillito Roast beef de novillito",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.jumbo.com.ar/56973?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6ed0957f-2f87-4034-a713-391d849308c9___d5c4871c245a1ae3b498cf1d1cc671ed.webp",
-        "fecha": "2026-02-05"
-    },
-    {
-        "supermercado": "Jumbo",
         "titulo": "Promoción Bancaria",
-        "descripcion": "VUELTA CLASES OFERTAS PARA PREPARAR TODO 130% cencopay CRÉDITO p 40% SIN INTERÉS útiles, mochilas, libros y más VÁLIDO DEL 30/01 AL 05/02. SELECCIONADOS. Hasta 30% + Hasta 6 CSI en Vuelta a Clases Hasta 30% + Hasta 6 CSI en Vuelta a Clases",
+        "descripcion": "VIERNES DOMINGO AL 8 febrero febrero JUMBO ExTREMC LECHES LARGA VIDA #VER EXCLUSIONES COMBINALOS COMO QUIERAS , MISMA MARCA Y CATEGORIA. HASTA 2DOAL CAPILARES 80% COMBINALOS COMO QUIERAS , MISMA MARCA Y CATEGORíA. 4x3 cencopay CRÉDITO 5x3 QUEDAN EXCLUIDOS DELAS PROMOCIONES LOS LOCALES CÓRDOBA, MADEROY ARENALES. Jumbo Ofertas Jumbo Ofertas",
         "categoria": [
             "💳 Bancarias"
         ],
-        "link": "https://www.jumbo.com.ar/56837?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/452444a2-501e-481c-8191-10a945c24c98___63bbbd6620b581fc6b2843504f31dc66.webp",
-        "fecha": "2026-02-05"
+        "link": "https://www.jumbo.com.ar/55707?map=productClusterIds&evento=jumboofertas",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/063bbddb-e06d-4334-91a5-c78a9a83c845___1f1ec84540fdce6070800b08af1b158a.webp",
+        "fecha": "2026-02-06"
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Hogar, Bazar",
-        "descripcion": "Casa € Deco CROSS-CHECV Ropa de cama, Organización, Bazar y más {3seRés 150% krea Ymás! VÁLIDO DEL 30/01 AL 05/02. PRODUCTOS SELECCIONADOS. Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
+        "titulo": "Hasta 50% Off en Hasta 50% En Electrodomésticos Hasta 50% En Electr",
+        "descripcion": "llega EN 24HS envios A TUCASA % Electros para todo 150% censg 160% CRÉDITO cenco HASTA 12 SININTERÉS nenng 06/02al 11/02. *Seleccionados Hasta 50% en Electrodomésticos Hasta 50% en Electrodomésticos",
         "categoria": [
-            "🏠 Hogar y Bazar"
+            "📺 Electro y Tecno"
         ],
-        "link": "https://www.jumbo.com.ar/56824?map=productClusterIds&evento=fdshogar",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/5a82a8fc-1e79-463d-8adb-ab44547c138c___91f829324314f8597acb0a58bd45d5da.webp",
-        "fecha": "2026-02-05"
+        "link": "https://www.jumbo.com.ar/57015?map=productClusterIds&evento=fdselectro",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/eb43c019-21ed-4e20-8d7b-0ea930823f74___530f88e21d18bea740e123b62fbe1e3e.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "50% Off en Ventiladores",
+        "descripcion": "Ilega ENZ4HS envíos A TUCASA = LIQUIDACIÓN QUE VUELA Ventiladores y Aires AXEL Ventilador de Pie cenCO 150% pa 160% CRÉDITO TODOMEDIO DEPAGO $54.99950 cenco oaU $43.99960 credito cenco 12 SININTERÉS Zot 06/02al 11/02. *Seleccionados. PRECIO REGULAR: $109.999 PRECIO SIN IMPUESTOS: $90 908 26 Aires Acondicionados y Ventilación Aires Acondicionados y Ventilación",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/57016?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/14d1394b-cd3d-4133-bea3-cd3e0ba4bc7c___23f053fc0409c1e06e116a863f2d169b.webp",
+        "fecha": "2026-02-06"
     },
     {
         "supermercado": "Jumbo",
@@ -54,7 +41,7 @@
         ],
         "link": "https://www.jumbo.com.ar/eventos/descuentos-jumbo-prime",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/83964e78-51fa-4196-8982-c2a6fa63cb4a___edaff8256615fd9011c8aed865bca5b2.png",
-        "fecha": "2026-02-05"
+        "fecha": "2026-02-06"
     },
     {
         "supermercado": "Jumbo",
@@ -65,85 +52,97 @@
         ],
         "link": "https://www.jumbo.com.ar/17321?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/6d164ab2-9933-4948-959c-728dbebbbc1b___b7c8c35fe83093661e73ca56a2aa7fc1.webp",
-        "fecha": "2026-02-05"
+        "fecha": "2026-02-06"
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Perfumería, Art. Limpieza",
-        "descripcion": "HASTA EXCLUSIVO ONLINE 40% Elite ELVIVE ORE Ultra Suave VERLEGALES . Perfumería y Limpieza ",
+        "titulo": "2do al 70% en Almacén",
+        "descripcion": "HASTA 2DO AL 70% FL SABOR Dkl Pnara CAsEKA Des0l 1912 8I 8 VICENTE Oon 8 888 TALLARIN {Ma d/ skatae 28ã on VERLEGALES _ 1 8 3 Almacén ",
         "categoria": [
-            "🧹 Limpieza",
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar/57020?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/b7f599b6-7005-4f20-8865-1e4cf4bad871___34d4176a375c5b243979f29d5da71ec5.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "2do al 70% en Lácteos ",
+        "descripcion": "HASTA 2DO AL 70% Las\" Tres Niñas Mo Es{hocolIAda , E EXCESO AZUCARES liviana lche Con IMpACTO ,  positivo QINDOR 730 Yoqurisimo Gaiego VERLEGALES _ Lácteos ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar/57021?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/2deffa3c-a69f-4ac2-82d6-015b741cf8f1___364570b49e3eb40fedbabfc79f8345dc.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "4x2 en Cervezas ",
+        "descripcion": "HASTA 4x2 lue Hoor  Bnewingco 31ó12 por La ANARES ANARFS MOON BLue kc S@GG BELGIAN VERLEGALES. BEBERCONMODERACIÓN. Cervezas ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.jumbo.com.ar/57022?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/68709ff9-4f56-4cfb-b0c8-88cc9698c4a9___9bbe3d4f007482f8e3e3e3f0251e4685.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "35% Off en Jabón Ropa, Art. Limpieza",
+        "descripcion": "HASTA 35% HASTA 209 De AHoRRO* 'RESIS U Higiena (skip) @2 AqUA LAVANDHNA COMÚN Bio-EnZiMAS 1 VERLEGALES. () @yudi) emorer indal Gus Limpieza ",
+        "categoria": [
+            "💳 Bancarias",
+            "🧹 Limpieza"
+        ],
+        "link": "https://www.jumbo.com.ar/57023?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/ebbe9788-2221-4e09-85bf-ad4adc91ffa7___ce1c7ff119d6cd0f1f9ad082f8f00308.webp",
+        "fecha": "2026-02-06"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "2do al 80% en Cuidado Capilar, Pasta Dental",
+        "descripcion": "HASTA 2DO AL 80% 24h PROIECAO Antibacteriane' 1 8 PANTENE HIDRATA FORTALECE Colgate Hidrate Hasia Formisse Total # VERLEGALES . Cuidado Personal ",
+        "categoria": [
+            "🧀 Lácteos y Frescos",
             "🧴 Perfumería y Bebé"
         ],
-        "link": "https://www.jumbo.com.ar/56955?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/2f179a82-cc18-4b19-a481-5d068a878e99___b6c7c4a4587c9a72b4f4a88addc2c558.webp",
-        "fecha": "2026-02-05"
+        "link": "https://www.jumbo.com.ar/57024?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/c582d439-8792-46fa-a59f-ca48f51c2020___9b4a91fedeb8d2d925d8a8d213a1d44f.webp",
+        "fecha": "2026-02-06"
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2do al 70% en Leche",
-        "descripcion": "HASTA 2DOAL EXCLUSIVO ONLINE 70% Las Tres Niñas liviana 13, Conicet LEchE Con proteinast) JUERENISILLA Probioticos IMPACTO  positivo Yogurisimo GRIEGO sabor NATURAL VERLEGALES . Lácteos ",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.jumbo.com.ar/56956?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/f5f91909-b897-47fd-a6d4-821a1871a6cf___76fb684682ef795921276b77355bfcbc.webp",
-        "fecha": "2026-02-05"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "2x1 en Cervezas ",
-        "descripcion": "HASTA EXCLUSIVO ONLINE 2x1 | MELLA Budweiser berr; {eaa 8 We Anow Wonnhund 'brhar hicn Cosis Wiurk Aaing prouuces brrt Acachwoud uso, inkabllv uou will flnd @n no olher o Tichel U L T R A 10 5 STELLA CALS CARBS Midrk ARTOIS [EB} Veaigs regist Simalcohol qei VERLEGALES. BEBER CONMODERACIÓN. Cervezas ",
+        "titulo": "Hasta 50% Off en Hasta 4X2 En Cervezas Hasta 4X2 En Cervezas",
+        "descripcion": "HASTA 4x2 CERVEZAS Buue Hoox Brswikgco isión2 poR La ANIARES  MooN BLue S@6G BELGIAN WHITE RUBI I26e1250 OULCE Velguey-style Wetat IUE 8288 600/ Hasta 4x2 en cervezas Hasta 4x2 en cervezas",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.jumbo.com.ar/56957?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/45632544-87a7-4d5a-9d7b-2d96810267ea___31e33563449bab53279bff7f3bea671b.webp",
-        "fecha": "2026-02-05"
+        "link": "https://www.jumbo.com.ar/57008?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/3305a817-f755-4e34-b051-12c144cb81db___f9a7cb9e335f805f3c2419b4e7bc5c28.webp",
+        "fecha": "2026-02-06"
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2do al 80% en Yerba",
-        "descripcion": "HASTA 2DOAL EXCLUSIVO ONLINE 80% Tebmmit elEoQLo4 C UbreDE GuirnghFoneao IAcc < YERBA MATE énàh Pipore 8 8 88/ @llime 8 VERLEGALES Desayuno ",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56958?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/80d7a525-af8b-4add-963c-48bbda06aea3___6d6a19d2241b613663f122f0e88b73a2.webp",
-        "fecha": "2026-02-05"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Bebidas Sin Alcohol ",
-        "descripcion": "HASTA 2DOAL EXCLUSIVO ONLINE 50% FrCsoa Atucare PcESC 29585  9954 luGla 5EE {22SL (erogt_ GccGlo Zero Sabor Liviano VERLEGALES . Bebidas Sin Alcohol ",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.jumbo.com.ar/56959?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/1630f363-ff02-46cd-9068-7fae34caf7d7___d436dd00fb405e91765aac452dd1398b.webp",
-        "fecha": "2026-02-05"
-    },
-    {
-        "supermercado": "Jumbo",
-        "titulo": "40% Off en Cocinas",
-        "descripcion": "HASTA 40% INFALTABLES DEL SUPER PRODUCTOS SELECCIONADOS. EXCLUSIVO ONLINE Rollo de Cocina Nuevo Giguilo 'Gigante Las Tres Niñas Doble Hoja clásica Lchegon IMPACTO / PosITIL Ecesoen Bxcesoen Gorll Bxoesoen AZUcAres Grasas BxceSC Totaus emuenl calorins VERLEGALES BEBERCONMODERACIÓN OREO Infaltables de Super Infaltables de Super",
+        "titulo": "15% Off en Lavarropas",
+        "descripcion": "llega EN24HS HASTA HASTA 15% 12 SINERÉS cenco pa š 20% 12 Creoito fTERÉS Heladeras , lavarropas y más VERLEGALES_ Hasta 15% en Heladeras y más Hasta 15% en Heladeras y más",
         "categoria": [
             "📺 Electro y Tecno"
         ],
-        "link": "https://www.jumbo.com.ar/56960?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/9be020a9-563a-420d-9702-b2983063d886___59f413c5ac18b9c09ca073122e9dac9d.webp",
-        "fecha": "2026-02-05"
+        "link": "https://www.jumbo.com.ar/57017?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/cea73bc4-e5ea-4a5d-ad7c-4739788bb272___7f307c19861fa4483d4200947ae275a9.webp",
+        "fecha": "2026-02-06"
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "2x1 en 2X1 En Cervezas 2X1 En Cervezas",
-        "descripcion": "2x1 CERVEZAS PRODUCTOS SELECCIONADOS. EXCLUSIVO ONLINE Budnriser beer: ne kron nos boy Alick cusla Wuck barm unrnd Tichel agann Aouil produces 0 iu,6, Mamurv [ Vou hill fena Lnn 7a5o U L T R A HB} 105 CALS CARBS aak Rcgist wdwei 0 a 8 ( € n  VERLEGALES BEBERCONMODERACIÓN 2x1 en Cervezas 2x1 en Cervezas",
+        "titulo": "5x3 en Leche",
+        "descripcion": "cencogay CRÉDXTO 5x3 4x3 LECHES LARGA VIDA Las Tres Niñas clásica LEChE Con IMPACTO ,  positivo Hasta 2do al 70% en Leches Hasta 2do al 70% en Leches",
         "categoria": [
-            "🍝 Almacén"
+            "🧀 Lácteos y Frescos"
         ],
-        "link": "https://www.jumbo.com.ar/56957?map=productClusterIds",
-        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/01039e7b-bd9b-4164-9b74-53f23dd4e87a___a55c196833afe3db26eedd63aa3c9b78.webp",
-        "fecha": "2026-02-05"
+        "link": "https://www.jumbo.com.ar/57124?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/33e1f833-7896-41a3-85ae-2bb0b9c4a0b7___d3102cee59e7d885051db89bdf80d0fa.webp",
+        "fecha": "2026-02-06"
     },
     {
         "supermercado": "Jumbo",
@@ -154,7 +153,7 @@
         ],
         "link": "https://www.jumbo.com.ar/56765?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/3faca400-1005-4794-9f03-38455aa5b887___0dd500168305aea06977e951eb3657ad.jpg",
-        "fecha": "2026-02-05"
+        "fecha": "2026-02-06"
     },
     {
         "supermercado": "Jumbo",
@@ -165,6 +164,6 @@
         ],
         "link": "https://www.jumbo.com.ar/56982?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/cf2e2a20-81ea-42e8-badd-28dfec442096___6e702ca8360d1cecaae01414374d0bed.jpg",
-        "fecha": "2026-02-05"
+        "fecha": "2026-02-06"
     }
 ]
