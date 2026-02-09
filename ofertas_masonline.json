@@ -9,7 +9,7 @@
         ],
         "link": "https://www.masonline.com.ar/mas-autocenter",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/068bf2c4-75b1-4dde-8d78-e9974903f1ad/image/attachments/Home_Automotor_dkt.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
@@ -20,7 +20,7 @@
         ],
         "link": "https://www.masonline.com.ar/vuelta-al-cole",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/963040b5-ca04-47da-9135-33c6836dfd03/image/attachments/27-28_Bhc-bts-dkp_dkp-vinos-01.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
@@ -31,7 +31,7 @@
         ],
         "link": "https://www.masonline.com.ar/868?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/d10d3e91-a8a2-421e-b74e-f7cc2e70f1c2/image/attachments/Banner_Home_Flash_30y31%20de%20enero-17.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
@@ -42,7 +42,7 @@
         ],
         "link": "https://www.masonline.com.ar/3518?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/00771e8d-3fb3-45b2-9078-7f12726f38ef/image/attachments/Home_Flash_Leches.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
@@ -53,11 +53,11 @@
         ],
         "link": "https://www.masonline.com.ar/1654?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/71ff152f-54f2-4325-8554-38a7d9289311/image/attachments/Home_Flash_galletitasyyogures.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Electro Noblex",
+        "titulo": "12 Cuotas S/Int en Smart TV",
         "descripcion": "ChangoMâs MâsOnline comar 12 cuotas 55\" AK OFERTAS FLASH SININTERÉS VISA CABAL los Bancos de todos Carnaval Del 6 al 9 de febrero 54.999 ANTES: $799.999 AHORA: $659.988 15% P sin imp Nac: $545.444,63 Desataoto Stock: 8000 un: Smart TV 55\" AK Philips 0 Noblex PHILIPS NOBLEX QUIERO VER MÁs PARA MÁSINFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM.AR/LEGALES_ ",
         "categoria": [
             "💳 Bancarias",
@@ -65,7 +65,18 @@
         ],
         "link": "https://www.masonline.com.ar/1093?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/1fb4adfe-186d-498d-8a76-2d11d8a2d66d/image/attachments/Home_Flash_TV.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "15% Off en Varios Productos",
+        "descripcion": "ChangoMâs MâsOnline comar SIN TOPE Beneficio Lunes y Jueves Mâs club' 15% 7 Exclusivo MâsOnline Descuento comar entu compra No acumulable con otras promociones. Consultas detalles y legales en WWW.masonline com.ar/promociones-bancarias Martes y Miércoles Exclusivo Sucursal QUIERO VERMÁs ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar/masclub",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/a8b24713-a07f-4c83-bb54-d6d2c86a8071/image/attachments/11_masclub_dkp.webp",
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
@@ -76,18 +87,7 @@
         ],
         "link": "https://www.masonline.com.ar/promociones-bancarias",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/78aa3c29-f1b3-4a6e-9094-e1b448588c3d___56d6685325ac169cbffcb6a2bd516620.webp",
-        "fecha": "2026-02-08"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "3 Cuotas S/Int en Varios Productos",
-        "descripcion": "Peren Frkhfa Galicia VISA Jueves a domingos 3cuotas Entodatucompra. SIN INTERÉS Crédito Exclusivo sucursal  ",
-        "categoria": [
-            "💳 Bancarias"
-        ],
-        "link": "https://www.masonline.com.ar/promociones-bancarias",
-        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/cdf765f7-537d-413f-a5bf-889148918b39___9b48b9d2e10e36fde4e90ba03469390b.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
@@ -99,7 +99,7 @@
         ],
         "link": "https://www.masonline.com.ar/411?map=productClusterIds",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/e6d3d85d-a63a-4c77-8c68-266e1a1639c3___5e1fd12d4736631e88010c16aac3566e.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
@@ -110,18 +110,29 @@
         ],
         "link": "https://www.masonline.com.ar/3353?map=productClusterIds",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/04992011-45b3-4cb7-8e48-d8fe198bd0eb___c2cd3221234db6a641ef468ab08b1529.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "Oferta en Aires Acondicionados",
+        "titulo": "Oferta en Electro Philco",
         "descripcion": "PHILCO BlooW 8 Aire Acondicionado Split Philco 3350 Watt Frio Calor Phs32ha4cn ",
         "categoria": [
             "📺 Electro y Tecno"
         ],
         "link": "https://www.masonline.com.ar/aire-acondicionado-philco-3400w-frio-calor-phs32ha4cn-2/p",
         "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/275581-230-230?v=638143617776100000&width=230&height=230&aspect=true",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Aires Acondicionados",
+        "descripcion": " Aire Acondicionado Split Inverter Hyundai 5000 Watt Frio Calor Hy11inv 5000fc ",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.masonline.com.ar/aire-acondicionado-hyundai-split-inverter-frio-calor-5000-frigorias-hy11inv-5000fcw/p",
+        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/359901-230-230?v=638913780394600000&width=230&height=230&aspect=true",
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
@@ -133,7 +144,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/ea6edd64-d995-4058-8f7a-d7b51455639c/multimedia/attachments/01_Regionales_Verano_28al03_Regional_2-%20Bebidas%20copia.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
@@ -144,11 +155,11 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/fca3dd28-4844-4a2a-8ec1-b46ed50dd172/multimedia/attachments/01_Regionales_Verano_28al03.png",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "35% Off en Art. Limpieza",
+        "titulo": "35% Off en Perfumería",
         "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comar Prgiiu Perfumería y limpieza Hasta 35% Descuento Unitario PARA MÁS INFORMACIÓN OLIMITACIONES APLICABLES, CONSULTE EN MASONLINE COM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831, C ABA Novedad image ",
         "categoria": [
             "🧹 Limpieza",
@@ -156,7 +167,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/75fe2de0-1945-4be6-a548-876143cc2df2/multimedia/attachments/01_Regionales_Verano_28al03_Regional_4-%20Perfumeria.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
@@ -167,7 +178,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/673ead76-79e3-4e63-9a1b-bfe1eb2ed4eb/multimedia/attachments/01_Regionales_Verano_04%20al%2010.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     },
     {
         "supermercado": "MasOnline",
@@ -178,6 +189,6 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/e430e4c0-99e9-4e53-b501-6319e02c39a0/multimedia/attachments/01_Regionales_Verano_04%20al%2010-07.webp",
-        "fecha": "2026-02-08"
+        "fecha": "2026-02-09"
     }
 ]
