@@ -1,15 +1,48 @@
 [
     {
         "supermercado": "MasOnline",
-        "titulo": "Oferta en Neumáticos",
-        "descripcion": "Del 4al 15 de febrero ChangoMâs MâsOnline comar ABIERTO TODOS LOS DíASDE8 A22H CARNAVAL 12suotas DE OFERTAS SIN INTERÉS VISA orapg darodce  bancos PARA TU AUTO Todos los neumáticos fatel ZRIDGESTODE Hsrizsn CORVEN Firestone IREZII COLOCACIÓN GRATIS EN @Mâsaurg QUIERO VER MÁs PARA MÁSINFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM AR/LEGALES_ ",
+        "titulo": "Oferta en Galletitas",
+        "descripcion": "Del 4al10 de febrero ChangoMâs MâsOnline com.ar Galletitas @REO Pepitosl seleccionadas % 70 Terrabu Si EPress 98R0 Descuento Segunda Variedad Unidad Crackers Galletitas rellenas 190g: oavena 18Og: QUIERO VER MÁs PARA MÁSINFORMACIÓNO LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM.AR/LEGALES_ ",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.masonline.com.ar/1654?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/820bd67b-2128-48bc-bef6-337b083bab9a/image/attachments/Home_Galletitas_dkt.webp",
+        "fecha": "2026-02-10"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Perfumería",
+        "descripcion": "Del 4al10 de febrero ChangoMâs MâsOnline comai Perfumería seleccionados % Cool 80 Dove PANTENE 'Degunanto Cuidado del cabello Protex 9984 Unidad COMBINALO COMO QUIERAS Jabón enpastilla SlAMPOO CONUMGNS Savroo QUIERO VER MÁs PARA MÁSINFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM AR/LEGALES_ ",
+        "categoria": [
+            "🧴 Perfumería y Bebé"
+        ],
+        "link": "https://www.masonline.com.ar/2907?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/c9df0a5e-9aa5-43d5-8c32-60308ce814b9/image/attachments/Home_Perfumeria_dkt.webp",
+        "fecha": "2026-02-10"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "35% Off en Art. Limpieza",
+        "descripcion": "Del 4al10 de febrero Changol Marone Limpieza skip Ace n [HARPIC) 7AT9 @mfôrt 'anish seleccionados Detergente Detergente líquido Y diluible líquido para ropa Lavavajillas Detergente líquido para ropa 35% Protectores Descuento BANaNa #ruteliuk SULAh solares dermaglós BOAT ZONO Rayito VN Unitario VIV( INTENSAMENTE de Sol seleccionados VILLENEUVE QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM.AR/LEGALES_ ",
+        "categoria": [
+            "🧹 Limpieza"
+        ],
+        "link": "https://www.masonline.com.ar/2199?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/8a7a658d-703c-477d-8edc-b482305ae1d0/image/attachments/Home_Limpieza_Solares_dkt.webp",
+        "fecha": "2026-02-10"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "12 Cuotas S/Int en Aires Acondicionados",
+        "descripcion": "Del 4al10 de febrero ChangoMâs MâsOnline comar Mas Ofertas Verano ToDoa SELECCIONADos 12 cuotas SIN INTERÉS VISA CABAL de todos los Bancos Mlês smart TV 50\" 0mas Aires acond. Heladeras Freezer Lavarropas Celulares QUIERO VER MÁs PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM AR/LEGALES_ ",
         "categoria": [
             "💳 Bancarias",
-            "🚗 Auto y Aire Libre"
+            "📺 Electro y Tecno"
         ],
-        "link": "https://www.masonline.com.ar/mas-autocenter",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/068bf2c4-75b1-4dde-8d78-e9974903f1ad/image/attachments/Home_Automotor_dkt.webp",
-        "fecha": "2026-02-09"
+        "link": "https://www.masonline.com.ar/masofertas-electroyhogar",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/faba552f-6f35-4622-ad4f-5f95f3ac5830/image/attachments/Home_GM_dkt.webp",
+        "fecha": "2026-02-10"
     },
     {
         "supermercado": "MasOnline",
@@ -20,7 +53,19 @@
         ],
         "link": "https://www.masonline.com.ar/vuelta-al-cole",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/963040b5-ca04-47da-9135-33c6836dfd03/image/attachments/27-28_Bhc-bts-dkp_dkp-vinos-01.webp",
-        "fecha": "2026-02-09"
+        "fecha": "2026-02-10"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Neumáticos",
+        "descripcion": "Del 4al 15 de febrero ChangoMâs MâsOnline comar ABIERTO TODOS LOS DíASDE8 A22H CARNAVAL 12suotas DE OFERTAS SIN INTERÉS VISA orapg darodce  bancos PARA TU AUTO Todos los neumáticos fatel ZRIDGESTODE Hsrizsn CORVEN Firestone IREZII COLOCACIÓN GRATIS EN @Mâsaurg QUIERO VER MÁs PARA MÁSINFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM AR/LEGALES_ ",
+        "categoria": [
+            "💳 Bancarias",
+            "🚗 Auto y Aire Libre"
+        ],
+        "link": "https://www.masonline.com.ar/mas-autocenter",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/068bf2c4-75b1-4dde-8d78-e9974903f1ad/image/attachments/Home_Automotor_dkt.webp",
+        "fecha": "2026-02-10"
     },
     {
         "supermercado": "MasOnline",
@@ -31,41 +76,7 @@
         ],
         "link": "https://www.masonline.com.ar/868?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/d10d3e91-a8a2-421e-b74e-f7cc2e70f1c2/image/attachments/Banner_Home_Flash_30y31%20de%20enero-17.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Precio Especial en Leche",
-        "descripcion": "ChangoMâs MâsOnline Acomar OFERTAS FLASH Carnaval Del 6 al 9 de febrero Check Check Check  Parcialmente Leche UAT Leche UAT Descremada Baja en Lactosa' Entera 1ARGA VIDA 9836 iollu Llk Fueni VIE; VItam EABEREIAENTE Fucntc Fuente  Vutominog 4t24 s Vitominos 1.149q Leche larga vida entera; descremada y baja en lactosa Check x IL. iLitro P. sin imp. Nac: $949,59 Stock: 1.000 un: 1Litro iLitro QUIERO VER MÁs PARA MÁSINFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM.AR/LEGALES_ ",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.masonline.com.ar/3518?map=productClusterIds",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/00771e8d-3fb3-45b2-9078-7f12726f38ef/image/attachments/Home_Flash_Leches.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Oferta en Yogur",
-        "descripcion": "Galletitasy yogures seleccionados OQE@ Pepitos] {TcrrabuSi colletitos callettas Calletitas Variedod ChangoMâs MâsOnline comar OFERTAS FLASH Carnaval Del 6 al 9 de febrero % Exprøss 98R0 RIANIT 70 Descuento Crockpr Golletitas o@vefo 18Ogrs {crujitas enas |ducire Segunda Unidad Yogurísimo Ser JERENISIMA YogirPs Nutrición activa Yoguroc QUIERO VER MÁs PARA MÁSINFORMACIÓN OLIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM.AR/LEGALES_ ",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.masonline.com.ar/1654?map=productClusterIds",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/71ff152f-54f2-4325-8554-38a7d9289311/image/attachments/Home_Flash_galletitasyyogures.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Smart TV",
-        "descripcion": "ChangoMâs MâsOnline comar 12 cuotas 55\" AK OFERTAS FLASH SININTERÉS VISA CABAL los Bancos de todos Carnaval Del 6 al 9 de febrero 54.999 ANTES: $799.999 AHORA: $659.988 15% P sin imp Nac: $545.444,63 Desataoto Stock: 8000 un: Smart TV 55\" AK Philips 0 Noblex PHILIPS NOBLEX QUIERO VER MÁs PARA MÁSINFORMACIÓN O LIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM.AR/LEGALES_ ",
-        "categoria": [
-            "💳 Bancarias",
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.masonline.com.ar/1093?map=productClusterIds",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/1fb4adfe-186d-498d-8a76-2d11d8a2d66d/image/attachments/Home_Flash_TV.webp",
-        "fecha": "2026-02-09"
+        "fecha": "2026-02-10"
     },
     {
         "supermercado": "MasOnline",
@@ -76,7 +87,18 @@
         ],
         "link": "https://www.masonline.com.ar/masclub",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/a8b24713-a07f-4c83-bb54-d6d2c86a8071/image/attachments/11_masclub_dkp.webp",
-        "fecha": "2026-02-09"
+        "fecha": "2026-02-10"
+    },
+    {
+        "supermercado": "MasOnline",
+        "titulo": "Oferta en Yogur",
+        "descripcion": "Del 29 de enero al 11 de febrero este Las Tres Niñas verano dame un GRRR PRODUCTO LÁCTEO SIN FLORA LÁCTICA ACTIVA, ENDULZADO, FORTIFICADO coN VITAmINAS AYd, SABOR VAINILLAY FRUTILLA, A BASE DE YOGUR- LIBRE DE GLUTEN 8529 Tres DCESO CUCES Azcanrs aso Las  Tres LasTres Las Niñas Tres Kilirs Niñas Niñas 1 1 UTA š Vakilla 1 Valhla 1 1 bebiBlE Eeb le cremosd BAs Base 0  YcRevo5o YdgjR {\" [ReMoso BiBiee Togur YOGUR Base ? 525005 QUIERO VER MÁs ",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.masonline.com.ar/1672?map=productClusterIds",
+        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/ef2f7934-c903-4026-a85c-8d49f440e4b0/image/attachments/Las%20tres%20nin%CC%83as%20enero-01.webp",
+        "fecha": "2026-02-10"
     },
     {
         "supermercado": "MasOnline",
@@ -87,108 +109,6 @@
         ],
         "link": "https://www.masonline.com.ar/promociones-bancarias",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/78aa3c29-f1b3-4a6e-9094-e1b448588c3d___56d6685325ac169cbffcb6a2bd516620.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "12 Cuotas S/Int en Celulares",
-        "descripcion": "Hasta 12 Cuotas SIN INTERÉS tvs y celulares tvs y celulares",
-        "categoria": [
-            "💳 Bancarias",
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.masonline.com.ar/411?map=productClusterIds",
-        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/e6d3d85d-a63a-4c77-8c68-266e1a1639c3___5e1fd12d4736631e88010c16aac3566e.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "30% Off en Varios Productos",
-        "descripcion": "Hasta 30% Descuento Hasta 12 SMotrís SIN Mlds  ",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.masonline.com.ar/3353?map=productClusterIds",
-        "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/04992011-45b3-4cb7-8e48-d8fe198bd0eb___c2cd3221234db6a641ef468ab08b1529.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Oferta en Electro Philco",
-        "descripcion": "PHILCO BlooW 8 Aire Acondicionado Split Philco 3350 Watt Frio Calor Phs32ha4cn ",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.masonline.com.ar/aire-acondicionado-philco-3400w-frio-calor-phs32ha4cn-2/p",
-        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/275581-230-230?v=638143617776100000&width=230&height=230&aspect=true",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Oferta en Aires Acondicionados",
-        "descripcion": " Aire Acondicionado Split Inverter Hyundai 5000 Watt Frio Calor Hy11inv 5000fc ",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.masonline.com.ar/aire-acondicionado-hyundai-split-inverter-frio-calor-5000-frigorias-hy11inv-5000fcw/p",
-        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/359901-230-230?v=638913780394600000&width=230&height=230&aspect=true",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "35% Off en Snacks",
-        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline connkar BUNNINGTOK iMi Cinoi Bebidas Y snacks Rex ORIGINAL @Rí|ìR Hasta 35% Descuento Jeuu Unitario BEBER CON MODERACIÓN. PROHIBIDA SU VENTAAMENORES DE 18 AÑOS PARA MÁS INFORMACIÓN OLIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM AR/LEGALES.DORINKA SRL 30-67813830-0 BOLIVIA 5831, CABA Novedad image ",
-        "categoria": [
-            "🍷 Bebidas",
-            "🍝 Almacén"
-        ],
-        "link": "https://www.masonline.com.ar",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/ea6edd64-d995-4058-8f7a-d7b51455639c/multimedia/attachments/01_Regionales_Verano_28al03_Regional_2-%20Bebidas%20copia.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "Oferta en Almacén",
-        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comar Almacén Hasta 352 Descuento Unitario PARA MÁSINFORMACIÓN OLIMITACIONES APLICABLES, CONSULTEEN MASONLINECOM.AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831, C.ABA Novedad image ",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.masonline.com.ar",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/fca3dd28-4844-4a2a-8ec1-b46ed50dd172/multimedia/attachments/01_Regionales_Verano_28al03.png",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "35% Off en Perfumería",
-        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comar Prgiiu Perfumería y limpieza Hasta 35% Descuento Unitario PARA MÁS INFORMACIÓN OLIMITACIONES APLICABLES, CONSULTE EN MASONLINE COM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831, C ABA Novedad image ",
-        "categoria": [
-            "🧹 Limpieza",
-            "🧴 Perfumería y Bebé"
-        ],
-        "link": "https://www.masonline.com.ar",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/75fe2de0-1945-4be6-a548-876143cc2df2/multimedia/attachments/01_Regionales_Verano_28al03_Regional_4-%20Perfumeria.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "50% Off en Varios Productos",
-        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline comar Muebles de interior Hasta 50% Descuento Unitario Hasta 12suotas SIN INTERÉS PARA MÁS INFORMACIÓN OLIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831, C ABA Novedad image ",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.masonline.com.ar",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/673ead76-79e3-4e63-9a1b-bfe1eb2ed4eb/multimedia/attachments/01_Regionales_Verano_04%20al%2010.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "MasOnline",
-        "titulo": "40% Off en Varios Productos",
-        "descripcion": "Mas Ofertas Verano ChangoMâs MâsOnline coriar Muebles de exterior Hasta 40% Unitario Descuento Hasta 12suots SININTERÉS PARA MÁS INFORMACIÓN OLIMITACIONES APLICABLES, CONSULTE EN MASONLINE COM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831, C.ABA Novedad image ",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.masonline.com.ar",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/e430e4c0-99e9-4e53-b501-6319e02c39a0/multimedia/attachments/01_Regionales_Verano_04%20al%2010-07.webp",
-        "fecha": "2026-02-09"
+        "fecha": "2026-02-10"
     }
 ]

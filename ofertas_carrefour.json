@@ -8,161 +8,107 @@
         ],
         "link": "https://www.carrefour.com.ar/20666?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/61187cb6-3c7c-4fea-ae83-444a0ade661a___ab830f59ded4b04cd5ec9a79d866c61c.png",
-        "fecha": "2026-02-09"
+        "fecha": "2026-02-10"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "12 Cuotas S/Int en Electrodomésticos",
-        "descripcion": "Exclusivo online iSolo por este finde! HASTA 12 CUOTAS SIN INTERÉS AHORRG GIGANTI 4 9 50\" Shartt 4K Hasta el 09/02 NOBLEX VER MÁS En seleccionados de: Electro UHD OBluetocih Sólo consumo familiar, válido por usuarioldocumento. Goode",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/24014?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/7cd04f6a-e4a4-4b01-8832-27f36e99ad07___224f886a2bc23bb6ef8fd94727d4c6d8.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "12 Cuotas S/Int en Aires Acondicionados",
-        "descripcion": "iSolo por este fnde! PRECIO NORMAL 8999-000 Hasta el 09/02 Aire Split Alaska 3200W OFERTA 8729.000 12 CUOTAS SIN INTERÉS DE 860.750 VER MÁS Solo consumo familiar válido por usuario documento EXCLUSIVO ONLINE",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/aire-acondicionado-alaska-3500w-as35wcew/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/79859b00-ef1b-4f0b-a208-5dd64a6b6018___418e0fe4519b7827345a23097f6c40fd.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Yerba",
-        "descripcion": "50 CrG [0i 30 DESCUENTO ra EN LA 24* UNIDAD 180 Yerba; Cervezas y Rollos de Coclna",
+        "titulo": "Cupón de $25000 en Seleccionados (🍝 Almacén)",
+        "descripcion": "EXCLUSIVO ONLINE Undaors 24 Maxnas VÁLIDO SÓLO POR EL 10/02 @NreEb [NMEDINTA TE REGALAMOS SI ESTAS EN CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL CUPÓN s5OOO DESCUENTO MINIMO DE COMPRA: $25.000 HACÉ TU PEDIDO ONLINE RECIBILO EN 0gORA 5K-OFF-FEB Válido sólo por 10/02 de 2026 de 08.00 2000 hs Exclusivg Fomora online mayores 825.000, con modalidad de Entrega Inmediata. No oplica compras prooramadas Carrerouecom arllegales ovoles",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/23910?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9c528057-1c1b-471a-a8fd-080289adb4c8___055a9ed722a54dd4242e84a7533415b2.webp",
-        "fecha": "2026-02-09"
+        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ac507c54-8bc4-445a-9afc-379abe876847___8ef8c30d18dcbc71d1b7cbf96683955a.webp",
+        "fecha": "2026-02-10"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Seleccionados (Electro)",
-        "descripcion": "HASTA 40 DESCUENTO Pequenos Electrodomestcos, Ventlaclón y más",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23957?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/e1580806-1537-42df-9722-22f5b274aade___d372ec086e33138dc2be1f2c1bc72f82.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "6 Cuotas S/Int en Seleccionados (🍝 Almacén)",
-        "descripcion": "HAaT 6 CUOTAS SIN INTERÉS Hlsi 25 DESCUENTO En seleccionados de: Celulares, Mlcroondas, Parantes Tores de Sonldo Hasta el 09/02",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/23956?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/fbf5a2a2-11c1-42bf-8b25-56ff68b7b161___701b3b3c3d0da99c116332051cba1ad6.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Celulares",
-        "descripcion": "Oferta Detectada",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/celular-libre-infinix-note-40-pro-8gb-256gb-negro--/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/637556-170-170?v=638787797025970000&width=170&height=170&aspect=true",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "70% Off en Lácteos",
-        "descripcion": "Scandiou 70% 80 DESCUENTO DESCUENTO EN LA 2D4 UNIDAD EN LA 2DA UNIDAD AHORRG GIGANTE Zzugoey @ 99 [#595 ORREO TerrabuSi Matarazzo) VEGETALES TIRABUZÓN N?28 Hasta el 09/02 VER MÁS En seleccionados de Kee$ 2 Ser Yogurisimo PRO+ Griego 154 Zoni Fideos, Galletitas, Postres Lácteos y más i Rumba Sólo consumo familiar; válido por usuarioldocumento ",
-        "categoria": [
-            "🧀 Lácteos y Frescos"
-        ],
-        "link": "https://www.carrefour.com.ar/23912?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/43cc4591-795e-4664-8c0b-fb99381e1d8f___2553e22d9f41ef0e4576d05d0e4dac86.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Smart TV",
-        "descripcion": "HASTA HASTA 12 SOFALS 3085 DESCUENTO AHORRG GIGANTI Hasta el 09/02 aEShv VER MÁS TCL LIBERTIDORES Guuuety En seleccionados de OnKvo Aires Acondicionados, Smart TVs, Heladeras y Lavarropas_ TINETO GO BIG 253 Sólo consumo familiar; válido por usuarioldocumento",
-        "categoria": [
-            "📺 Electro y Tecno"
-        ],
-        "link": "https://www.carrefour.com.ar/23917?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/5e6ca22f-55cb-486e-8ee8-017caa529f1f___9eca775a76dbc1c2ede1fc6329d4b452.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "15% Off en Seleccionados (🍝 Almacén)",
-        "descripcion": "EXCLUSIVO ONLINE HOY BENEFICIOS EXCLUSIVOS PAGANDO CON ENoredb NMEDNo SI ESTAS EN CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL Heste SIN 3 INTERÉS pigcodo 209 Diner Cuent: Tope $15.0oo ALAn Mi Charrefour 15% DESCTGPTO Club  Lacin 15% DESCUENTO SIN TOPE HACÉ TU PEDIDO ONLINE Y RECIBILO EN 040R ANSES 109 0e5eugsgo Ver legales en carrefour com arldescuentos-bancaros Unidades 24 Makimas",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/entrega-inmediata",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/4fdfd0f1-254a-47dc-a812-3ed6fb9e1ff3___378c847cfed3cf9a6a50a47039a3451e.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Cupón de Descuento en Almacén",
-        "descripcion": "Para clientes de Club LA NACION NUEVO Haciendo tu compra del super online los Lunes de Febrero EXCLUSIVO ONLINE DESCUENTO SIN TOPE Utilizando cupón obtenido en Club LA NACION ENore5b INMEDIAuA Club LA NACION 15 No Incluy alectrodomesticos Ver legales en carrefourcomarldescuentos bancarlos. electrónica; telefonia celular carniceria leches Infantiles maternizadas (etapa 1y 2) HACÉ TU PEDIDO ONLINE Y RECIBILO EN 04oRE VÁLIDO PARA CABA, TANDIL, UNIDADES CÓRDOBA CAPITAL MENDOZA CAPITAL MAXIMAS 24 DisponiBle EN TAMBIÉN",
+        "titulo": "Oferta en Almacén",
+        "descripcion": "Exclusivo online Carrefour banco EXCLUSIVO ONLINE HOY MARTES Tarjeta Mi Carrefour Pagando Con Crédito Valldo los dfas martes de Febrero. 208 DESCUENTO EN EL ACTO Garrefour SIN TOPE Eedd HACÉ TU PEDIDO ONLINE Y RECIBILO EN 00oRE VALIDO PARA CABA TANDIL, UNiDADES CÓRDOBA CAPITAL Y MENDOZA CAPITAL MAXIMAS 24 No Inciuve electcjonestkos_electionka teleionia celulb c Camlcena 12cnes Inra nuies Maternizedas Ncacumulable con Otras Dromochnes Ver Iegales Ceraoucconarescuenagadencados DISPONIBLE En,e TAMBIÉN",
         "categoria": [
             "🍝 Almacén"
         ],
         "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/24e4dccc-cdc9-41bc-afa3-bc78af80a667___8facf951ecab81df6ca9c5928e6213a9.webp",
-        "fecha": "2026-02-09"
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/148c1b69-a2ce-46d6-94f3-a68c91aa067f___8f5a295eac876af7f8afb8bc136c3b64.webp",
+        "fecha": "2026-02-10"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "50% Off en Seleccionados (🍝 Almacén)",
-        "descripcion": "HASTA 50% DESCUENTO AHORRG GIGANTE Hasta el 09/02 SKYY abell Red carnro EXPERT ôLiv^ Nesquik g2 VER MÁS En seleccionados de Repelentes; Aceites De Oliva; Bebidas y más 2004  Sólo consumo familiar; válido por usuarioldocumento",
+        "titulo": "80% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "VUELTA alcole iVolvé al cole con todo! BiC pergMale Shonpie [ Hasta el 16/02 LLEVANDO 2 PRODUCTOS taL PAGANDOCCN   Carrefour VER MÁs 709 OFF EN LA 2DA UNIDAD 80% OFF EN LA 2DA UNIDAD #ACTITU Gomas En selecclonados de Aapcd Escritura, Manualidades y Artículos de Oficina omo Pack S6lo consumo famlllar; válldo por usuarloldocumento _ Warzs love , Hleai{ V80",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/23910?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1202ea1a-e43c-4b89-bd3d-177a8c4c1c2b___236fefb684f6f4b2872eafc81cce0b20.webp",
-        "fecha": "2026-02-09"
+        "link": "https://www.carrefour.com.ar/24036?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/8449b336-b0e3-429d-b6d1-aeb1dd779935___18e6f0aa85f6ffe823c2302a7645f00d.webp",
+        "fecha": "2026-02-10"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Pollo",
-        "descripcion": "Suprema de 86.990 Pollo Congelada x KG OFERTA Hasta el 09/02 VER MAS",
-        "categoria": [
-            "🥩 Carnicería"
-        ],
-        "link": "https://www.carrefour.com.ar/suprema-congelada-x-kg-704563/p",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/50171a6b-8a41-484c-a893-6e800be5347a___f6dc4227300aa8b027843cde8f570247.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "18 Cuotas S/Int en Seleccionados (Electro)",
-        "descripcion": "HASTA 18 CUOTAS SIN INTERES HASTA 50 DESCUENTO Hasta el 10/02 EXCLUSIVO ONLINE",
+        "titulo": "12 Cuotas S/Int en Lavarropas",
+        "descripcion": "@ Carnaval Carrefour Hasta el 16/02 VER MÁs HASTA HASTA 12 CUOTAS SIN INTERÉS 309 OFF En selecclonados de Aires Acondicionados, Smart TVs, Heladeras y Lavarropas TCL LiB(ATADORls oES5v Gooeiv ONIYO TINETO GO BIG 295 Sólo consumo famlllar; válldo por usuarloldocumento.",
         "categoria": [
             "📺 Electro y Tecno"
         ],
-        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/1500d075-ef93-4773-9e49-ddbef09cc443___928e509321b4b7ccd39a7a0fc481d162.webp",
-        "fecha": "2026-02-09"
+        "link": "https://www.carrefour.com.ar/24035?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/51681bcd-d39d-40f7-8e24-23e623486f47___da9e69fd1e8d77336a492204bc14612c.webp",
+        "fecha": "2026-02-10"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "Oferta en Lavarropas",
-        "descripcion": "Oferta Detectada",
+        "titulo": "Cupón de Descuento en Leche",
+        "descripcion": "Para clientes de Club LA NACION NUEVO EXCLUSIVO ONLINE Haciendo tu compra del super online de Martes a Domingos de Febrero DESCUENTO SIN TOPE 10l Club LA NACION Utillzando el cupón obtenido en Club LA NACION https: Isuscripclones lanacion com arlsuscripcion No Incluve electodomestlcos electronlca telefonia celularcarnicene Máxlmo 24 unldades por pedldo 'leches Infantles legales Matemizadas (etada |  21 en Catrefcupconandeachentos-Pancades No acumulable con Dromoclones nI Productos con descuento En2ed? HACÉ TU PEDIDO ONLINE Y RECIBILO EN IqoRD VÁLIDO PARA CABA, TANDIL, UNiddDES CÓRDOBA CAPITAL Y MENDOZA CAPITAL MAXIMAS 24 EN DiSPOnIBLE SOLo",
         "categoria": [
-            "📺 Electro y Tecno"
+            "🧀 Lácteos y Frescos",
+            "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/lavarropas-carga-superior-gafa-digifit-65kg-plata-1658335/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/524658-170-170?v=638802314623030000&width=170&height=170&aspect=true",
-        "fecha": "2026-02-09"
+        "link": "https://www.carrefour.com.ar/almacen",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/5826fefb-df5a-4c29-b904-f6000a4ea7dc___1420f39b3f3eb7ac8fa7345ac04715a9.webp",
+        "fecha": "2026-02-10"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Seleccionados (🍝 Almacén)",
+        "descripcion": "@ Carnaval Carrefour Hasta el 16/02 VER MÁs SANTA JULIA IRIVENTO ELENFMIGO ALMA MORA 3x2 LLEVANDO 3 PAGÁS 2 ' Jnigi Boxa {endio an En selecclonados de Vinos y Espumante Sólo consumo famlllar; válldo por usuarloldocumento _",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/24028?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/9644b5eb-0211-4141-ab9c-b083e176828a___01da782d08e3669b482fa3e76a59d02f.webp",
+        "fecha": "2026-02-10"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oportunidad a $12000 en Seleccionados (🍝 Almacén)",
+        "descripcion": "EXCLUSIVO ONLINE Unidades 24 maximas HOY BENEFICIOS EXCLUSIVOS PAGANDO CON @Nore5b NEJRo SI ESTAS EN CABA TANDIL, Haste cBRDOBA CAPITAL 0 MENDOZA CAPITAL MaranjaX 259 DESCUENTO Cluhcio 109 DESCUGPTO Tope de $12.000 Tarjeta Mi Ctrrefour 209 ANSES 109 DESCUENTO] DISCUGPTO Tope de $35.000 HACÉ TU PEDIDO ONLINE Y RECIBILO EN 06ORD Ver legales en carrefour com arldescuentos-bancaros",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/entrega-inmedita?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ba0efc0a-d075-45db-ae32-99cb360656a8___63825202ec89d15cab0b93d7a669ec8b.webp",
+        "fecha": "2026-02-10"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "50% Off en Yerba",
+        "descripcion": "Carnaval Carrefour 50% OFF EN LA 2DA UNIDAD Mugvoi Hasta el 16/02 NQUERA VER MÁS Babysec UIGA sofd Larç Surtido Bag gpnrv% 160 Auilmme stella masi |artois Uoiaan En selecclonados de Arroz, Yerba, Galletitas y más Sólo consumo famlllar; válldo por usuarloldocumento.",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/24030?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/638f2c99-aba5-4544-839a-0babb9d41d13___bd435d66c476fc70c0eaed30a7834b07.webp",
+        "fecha": "2026-02-10"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "9 Cuotas S/Int en Seleccionados (🍝 Almacén)",
+        "descripcion": "@ Carnaval Carrefour Hasta el 16/02 VER MÁs HASTA HASTA 9 CUOTAS SIN INTERÉS 25% OFF En selecclonados de Notebooks, Cocinas y Freezers Sólo consumo famlllar; válldo por usuarloldocumento",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/24037?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/65ef3a38-6ce9-4cf5-94f4-3bca8c44415d___1a04db489c8d070a692a3d8acc3ba7f0.webp",
+        "fecha": "2026-02-10"
     },
     {
         "supermercado": "Carrefour",
@@ -173,39 +119,6 @@
         ],
         "link": "https://www.carrefour.com.ar/almacen",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/7be41375-1a70-4e59-8779-2247feea87bd___22d429c20217c15dab8a21a5e7ad18bf.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "2x1 en Shampoo",
-        "descripcion": "2x1 LLEVANDO 2 PAGÁS 1 En selecclonados Shampoo, Acondlonadores Pañales mas Hasta el 09/02",
-        "categoria": [
-            "🧴 Perfumería y Bebé"
-        ],
-        "link": "https://www.carrefour.com.ar/23914?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/762ee292-46da-4353-ba7a-decabbc03b36___af532dbd674bd828162d84f83afbbc78.webp",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Shampoo",
-        "descripcion": "Dove Reconstrioon 400 SHAMPOO",
-        "categoria": [
-            "🧴 Perfumería y Bebé"
-        ],
-        "link": "https://www.carrefour.com.ar/shampoo-dove-reconstruccion-completa-400-ml-718503/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/719302-170-170?v=638941630936100000&width=170&height=170&aspect=true",
-        "fecha": "2026-02-09"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Oferta en Jabón",
-        "descripcion": "1 š @ arieyi ; Diluic SOOmI",
-        "categoria": [
-            "🧹 Limpieza"
-        ],
-        "link": "https://www.carrefour.com.ar/jabon-concentrado-ariel-platinum-botella-500-ml-749496/p",
-        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/776379-170-170?v=639005417611900000&width=170&height=170&aspect=true",
-        "fecha": "2026-02-09"
+        "fecha": "2026-02-10"
     }
 ]
