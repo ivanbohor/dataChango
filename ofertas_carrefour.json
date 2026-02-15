@@ -8,7 +8,7 @@
         ],
         "link": "https://www.carrefour.com.ar/20666?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/61187cb6-3c7c-4fea-ae83-444a0ade661a___ab830f59ded4b04cd5ec9a79d866c61c.png",
-        "fecha": "2026-02-13"
+        "fecha": "2026-02-15"
     },
     {
         "supermercado": "Carrefour",
@@ -19,7 +19,7 @@
         ],
         "link": "https://www.carrefour.com.ar/almacen",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/6fb0b104-8850-4c0f-9793-701277615c21___0e9c0cfe8ff3dac5cde9ea1cc531a168.webp",
-        "fecha": "2026-02-13"
+        "fecha": "2026-02-15"
     },
     {
         "supermercado": "Carrefour",
@@ -30,7 +30,40 @@
         ],
         "link": "https://www.carrefour.com.ar/24082?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/d570c8ab-93f8-4c7a-b62a-cb1db6313a7a___7a10888ed20191a4522c96febf6e3e95.webp",
-        "fecha": "2026-02-13"
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "12 Cuotas S/Int en Smart TV",
+        "descripcion": "iSolo por este finde! Hasta el 17/02 PRECIO NORMAL 82-099-000 OFERTA 81.999.000 12 CUOTAS SIN INTERÉS DE 8166.583 Hilids Smart TV Philips 75\" Led 4K Sólo consumo familiar válido ( por usuarioldocumento. AMBILIGHT tv VER MÁs",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/smart-tv-75--philips-led-4k-google-tv-75pud8100-77-/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/14fb0b11-bf8e-41bd-8f71-e454b80d25d1___87ba53baf3d256f238f9b309c88cc9da.webp",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "3x2 en Seleccionados (🍝 Almacén)",
+        "descripcion": "3x2 LLEVANDO PAGAS 2 Lkiyeail Vinos y Espumantes",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/24028?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/f240a20e-2827-4413-adf8-9938ba0807b9___42dcbf85305c161f21ed4f0724dad912.webp",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "25% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "CUOTAS SIN INTERES Has 25% OFF Notebooks, Cocinas y Freezers",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/24037?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/35b53040-675f-4da1-9c91-77c0ed181531___9d8c6aac463a12b82c7f3bcc5a4c258f.webp",
+        "fecha": "2026-02-15"
     },
     {
         "supermercado": "Carrefour",
@@ -41,7 +74,7 @@
         ],
         "link": "https://www.carrefour.com.ar/24036?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/8a9af092-5244-4a26-b439-1f245d40ed0a___6678b7efb53b9ac4234b21025316951a.webp",
-        "fecha": "2026-02-13"
+        "fecha": "2026-02-15"
     },
     {
         "supermercado": "Carrefour",
@@ -52,40 +85,40 @@
         ],
         "link": "https://www.carrefour.com.ar/24050?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/8fe2218d-4a8f-4b0b-9286-b2ecf0a5dbf1___ef7b6b27076276c66126f29c49eae699.webp",
-        "fecha": "2026-02-13"
+        "fecha": "2026-02-15"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "12 Cuotas S/Int en Lavarropas",
-        "descripcion": "@ Carnaval Carrefour Hasta el 17/02 VER MÁs oES5v HASTA HASTA TCL Libertadores 12 CUOTAS SIN INTERÉS 309 OFF GocgkTV nuno TINE TO GO BIG En selecclonados de Aires Acondicionados, Smart TVs, Heladeras y Lavarropas Solo consumo famlllar; válldo por usuarloldocumento.",
+        "titulo": "Oferta en Celulares",
+        "descripcion": "71835",
         "categoria": [
             "📺 Electro y Tecno"
         ],
-        "link": "https://www.carrefour.com.ar/24035?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3e621a4d-f684-479f-a46f-e3b2713a9a57___10482a690a3ace073b2436723481275b.webp",
-        "fecha": "2026-02-13"
+        "link": "https://www.carrefour.com.ar/celular-libre-motorola-g05-4gb-64gb-rojo/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/670571-170-170?v=638852534990630000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-15"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "3x2 en Seleccionados (🍝 Almacén)",
-        "descripcion": "Carnaval Carrefour 3x2 LLEVANDO 3 PAGÁS 2 Hasta el 17/02 VER MÁs SANTA JULIA IRIVENTO ELENFMIGO ALMA MORA ' Junigi Boxa (engio an En selecclonados de Vinos y Espumante Sólo consumo famlliar; válldo por usuarloldocumento.",
+        "titulo": "40% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "En Chocolates, Golosinas, Vinos y Espumantes MES DEL HASTA AMOR Carrefour Celebrá el amor con nuestras ofertas! 40% DESCUENTO Nestlê 15212532 Wone / eate 2512 bgn VER MÁS 1 Bon @ Eo",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/24028?map=productClusterIds",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/4d822b59-4e20-4d9b-addb-284165636bec___ee4bc08deed1edae5cbf6d995587e87b.webp",
-        "fecha": "2026-02-13"
+        "link": "https://www.carrefour.com.ar/24115?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/394395d8-f5bf-4dcb-9977-00bd237d07dd___b8e6b93d147bfa6663f8b5adfe158004.webp",
+        "fecha": "2026-02-15"
     },
     {
         "supermercado": "Carrefour",
-        "titulo": "3 Cuotas S/Int en Seleccionados (🍝 Almacén)",
-        "descripcion": "EXCLUSIVO ONLINE HOY BENEFICIOS EXCLUSIVOS PAGANDO CON ENoredb NMEDNo SI ESTAS EN CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL Galiciasa 3 CUOIAS SIN INTERÉS Club  Lacin 109 DESCUENTO SIN TOPE HACÉ TU PEDIDO ONLINE Y RECIBILO EN 040R Tarjeta Mi Ctrrefour 15% DESGTGPT@ ANSES 109 FOed 7ESDOO Ver legales en carrefour com arldescuentos-bancaros Unidades 24 Makimas",
+        "titulo": "15% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "EXCLUSIVO ONLINE HOY BENEFICIOS EXCLUSIVOS PAGANDO CON ENoreEb INMEDINT SI ESTAS EN CABA, TANDIL, CÓRDOBA CAPITAL 0 MENDOZA CAPITAL Tarjevs Mi Carrefour rta CUOTAS Galicia Visa CUOTAS 3 SIN INTERES 3 SIN INTERES Tugats Mi Carrefour h € 15% DESCUENTO SIN TOPE Cuenta Digital Mi Carrefour 109 DESCUENTO SIN TOPE HACÉ TU PEDIDO ONLINE Y RECIBILO EN 040R DESCUENTO SIN TOPE cluhcrov 109 Ver legales en carrefour com arldescuentos-bancaros UnidadES 24 Maxias",
         "categoria": [
             "🍝 Almacén"
         ],
-        "link": "https://www.carrefour.com.ar/entrega-inmediata?",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/425884f7-280f-41da-acea-995285c1c0be___8beb7f14df9ab45f3ae7eae627dedc6a.webp",
-        "fecha": "2026-02-13"
+        "link": "https://www.carrefour.com.ar/entrega-inmedita?",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/727631f0-ea02-4e82-bf13-0bc349143f41___28ccd1f402fa8e15235a3b7f9dc78087.webp",
+        "fecha": "2026-02-15"
     },
     {
         "supermercado": "Carrefour",
@@ -96,30 +129,7 @@
         ],
         "link": "https://www.carrefour.com.ar/24079?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/ab82ac63-18a1-4549-bfc1-e81674887979___92e6ffb1feec00f3d959ec8f3376dfc8.webp",
-        "fecha": "2026-02-13"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "10% Off en Almacén",
-        "descripcion": "Requisitos para el beneficio Tener más de Ser beneficiario de +60 ANSES AÑOS Ser parte de Mi Carrefour Micanctour En tu compra AHORRÁ De Lunes a Viemes de Febrero mmuV 10% No acumula con otras promociones Con un tope de $35000 EXCLUSIVO ONLINE E2edd HACÉ TU PEDIDO ONLINE Y RECIBILO EN DgOR VALIDO PARA CABA TANDIL, UNIDADES CÓRDOBA CAPITAL Y MENDOZA CAPITAL MAXIMAS 24 DISPOnIBLE EN  TAMBIÉN",
-        "categoria": [
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/7be41375-1a70-4e59-8779-2247feea87bd___22d429c20217c15dab8a21a5e7ad18bf.webp",
-        "fecha": "2026-02-13"
-    },
-    {
-        "supermercado": "Carrefour",
-        "titulo": "Cupón de Descuento en Leche",
-        "descripcion": "Para clientes de Club LA NACION NUEVO EXCLUSIVO ONLINE Haciendo tu compra del super online de Martes a Domingos de Febrero DESCUENTO SIN TOPE 10l Club LA NACION Utillzando el cupón obtenido en Club LA NACION https: Isuscripclones lanacion com arlsuscripcion No Incluve electodomestlcos electronlca telefonia celularcarnicene Máxlmo 24 unldades por pedldo 'leches Infantles legales Matemizadas (etada |  21 en Catrefcupconandeachentos-Pancades No acumulable con Dromoclones nI Productos con descuento En2ed? HACÉ TU PEDIDO ONLINE Y RECIBILO EN IqoRD VÁLIDO PARA CABA, TANDIL, UNiddDES CÓRDOBA CAPITAL Y MENDOZA CAPITAL MAXIMAS 24 EN DiSPOnIBLE SOLo",
-        "categoria": [
-            "🧀 Lácteos y Frescos",
-            "🍝 Almacén"
-        ],
-        "link": "https://www.carrefour.com.ar/almacen",
-        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/5826fefb-df5a-4c29-b904-f6000a4ea7dc___1420f39b3f3eb7ac8fa7345ac04715a9.webp",
-        "fecha": "2026-02-13"
+        "fecha": "2026-02-15"
     },
     {
         "supermercado": "Carrefour",
@@ -130,7 +140,7 @@
         ],
         "link": "https://www.carrefour.com.ar/24030?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/08da1368-d014-4437-aeb4-4dbbac522cf9___373de4092bb1b19b5cbaafa2c4013c7c.webp",
-        "fecha": "2026-02-13"
+        "fecha": "2026-02-15"
     },
     {
         "supermercado": "Carrefour",
@@ -141,6 +151,127 @@
         ],
         "link": "https://www.carrefour.com.ar/24037?map=productClusterIds",
         "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/c3c17149-4bd5-4065-8a69-e517e35289ff___79417b2054f603c212472b1571d06b42.webp",
-        "fecha": "2026-02-13"
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Asado",
+        "descripcion": "iSolo por este fInde! Hasta el 17/02 610.99Oxkg Asado de Novillo VER MÁS",
+        "categoria": [
+            "🥩 Carnicería"
+        ],
+        "link": "https://www.carrefour.com.ar/asado-novillo-x-kg-6631/p",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/01bbe99c-b53a-4196-ada6-cbbfc598594a___b4f25d9fb9a60d1d5b0a7e286dbbc2d6.webp",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "18 Cuotas S/Int en Seleccionados (Electro)",
+        "descripcion": "HASTA 18 CUOTAS SIN INTERES HASTA 50 DESCUENTO Hasta el 18/02 EXCLUSIVO ONLINE",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/11738?map=productClusterIds&order=",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/b45d5c8a-11e9-4d7b-a267-eb5c2be3e086___39d6e2f0ce8c7b36c215c528c93c0882.webp",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Notebooks",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/notebook-exo-intel-n4020-14-4gb-ssd128-r34-w11-1753001/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/680130-170-170?v=638872359844500000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Seleccionados (Electro)",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/smartphone-tecno-spark-20c-256---4gb-1750079/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/638100-170-170?v=638790440190200000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Heladeras",
+        "descripcion": "Oferta Detectada",
+        "categoria": [
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.carrefour.com.ar/heladera-gafa-no-frost-262l-inverter-negra-hgnf251n-1751944/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/670702-170-170?v=638852595852600000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Manteca",
+        "descripcion": "Buus Maneca 1 200g",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/manteca-la-serenisima-extra-para-untar-200-g/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/636209-170-170?v=638780820785500000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Quesos",
+        "descripcion": "CasanCrem 1 {290g",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/queso-crema-clasico-casancrem-290-grs-726373/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/684202-170-170?v=638890490298270000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Crema",
+        "descripcion": "[Colgate Adder Crema Dental Familhar",
+        "categoria": [
+            "🧀 Lácteos y Frescos"
+        ],
+        "link": "https://www.carrefour.com.ar/pasta-dental-colgate-triple-beneficio-90-g-718627/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/542860-170-170?v=638569960543130000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Jabón",
+        "descripcion": "HAsta 204 dEAHORRO ala Jagoniqvioc Gongentaadg PRADR Rinde 3L",
+        "categoria": [
+            "🧹 Limpieza"
+        ],
+        "link": "https://www.carrefour.com.ar/jabon-liquido-concentrado-para-diluir-ala-matic-maxima-blancura-500-ml-695747/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/671107-170-170?v=638853548795030000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "Oferta en Carne Vacuna",
+        "descripcion": "Bulnes 1 1 520",
+        "categoria": [
+            "🥩 Carnicería"
+        ],
+        "link": "https://www.carrefour.com.ar/ravioles-bulnez-de-carne-y-verdura-en-placha-520-g-735798/p",
+        "imagen": "https://carrefourar.vtexassets.com/arquivos/ids/538189-170-170?v=638554509973000000&width=170&height=170&aspect=true",
+        "fecha": "2026-02-15"
+    },
+    {
+        "supermercado": "Carrefour",
+        "titulo": "20% Off en Seleccionados (🍝 Almacén)",
+        "descripcion": "Hasta el 17/02 En selecclonados de CUOIAS SIN INTERES 20% OFF Mochilas Escolares VER MÁS",
+        "categoria": [
+            "🍝 Almacén"
+        ],
+        "link": "https://www.carrefour.com.ar/24050?map=productClusterIds",
+        "imagen": "https://carrefourar.vtexassets.com/assets/vtex.file-manager-graphql/images/3b4f2d4a-da9d-4c70-9e8b-e3d3517c0248___1c6a71223c16c56b7448f7328134371d.webp",
+        "fecha": "2026-02-15"
     }
 ]
