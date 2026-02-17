@@ -1,7 +1,7 @@
 [
     {
         "supermercado": "Jumbo",
-        "titulo": "40% Off en Art. Limpieza, Perfumería",
+        "titulo": "40% Off en Art. Limpieza, Almacén",
         "descripcion": "CARNAVAL de DESCUENTOS TECNOLOGIA ESPONJADA ABSORCIÓN RESISTENCIA HASTA INFALTABLES 40% DEL SUPER PRODUCTOS SELECCIONADOS. L  EAL ELKJVE Higienol NUEVG EB aegisti EXCESO EN AZÚCARES EXCESO EN CALORIAS HIDRSHAMPSQDOR JERENISIMA dwei [con Acido Hialuron co] Siempre cindemás mas hidratacic DulcedLeche Cabevlodeshide Terrabusi 58/82 TOTADe To 2268f 400 Clásico M@b 4005 EXCLUSIVO ONLINE VÁLIDODEL 16/02AL19/02. BEBER CONMODERACIÓN:. Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza Hasta 40% Almacén, Bebidas, Frescos, Perfumería y Limpieza",
         "categoria": [
             "🧹 Limpieza",
@@ -10,7 +10,7 @@
         ],
         "link": "https://www.jumbo.com.ar/57469?map=productClusterIds&evento=eds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/86d3b732-dfa5-41d3-9e10-f4bfd19093bf___48ebec17d118d2228a4864172c349ff0.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -21,7 +21,7 @@
         ],
         "link": "https://www.jumbo.com.ar/57332?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/d285fef6-8a03-47ad-9bc2-f7222ae0ef74___8eaf5332b6a25feb5424db2abc3c90a5.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -32,7 +32,7 @@
         ],
         "link": "https://www.jumbo.com.ar/57466?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/b437e53d-eaf4-4680-a78f-0959ac8cada2___a9319893ba427b266e47e692b362958a.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -43,7 +43,7 @@
         ],
         "link": "https://www.jumbo.com.ar/57349?map=productClusterIds&evento=fdselectro",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/9d316da3-b71b-4a70-b2b9-28741bbe0732___02e998c9324ea12de70bdd4ebac90cb9.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -54,18 +54,18 @@
         ],
         "link": "https://www.jumbo.com.ar/57371?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/3fab8d11-bd3d-46f3-a162-2121d1c31211___7c5a3297e49600cd325eec91894f5688.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
-        "titulo": "Hasta 50% Off en Hogar, Decoración",
+        "titulo": "Hasta 50% Off en Decoración, Hogar",
         "descripcion": "Bazar € Deco Valijas, Hogar y más 150%13 SNERÉS cenCo pay HASTA SININTERÉS CRÉDITO VÁLIDO DEL 13/02 AL 19/02. PRODUCTOS SELECCIONADOS _ 144n e5 Hasta 3 CSI y Hasta 50% en Hogar Hasta 3 CSI y Hasta 50% en Hogar",
         "categoria": [
             "🏠 Hogar y Bazar"
         ],
         "link": "https://www.jumbo.com.ar/57362?map=productClusterIds&evento=fdshogar",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/53709588-6406-4684-98c1-013d19291351___9d7c1954cb46f8abd1a5b857fadea571.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -77,7 +77,7 @@
         ],
         "link": "https://www.jumbo.com.ar/colgate-total",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/18620ae8-1157-4c22-9bcc-1ec72b5e6242___3d72ec97c67eb9f36e29dd18b0f8d620.jpg",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -89,7 +89,20 @@
         ],
         "link": "https://www.jumbo.com.ar/57255?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/75c219ae-f495-447f-b34f-3cd2f2b8eb71___8b398722e82df932027a6003a24ee7c2.jpg",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
+    },
+    {
+        "supermercado": "Jumbo",
+        "titulo": "40% Off en Art. Limpieza, Shampoo",
+        "descripcion": "HASTA EXCLUSIVO ONLINE 40% LEAL ELVIVE Tecnologia EsponjadA ABSORCION HIDRA RESISTENCIA [HIALURÓNICO] NUEVO Higienol Rafun HIDRA RELLENADOR SHAMPOO VERLEGALES . Perfumería y Limpieza ",
+        "categoria": [
+            "🧹 Limpieza",
+            "🧴 Perfumería y Bebé",
+            "📺 Electro y Tecno"
+        ],
+        "link": "https://www.jumbo.com.ar/57464?map=productClusterIds",
+        "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/ca1fe011-0348-4f83-8d8d-34e47a90c90c___9ae4b713c9b2fb3f9f7358285a086800.webp",
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -100,7 +113,7 @@
         ],
         "link": "https://www.jumbo.com.ar/57465?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/567bedc9-2ab1-43af-a220-339a835b4354___db84159a07afcb995b9238101c58fb98.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -111,7 +124,7 @@
         ],
         "link": "https://www.jumbo.com.ar/57466?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/e8528559-4efe-4d16-bc31-a4dd581fab14___edd53d2cf3a441a63d53cea17c53593d.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -122,7 +135,7 @@
         ],
         "link": "https://www.jumbo.com.ar/57467?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/3c9bf2c6-490c-4a1c-aec1-f46213b70b4c___bb167f9746feb093ae5c5ec5f9832dd6.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -133,7 +146,7 @@
         ],
         "link": "https://www.jumbo.com.ar/57468?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/0c9dc9f4-4829-4d10-8b54-b08d17de63a9___f6209cf06117156253badbbdc40ac8c3.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -144,7 +157,7 @@
         ],
         "link": "https://www.jumbo.com.ar/57472?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/74ba4235-2517-43a2-b65b-05f3e6b9e494___4aa0ae6efc6456cbbed646b5435d29e9.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     },
     {
         "supermercado": "Jumbo",
@@ -155,6 +168,6 @@
         ],
         "link": "https://www.jumbo.com.ar/57469?map=productClusterIds",
         "imagen": "https://jumboargentinaio.vtexassets.com/assets/vtex.file-manager-graphql/images/c16735c1-46fa-4087-91d3-25763ea45d4e___72b64628371084a6c58ec67a090af4dc.webp",
-        "fecha": "2026-02-16"
+        "fecha": "2026-02-17"
     }
 ]
