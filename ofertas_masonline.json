@@ -1,17 +1,6 @@
 [
     {
         "supermercado": "MasOnline",
-        "titulo": "Precio Especial en Pollo",
-        "descripcion": "Aprovechá 20y 2Ide febrero ChangoMâs MâsOnline comar s12999 X kg Matambrefresco y congelado Tapade Asadoal vacío Psin imp Nac. $511.763,80 Stock: 5.000 kg (**) s589 X 100g Palta Hass Psin imp Nac $533 St%kg 36090 Stock: 'kg (**) s3.489 xkg Cuartotrasero de Pollo fresco y congelado P. sinimp Nac; 53.157,47 Stock: IQ.OOO kg: QUIERO VER MÁs PARA MÁS INFORMACIÓN 0 LIMITACIONES APLICABLES, CONSULTE EN MASONLINE.COM.AR/LEGALES ",
-        "categoria": [
-            "🥩 Carnicería"
-        ],
-        "link": "https://www.masonline.com.ar/773?map=productClusterIds",
-        "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/faba552f-6f35-4622-ad4f-5f95f3ac5830/image/attachments/frescos-mb_3_leches-dkp.webp",
-        "fecha": "2026-02-21"
-    },
-    {
-        "supermercado": "MasOnline",
         "titulo": "70% Off en Galletitas",
         "descripcion": "Del 20al 23 de febrero ChangoMâs MâsOnline Gomar OFERTAS FLASH Exclusivo Mâs club' Todas las pepitos! Coco/inaf Helados 70% Galletitas (Excepto Franui) Descuento ORE@ Bagley Maná Segunda dulces Unidad Cofler TerrabuSi QUIERO VER MÁs PROMOCIÓN VÁLIDA SIN OBLIGACIÓN DE COMPRA PARA TODOS LOS SOCIOS DE MSCLUB. VER TÉRMINOS Y CONDICIONES EN WWWMASCLUB.COM.AR. PARA MÁS INFORMACIÓN O LIMITACIONES APLICABLES, CONSULTE EN MASONLINE_COM.AR/LEGALES ",
         "categoria": [
@@ -19,7 +8,7 @@
         ],
         "link": "https://www.masonline.com.ar/210?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/6d3e127d-cf87-4a3e-a47a-e1048eda7523/image/attachments/02_Flash(20-23)_2_galletas-dkp.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -30,7 +19,7 @@
         ],
         "link": "https://www.masonline.com.ar/635?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/6453ec0e-d99f-49f0-b1e0-83ae82b0f13c/image/attachments/02_Flash(20-23)_6_lavandinas-dkp.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -41,7 +30,7 @@
         ],
         "link": "https://www.masonline.com.ar/929?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/a16baebe-6bbe-4566-8c79-ba044c4bcc37/image/attachments/02_Flash(20-23)_4_capsulas_dkp.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -52,7 +41,7 @@
         ],
         "link": "https://www.masonline.com.ar/1502?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/71ff152f-54f2-4325-8554-38a7d9289311/image/attachments/02_Flash(20-23)_3_leches_dkp.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -63,18 +52,18 @@
         ],
         "link": "https://www.masonline.com.ar/439?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/f6d0a6e5-fbb1-4000-b1ec-32a598ed31d4/image/attachments/02_BannerHome%20(18-24)_Dkp%201.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "70% Off en Dulce de Leche",
+        "titulo": "70% Off en Yogur",
         "descripcion": "Del18al 24 de febrero ChangoMâs MâsOnline comar Lácteos seleccionados Las Tres JASERENISIMA 10orded lecioa GBAN Milkaut | ilolay 70% Niñas COMPBA 7as4a€ 1r Leches Nutrición Descuento Yogures Yogures en pote Dulce larga vida activa yogures Y Dulce de leche de leche Segunda Unidad QUIERO VER MÁs PARA MÁS INFORMACIÓN OLIMITACIONES APLICABLES, CONSULTEEN MASONLINE COM AR/LEGALES_ ",
         "categoria": [
             "🧀 Lácteos y Frescos"
         ],
         "link": "https://www.masonline.com.ar/1508?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/e5428270-fb72-463d-9cbb-f2399fb7684d/image/attachments/02_BannerHome%20(18-24)_Dkp%202.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -85,7 +74,7 @@
         ],
         "link": "https://www.masonline.com.ar/1654?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/820bd67b-2128-48bc-bef6-337b083bab9a/image/attachments/02_BannerHome%20(18-24)_Dkp%203.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -97,7 +86,7 @@
         ],
         "link": "https://www.masonline.com.ar/masofertas-electroyhogar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/b58ca5ba-27b3-41d1-9d4c-85c458d12e43/image/attachments/02_BannerHome%20(18-24)_Dkp%205.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -108,7 +97,7 @@
         ],
         "link": "https://www.masonline.com.ar/1480?map=productClusterIds",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DF/documents/ef2f7934-c903-4026-a85c-8d49f440e4b0/image/attachments/p.94%20-%20cif%20-%20masonline-1920x440.jpg",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -119,7 +108,7 @@
         ],
         "link": "https://www.masonline.com.ar/promociones-bancarias",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/78aa3c29-f1b3-4a6e-9094-e1b448588c3d___56d6685325ac169cbffcb6a2bd516620.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -130,7 +119,7 @@
         ],
         "link": "https://www.masonline.com.ar/promociones-bancarias",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/cdf765f7-537d-413f-a5bf-889148918b39___9b48b9d2e10e36fde4e90ba03469390b.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -142,7 +131,7 @@
         ],
         "link": "https://www.masonline.com.ar/411?map=productClusterIds",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/e6d3d85d-a63a-4c77-8c68-266e1a1639c3___5e1fd12d4736631e88010c16aac3566e.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -153,7 +142,7 @@
         ],
         "link": "https://www.masonline.com.ar/3353?map=productClusterIds",
         "imagen": "https://masonlineprod.vtexassets.com/assets/vtex.file-manager-graphql/images/1961f8f3-9d69-45e0-8606-0cfceed181cb___fd7dcc30ec796324a78080390627c662.png",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -164,7 +153,7 @@
         ],
         "link": "https://www.masonline.com.ar/aire-acondicionado-hyundai-inverter-fc-hy11inv-3200fcw/p",
         "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/356554-230-230?v=638857897172300000&width=230&height=230&aspect=true",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -175,7 +164,7 @@
         ],
         "link": "https://www.masonline.com.ar/aire-acondicionado-philco-inverter-5200w-blanco-phin52ha3bn-2/p",
         "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/276140-230-230?v=638150314025530000&width=230&height=230&aspect=true",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -187,7 +176,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/6ca87f85-2e2a-48bc-9b4c-c76059db9f8a/multimedia/attachments/01_Regionales_Verano_28al03.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -198,11 +187,11 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/bd7f6158-6e8f-494b-9afe-5f4b1e7515d3/multimedia/attachments/02_Regional_1-%20Almacen.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
-        "titulo": "Oferta en Art. Limpieza",
+        "titulo": "Oferta en Perfumería",
         "descripcion": "ChangoMâs MâsOnline comar Perfumería Y limpieza Vshio Hasta 352 Unitario Descuento PARA MÁS INFORMACIÓN OLIMITACIONES APLICABLES, CONSULTE EN MASONLINECOM AR/LEGALES. DORINKA SRL 30-67813830-0 BOLIVIA 5831, C.ABA Novedad image ",
         "categoria": [
             "🧹 Limpieza",
@@ -210,7 +199,7 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/89a33b33-bd19-4887-896d-713c7fe12f14/multimedia/attachments/02_Regional_4-%20Perfumeria.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     },
     {
         "supermercado": "MasOnline",
@@ -221,6 +210,6 @@
         ],
         "link": "https://www.masonline.com.ar",
         "imagen": "https://www.masonline.com.ar/api/dataentities/DC/documents/1aa020a4-363f-4c89-99d3-02cc4a93c986/multimedia/attachments/01_Regionales_Verano_28al03-03.webp",
-        "fecha": "2026-02-21"
+        "fecha": "2026-02-22"
     }
 ]
